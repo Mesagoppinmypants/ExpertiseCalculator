@@ -1,4 +1,4 @@
-# ExpertiseCalculator
+# NGE Expertise Calculator
 
 Started by Iosnowore Kun
 Made for ProjectSWG
