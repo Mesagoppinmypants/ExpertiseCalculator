@@ -1,2 +1,6 @@
 # ExpertiseCalculator
-SWG NGE Expertise Calculator Application for Windows
+
+Started by Iosnowore Kun
+Made for ProjectSWG
+
+This is an NGE profession expertise calculator made for Windows.
