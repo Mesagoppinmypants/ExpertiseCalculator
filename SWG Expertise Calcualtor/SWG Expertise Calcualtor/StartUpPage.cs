@@ -15,6 +15,7 @@ namespace SWG_Expertise_Calcualtor
         public StartUpPage()
         {
             InitializeComponent();
+            comboBox1.SelectedIndex = 0;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

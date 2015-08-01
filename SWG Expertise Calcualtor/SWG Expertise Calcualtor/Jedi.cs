@@ -16,5 +16,11 @@ namespace SWG_Expertise_Calcualtor
         {
             InitializeComponent();
         }
+
+        private void Jedi_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            StartUpPage start = new StartUpPage();
+            start.Visible = true;
+        }
     }
 }

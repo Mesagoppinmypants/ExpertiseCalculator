@@ -39,6 +39,7 @@
             this.Name = "Jedi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jedi";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Jedi_FormClosing);
             this.ResumeLayout(false);
 
         }
