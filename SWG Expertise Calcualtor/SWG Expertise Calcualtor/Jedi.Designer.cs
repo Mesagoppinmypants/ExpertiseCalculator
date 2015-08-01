@@ -45,8 +45,8 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.TotalPointLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.CheckBox();
+            this.remove = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -229,26 +229,29 @@
             this.TotalPointLabel.TabIndex = 22;
             this.TotalPointLabel.Text = "Available Points...";
             // 
-            // button1
+            // add
             // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(686, 422);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Add Points";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.add.AutoSize = true;
+            this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add.Location = new System.Drawing.Point(698, 491);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(135, 29);
+            this.add.TabIndex = 23;
+            this.add.Text = "Add Points";
+            this.add.UseVisualStyleBackColor = true;
+            this.add.CheckedChanged += new System.EventHandler(this.add_CheckedChanged);
             // 
-            // button2
+            // remove
             // 
-            this.button2.Location = new System.Drawing.Point(767, 422);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Remove Points";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.remove.AutoSize = true;
+            this.remove.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remove.Location = new System.Drawing.Point(698, 526);
+            this.remove.Name = "remove";
+            this.remove.Size = new System.Drawing.Size(176, 29);
+            this.remove.TabIndex = 24;
+            this.remove.Text = "Remove Points";
+            this.remove.UseVisualStyleBackColor = true;
+            this.remove.CheckedChanged += new System.EventHandler(this.remove_CheckedChanged);
             // 
             // Jedi
             // 
@@ -256,8 +259,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(984, 696);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.remove);
+            this.Controls.Add(this.add);
             this.Controls.Add(this.TotalPointLabel);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox10);
@@ -320,7 +323,7 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label TotalPointLabel;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox add;
+        private System.Windows.Forms.CheckBox remove;
     }
 }
