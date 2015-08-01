@@ -83,6 +83,16 @@ namespace SWG_Expertise_Calcualtor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap massage_top_right {
+            get {
+                object obj = ResourceManager.GetObject("massage_top_right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap window1_bottom_left {
             get {
                 object obj = ResourceManager.GetObject("window1_bottom_left", resourceCulture);
