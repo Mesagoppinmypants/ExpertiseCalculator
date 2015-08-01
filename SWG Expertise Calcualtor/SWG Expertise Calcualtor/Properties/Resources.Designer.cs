@@ -233,6 +233,46 @@ namespace SWG_Expertise_Calcualtor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap skillpoints1 {
+            get {
+                object obj = ResourceManager.GetObject("skillpoints1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap skillpoints2 {
+            get {
+                object obj = ResourceManager.GetObject("skillpoints2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap skillpoints3 {
+            get {
+                object obj = ResourceManager.GetObject("skillpoints3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap skillpoints4 {
+            get {
+                object obj = ResourceManager.GetObject("skillpoints4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap window1_bottom_left {
             get {
                 object obj = ResourceManager.GetObject("window1_bottom_left", resourceCulture);

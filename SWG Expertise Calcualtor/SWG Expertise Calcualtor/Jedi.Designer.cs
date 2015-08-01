@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.TotalPointLabel = new System.Windows.Forms.Label();
+            this.add = new System.Windows.Forms.CheckBox();
+            this.remove = new System.Windows.Forms.CheckBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.strengthgrayed = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -41,13 +47,14 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.TotalPointLabel = new System.Windows.Forms.Label();
-            this.add = new System.Windows.Forms.CheckBox();
-            this.remove = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.strength1 = new System.Windows.Forms.PictureBox();
+            this.strength2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strengthgrayed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -60,22 +67,82 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strength1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strength2)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox8
+            // TotalPointLabel
             // 
-            this.pictureBox8.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStrength;
-            this.pictureBox8.Location = new System.Drawing.Point(182, 115);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox8.TabIndex = 18;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
-            this.pictureBox8.MouseLeave += new System.EventHandler(this.pictureBox8_MouseLeave);
-            this.pictureBox8.MouseHover += new System.EventHandler(this.pictureBox8_MouseHover);
+            this.TotalPointLabel.AutoSize = true;
+            this.TotalPointLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalPointLabel.Location = new System.Drawing.Point(758, 128);
+            this.TotalPointLabel.Name = "TotalPointLabel";
+            this.TotalPointLabel.Size = new System.Drawing.Size(30, 24);
+            this.TotalPointLabel.TabIndex = 22;
+            this.TotalPointLabel.Text = "45";
+            // 
+            // add
+            // 
+            this.add.AutoSize = true;
+            this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add.Location = new System.Drawing.Point(787, 563);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(135, 29);
+            this.add.TabIndex = 23;
+            this.add.Text = "Add Points";
+            this.add.UseVisualStyleBackColor = true;
+            this.add.CheckedChanged += new System.EventHandler(this.add_CheckedChanged);
+            // 
+            // remove
+            // 
+            this.remove.AutoSize = true;
+            this.remove.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remove.Location = new System.Drawing.Point(787, 598);
+            this.remove.Name = "remove";
+            this.remove.Size = new System.Drawing.Size(176, 29);
+            this.remove.TabIndex = 24;
+            this.remove.Text = "Remove Points";
+            this.remove.UseVisualStyleBackColor = true;
+            this.remove.CheckedChanged += new System.EventHandler(this.remove_CheckedChanged);
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStamina;
+            this.pictureBox13.Location = new System.Drawing.Point(442, 115);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox13.TabIndex = 21;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedAgility;
+            this.pictureBox10.Location = new System.Drawing.Point(355, 115);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox10.TabIndex = 20;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedConstitution;
+            this.pictureBox9.Location = new System.Drawing.Point(268, 115);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox9.TabIndex = 19;
+            this.pictureBox9.TabStop = false;
+            // 
+            // strengthgrayed
+            // 
+            this.strengthgrayed.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStrength;
+            this.strengthgrayed.Location = new System.Drawing.Point(182, 115);
+            this.strengthgrayed.Name = "strengthgrayed";
+            this.strengthgrayed.Size = new System.Drawing.Size(42, 42);
+            this.strengthgrayed.TabIndex = 18;
+            this.strengthgrayed.TabStop = false;
+            this.strengthgrayed.Click += new System.EventHandler(this.strengthgrayed_Click);
+            this.strengthgrayed.MouseLeave += new System.EventHandler(this.strengthgrayed_MouseLeave);
+            this.strengthgrayed.MouseHover += new System.EventHandler(this.strengthgrayed_MouseHover);
             // 
             // pictureBox2
             // 
@@ -112,6 +179,7 @@
             this.strength.Size = new System.Drawing.Size(42, 42);
             this.strength.TabIndex = 4;
             this.strength.TabStop = false;
+            this.strength.Click += new System.EventHandler(this.strength_Click);
             this.strength.MouseLeave += new System.EventHandler(this.strength_MouseLeave);
             this.strength.MouseHover += new System.EventHandler(this.strength_MouseHover);
             this.strength.MouseMove += new System.Windows.Forms.MouseEventHandler(this.strength_MouseMove);
@@ -192,66 +260,45 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox9
+            // label1
             // 
-            this.pictureBox9.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedConstitution;
-            this.pictureBox9.Location = new System.Drawing.Point(268, 115);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox9.TabIndex = 19;
-            this.pictureBox9.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(783, 128);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 24);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "/ 45";
             // 
-            // pictureBox10
+            // label2
             // 
-            this.pictureBox10.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedAgility;
-            this.pictureBox10.Location = new System.Drawing.Point(355, 115);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox10.TabIndex = 20;
-            this.pictureBox10.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(720, 104);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(142, 24);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Available Points";
             // 
-            // pictureBox13
+            // strength1
             // 
-            this.pictureBox13.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStamina;
-            this.pictureBox13.Location = new System.Drawing.Point(442, 115);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox13.TabIndex = 21;
-            this.pictureBox13.TabStop = false;
+            this.strength1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.strength1.Location = new System.Drawing.Point(221, 156);
+            this.strength1.Name = "strength1";
+            this.strength1.Size = new System.Drawing.Size(25, 24);
+            this.strength1.TabIndex = 27;
+            this.strength1.TabStop = false;
+            this.strength1.Visible = false;
             // 
-            // TotalPointLabel
+            // strength2
             // 
-            this.TotalPointLabel.AutoSize = true;
-            this.TotalPointLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalPointLabel.Location = new System.Drawing.Point(749, 128);
-            this.TotalPointLabel.Name = "TotalPointLabel";
-            this.TotalPointLabel.Size = new System.Drawing.Size(157, 24);
-            this.TotalPointLabel.TabIndex = 22;
-            this.TotalPointLabel.Text = "Available Points...";
-            // 
-            // add
-            // 
-            this.add.AutoSize = true;
-            this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add.Location = new System.Drawing.Point(698, 491);
-            this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(135, 29);
-            this.add.TabIndex = 23;
-            this.add.Text = "Add Points";
-            this.add.UseVisualStyleBackColor = true;
-            this.add.CheckedChanged += new System.EventHandler(this.add_CheckedChanged);
-            // 
-            // remove
-            // 
-            this.remove.AutoSize = true;
-            this.remove.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.remove.Location = new System.Drawing.Point(698, 526);
-            this.remove.Name = "remove";
-            this.remove.Size = new System.Drawing.Size(176, 29);
-            this.remove.TabIndex = 24;
-            this.remove.Text = "Remove Points";
-            this.remove.UseVisualStyleBackColor = true;
-            this.remove.CheckedChanged += new System.EventHandler(this.remove_CheckedChanged);
+            this.strength2.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints2;
+            this.strength2.Location = new System.Drawing.Point(221, 156);
+            this.strength2.Name = "strength2";
+            this.strength2.Size = new System.Drawing.Size(25, 24);
+            this.strength2.TabIndex = 28;
+            this.strength2.TabStop = false;
+            this.strength2.Visible = false;
             // 
             // Jedi
             // 
@@ -259,13 +306,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(984, 696);
+            this.Controls.Add(this.strength2);
+            this.Controls.Add(this.strength1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.remove);
             this.Controls.Add(this.add);
             this.Controls.Add(this.TotalPointLabel);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.strengthgrayed);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox7);
@@ -283,7 +334,10 @@
             this.Text = "Jedi";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Jedi_FormClosing);
             this.Load += new System.EventHandler(this.Jedi_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strengthgrayed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -296,9 +350,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strength1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strength2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,12 +371,16 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox strengthgrayed;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label TotalPointLabel;
         private System.Windows.Forms.CheckBox add;
         private System.Windows.Forms.CheckBox remove;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox strength1;
+        private System.Windows.Forms.PictureBox strength2;
     }
 }
