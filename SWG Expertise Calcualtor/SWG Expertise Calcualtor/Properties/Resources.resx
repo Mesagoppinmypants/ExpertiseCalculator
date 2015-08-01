@@ -139,6 +139,18 @@
   <data name="aSkillBoxRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aSkillBoxRed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iEnhancedAgility" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iEnhancedAgility.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iEnhancedConstitution" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iEnhancedConstitution.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iEnhancedStamina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iEnhancedStamina.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iEnhancedStrength" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iEnhancedStrength.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iSkillBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iSkillBox.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

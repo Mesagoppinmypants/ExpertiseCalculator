@@ -28,28 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.strength = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.strength = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.strength)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.TotalPointLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStrength;
+            this.pictureBox8.Location = new System.Drawing.Point(182, 115);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox8.TabIndex = 18;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            this.pictureBox8.MouseLeave += new System.EventHandler(this.pictureBox8_MouseLeave);
+            this.pictureBox8.MouseHover += new System.EventHandler(this.pictureBox8_MouseHover);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aEnhancedStamina;
+            this.pictureBox2.Location = new System.Drawing.Point(442, 115);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aEnhancedAgility;
+            this.pictureBox3.Location = new System.Drawing.Point(355, 115);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aEnhancedConstitution;
-            this.pictureBox7.Location = new System.Drawing.Point(269, 115);
+            this.pictureBox7.Location = new System.Drawing.Point(268, 115);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(42, 42);
             this.pictureBox7.TabIndex = 7;
@@ -63,11 +112,72 @@
             this.strength.Size = new System.Drawing.Size(42, 42);
             this.strength.TabIndex = 4;
             this.strength.TabStop = false;
+            this.strength.MouseLeave += new System.EventHandler(this.strength_MouseLeave);
+            this.strength.MouseHover += new System.EventHandler(this.strength_MouseHover);
+            this.strength.MouseMove += new System.Windows.Forms.MouseEventHandler(this.strength_MouseMove);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxGreen;
+            this.pictureBox11.Location = new System.Drawing.Point(419, 92);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(89, 88);
+            this.pictureBox11.TabIndex = 17;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Visible = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxGreen;
+            this.pictureBox12.Location = new System.Drawing.Point(332, 92);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(89, 88);
+            this.pictureBox12.TabIndex = 16;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Visible = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxGreen;
+            this.pictureBox14.Location = new System.Drawing.Point(245, 92);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(89, 88);
+            this.pictureBox14.TabIndex = 13;
+            this.pictureBox14.TabStop = false;
+            this.pictureBox14.Visible = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxGreen;
+            this.pictureBox15.Location = new System.Drawing.Point(159, 92);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(89, 88);
+            this.pictureBox15.TabIndex = 12;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
+            this.pictureBox5.Location = new System.Drawing.Point(419, 92);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(89, 88);
+            this.pictureBox5.TabIndex = 9;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
+            this.pictureBox6.Location = new System.Drawing.Point(332, 92);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(89, 88);
+            this.pictureBox6.TabIndex = 8;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.pictureBox4.Location = new System.Drawing.Point(246, 92);
+            this.pictureBox4.Location = new System.Drawing.Point(245, 92);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(89, 88);
             this.pictureBox4.TabIndex = 3;
@@ -82,41 +192,63 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBox9
             // 
-            this.pictureBox2.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aEnhancedStamina;
-            this.pictureBox2.Location = new System.Drawing.Point(443, 115);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox9.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedConstitution;
+            this.pictureBox9.Location = new System.Drawing.Point(268, 115);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox9.TabIndex = 19;
+            this.pictureBox9.TabStop = false;
             // 
-            // pictureBox3
+            // pictureBox10
             // 
-            this.pictureBox3.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aEnhancedAgility;
-            this.pictureBox3.Location = new System.Drawing.Point(356, 115);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
+            this.pictureBox10.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedAgility;
+            this.pictureBox10.Location = new System.Drawing.Point(355, 115);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox10.TabIndex = 20;
+            this.pictureBox10.TabStop = false;
             // 
-            // pictureBox5
+            // pictureBox13
             // 
-            this.pictureBox5.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.pictureBox5.Location = new System.Drawing.Point(420, 92);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
+            this.pictureBox13.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStamina;
+            this.pictureBox13.Location = new System.Drawing.Point(442, 115);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox13.TabIndex = 21;
+            this.pictureBox13.TabStop = false;
             // 
-            // pictureBox6
+            // TotalPointLabel
             // 
-            this.pictureBox6.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.pictureBox6.Location = new System.Drawing.Point(333, 92);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox6.TabIndex = 8;
-            this.pictureBox6.TabStop = false;
+            this.TotalPointLabel.AutoSize = true;
+            this.TotalPointLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalPointLabel.Location = new System.Drawing.Point(749, 128);
+            this.TotalPointLabel.Name = "TotalPointLabel";
+            this.TotalPointLabel.Size = new System.Drawing.Size(157, 24);
+            this.TotalPointLabel.TabIndex = 22;
+            this.TotalPointLabel.Text = "Available Points...";
+            // 
+            // button1
+            // 
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(686, 422);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Add Points";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(767, 422);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "Remove Points";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Jedi
             // 
@@ -124,27 +256,48 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(984, 696);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.TotalPointLabel);
+            this.Controls.Add(this.pictureBox13);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.strength);
+            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.pictureBox14);
+            this.Controls.Add(this.pictureBox15);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Jedi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jedi";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Jedi_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.strength)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Jedi_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -158,5 +311,16 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.Label TotalPointLabel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
