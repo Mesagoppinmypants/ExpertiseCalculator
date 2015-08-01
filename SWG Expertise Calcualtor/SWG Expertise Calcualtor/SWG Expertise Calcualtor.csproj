@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Jedi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jedi.Designer.cs">
+      <DependentUpon>Jedi.cs</DependentUpon>
+    </Compile>
     <Compile Include="StartUpPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Jedi.resx">
+      <DependentUpon>Jedi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

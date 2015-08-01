@@ -17,9 +17,14 @@ namespace SWG_Expertise_Calcualtor
             InitializeComponent();
         }
 
-        private void StartUpPage_Load(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (comboBox1.SelectedIndex == 1)
+            {
+                Jedi jedi = new Jedi();
+                jedi.Show();
+                Visible = false;
+            }
         }
     }
 }
