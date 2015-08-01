@@ -62,7 +62,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StartUpPage.resx">
+      <DependentUpon>StartUpPage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +79,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\massage_bottom_left.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\massage_bottom_right.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window1_bottom_left.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window1_bottom_right.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window1_top_left.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window1_top_right.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
