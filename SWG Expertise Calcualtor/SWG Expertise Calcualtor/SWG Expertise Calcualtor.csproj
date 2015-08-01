@@ -110,6 +110,36 @@
   <ItemGroup>
     <None Include="Resources\massage_top_right.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aSkillBox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aSkillBoxGreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aSkillBoxRed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iSkillBox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iSkillBoxGreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iSkillBoxRed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aEnhancedAgility.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aEnhancedConstitution.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aEnhancedStamina.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aEnhancedStrength.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
