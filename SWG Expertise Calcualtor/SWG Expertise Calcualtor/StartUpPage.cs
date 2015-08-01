@@ -16,5 +16,10 @@ namespace SWG_Expertise_Calcualtor
         {
             InitializeComponent();
         }
+
+        private void StartUpPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
