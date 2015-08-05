@@ -165,6 +165,90 @@
   <ItemGroup>
     <None Include="Resources\skillpoints4.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iHeightenedSpeed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aHeightenedSpeed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iSecondWind.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aSecondWind.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iExactingStrikes.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aExactingStrikes.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iAlacrity.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aAlacrity.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iImprovedForceThrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aImprovedForceThrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iImprovedCripplingAccuracy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aImprovedCripplingAccuracy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LineStart.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iPremonition.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aPremonition.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iForceCloak.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aForceCloak.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iGraceInMotion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aGraceInMotion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aImprovedForceThrow1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iStanceSaberBlock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aStanceSaberBlock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iImprovedSaberBlock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iFidelity.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iImprovedForceShockwave.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iForceShockwave.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iImprovedForceCloak.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iIncisiveness.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

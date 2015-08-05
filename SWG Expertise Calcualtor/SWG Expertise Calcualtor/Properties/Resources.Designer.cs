@@ -63,6 +63,16 @@ namespace SWG_Expertise_Calcualtor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aAlacrity {
+            get {
+                object obj = ResourceManager.GetObject("aAlacrity", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aEnhancedAgility {
             get {
                 object obj = ResourceManager.GetObject("aEnhancedAgility", resourceCulture);
@@ -103,6 +113,96 @@ namespace SWG_Expertise_Calcualtor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aExactingStrikes {
+            get {
+                object obj = ResourceManager.GetObject("aExactingStrikes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aForceCloak {
+            get {
+                object obj = ResourceManager.GetObject("aForceCloak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aGraceInMotion {
+            get {
+                object obj = ResourceManager.GetObject("aGraceInMotion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aHeightenedSpeed {
+            get {
+                object obj = ResourceManager.GetObject("aHeightenedSpeed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aImprovedCripplingAccuracy {
+            get {
+                object obj = ResourceManager.GetObject("aImprovedCripplingAccuracy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aImprovedForceThrow {
+            get {
+                object obj = ResourceManager.GetObject("aImprovedForceThrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aImprovedForceThrow1 {
+            get {
+                object obj = ResourceManager.GetObject("aImprovedForceThrow1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aPremonition {
+            get {
+                object obj = ResourceManager.GetObject("aPremonition", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aSecondWind {
+            get {
+                object obj = ResourceManager.GetObject("aSecondWind", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aSkillBox {
             get {
                 object obj = ResourceManager.GetObject("aSkillBox", resourceCulture);
@@ -126,6 +226,26 @@ namespace SWG_Expertise_Calcualtor.Properties {
         internal static System.Drawing.Bitmap aSkillBoxRed {
             get {
                 object obj = ResourceManager.GetObject("aSkillBoxRed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aStanceSaberBlock {
+            get {
+                object obj = ResourceManager.GetObject("aStanceSaberBlock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iAlacrity {
+            get {
+                object obj = ResourceManager.GetObject("iAlacrity", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,6 +293,146 @@ namespace SWG_Expertise_Calcualtor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iExactingStrikes {
+            get {
+                object obj = ResourceManager.GetObject("iExactingStrikes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iFidelity {
+            get {
+                object obj = ResourceManager.GetObject("iFidelity", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iForceCloak {
+            get {
+                object obj = ResourceManager.GetObject("iForceCloak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iForceShockwave {
+            get {
+                object obj = ResourceManager.GetObject("iForceShockwave", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iGraceInMotion {
+            get {
+                object obj = ResourceManager.GetObject("iGraceInMotion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iHeightenedSpeed {
+            get {
+                object obj = ResourceManager.GetObject("iHeightenedSpeed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iImprovedCripplingAccuracy {
+            get {
+                object obj = ResourceManager.GetObject("iImprovedCripplingAccuracy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iImprovedForceCloak {
+            get {
+                object obj = ResourceManager.GetObject("iImprovedForceCloak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iImprovedForceShockwave {
+            get {
+                object obj = ResourceManager.GetObject("iImprovedForceShockwave", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iImprovedForceThrow {
+            get {
+                object obj = ResourceManager.GetObject("iImprovedForceThrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iImprovedSaberBlock {
+            get {
+                object obj = ResourceManager.GetObject("iImprovedSaberBlock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iIncisiveness {
+            get {
+                object obj = ResourceManager.GetObject("iIncisiveness", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iPremonition {
+            get {
+                object obj = ResourceManager.GetObject("iPremonition", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iSecondWind {
+            get {
+                object obj = ResourceManager.GetObject("iSecondWind", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iSkillBox {
             get {
                 object obj = ResourceManager.GetObject("iSkillBox", resourceCulture);
@@ -196,6 +456,26 @@ namespace SWG_Expertise_Calcualtor.Properties {
         internal static System.Drawing.Bitmap iSkillBoxRed {
             get {
                 object obj = ResourceManager.GetObject("iSkillBoxRed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iStanceSaberBlock {
+            get {
+                object obj = ResourceManager.GetObject("iStanceSaberBlock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LineStart {
+            get {
+                object obj = ResourceManager.GetObject("LineStart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
