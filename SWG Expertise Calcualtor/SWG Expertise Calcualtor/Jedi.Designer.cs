@@ -97,15 +97,15 @@
             this.stam1 = new System.Windows.Forms.PictureBox();
             this.agility1 = new System.Windows.Forms.PictureBox();
             this.con1 = new System.Windows.Forms.PictureBox();
-            this.strength1 = new System.Windows.Forms.PictureBox();
+            this.StrengthPoints = new System.Windows.Forms.PictureBox();
             this.staminagrayed = new System.Windows.Forms.PictureBox();
             this.agilitygrayed = new System.Windows.Forms.PictureBox();
             this.congrayed = new System.Windows.Forms.PictureBox();
-            this.strengthgrayed = new System.Windows.Forms.PictureBox();
+            this.EnhancedStrength = new System.Windows.Forms.PictureBox();
             this.stamunhover = new System.Windows.Forms.PictureBox();
             this.aginonhover = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.EnhancedStrengthBackground = new System.Windows.Forms.PictureBox();
             this.Speed4 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
@@ -176,15 +176,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.stam1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agility1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.con1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.strength1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StrengthPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.staminagrayed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agilitygrayed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.congrayed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.strengthgrayed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stamunhover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aginonhover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Speed4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
@@ -294,7 +294,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox2.Location = new System.Drawing.Point(397, 501);
+            this.pictureBox2.Location = new System.Drawing.Point(397, 503);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 24);
             this.pictureBox2.TabIndex = 165;
@@ -304,7 +304,7 @@
             // pictureBox22
             // 
             this.pictureBox22.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox22.Location = new System.Drawing.Point(310, 501);
+            this.pictureBox22.Location = new System.Drawing.Point(310, 503);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(25, 24);
             this.pictureBox22.TabIndex = 164;
@@ -314,7 +314,7 @@
             // pictureBox23
             // 
             this.pictureBox23.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox23.Location = new System.Drawing.Point(223, 501);
+            this.pictureBox23.Location = new System.Drawing.Point(223, 503);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(25, 24);
             this.pictureBox23.TabIndex = 163;
@@ -324,7 +324,7 @@
             // pictureBox24
             // 
             this.pictureBox24.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints2;
-            this.pictureBox24.Location = new System.Drawing.Point(223, 501);
+            this.pictureBox24.Location = new System.Drawing.Point(223, 503);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 24);
             this.pictureBox24.TabIndex = 162;
@@ -334,7 +334,7 @@
             // pictureBox25
             // 
             this.pictureBox25.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iIncisiveness;
-            this.pictureBox25.Location = new System.Drawing.Point(355, 460);
+            this.pictureBox25.Location = new System.Drawing.Point(355, 462);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(42, 42);
             this.pictureBox25.TabIndex = 161;
@@ -343,7 +343,7 @@
             // pictureBox26
             // 
             this.pictureBox26.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedForceCloak;
-            this.pictureBox26.Location = new System.Drawing.Point(269, 460);
+            this.pictureBox26.Location = new System.Drawing.Point(269, 462);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(42, 42);
             this.pictureBox26.TabIndex = 160;
@@ -352,7 +352,7 @@
             // pictureBox27
             // 
             this.pictureBox27.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedForceShockwave;
-            this.pictureBox27.Location = new System.Drawing.Point(180, 460);
+            this.pictureBox27.Location = new System.Drawing.Point(180, 462);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(42, 42);
             this.pictureBox27.TabIndex = 159;
@@ -361,7 +361,7 @@
             // pictureBox28
             // 
             this.pictureBox28.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aGraceInMotion;
-            this.pictureBox28.Location = new System.Drawing.Point(355, 460);
+            this.pictureBox28.Location = new System.Drawing.Point(355, 462);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(42, 42);
             this.pictureBox28.TabIndex = 158;
@@ -370,47 +370,43 @@
             // pictureBox32
             // 
             this.pictureBox32.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox32.Location = new System.Drawing.Point(332, 437);
+            this.pictureBox32.Location = new System.Drawing.Point(332, 439);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(89, 88);
             this.pictureBox32.TabIndex = 166;
             this.pictureBox32.TabStop = false;
-            this.pictureBox32.Visible = false;
             // 
             // pictureBox33
             // 
             this.pictureBox33.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxRed;
-            this.pictureBox33.Location = new System.Drawing.Point(333, 437);
+            this.pictureBox33.Location = new System.Drawing.Point(333, 439);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(89, 88);
             this.pictureBox33.TabIndex = 169;
             this.pictureBox33.TabStop = false;
-            this.pictureBox33.Visible = false;
             // 
             // pictureBox43
             // 
             this.pictureBox43.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxGreen;
-            this.pictureBox43.Location = new System.Drawing.Point(333, 437);
+            this.pictureBox43.Location = new System.Drawing.Point(333, 439);
             this.pictureBox43.Name = "pictureBox43";
             this.pictureBox43.Size = new System.Drawing.Size(89, 88);
             this.pictureBox43.TabIndex = 168;
             this.pictureBox43.TabStop = false;
-            this.pictureBox43.Visible = false;
             // 
             // pictureBox44
             // 
             this.pictureBox44.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxRed;
-            this.pictureBox44.Location = new System.Drawing.Point(333, 437);
+            this.pictureBox44.Location = new System.Drawing.Point(333, 439);
             this.pictureBox44.Name = "pictureBox44";
             this.pictureBox44.Size = new System.Drawing.Size(89, 88);
             this.pictureBox44.TabIndex = 167;
             this.pictureBox44.TabStop = false;
-            this.pictureBox44.Visible = false;
             // 
             // pictureBox45
             // 
             this.pictureBox45.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox45.Location = new System.Drawing.Point(133, 501);
+            this.pictureBox45.Location = new System.Drawing.Point(133, 503);
             this.pictureBox45.Name = "pictureBox45";
             this.pictureBox45.Size = new System.Drawing.Size(25, 24);
             this.pictureBox45.TabIndex = 155;
@@ -420,7 +416,7 @@
             // pictureBox46
             // 
             this.pictureBox46.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iForceShockwave;
-            this.pictureBox46.Location = new System.Drawing.Point(91, 460);
+            this.pictureBox46.Location = new System.Drawing.Point(91, 462);
             this.pictureBox46.Name = "pictureBox46";
             this.pictureBox46.Size = new System.Drawing.Size(42, 42);
             this.pictureBox46.TabIndex = 154;
@@ -429,37 +425,34 @@
             // pictureBox48
             // 
             this.pictureBox48.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox48.Location = new System.Drawing.Point(245, 437);
+            this.pictureBox48.Location = new System.Drawing.Point(245, 439);
             this.pictureBox48.Name = "pictureBox48";
             this.pictureBox48.Size = new System.Drawing.Size(89, 88);
             this.pictureBox48.TabIndex = 171;
             this.pictureBox48.TabStop = false;
-            this.pictureBox48.Visible = false;
             // 
             // pictureBox53
             // 
             this.pictureBox53.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox53.Location = new System.Drawing.Point(157, 437);
+            this.pictureBox53.Location = new System.Drawing.Point(157, 439);
             this.pictureBox53.Name = "pictureBox53";
             this.pictureBox53.Size = new System.Drawing.Size(89, 88);
             this.pictureBox53.TabIndex = 170;
             this.pictureBox53.TabStop = false;
-            this.pictureBox53.Visible = false;
             // 
             // pictureBox54
             // 
             this.pictureBox54.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox54.Location = new System.Drawing.Point(68, 437);
+            this.pictureBox54.Location = new System.Drawing.Point(68, 439);
             this.pictureBox54.Name = "pictureBox54";
             this.pictureBox54.Size = new System.Drawing.Size(89, 88);
             this.pictureBox54.TabIndex = 172;
             this.pictureBox54.TabStop = false;
-            this.pictureBox54.Visible = false;
             // 
             // pictureBox55
             // 
             this.pictureBox55.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox55.Location = new System.Drawing.Point(394, 413);
+            this.pictureBox55.Location = new System.Drawing.Point(394, 415);
             this.pictureBox55.Name = "pictureBox55";
             this.pictureBox55.Size = new System.Drawing.Size(25, 24);
             this.pictureBox55.TabIndex = 137;
@@ -469,7 +462,7 @@
             // pictureBox59
             // 
             this.pictureBox59.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox59.Location = new System.Drawing.Point(222, 413);
+            this.pictureBox59.Location = new System.Drawing.Point(222, 415);
             this.pictureBox59.Name = "pictureBox59";
             this.pictureBox59.Size = new System.Drawing.Size(25, 24);
             this.pictureBox59.TabIndex = 133;
@@ -479,7 +472,7 @@
             // pictureBox60
             // 
             this.pictureBox60.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints2;
-            this.pictureBox60.Location = new System.Drawing.Point(222, 413);
+            this.pictureBox60.Location = new System.Drawing.Point(222, 415);
             this.pictureBox60.Name = "pictureBox60";
             this.pictureBox60.Size = new System.Drawing.Size(25, 24);
             this.pictureBox60.TabIndex = 132;
@@ -489,7 +482,7 @@
             // pictureBox61
             // 
             this.pictureBox61.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iFidelity;
-            this.pictureBox61.Location = new System.Drawing.Point(356, 372);
+            this.pictureBox61.Location = new System.Drawing.Point(356, 374);
             this.pictureBox61.Name = "pictureBox61";
             this.pictureBox61.Size = new System.Drawing.Size(42, 42);
             this.pictureBox61.TabIndex = 131;
@@ -498,7 +491,7 @@
             // pictureBox63
             // 
             this.pictureBox63.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedSaberBlock;
-            this.pictureBox63.Location = new System.Drawing.Point(180, 372);
+            this.pictureBox63.Location = new System.Drawing.Point(180, 374);
             this.pictureBox63.Name = "pictureBox63";
             this.pictureBox63.Size = new System.Drawing.Size(42, 42);
             this.pictureBox63.TabIndex = 129;
@@ -507,47 +500,43 @@
             // pictureBox73
             // 
             this.pictureBox73.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox73.Location = new System.Drawing.Point(331, 349);
+            this.pictureBox73.Location = new System.Drawing.Point(331, 351);
             this.pictureBox73.Name = "pictureBox73";
             this.pictureBox73.Size = new System.Drawing.Size(89, 88);
             this.pictureBox73.TabIndex = 140;
             this.pictureBox73.TabStop = false;
-            this.pictureBox73.Visible = false;
             // 
             // pictureBox74
             // 
             this.pictureBox74.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxRed;
-            this.pictureBox74.Location = new System.Drawing.Point(332, 349);
+            this.pictureBox74.Location = new System.Drawing.Point(332, 351);
             this.pictureBox74.Name = "pictureBox74";
             this.pictureBox74.Size = new System.Drawing.Size(89, 88);
             this.pictureBox74.TabIndex = 143;
             this.pictureBox74.TabStop = false;
-            this.pictureBox74.Visible = false;
             // 
             // pictureBox75
             // 
             this.pictureBox75.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxGreen;
-            this.pictureBox75.Location = new System.Drawing.Point(332, 349);
+            this.pictureBox75.Location = new System.Drawing.Point(332, 351);
             this.pictureBox75.Name = "pictureBox75";
             this.pictureBox75.Size = new System.Drawing.Size(89, 88);
             this.pictureBox75.TabIndex = 142;
             this.pictureBox75.TabStop = false;
-            this.pictureBox75.Visible = false;
             // 
             // pictureBox76
             // 
             this.pictureBox76.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxRed;
-            this.pictureBox76.Location = new System.Drawing.Point(332, 349);
+            this.pictureBox76.Location = new System.Drawing.Point(332, 351);
             this.pictureBox76.Name = "pictureBox76";
             this.pictureBox76.Size = new System.Drawing.Size(89, 88);
             this.pictureBox76.TabIndex = 141;
             this.pictureBox76.TabStop = false;
-            this.pictureBox76.Visible = false;
             // 
             // pictureBox78
             // 
             this.pictureBox78.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox78.Location = new System.Drawing.Point(132, 413);
+            this.pictureBox78.Location = new System.Drawing.Point(132, 415);
             this.pictureBox78.Name = "pictureBox78";
             this.pictureBox78.Size = new System.Drawing.Size(25, 24);
             this.pictureBox78.TabIndex = 118;
@@ -557,7 +546,7 @@
             // pictureBox79
             // 
             this.pictureBox79.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iStanceSaberBlock;
-            this.pictureBox79.Location = new System.Drawing.Point(94, 372);
+            this.pictureBox79.Location = new System.Drawing.Point(94, 374);
             this.pictureBox79.Name = "pictureBox79";
             this.pictureBox79.Size = new System.Drawing.Size(42, 42);
             this.pictureBox79.TabIndex = 117;
@@ -566,7 +555,7 @@
             // pictureBox80
             // 
             this.pictureBox80.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aStanceSaberBlock;
-            this.pictureBox80.Location = new System.Drawing.Point(93, 372);
+            this.pictureBox80.Location = new System.Drawing.Point(93, 374);
             this.pictureBox80.Name = "pictureBox80";
             this.pictureBox80.Size = new System.Drawing.Size(42, 42);
             this.pictureBox80.TabIndex = 115;
@@ -575,7 +564,7 @@
             // pictureBox31
             // 
             this.pictureBox31.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox31.Location = new System.Drawing.Point(397, 325);
+            this.pictureBox31.Location = new System.Drawing.Point(397, 327);
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.Size = new System.Drawing.Size(25, 24);
             this.pictureBox31.TabIndex = 100;
@@ -585,7 +574,7 @@
             // pictureBox34
             // 
             this.pictureBox34.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox34.Location = new System.Drawing.Point(310, 325);
+            this.pictureBox34.Location = new System.Drawing.Point(310, 327);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(25, 24);
             this.pictureBox34.TabIndex = 97;
@@ -595,7 +584,7 @@
             // pictureBox35
             // 
             this.pictureBox35.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox35.Location = new System.Drawing.Point(223, 325);
+            this.pictureBox35.Location = new System.Drawing.Point(223, 327);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(25, 24);
             this.pictureBox35.TabIndex = 96;
@@ -605,7 +594,7 @@
             // pictureBox36
             // 
             this.pictureBox36.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints2;
-            this.pictureBox36.Location = new System.Drawing.Point(223, 325);
+            this.pictureBox36.Location = new System.Drawing.Point(223, 327);
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.Size = new System.Drawing.Size(25, 24);
             this.pictureBox36.TabIndex = 95;
@@ -615,7 +604,7 @@
             // pictureBox37
             // 
             this.pictureBox37.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iGraceInMotion;
-            this.pictureBox37.Location = new System.Drawing.Point(355, 284);
+            this.pictureBox37.Location = new System.Drawing.Point(355, 286);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(42, 42);
             this.pictureBox37.TabIndex = 94;
@@ -624,7 +613,7 @@
             // pictureBox38
             // 
             this.pictureBox38.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iForceCloak;
-            this.pictureBox38.Location = new System.Drawing.Point(269, 284);
+            this.pictureBox38.Location = new System.Drawing.Point(269, 286);
             this.pictureBox38.Name = "pictureBox38";
             this.pictureBox38.Size = new System.Drawing.Size(42, 42);
             this.pictureBox38.TabIndex = 93;
@@ -633,7 +622,7 @@
             // pictureBox39
             // 
             this.pictureBox39.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iPremonition;
-            this.pictureBox39.Location = new System.Drawing.Point(182, 284);
+            this.pictureBox39.Location = new System.Drawing.Point(182, 286);
             this.pictureBox39.Name = "pictureBox39";
             this.pictureBox39.Size = new System.Drawing.Size(42, 42);
             this.pictureBox39.TabIndex = 92;
@@ -642,7 +631,7 @@
             // pictureBox40
             // 
             this.pictureBox40.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aGraceInMotion;
-            this.pictureBox40.Location = new System.Drawing.Point(355, 284);
+            this.pictureBox40.Location = new System.Drawing.Point(355, 286);
             this.pictureBox40.Name = "pictureBox40";
             this.pictureBox40.Size = new System.Drawing.Size(42, 42);
             this.pictureBox40.TabIndex = 88;
@@ -651,7 +640,7 @@
             // pictureBox41
             // 
             this.pictureBox41.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aForceCloak;
-            this.pictureBox41.Location = new System.Drawing.Point(269, 284);
+            this.pictureBox41.Location = new System.Drawing.Point(269, 286);
             this.pictureBox41.Name = "pictureBox41";
             this.pictureBox41.Size = new System.Drawing.Size(42, 42);
             this.pictureBox41.TabIndex = 87;
@@ -660,7 +649,7 @@
             // pictureBox42
             // 
             this.pictureBox42.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aPremonition;
-            this.pictureBox42.Location = new System.Drawing.Point(181, 284);
+            this.pictureBox42.Location = new System.Drawing.Point(181, 286);
             this.pictureBox42.Name = "pictureBox42";
             this.pictureBox42.Size = new System.Drawing.Size(42, 42);
             this.pictureBox42.TabIndex = 84;
@@ -669,47 +658,43 @@
             // pictureBox49
             // 
             this.pictureBox49.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox49.Location = new System.Drawing.Point(332, 261);
+            this.pictureBox49.Location = new System.Drawing.Point(332, 263);
             this.pictureBox49.Name = "pictureBox49";
             this.pictureBox49.Size = new System.Drawing.Size(89, 88);
             this.pictureBox49.TabIndex = 103;
             this.pictureBox49.TabStop = false;
-            this.pictureBox49.Visible = false;
             // 
             // pictureBox50
             // 
             this.pictureBox50.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxRed;
-            this.pictureBox50.Location = new System.Drawing.Point(333, 261);
+            this.pictureBox50.Location = new System.Drawing.Point(333, 263);
             this.pictureBox50.Name = "pictureBox50";
             this.pictureBox50.Size = new System.Drawing.Size(89, 88);
             this.pictureBox50.TabIndex = 106;
             this.pictureBox50.TabStop = false;
-            this.pictureBox50.Visible = false;
             // 
             // pictureBox51
             // 
             this.pictureBox51.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxGreen;
-            this.pictureBox51.Location = new System.Drawing.Point(333, 261);
+            this.pictureBox51.Location = new System.Drawing.Point(333, 263);
             this.pictureBox51.Name = "pictureBox51";
             this.pictureBox51.Size = new System.Drawing.Size(89, 88);
             this.pictureBox51.TabIndex = 105;
             this.pictureBox51.TabStop = false;
-            this.pictureBox51.Visible = false;
             // 
             // pictureBox52
             // 
             this.pictureBox52.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxRed;
-            this.pictureBox52.Location = new System.Drawing.Point(333, 261);
+            this.pictureBox52.Location = new System.Drawing.Point(333, 263);
             this.pictureBox52.Name = "pictureBox52";
             this.pictureBox52.Size = new System.Drawing.Size(89, 88);
             this.pictureBox52.TabIndex = 104;
             this.pictureBox52.TabStop = false;
-            this.pictureBox52.Visible = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox3.Location = new System.Drawing.Point(133, 325);
+            this.pictureBox3.Location = new System.Drawing.Point(133, 327);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 24);
             this.pictureBox3.TabIndex = 81;
@@ -719,7 +704,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedCripplingAccuracy;
-            this.pictureBox11.Location = new System.Drawing.Point(93, 284);
+            this.pictureBox11.Location = new System.Drawing.Point(93, 286);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(42, 42);
             this.pictureBox11.TabIndex = 80;
@@ -728,7 +713,7 @@
             // pictureBox17
             // 
             this.pictureBox17.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aImprovedCripplingAccuracy;
-            this.pictureBox17.Location = new System.Drawing.Point(94, 284);
+            this.pictureBox17.Location = new System.Drawing.Point(94, 286);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(42, 42);
             this.pictureBox17.TabIndex = 78;
@@ -737,7 +722,7 @@
             // sw1
             // 
             this.sw1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.sw1.Location = new System.Drawing.Point(483, 325);
+            this.sw1.Location = new System.Drawing.Point(483, 327);
             this.sw1.Name = "sw1";
             this.sw1.Size = new System.Drawing.Size(25, 24);
             this.sw1.TabIndex = 68;
@@ -747,7 +732,7 @@
             // windgrayed
             // 
             this.windgrayed.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSecondWind;
-            this.windgrayed.Location = new System.Drawing.Point(442, 284);
+            this.windgrayed.Location = new System.Drawing.Point(442, 286);
             this.windgrayed.Name = "windgrayed";
             this.windgrayed.Size = new System.Drawing.Size(42, 42);
             this.windgrayed.TabIndex = 66;
@@ -760,7 +745,7 @@
             // wind
             // 
             this.wind.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSecondWind;
-            this.wind.Location = new System.Drawing.Point(442, 284);
+            this.wind.Location = new System.Drawing.Point(442, 286);
             this.wind.Name = "wind";
             this.wind.Size = new System.Drawing.Size(42, 42);
             this.wind.TabIndex = 64;
@@ -771,7 +756,7 @@
             // hs1
             // 
             this.hs1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.hs1.Location = new System.Drawing.Point(483, 239);
+            this.hs1.Location = new System.Drawing.Point(483, 241);
             this.hs1.Name = "hs1";
             this.hs1.Size = new System.Drawing.Size(25, 24);
             this.hs1.TabIndex = 60;
@@ -781,7 +766,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox6.Location = new System.Drawing.Point(397, 239);
+            this.pictureBox6.Location = new System.Drawing.Point(397, 241);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(25, 24);
             this.pictureBox6.TabIndex = 57;
@@ -791,7 +776,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox7.Location = new System.Drawing.Point(310, 239);
+            this.pictureBox7.Location = new System.Drawing.Point(310, 241);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(25, 24);
             this.pictureBox7.TabIndex = 56;
@@ -801,7 +786,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox10.Location = new System.Drawing.Point(134, 239);
+            this.pictureBox10.Location = new System.Drawing.Point(134, 241);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(25, 24);
             this.pictureBox10.TabIndex = 53;
@@ -811,7 +796,7 @@
             // speedgrayed
             // 
             this.speedgrayed.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iHeightenedSpeed;
-            this.speedgrayed.Location = new System.Drawing.Point(442, 198);
+            this.speedgrayed.Location = new System.Drawing.Point(442, 200);
             this.speedgrayed.Name = "speedgrayed";
             this.speedgrayed.Size = new System.Drawing.Size(42, 42);
             this.speedgrayed.TabIndex = 52;
@@ -824,7 +809,7 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iExactingStrikes;
-            this.pictureBox12.Location = new System.Drawing.Point(356, 198);
+            this.pictureBox12.Location = new System.Drawing.Point(356, 200);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(42, 42);
             this.pictureBox12.TabIndex = 51;
@@ -833,7 +818,7 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iAlacrity;
-            this.pictureBox13.Location = new System.Drawing.Point(269, 198);
+            this.pictureBox13.Location = new System.Drawing.Point(269, 200);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(42, 42);
             this.pictureBox13.TabIndex = 50;
@@ -842,7 +827,7 @@
             // pictureBox16
             // 
             this.pictureBox16.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedForceThrow;
-            this.pictureBox16.Location = new System.Drawing.Point(93, 198);
+            this.pictureBox16.Location = new System.Drawing.Point(93, 200);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(42, 42);
             this.pictureBox16.TabIndex = 49;
@@ -878,15 +863,15 @@
             this.con1.TabStop = false;
             this.con1.Visible = false;
             // 
-            // strength1
+            // StrengthPoints
             // 
-            this.strength1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.strength1.Location = new System.Drawing.Point(221, 156);
-            this.strength1.Name = "strength1";
-            this.strength1.Size = new System.Drawing.Size(25, 24);
-            this.strength1.TabIndex = 27;
-            this.strength1.TabStop = false;
-            this.strength1.Visible = false;
+            this.StrengthPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.StrengthPoints.Location = new System.Drawing.Point(223, 156);
+            this.StrengthPoints.Name = "StrengthPoints";
+            this.StrengthPoints.Size = new System.Drawing.Size(25, 24);
+            this.StrengthPoints.TabIndex = 27;
+            this.StrengthPoints.TabStop = false;
+            this.StrengthPoints.Visible = false;
             // 
             // staminagrayed
             // 
@@ -927,18 +912,18 @@
             this.congrayed.MouseHover += new System.EventHandler(this.congrayed_MouseHover);
             this.congrayed.MouseMove += new System.Windows.Forms.MouseEventHandler(this.congrayed_MouseMove);
             // 
-            // strengthgrayed
+            // EnhancedStrength
             // 
-            this.strengthgrayed.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStrength;
-            this.strengthgrayed.Location = new System.Drawing.Point(180, 115);
-            this.strengthgrayed.Name = "strengthgrayed";
-            this.strengthgrayed.Size = new System.Drawing.Size(42, 42);
-            this.strengthgrayed.TabIndex = 18;
-            this.strengthgrayed.TabStop = false;
-            this.strengthgrayed.Click += new System.EventHandler(this.strengthgrayed_Click);
-            this.strengthgrayed.MouseLeave += new System.EventHandler(this.strengthgrayed_MouseLeave);
-            this.strengthgrayed.MouseHover += new System.EventHandler(this.strengthgrayed_MouseHover);
-            this.strengthgrayed.MouseMove += new System.Windows.Forms.MouseEventHandler(this.strengthgrayed_MouseMove);
+            this.EnhancedStrength.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStrength;
+            this.EnhancedStrength.Location = new System.Drawing.Point(182, 115);
+            this.EnhancedStrength.Name = "EnhancedStrength";
+            this.EnhancedStrength.Size = new System.Drawing.Size(42, 42);
+            this.EnhancedStrength.TabIndex = 18;
+            this.EnhancedStrength.TabStop = false;
+            this.EnhancedStrength.Click += new System.EventHandler(this.EnhancedStrength_Click);
+            this.EnhancedStrength.MouseLeave += new System.EventHandler(this.strengthgrayed_MouseLeave);
+            this.EnhancedStrength.MouseHover += new System.EventHandler(this.EnhancedStrength_MouseHover);
+            this.EnhancedStrength.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedStrength_MouseMove);
             // 
             // stamunhover
             // 
@@ -967,114 +952,104 @@
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBox1
+            // EnhancedStrengthBackground
             // 
-            this.pictureBox1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.pictureBox1.Location = new System.Drawing.Point(157, 92);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.EnhancedStrengthBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
+            this.EnhancedStrengthBackground.Location = new System.Drawing.Point(159, 92);
+            this.EnhancedStrengthBackground.Name = "EnhancedStrengthBackground";
+            this.EnhancedStrengthBackground.Size = new System.Drawing.Size(89, 88);
+            this.EnhancedStrengthBackground.TabIndex = 0;
+            this.EnhancedStrengthBackground.TabStop = false;
             // 
             // Speed4
             // 
             this.Speed4.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.Speed4.Location = new System.Drawing.Point(419, 175);
+            this.Speed4.Location = new System.Drawing.Point(419, 177);
             this.Speed4.Name = "Speed4";
             this.Speed4.Size = new System.Drawing.Size(89, 88);
             this.Speed4.TabIndex = 71;
             this.Speed4.TabStop = false;
-            this.Speed4.Visible = false;
             // 
             // pictureBox14
             // 
             this.pictureBox14.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox14.Location = new System.Drawing.Point(419, 261);
+            this.pictureBox14.Location = new System.Drawing.Point(419, 263);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(89, 88);
             this.pictureBox14.TabIndex = 144;
             this.pictureBox14.TabStop = false;
-            this.pictureBox14.Visible = false;
             // 
             // pictureBox15
             // 
             this.pictureBox15.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox15.Location = new System.Drawing.Point(71, 175);
+            this.pictureBox15.Location = new System.Drawing.Point(71, 177);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(89, 88);
             this.pictureBox15.TabIndex = 145;
             this.pictureBox15.TabStop = false;
-            this.pictureBox15.Visible = false;
             // 
             // pictureBox18
             // 
             this.pictureBox18.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox18.Location = new System.Drawing.Point(333, 175);
+            this.pictureBox18.Location = new System.Drawing.Point(333, 177);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(89, 88);
             this.pictureBox18.TabIndex = 149;
             this.pictureBox18.TabStop = false;
-            this.pictureBox18.Visible = false;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox9.Location = new System.Drawing.Point(246, 175);
+            this.pictureBox9.Location = new System.Drawing.Point(246, 177);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(89, 88);
             this.pictureBox9.TabIndex = 148;
             this.pictureBox9.TabStop = false;
-            this.pictureBox9.Visible = false;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox8.Location = new System.Drawing.Point(245, 261);
+            this.pictureBox8.Location = new System.Drawing.Point(245, 263);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(89, 88);
             this.pictureBox8.TabIndex = 147;
             this.pictureBox8.TabStop = false;
-            this.pictureBox8.Visible = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox5.Location = new System.Drawing.Point(157, 261);
+            this.pictureBox5.Location = new System.Drawing.Point(157, 263);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(89, 88);
             this.pictureBox5.TabIndex = 146;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Visible = false;
             // 
             // pictureBox19
             // 
             this.pictureBox19.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox19.Location = new System.Drawing.Point(68, 261);
+            this.pictureBox19.Location = new System.Drawing.Point(68, 263);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(89, 88);
             this.pictureBox19.TabIndex = 150;
             this.pictureBox19.TabStop = false;
-            this.pictureBox19.Visible = false;
             // 
             // pictureBox20
             // 
             this.pictureBox20.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox20.Location = new System.Drawing.Point(70, 349);
+            this.pictureBox20.Location = new System.Drawing.Point(70, 351);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(89, 88);
             this.pictureBox20.TabIndex = 151;
             this.pictureBox20.TabStop = false;
-            this.pictureBox20.Visible = false;
             // 
             // pictureBox21
             // 
             this.pictureBox21.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox21.Location = new System.Drawing.Point(157, 349);
+            this.pictureBox21.Location = new System.Drawing.Point(157, 351);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(89, 88);
             this.pictureBox21.TabIndex = 152;
             this.pictureBox21.TabStop = false;
-            this.pictureBox21.Visible = false;
             // 
             // Jedi
             // 
@@ -1146,7 +1121,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.agility1);
             this.Controls.Add(this.con1);
-            this.Controls.Add(this.strength1);
+            this.Controls.Add(this.StrengthPoints);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.remove);
@@ -1155,11 +1130,11 @@
             this.Controls.Add(this.staminagrayed);
             this.Controls.Add(this.agilitygrayed);
             this.Controls.Add(this.congrayed);
-            this.Controls.Add(this.strengthgrayed);
+            this.Controls.Add(this.EnhancedStrength);
             this.Controls.Add(this.stamunhover);
             this.Controls.Add(this.aginonhover);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.EnhancedStrengthBackground);
             this.Controls.Add(this.Speed4);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox15);
@@ -1235,15 +1210,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.stam1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agility1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.con1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.strength1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StrengthPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.staminagrayed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agilitygrayed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.congrayed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.strengthgrayed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stamunhover)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aginonhover)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Speed4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
@@ -1261,11 +1236,11 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox EnhancedStrengthBackground;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox stamunhover;
         private System.Windows.Forms.PictureBox aginonhover;
-        private System.Windows.Forms.PictureBox strengthgrayed;
+        private System.Windows.Forms.PictureBox EnhancedStrength;
         private System.Windows.Forms.PictureBox congrayed;
         private System.Windows.Forms.PictureBox agilitygrayed;
         private System.Windows.Forms.PictureBox staminagrayed;
@@ -1274,7 +1249,7 @@
         private System.Windows.Forms.CheckBox remove;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox strength1;
+        private System.Windows.Forms.PictureBox StrengthPoints;
         private System.Windows.Forms.PictureBox con1;
         private System.Windows.Forms.PictureBox agility1;
         private System.Windows.Forms.Label label3;

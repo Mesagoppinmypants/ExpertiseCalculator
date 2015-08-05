@@ -19,17 +19,6 @@ namespace SWG_Expertise_Calcualtor
             add.Checked = true;
         }
 
-        /*
-            Available To Spec:
-            aSkillBox = 1
-            aSkillBoxGreen = 2
-            aSkillBoxRed = 3
-
-            Not Available to Spec:
-            iSkillBox = 4
-            iSkillBoxGreen = 5
-            iSkillBoxRed = 6
-        */
         GuiController gc = new GuiController();
 
         public int totalPoints = 45;
@@ -71,29 +60,25 @@ namespace SWG_Expertise_Calcualtor
         }
 
         // Enhanced Strength
-        private void strength_MouseHover(object sender, EventArgs e)
+
+        private void EnhancedStrength_MouseMove(object sender, MouseEventArgs e)
         {
-            pictureBox1.Visible = false;
+            EnhancedStrengthBackground.Image = Properties.Resources.aSkillBoxGreen;
+        }
+
+        private void EnhancedStrength_MouseHover(object sender, EventArgs e)
+        {
+            EnhancedStrengthBackground.Image = Properties.Resources.aSkillBoxGreen;
         }
 
         private void strength_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox1.Visible = true;
-        }
-
-        private void strength_MouseMove(object sender, MouseEventArgs e)
-        {
-            pictureBox1.Visible = false;
-        }
-
-        private void strengthgrayed_MouseHover(object sender, EventArgs e)
-        {
-            strength1.Image = pictureBox40.Image = Properties.Resources.aGraceInMotion;
+            EnhancedStrengthBackground.Visible = true;
         }
 
         private void strengthgrayed_MouseLeave(object sender, EventArgs e)
         {
-
+            EnhancedStrengthBackground.Image = Properties.Resources.aSkillBox;
         }
 
         private void Jedi_Load(object sender, EventArgs e)
@@ -101,38 +86,40 @@ namespace SWG_Expertise_Calcualtor
 
         }
 
-        private void strengthgrayed_Click(object sender, EventArgs e)
+        private void EnhancedStrength_Click(object sender, EventArgs e)
         {
             if (remove.Checked == true && strpoints <= 2 && strpoints > 0)
-                {
-                    totalPoints++;
-                    strpoints--;
-                }
-                
+            {
+                totalPoints++;
+                strpoints--;
+            }
+
             if (add.Checked == true && totalPoints > 0 && strpoints >= 0 && strpoints < 2)
-                {
-                    totalPoints--;
-                    strpoints++;
-                }
+            {
+                totalPoints--;
+                strpoints++;
+            }
 
             if (strpoints >= 1)
             {
-                strengthgrayed.Visible = false;
+                StrengthPoints.Visible = true;
+                EnhancedStrength.Image = Properties.Resources.aEnhancedStrength;
             }
 
             if (strpoints == 1)
             {
-                strength1.Visible = true;
+                StrengthPoints.Image = Properties.Resources.skillpoints1;
             }
 
             if (strpoints == 2)
             {
-                
+                StrengthPoints.Image = Properties.Resources.skillpoints2;
             }
 
             if (strpoints == 0)
             {
-                strength1.Visible = false;
+                EnhancedStrength.Image = Properties.Resources.iEnhancedStrength;
+                StrengthPoints.Visible = false;
             }
 
             TotalPointLabel.Text = totalPoints.ToString();
@@ -182,23 +169,23 @@ namespace SWG_Expertise_Calcualtor
 
             if (strpoints >= 1)
             {
-                strengthgrayed.Visible = false;
+                EnhancedStrength.Visible = false;
             }
 
             if (strpoints == 0)
             {
-                strengthgrayed.Visible = true;
-                strength1.Visible = false;
+                EnhancedStrength.Visible = true;
+                StrengthPoints.Visible = false;
             }
 
             if (strpoints == 1)
             {
-                strength1.Visible = true;
+                StrengthPoints.Visible = true;
             }
 
             if (strpoints == 2)
             {
-                strength1.Visible = false;
+                StrengthPoints.Visible = false;
             }
 
             TotalPointLabel.Text = totalPoints.ToString();
@@ -261,10 +248,7 @@ namespace SWG_Expertise_Calcualtor
         {
         }
 
-        private void strengthgrayed_MouseMove(object sender, MouseEventArgs e)
-        {
-            
-        }
+        
 
         private void con_Click(object sender, EventArgs e)
         {
@@ -788,6 +772,6 @@ namespace SWG_Expertise_Calcualtor
         private void ResetButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Testing the reset button function. This button isn't implemented yet.");
-        }
+        }       
     }
 }
