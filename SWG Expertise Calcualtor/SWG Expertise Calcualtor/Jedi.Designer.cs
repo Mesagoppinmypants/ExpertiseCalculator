@@ -40,7 +40,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.Incisiveness = new System.Windows.Forms.PictureBox();
             this.ImprovedForceCloak = new System.Windows.Forms.PictureBox();
             this.ImprovedForceShockwave = new System.Windows.Forms.PictureBox();
@@ -55,7 +54,6 @@
             this.pictureBox54 = new System.Windows.Forms.PictureBox();
             this.pictureBox55 = new System.Windows.Forms.PictureBox();
             this.pictureBox59 = new System.Windows.Forms.PictureBox();
-            this.pictureBox60 = new System.Windows.Forms.PictureBox();
             this.Fidelity = new System.Windows.Forms.PictureBox();
             this.ImprovedSaberBlock = new System.Windows.Forms.PictureBox();
             this.pictureBox73 = new System.Windows.Forms.PictureBox();
@@ -67,7 +65,6 @@
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.GraceInMotion = new System.Windows.Forms.PictureBox();
             this.ForceCloak = new System.Windows.Forms.PictureBox();
             this.Premonition = new System.Windows.Forms.PictureBox();
@@ -112,7 +109,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Incisiveness)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceCloak)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceShockwave)).BeginInit();
@@ -127,7 +123,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Fidelity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).BeginInit();
@@ -139,7 +134,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GraceInMotion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloak)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Premonition)).BeginInit();
@@ -307,16 +301,6 @@
             this.pictureBox23.TabStop = false;
             this.pictureBox23.Visible = false;
             // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints2;
-            this.pictureBox24.Location = new System.Drawing.Point(223, 503);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox24.TabIndex = 162;
-            this.pictureBox24.TabStop = false;
-            this.pictureBox24.Visible = false;
-            // 
             // Incisiveness
             // 
             this.Incisiveness.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iIncisiveness;
@@ -439,22 +423,12 @@
             // pictureBox59
             // 
             this.pictureBox59.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox59.Location = new System.Drawing.Point(222, 415);
+            this.pictureBox59.Location = new System.Drawing.Point(221, 415);
             this.pictureBox59.Name = "pictureBox59";
             this.pictureBox59.Size = new System.Drawing.Size(25, 24);
             this.pictureBox59.TabIndex = 133;
             this.pictureBox59.TabStop = false;
             this.pictureBox59.Visible = false;
-            // 
-            // pictureBox60
-            // 
-            this.pictureBox60.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints2;
-            this.pictureBox60.Location = new System.Drawing.Point(222, 415);
-            this.pictureBox60.Name = "pictureBox60";
-            this.pictureBox60.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox60.TabIndex = 132;
-            this.pictureBox60.TabStop = false;
-            this.pictureBox60.Visible = false;
             // 
             // Fidelity
             // 
@@ -552,22 +526,12 @@
             // pictureBox35
             // 
             this.pictureBox35.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox35.Location = new System.Drawing.Point(223, 327);
+            this.pictureBox35.Location = new System.Drawing.Point(221, 327);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(25, 24);
             this.pictureBox35.TabIndex = 96;
             this.pictureBox35.TabStop = false;
             this.pictureBox35.Visible = false;
-            // 
-            // pictureBox36
-            // 
-            this.pictureBox36.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints2;
-            this.pictureBox36.Location = new System.Drawing.Point(223, 327);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox36.TabIndex = 95;
-            this.pictureBox36.TabStop = false;
-            this.pictureBox36.Visible = false;
             // 
             // GraceInMotion
             // 
@@ -981,7 +945,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox22);
             this.Controls.Add(this.pictureBox23);
-            this.Controls.Add(this.pictureBox24);
             this.Controls.Add(this.Incisiveness);
             this.Controls.Add(this.ImprovedForceCloak);
             this.Controls.Add(this.ImprovedForceShockwave);
@@ -996,7 +959,6 @@
             this.Controls.Add(this.pictureBox54);
             this.Controls.Add(this.pictureBox55);
             this.Controls.Add(this.pictureBox59);
-            this.Controls.Add(this.pictureBox60);
             this.Controls.Add(this.Fidelity);
             this.Controls.Add(this.ImprovedSaberBlock);
             this.Controls.Add(this.pictureBox73);
@@ -1008,7 +970,6 @@
             this.Controls.Add(this.pictureBox31);
             this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.pictureBox35);
-            this.Controls.Add(this.pictureBox36);
             this.Controls.Add(this.GraceInMotion);
             this.Controls.Add(this.ForceCloak);
             this.Controls.Add(this.Premonition);
@@ -1067,7 +1028,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Incisiveness)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceCloak)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceShockwave)).EndInit();
@@ -1082,7 +1042,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Fidelity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).EndInit();
@@ -1094,7 +1053,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GraceInMotion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloak)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Premonition)).EndInit();
@@ -1180,7 +1138,6 @@
         private System.Windows.Forms.PictureBox pictureBox31;
         private System.Windows.Forms.PictureBox pictureBox34;
         private System.Windows.Forms.PictureBox pictureBox35;
-        private System.Windows.Forms.PictureBox pictureBox36;
         private System.Windows.Forms.PictureBox GraceInMotion;
         private System.Windows.Forms.PictureBox ForceCloak;
         private System.Windows.Forms.PictureBox Premonition;
@@ -1190,7 +1147,6 @@
         private System.Windows.Forms.PictureBox pictureBox52;
         private System.Windows.Forms.PictureBox pictureBox55;
         private System.Windows.Forms.PictureBox pictureBox59;
-        private System.Windows.Forms.PictureBox pictureBox60;
         private System.Windows.Forms.PictureBox Fidelity;
         private System.Windows.Forms.PictureBox ImprovedSaberBlock;
         private System.Windows.Forms.PictureBox pictureBox73;
@@ -1211,7 +1167,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox22;
         private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox Incisiveness;
         private System.Windows.Forms.PictureBox ImprovedForceCloak;
         private System.Windows.Forms.PictureBox ImprovedForceShockwave;
