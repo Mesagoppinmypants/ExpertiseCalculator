@@ -216,7 +216,7 @@ namespace SWG_Expertise_Calcualtor
 
             if (conpoints >= 1)
             {
-                congrayed.Visible = false;
+                EnhancedConstitution.Visible = false;
             }
 
             if (conpoints == 1)
@@ -266,12 +266,12 @@ namespace SWG_Expertise_Calcualtor
 
             if (conpoints >= 1)
             {
-                congrayed.Visible = false;
+                EnhancedConstitution.Visible = false;
             }
 
             if (conpoints == 0)
             {
-                congrayed.Visible = true;
+                EnhancedConstitution.Visible = true;
                 con1.Visible = false;
             }
 
@@ -320,7 +320,7 @@ namespace SWG_Expertise_Calcualtor
 
             if (agipoints >= 1)
             {
-                agilitygrayed.Visible = false;
+                EnhancedAgility.Visible = false;
             }
 
             if (agipoints == 1)
@@ -357,12 +357,12 @@ namespace SWG_Expertise_Calcualtor
 
             if (agipoints >= 1)
             {
-                agilitygrayed.Visible = false;
+                EnhancedAgility.Visible = false;
             }
 
             if (agipoints == 0)
             {
-                agilitygrayed.Visible = true;
+                EnhancedAgility.Visible = true;
                 agility1.Visible = false;
             }
 
@@ -426,7 +426,7 @@ namespace SWG_Expertise_Calcualtor
 
             if (stapoints >= 1)
             {
-                staminagrayed.Visible = false;
+                EnhancedStamina.Visible = false;
             }
 
             if (stapoints == 1)
@@ -463,12 +463,12 @@ namespace SWG_Expertise_Calcualtor
 
             if (stapoints >= 1)
             {
-                staminagrayed.Visible = false;
+                EnhancedStamina.Visible = false;
             }
 
             if (stapoints == 0)
             {
-                staminagrayed.Visible = true;
+                EnhancedStamina.Visible = true;
                 stam1.Visible = false;
             }
 
@@ -532,7 +532,7 @@ namespace SWG_Expertise_Calcualtor
 
             if (hspoints >= 1)
             {
-                speedgrayed.Visible = false;
+                HeightenedSpeed.Visible = false;
             }
 
             if (hspoints == 1)
@@ -579,12 +579,12 @@ namespace SWG_Expertise_Calcualtor
 
             if (hspoints >= 1)
             {
-                speedgrayed.Visible = false;
+                HeightenedSpeed.Visible = false;
             }
 
             if (hspoints == 0)
             {
-                speedgrayed.Visible = true;
+                HeightenedSpeed.Visible = true;
                 hs1.Visible = false;
             }
 
@@ -671,7 +671,7 @@ namespace SWG_Expertise_Calcualtor
 
             if (swpoints >= 1)
             {
-                windgrayed.Visible = false;
+                SecondWind.Visible = false;
             }
 
             if (swpoints == 1)
@@ -708,12 +708,12 @@ namespace SWG_Expertise_Calcualtor
 
             if (swpoints >= 1)
             {
-                windgrayed.Visible = false;
+                SecondWind.Visible = false;
             }
 
             if (swpoints == 0)
             {
-                windgrayed.Visible = true;
+                SecondWind.Visible = true;
                 sw1.Visible = false;
             }
 
