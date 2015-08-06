@@ -786,10 +786,10 @@
             this.EnhancedAgility.Size = new System.Drawing.Size(42, 42);
             this.EnhancedAgility.TabIndex = 20;
             this.EnhancedAgility.TabStop = false;
-            this.EnhancedAgility.Click += new System.EventHandler(this.agilitygrayed_Click);
-            this.EnhancedAgility.MouseLeave += new System.EventHandler(this.agilitygrayed_MouseLeave);
-            this.EnhancedAgility.MouseHover += new System.EventHandler(this.agilitygrayed_MouseHover);
-            this.EnhancedAgility.MouseMove += new System.Windows.Forms.MouseEventHandler(this.agilitygrayed_MouseMove);
+            this.EnhancedAgility.Click += new System.EventHandler(this.EnhancedAgility_Click);
+            this.EnhancedAgility.MouseLeave += new System.EventHandler(this.EnhancedAgility_MouseLeave);
+            this.EnhancedAgility.MouseHover += new System.EventHandler(this.EnhancedAgility_MouseHover);
+            this.EnhancedAgility.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedAgility_MouseMove);
             // 
             // EnhancedConstitution
             // 

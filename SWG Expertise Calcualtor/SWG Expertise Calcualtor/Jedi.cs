@@ -188,7 +188,7 @@ namespace SWG_Expertise_Calcualtor
         }
 
         // Enhanced Agility
-        private void agilitygrayed_Click(object sender, EventArgs e)
+        private void EnhancedAgility_Click(object sender, EventArgs e)
         {
             if (RemovePoints.Checked == true && agipoints <= 2 && agipoints > 0)
             {
@@ -204,93 +204,42 @@ namespace SWG_Expertise_Calcualtor
 
             if (agipoints >= 1)
             {
-                EnhancedAgility.Visible = false;
+                EnhancedAgilityPoints.Visible = true;
+                EnhancedAgility.Image = Properties.Resources.aEnhancedAgility;
             }
 
             if (agipoints == 1)
             {
-                EnhancedAgilityPoints.Visible = true;
+                EnhancedAgilityPoints.Image = Properties.Resources.skillpoints1;
             }
 
             if (agipoints == 2)
             {
-
+                EnhancedAgilityPoints.Image = Properties.Resources.skillpoints2;
             }
 
             if (agipoints == 0)
             {
+                EnhancedAgility.Image = Properties.Resources.iEnhancedAgility;
                 EnhancedAgilityPoints.Visible = false;
             }
 
             AvailablePoints.Text = totalPoints.ToString();
         }
 
-        private void agility_Click(object sender, EventArgs e)
+        private void EnhancedAgility_MouseHover(object sender, EventArgs e)
         {
-            if (RemovePoints.Checked == true && agipoints <= 2 && agipoints > 0)
-            {
-                totalPoints++;
-                agipoints--;
-            }
-
-            if (AddPoints.Checked == true && totalPoints > 0 && agipoints >= 0 && agipoints < 2)
-            {
-                totalPoints--;
-                agipoints++;
-            }
-
-            if (agipoints >= 1)
-            {
-                EnhancedAgility.Visible = false;
-            }
-
-            if (agipoints == 0)
-            {
-                EnhancedAgility.Visible = true;
-                EnhancedAgilityPoints.Visible = false;
-            }
-
-            if (agipoints == 1)
-            {
-                EnhancedAgilityPoints.Visible = true;
-            }
-
-            if (agipoints == 2)
-            {
-                EnhancedAgilityPoints.Visible = false;
-            }
-
-            AvailablePoints.Text = totalPoints.ToString();
+            EnhancedAgilityBackground.Image = Properties.Resources.aSkillBoxGreen;
         }
 
-        private void agilitygrayed_MouseHover(object sender, EventArgs e)
+        private void EnhancedAgility_MouseMove(object sender, MouseEventArgs e)
         {
-            
+            EnhancedAgilityBackground.Image = Properties.Resources.aSkillBoxGreen;
         }
 
-        private void agilitygrayed_MouseMove(object sender, MouseEventArgs e)
+        private void EnhancedAgility_MouseLeave(object sender, EventArgs e)
         {
-            
-        }
-
-        private void agilitygrayed_MouseLeave(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void agility_MouseHover(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void agility_MouseMove(object sender, MouseEventArgs e)
-        {
-            
-        }
-
-        private void agility_MouseLeave(object sender, EventArgs e)
-        {
-            
+            EnhancedAgilityBackground.Image = Properties.Resources.aSkillBox;
         }
 
         // Enhanced Stamina
