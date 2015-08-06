@@ -268,7 +268,7 @@ namespace SWG_Expertise_Calcualtor
                 EnhancedStaminaPoints.Image = Properties.Resources.skillpoints1;
             }
 
-            if (agipoints == 2)
+            if (stapoints == 2)
             {
                 EnhancedStaminaPoints.Image = Properties.Resources.skillpoints2;
             }
@@ -298,7 +298,7 @@ namespace SWG_Expertise_Calcualtor
         }
 
         // Heightened Speed
-        private void speedgrayed_Click(object sender, EventArgs e)
+        private void HeightenedSpeed_Click(object sender, EventArgs e)
         {
             if (RemovePoints.Checked == true && hspoints <= 2 && hspoints > 0)
             {
@@ -306,7 +306,7 @@ namespace SWG_Expertise_Calcualtor
                 hspoints--;
             }
 
-            if (AddPoints.Checked == true && totalPoints > 0 && hspoints >= 0 && hspoints < 2 && totalPoints <= 40)
+            if (AddPoints.Checked == true && totalPoints > 0 && hspoints >= 0 && hspoints < 2)
             {
                 totalPoints--;
                 hspoints++;
@@ -314,127 +314,73 @@ namespace SWG_Expertise_Calcualtor
 
             if (hspoints >= 1)
             {
-                HeightenedSpeed.Visible = false;
+                HeightenedSpeedPoints.Visible = true;
+                HeightenedSpeed.Image = Properties.Resources.aHeightenedSpeed;
             }
 
             if (hspoints == 1)
             {
-                hs1.Visible = true;
+                HeightenedSpeedPoints.Image = Properties.Resources.skillpoints1;
             }
 
             if (hspoints == 2)
             {
-
+                HeightenedSpeedPoints.Image = Properties.Resources.skillpoints2;
             }
 
             if (hspoints == 3)
             {
-
+                HeightenedSpeedPoints.Image = Properties.Resources.skillpoints3;
             }
 
             if (hspoints == 4)
             {
-
-            }
-
-            if (stapoints == 0)
-            {
-                hs1.Visible = false;
-            }
-
-            AvailablePoints.Text = totalPoints.ToString();
-        }
-
-        private void speed_Click(object sender, EventArgs e)
-        {
-            if (RemovePoints.Checked == true && hspoints <= 4)
-            {
-                totalPoints++;
-                hspoints--;
-            }
-
-            if (AddPoints.Checked == true && hspoints <= 4 && hspoints < 4)
-            {
-                totalPoints--;
-                hspoints++;
-            }
-
-            if (hspoints >= 1)
-            {
-                HeightenedSpeed.Visible = false;
+                HeightenedSpeedPoints.Image = Properties.Resources.skillpoints4;
             }
 
             if (hspoints == 0)
             {
-                HeightenedSpeed.Visible = true;
-                hs1.Visible = false;
-            }
-
-            if (hspoints == 1)
-            {
-                hs1.Visible = true;
-            }
-
-            if (hspoints == 2)
-            {
-                hs1.Visible = false;
-            }
-
-            if (hspoints == 3)
-            {
-
-            }
-
-            if (hspoints == 4)
-            {
-
+                HeightenedSpeed.Image = Properties.Resources.iHeightenedSpeed;
+                HeightenedSpeedPoints.Visible = false;
             }
 
             AvailablePoints.Text = totalPoints.ToString();
         }
 
-        private void speedgrayed_MouseHover(object sender, EventArgs e)
+        private void HeightenedSpeed_MouseLeave(object sender, EventArgs e)
         {
-            if (totalPoints <= 40)
+            if (totalPoints < 40)
             {
-
+                HeightenedSpeedBackground.Image = Properties.Resources.aSkillBox;
             }
             else
             {
-
+                HeightenedSpeedBackground.Image = Properties.Resources.iSkillBox;
             }
         }
 
-        private void speedgrayed_MouseMove(object sender, MouseEventArgs e)
+        private void HeightenedSpeed_MouseHover(object sender, EventArgs e)
         {
-            if (totalPoints <= 40)
+            if (totalPoints < 40)
             {
-
+                HeightenedSpeedBackground.Image = Properties.Resources.aSkillBoxGreen;
             }
             else
             {
-
+                HeightenedSpeedBackground.Image = Properties.Resources.iSkillBoxRed;
             }
         }
 
-        private void speedgrayed_MouseLeave(object sender, EventArgs e)
+        private void HeightenedSpeed_MouseMove(object sender, MouseEventArgs e)
         {
-
-        }
-
-        private void speed_MouseHover(object sender, EventArgs e)
-        {
-
-        }
-
-        private void speed_MouseMove(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void speed_MouseLeave(object sender, EventArgs e)
-        {
-
+            if (totalPoints < 40)
+            {
+                HeightenedSpeedBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                HeightenedSpeedBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void windgrayed_Click(object sender, EventArgs e)

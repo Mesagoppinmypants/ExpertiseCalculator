@@ -76,7 +76,7 @@
             this.ImprovedCripplingAccuracy = new System.Windows.Forms.PictureBox();
             this.sw1 = new System.Windows.Forms.PictureBox();
             this.SecondWind = new System.Windows.Forms.PictureBox();
-            this.hs1 = new System.Windows.Forms.PictureBox();
+            this.HeightenedSpeedPoints = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -96,7 +96,7 @@
             this.EnhancedAgilityBackground = new System.Windows.Forms.PictureBox();
             this.EnhancedConstitutionBackground = new System.Windows.Forms.PictureBox();
             this.EnhancedStrengthBackground = new System.Windows.Forms.PictureBox();
-            this.Speed4 = new System.Windows.Forms.PictureBox();
+            this.HeightenedSpeedBackground = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
@@ -145,7 +145,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sw1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hs1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HeightenedSpeedPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -165,7 +165,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Speed4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HeightenedSpeedBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
@@ -645,15 +645,15 @@
             this.SecondWind.MouseHover += new System.EventHandler(this.windgrayed_MouseHover);
             this.SecondWind.MouseMove += new System.Windows.Forms.MouseEventHandler(this.windgrayed_MouseMove);
             // 
-            // hs1
+            // HeightenedSpeedPoints
             // 
-            this.hs1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.hs1.Location = new System.Drawing.Point(483, 242);
-            this.hs1.Name = "hs1";
-            this.hs1.Size = new System.Drawing.Size(25, 24);
-            this.hs1.TabIndex = 60;
-            this.hs1.TabStop = false;
-            this.hs1.Visible = false;
+            this.HeightenedSpeedPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.HeightenedSpeedPoints.Location = new System.Drawing.Point(483, 242);
+            this.HeightenedSpeedPoints.Name = "HeightenedSpeedPoints";
+            this.HeightenedSpeedPoints.Size = new System.Drawing.Size(25, 24);
+            this.HeightenedSpeedPoints.TabIndex = 60;
+            this.HeightenedSpeedPoints.TabStop = false;
+            this.HeightenedSpeedPoints.Visible = false;
             // 
             // pictureBox6
             // 
@@ -693,10 +693,10 @@
             this.HeightenedSpeed.Size = new System.Drawing.Size(42, 42);
             this.HeightenedSpeed.TabIndex = 52;
             this.HeightenedSpeed.TabStop = false;
-            this.HeightenedSpeed.Click += new System.EventHandler(this.speedgrayed_Click);
-            this.HeightenedSpeed.MouseLeave += new System.EventHandler(this.speedgrayed_MouseLeave);
-            this.HeightenedSpeed.MouseHover += new System.EventHandler(this.speedgrayed_MouseHover);
-            this.HeightenedSpeed.MouseMove += new System.Windows.Forms.MouseEventHandler(this.speedgrayed_MouseMove);
+            this.HeightenedSpeed.Click += new System.EventHandler(this.HeightenedSpeed_Click);
+            this.HeightenedSpeed.MouseLeave += new System.EventHandler(this.HeightenedSpeed_MouseLeave);
+            this.HeightenedSpeed.MouseHover += new System.EventHandler(this.HeightenedSpeed_MouseHover);
+            this.HeightenedSpeed.MouseMove += new System.Windows.Forms.MouseEventHandler(this.HeightenedSpeed_MouseMove);
             // 
             // ExactingStrikes
             // 
@@ -853,14 +853,14 @@
             this.EnhancedStrengthBackground.TabIndex = 0;
             this.EnhancedStrengthBackground.TabStop = false;
             // 
-            // Speed4
+            // HeightenedSpeedBackground
             // 
-            this.Speed4.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.Speed4.Location = new System.Drawing.Point(419, 178);
-            this.Speed4.Name = "Speed4";
-            this.Speed4.Size = new System.Drawing.Size(89, 88);
-            this.Speed4.TabIndex = 71;
-            this.Speed4.TabStop = false;
+            this.HeightenedSpeedBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            this.HeightenedSpeedBackground.Location = new System.Drawing.Point(419, 178);
+            this.HeightenedSpeedBackground.Name = "HeightenedSpeedBackground";
+            this.HeightenedSpeedBackground.Size = new System.Drawing.Size(89, 88);
+            this.HeightenedSpeedBackground.TabIndex = 71;
+            this.HeightenedSpeedBackground.TabStop = false;
             // 
             // pictureBox14
             // 
@@ -952,9 +952,9 @@
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.ExactingStrikes);
             this.Controls.Add(this.pictureBox18);
-            this.Controls.Add(this.hs1);
+            this.Controls.Add(this.HeightenedSpeedPoints);
             this.Controls.Add(this.HeightenedSpeed);
-            this.Controls.Add(this.Speed4);
+            this.Controls.Add(this.HeightenedSpeedBackground);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox22);
             this.Controls.Add(this.pictureBox23);
@@ -1071,7 +1071,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sw1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hs1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HeightenedSpeedPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -1091,7 +1091,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Speed4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HeightenedSpeedBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
@@ -1127,7 +1127,7 @@
         private System.Windows.Forms.Label RequiredLevelLabel;
         private System.Windows.Forms.Label levelOutput;
         private System.Windows.Forms.PictureBox EnhancedStaminaPoints;
-        private System.Windows.Forms.PictureBox hs1;
+        private System.Windows.Forms.PictureBox HeightenedSpeedPoints;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox10;
@@ -1137,7 +1137,7 @@
         private System.Windows.Forms.PictureBox ImprovedForceThrow;
         private System.Windows.Forms.PictureBox sw1;
         private System.Windows.Forms.PictureBox SecondWind;
-        private System.Windows.Forms.PictureBox Speed4;
+        private System.Windows.Forms.PictureBox HeightenedSpeedBackground;
         private System.Windows.Forms.Button ResetButton;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.PictureBox pictureBox3;
