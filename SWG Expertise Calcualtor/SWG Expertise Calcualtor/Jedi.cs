@@ -22,13 +22,16 @@ namespace SWG_Expertise_Calcualtor
 
         public int totalPoints = 45;
 
+        // First Row
         public int strpoints = 0;
         public int conpoints = 0;
         public int agipoints = 0;
         public int stapoints = 0;
 
+        // Second Row
         public int hspoints = 0;
 
+        // Third Row
         public int swpoints = 0;
 
         private void Jedi_FormClosing(object sender, FormClosingEventArgs e)
@@ -50,11 +53,6 @@ namespace SWG_Expertise_Calcualtor
             {
                 levelOutput.Text = "12";
             }
-        }
-
-        private void CheckCheckBox()
-        {
-            gc.CheckBoxCheck();
         }
 
         private void AddPoints_CheckedChanged(object sender, EventArgs e)
