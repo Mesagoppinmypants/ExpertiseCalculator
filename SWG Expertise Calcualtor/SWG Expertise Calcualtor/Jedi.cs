@@ -243,7 +243,7 @@ namespace SWG_Expertise_Calcualtor
         }
 
         // Enhanced Stamina
-        private void staminagrayed_Click(object sender, EventArgs e)
+        private void EnhancedStamina_Click(object sender, EventArgs e)
         {
             if (RemovePoints.Checked == true && stapoints <= 2 && stapoints > 0)
             {
@@ -259,93 +259,42 @@ namespace SWG_Expertise_Calcualtor
 
             if (stapoints >= 1)
             {
-                EnhancedStamina.Visible = false;
+                EnhancedStaminaPoints.Visible = true;
+                EnhancedStamina.Image = Properties.Resources.aEnhancedStamina;
             }
 
             if (stapoints == 1)
             {
-                EnhancedStaminaPoints.Visible = true;
+                EnhancedStaminaPoints.Image = Properties.Resources.skillpoints1;
             }
 
-            if (stapoints == 2)
+            if (agipoints == 2)
             {
-                
+                EnhancedStaminaPoints.Image = Properties.Resources.skillpoints2;
             }
 
             if (stapoints == 0)
             {
+                EnhancedStamina.Image = Properties.Resources.iEnhancedStamina;
                 EnhancedStaminaPoints.Visible = false;
             }
 
             AvailablePoints.Text = totalPoints.ToString();
         }
 
-        private void stamina_Click(object sender, EventArgs e)
+        private void EnhancedStamina_MouseHover(object sender, EventArgs e)
         {
-            if (RemovePoints.Checked == true && stapoints <= 2 && stapoints > 0 && totalPoints >= 40)
-            {
-                totalPoints++;
-                stapoints--;
-            }
-
-            if (AddPoints.Checked == true && totalPoints > 0 && stapoints >= 0 && stapoints < 2)
-            {
-                totalPoints--;
-                stapoints++;
-            }
-
-            if (stapoints >= 1)
-            {
-                EnhancedStamina.Visible = false;
-            }
-
-            if (stapoints == 0)
-            {
-                EnhancedStamina.Visible = true;
-                EnhancedStaminaPoints.Visible = false;
-            }
-
-            if (stapoints == 1)
-            {
-                EnhancedStaminaPoints.Visible = true;
-            }
-
-            if (stapoints == 2)
-            {
-                EnhancedStaminaPoints.Visible = false;
-            }
-
-            AvailablePoints.Text = totalPoints.ToString();
+            EnhancedStaminaBackground.Image = Properties.Resources.aSkillBoxGreen;
         }
 
-        private void staminagrayed_MouseHover(object sender, EventArgs e)
+        private void EnhancedStamina_MouseMove(object sender, MouseEventArgs e)
         {
-
+            EnhancedStaminaBackground.Image = Properties.Resources.aSkillBoxGreen;
         }
 
-        private void staminagrayed_MouseLeave(object sender, EventArgs e)
+        private void EnhancedStamina_MouseLeave(object sender, EventArgs e)
         {
-
-        }
-
-        private void staminagrayed_MouseMove(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void stamina_MouseHover(object sender, EventArgs e)
-        {
-
-        }
-
-        private void stamina_MouseLeave(object sender, EventArgs e)
-        {
-
-        }
-
-        private void stamina_MouseMove(object sender, MouseEventArgs e)
-        {
-
+            EnhancedStaminaBackground.Image = Properties.Resources.aSkillBox;
         }
 
         // Heightened Speed

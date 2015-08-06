@@ -773,10 +773,10 @@
             this.EnhancedStamina.Size = new System.Drawing.Size(42, 42);
             this.EnhancedStamina.TabIndex = 21;
             this.EnhancedStamina.TabStop = false;
-            this.EnhancedStamina.Click += new System.EventHandler(this.staminagrayed_Click);
-            this.EnhancedStamina.MouseLeave += new System.EventHandler(this.staminagrayed_MouseLeave);
-            this.EnhancedStamina.MouseHover += new System.EventHandler(this.staminagrayed_MouseHover);
-            this.EnhancedStamina.MouseMove += new System.Windows.Forms.MouseEventHandler(this.staminagrayed_MouseMove);
+            this.EnhancedStamina.Click += new System.EventHandler(this.EnhancedStamina_Click);
+            this.EnhancedStamina.MouseLeave += new System.EventHandler(this.EnhancedStamina_MouseLeave);
+            this.EnhancedStamina.MouseHover += new System.EventHandler(this.EnhancedStamina_MouseHover);
+            this.EnhancedStamina.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedStamina_MouseMove);
             // 
             // EnhancedAgility
             // 
