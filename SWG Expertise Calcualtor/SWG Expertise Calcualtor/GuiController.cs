@@ -8,6 +8,13 @@ namespace SWG_Expertise_Calcualtor
 {
     class GuiController
     {
-
+        public void CheckBoxCheck()
+        {
+            Jedi jedi = new Jedi();
+            if (jedi.AddPoints.Checked == false)
+            {
+                jedi.RemovePoints.Checked = true;
+            }
+        }
     }
 }

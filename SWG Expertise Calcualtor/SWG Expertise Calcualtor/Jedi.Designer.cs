@@ -1117,8 +1117,8 @@
         private System.Windows.Forms.PictureBox EnhancedAgility;
         private System.Windows.Forms.PictureBox EnhancedStamina;
         private System.Windows.Forms.Label AvailablePoints;
-        private System.Windows.Forms.CheckBox AddPoints;
-        private System.Windows.Forms.CheckBox RemovePoints;
+        public System.Windows.Forms.CheckBox AddPoints;
+        public System.Windows.Forms.CheckBox RemovePoints;
         private System.Windows.Forms.Label AvailablePointsBase;
         private System.Windows.Forms.Label AvailablePointsLabel;
         private System.Windows.Forms.PictureBox EnhancedStrengthPoints;

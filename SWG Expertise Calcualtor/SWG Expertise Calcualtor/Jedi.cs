@@ -54,10 +54,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void CheckCheckBox()
         {
-            if (AddPoints.Checked == false)
-            {
-                RemovePoints.Checked = true;
-            }
+            gc.CheckBoxCheck();
         }
 
         private void AddPoints_CheckedChanged(object sender, EventArgs e)

@@ -38,6 +38,7 @@
             // 
             this.ProfessionSelection.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ProfessionSelection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ProfessionSelection.ForeColor = System.Drawing.Color.MediumTurquoise;
             this.ProfessionSelection.FormattingEnabled = true;
             this.ProfessionSelection.Items.AddRange(new object[] {
             "Choose Profession",
