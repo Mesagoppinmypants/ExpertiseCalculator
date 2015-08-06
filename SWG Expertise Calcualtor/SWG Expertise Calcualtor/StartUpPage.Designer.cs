@@ -28,25 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ProfessionSelection = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // ProfessionSelection
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.ProfessionSelection.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.ProfessionSelection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ProfessionSelection.FormattingEnabled = true;
+            this.ProfessionSelection.Items.AddRange(new object[] {
             "Choose Profession",
-            "Jedi"});
-            this.comboBox1.Location = new System.Drawing.Point(814, 9);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            "Jedi",
+            "Bounty Hunter"});
+            this.ProfessionSelection.Location = new System.Drawing.Point(814, 9);
+            this.ProfessionSelection.Name = "ProfessionSelection";
+            this.ProfessionSelection.Size = new System.Drawing.Size(121, 21);
+            this.ProfessionSelection.TabIndex = 0;
+            this.ProfessionSelection.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
@@ -76,7 +77,7 @@
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(984, 696);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.ProfessionSelection);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StartUpPage";
@@ -91,7 +92,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox ProfessionSelection;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
     }

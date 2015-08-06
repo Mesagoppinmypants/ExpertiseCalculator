@@ -15,8 +15,7 @@ namespace SWG_Expertise_Calcualtor
         public Jedi()
         {
             InitializeComponent();
-            CheckState();
-            add.Checked = true;
+            AddPoints.Checked = true;
         }
 
         GuiController gc = new GuiController();
@@ -38,6 +37,8 @@ namespace SWG_Expertise_Calcualtor
             start.Visible = true;
         }
 
+        // Page Functions
+
         private void CheckLevel()
         {
             if (totalPoints >= 40)
@@ -51,11 +52,39 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
-        private void CheckState()
+        private void CheckCheckBox()
         {
-            if  (totalPoints > 40)
+            if (AddPoints.Checked == false)
             {
-                Speed4.Visible = true;
+                RemovePoints.Checked = true;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddPoints.Checked = false;
+            RemovePoints.Checked = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddPoints.Checked = true;
+            RemovePoints.Checked = false;
+        }
+
+        private void add_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AddPoints.Checked == true)
+            {
+                RemovePoints.Checked = false;
+            }
+        }
+
+        private void remove_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RemovePoints.Checked == true)
+            {
+                AddPoints.Checked = false;
             }
         }
 
@@ -88,13 +117,13 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStrength_Click(object sender, EventArgs e)
         {
-            if (remove.Checked == true && strpoints <= 2 && strpoints > 0)
+            if (RemovePoints.Checked == true && strpoints <= 2 && strpoints > 0)
             {
                 totalPoints++;
                 strpoints--;
             }
 
-            if (add.Checked == true && totalPoints > 0 && strpoints >= 0 && strpoints < 2)
+            if (AddPoints.Checked == true && totalPoints > 0 && strpoints >= 0 && strpoints < 2)
             {
                 totalPoints--;
                 strpoints++;
@@ -102,66 +131,40 @@ namespace SWG_Expertise_Calcualtor
 
             if (strpoints >= 1)
             {
-                StrengthPoints.Visible = true;
+                EnhancedStrengthPoints.Visible = true;
                 EnhancedStrength.Image = Properties.Resources.aEnhancedStrength;
             }
 
             if (strpoints == 1)
             {
-                StrengthPoints.Image = Properties.Resources.skillpoints1;
+                EnhancedStrengthPoints.Image = Properties.Resources.skillpoints1;
             }
 
             if (strpoints == 2)
             {
-                StrengthPoints.Image = Properties.Resources.skillpoints2;
+                EnhancedStrengthPoints.Image = Properties.Resources.skillpoints2;
             }
 
             if (strpoints == 0)
             {
                 EnhancedStrength.Image = Properties.Resources.iEnhancedStrength;
-                StrengthPoints.Visible = false;
+                EnhancedStrengthPoints.Visible = false;
             }
 
-            TotalPointLabel.Text = totalPoints.ToString();
+            AvailablePoints.Text = totalPoints.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            add.Checked = false;
-            remove.Checked = true;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            add.Checked = true;
-            remove.Checked = false;
-        }
-
-        private void add_CheckedChanged(object sender, EventArgs e)
-        {
-            if (add.Checked == true)
-            {
-                remove.Checked = false;
-            }
-        }
-
-        private void remove_CheckedChanged(object sender, EventArgs e)
-        {
-            if (remove.Checked == true)
-            {
-                add.Checked = false;
-            }
-        }
+        
 
         private void strength_Click(object sender, EventArgs e)
         {
-            if (remove.Checked == true && strpoints <= 2 && strpoints > 0)
+            if (RemovePoints.Checked == true && strpoints <= 2 && strpoints > 0)
             {
                 totalPoints++;
                 strpoints--;
             }
 
-            if (add.Checked == true && totalPoints > 0 && strpoints >= 0 && strpoints < 2)
+            if (AddPoints.Checked == true && totalPoints > 0 && strpoints >= 0 && strpoints < 2)
             {
                 totalPoints--;
                 strpoints++;
@@ -175,65 +178,62 @@ namespace SWG_Expertise_Calcualtor
             if (strpoints == 0)
             {
                 EnhancedStrength.Visible = true;
-                StrengthPoints.Visible = false;
+                EnhancedStrengthPoints.Visible = false;
             }
 
             if (strpoints == 1)
             {
-                StrengthPoints.Visible = true;
+                EnhancedStrengthPoints.Visible = true;
             }
 
             if (strpoints == 2)
             {
-                StrengthPoints.Visible = false;
+                EnhancedStrengthPoints.Visible = false;
             }
 
-            TotalPointLabel.Text = totalPoints.ToString();
+            AvailablePoints.Text = totalPoints.ToString();
         }
 
-        private void CheckCheckBox()
-        {
-            if (add.Checked == false)
-            {
-                remove.Checked = true;
-            }
-        }
+        
 
         // Enhanced Constitution    
         private void congrayed_Click(object sender, EventArgs e)
         {
-            if (remove.Checked == true && conpoints <= 2 && conpoints > 0)
+            if (RemovePoints.Checked == true && strpoints <= 2 && strpoints > 0)
             {
                 totalPoints++;
-                conpoints--;
+                strpoints--;
             }
 
-            if (add.Checked == true && totalPoints > 0 && conpoints >= 0 && conpoints < 2)
+            if (AddPoints.Checked == true && totalPoints > 0 && strpoints >= 0 && strpoints < 2)
             {
                 totalPoints--;
-                conpoints++;
+                strpoints++;
             }
 
-            if (conpoints >= 1)
+            if (strpoints >= 1)
             {
-                EnhancedConstitution.Visible = false;
+                EnhancedStrengthPoints.Visible = true;
+                EnhancedStrength.Image = Properties.Resources.aEnhancedStrength;
             }
 
-            if (conpoints == 1)
+            if (strpoints == 1)
             {
-                con1.Visible = true;
+                EnhancedStrengthPoints.Image = Properties.Resources.skillpoints1;
             }
 
-            if (conpoints == 2)
+            if (strpoints == 2)
             {
+                EnhancedStrengthPoints.Image = Properties.Resources.skillpoints2;
             }
 
-            if (conpoints == 0)
+            if (strpoints == 0)
             {
-                con1.Visible = false;
+                EnhancedStrength.Image = Properties.Resources.iEnhancedStrength;
+                EnhancedStrengthPoints.Visible = false;
             }
 
-            TotalPointLabel.Text = totalPoints.ToString();
+            AvailablePoints.Text = totalPoints.ToString();
         }
 
         private void congrayed_MouseHover(object sender, EventArgs e)
@@ -252,13 +252,13 @@ namespace SWG_Expertise_Calcualtor
 
         private void con_Click(object sender, EventArgs e)
         {
-            if (remove.Checked == true && conpoints <= 2 && conpoints > 0)
+            if (RemovePoints.Checked == true && conpoints <= 2 && conpoints > 0)
             {
                 totalPoints++;
                 conpoints--;
             }
 
-            if (add.Checked == true && totalPoints > 0 && conpoints >= 0 && conpoints < 2)
+            if (AddPoints.Checked == true && totalPoints > 0 && conpoints >= 0 && conpoints < 2)
             {
                 totalPoints--;
                 conpoints++;
@@ -272,47 +272,47 @@ namespace SWG_Expertise_Calcualtor
             if (conpoints == 0)
             {
                 EnhancedConstitution.Visible = true;
-                con1.Visible = false;
+                EnhancedConstitutionPoints.Visible = false;
             }
 
             if (conpoints == 1)
             {
-                con1.Visible = true;
+                EnhancedConstitutionPoints.Visible = true;
             }
 
             if (conpoints == 2)
             {
-                con1.Visible = false;
+                EnhancedConstitutionPoints.Visible = false;
             }
 
-            TotalPointLabel.Text = totalPoints.ToString();
+            AvailablePoints.Text = totalPoints.ToString();
         }
 
         private void con_MouseHover(object sender, EventArgs e)
         {
-            pictureBox4.Visible = false;
+            EnhancedConstitutionBackground.Visible = false;
         }
 
         private void con_MouseMove(object sender, MouseEventArgs e)
         {
-            pictureBox4.Visible = false;
+            EnhancedConstitutionBackground.Visible = false;
         }
 
         private void con_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox4.Visible = true;
+            EnhancedConstitutionBackground.Visible = true;
         }
 
         // Enhanced Agility
         private void agilitygrayed_Click(object sender, EventArgs e)
         {
-            if (remove.Checked == true && agipoints <= 2 && agipoints > 0)
+            if (RemovePoints.Checked == true && agipoints <= 2 && agipoints > 0)
             {
                 totalPoints++;
                 agipoints--;
             }
 
-            if (add.Checked == true && totalPoints > 0 && agipoints >= 0 && agipoints < 2)
+            if (AddPoints.Checked == true && totalPoints > 0 && agipoints >= 0 && agipoints < 2)
             {
                 totalPoints--;
                 agipoints++;
@@ -325,7 +325,7 @@ namespace SWG_Expertise_Calcualtor
 
             if (agipoints == 1)
             {
-                agility1.Visible = true;
+                EnhancedAgilityPoints.Visible = true;
             }
 
             if (agipoints == 2)
@@ -335,21 +335,21 @@ namespace SWG_Expertise_Calcualtor
 
             if (agipoints == 0)
             {
-                agility1.Visible = false;
+                EnhancedAgilityPoints.Visible = false;
             }
 
-            TotalPointLabel.Text = totalPoints.ToString();
+            AvailablePoints.Text = totalPoints.ToString();
         }
 
         private void agility_Click(object sender, EventArgs e)
         {
-            if (remove.Checked == true && agipoints <= 2 && agipoints > 0)
+            if (RemovePoints.Checked == true && agipoints <= 2 && agipoints > 0)
             {
                 totalPoints++;
                 agipoints--;
             }
 
-            if (add.Checked == true && totalPoints > 0 && agipoints >= 0 && agipoints < 2)
+            if (AddPoints.Checked == true && totalPoints > 0 && agipoints >= 0 && agipoints < 2)
             {
                 totalPoints--;
                 agipoints++;
@@ -363,20 +363,20 @@ namespace SWG_Expertise_Calcualtor
             if (agipoints == 0)
             {
                 EnhancedAgility.Visible = true;
-                agility1.Visible = false;
+                EnhancedAgilityPoints.Visible = false;
             }
 
             if (agipoints == 1)
             {
-                agility1.Visible = true;
+                EnhancedAgilityPoints.Visible = true;
             }
 
             if (agipoints == 2)
             {
-                agility1.Visible = false;
+                EnhancedAgilityPoints.Visible = false;
             }
 
-            TotalPointLabel.Text = totalPoints.ToString();
+            AvailablePoints.Text = totalPoints.ToString();
         }
 
         private void agilitygrayed_MouseHover(object sender, EventArgs e)
@@ -412,13 +412,13 @@ namespace SWG_Expertise_Calcualtor
         // Enhanced Stamina
         private void staminagrayed_Click(object sender, EventArgs e)
         {
-            if (remove.Checked == true && stapoints <= 2 && stapoints > 0)
+            if (RemovePoints.Checked == true && stapoints <= 2 && stapoints > 0)
             {
                 totalPoints++;
                 stapoints--;
             }
 
-            if (add.Checked == true && totalPoints > 0 && stapoints >= 0 && stapoints < 2)
+            if (AddPoints.Checked == true && totalPoints > 0 && stapoints >= 0 && stapoints < 2)
             {
                 totalPoints--;
                 stapoints++;
@@ -431,7 +431,7 @@ namespace SWG_Expertise_Calcualtor
 
             if (stapoints == 1)
             {
-                stam1.Visible = true;
+                EnhancedStaminaPoints.Visible = true;
             }
 
             if (stapoints == 2)
@@ -441,21 +441,21 @@ namespace SWG_Expertise_Calcualtor
 
             if (stapoints == 0)
             {
-                stam1.Visible = false;
+                EnhancedStaminaPoints.Visible = false;
             }
 
-            TotalPointLabel.Text = totalPoints.ToString();
+            AvailablePoints.Text = totalPoints.ToString();
         }
 
         private void stamina_Click(object sender, EventArgs e)
         {
-            if (remove.Checked == true && stapoints <= 2 && stapoints > 0 && totalPoints >= 40)
+            if (RemovePoints.Checked == true && stapoints <= 2 && stapoints > 0 && totalPoints >= 40)
             {
                 totalPoints++;
                 stapoints--;
             }
 
-            if (add.Checked == true && totalPoints > 0 && stapoints >= 0 && stapoints < 2)
+            if (AddPoints.Checked == true && totalPoints > 0 && stapoints >= 0 && stapoints < 2)
             {
                 totalPoints--;
                 stapoints++;
@@ -469,20 +469,20 @@ namespace SWG_Expertise_Calcualtor
             if (stapoints == 0)
             {
                 EnhancedStamina.Visible = true;
-                stam1.Visible = false;
+                EnhancedStaminaPoints.Visible = false;
             }
 
             if (stapoints == 1)
             {
-                stam1.Visible = true;
+                EnhancedStaminaPoints.Visible = true;
             }
 
             if (stapoints == 2)
             {
-                stam1.Visible = false;
+                EnhancedStaminaPoints.Visible = false;
             }
 
-            TotalPointLabel.Text = totalPoints.ToString();
+            AvailablePoints.Text = totalPoints.ToString();
         }
 
         private void staminagrayed_MouseHover(object sender, EventArgs e)
@@ -518,13 +518,13 @@ namespace SWG_Expertise_Calcualtor
         // Heightened Speed
         private void speedgrayed_Click(object sender, EventArgs e)
         {
-            if (remove.Checked == true && hspoints <= 2 && hspoints > 0)
+            if (RemovePoints.Checked == true && hspoints <= 2 && hspoints > 0)
             {
                 totalPoints++;
                 hspoints--;
             }
 
-            if (add.Checked == true && totalPoints > 0 && hspoints >= 0 && hspoints < 2 && totalPoints <= 40)
+            if (AddPoints.Checked == true && totalPoints > 0 && hspoints >= 0 && hspoints < 2 && totalPoints <= 40)
             {
                 totalPoints--;
                 hspoints++;
@@ -560,18 +560,18 @@ namespace SWG_Expertise_Calcualtor
                 hs1.Visible = false;
             }
 
-            TotalPointLabel.Text = totalPoints.ToString();
+            AvailablePoints.Text = totalPoints.ToString();
         }
 
         private void speed_Click(object sender, EventArgs e)
         {
-            if (remove.Checked == true && hspoints <= 4)
+            if (RemovePoints.Checked == true && hspoints <= 4)
             {
                 totalPoints++;
                 hspoints--;
             }
 
-            if (add.Checked == true && hspoints <= 4 && hspoints < 4)
+            if (AddPoints.Checked == true && hspoints <= 4 && hspoints < 4)
             {
                 totalPoints--;
                 hspoints++;
@@ -608,7 +608,7 @@ namespace SWG_Expertise_Calcualtor
 
             }
 
-            TotalPointLabel.Text = totalPoints.ToString();
+            AvailablePoints.Text = totalPoints.ToString();
         }
 
         private void speedgrayed_MouseHover(object sender, EventArgs e)
@@ -657,13 +657,13 @@ namespace SWG_Expertise_Calcualtor
 
         private void windgrayed_Click(object sender, EventArgs e)
         {
-            if (remove.Checked == true && swpoints <= 2 && swpoints > 0)
+            if (RemovePoints.Checked == true && swpoints <= 2 && swpoints > 0)
             {
                 totalPoints++;
                 swpoints--;
             }
 
-            if (add.Checked == true && totalPoints > 0 && swpoints >= 0 && swpoints < 2 && hspoints == 4)
+            if (AddPoints.Checked == true && totalPoints > 0 && swpoints >= 0 && swpoints < 2 && hspoints == 4)
             {
                 totalPoints--;
                 swpoints++;
@@ -689,18 +689,18 @@ namespace SWG_Expertise_Calcualtor
                 sw1.Visible = false;
             }
 
-            TotalPointLabel.Text = totalPoints.ToString();
+            AvailablePoints.Text = totalPoints.ToString();
         }
 
         private void wind_Click(object sender, EventArgs e)
         {
-            if (remove.Checked == true && swpoints <= 2 && swpoints > 0 && totalPoints >= 40)
+            if (RemovePoints.Checked == true && swpoints <= 2 && swpoints > 0 && totalPoints >= 40)
             {
                 totalPoints++;
                 swpoints--;
             }
 
-            if (add.Checked == true && totalPoints > 0 && swpoints >= 0 && swpoints < 2)
+            if (AddPoints.Checked == true && totalPoints > 0 && swpoints >= 0 && swpoints < 2)
             {
                 totalPoints--;
                 swpoints++;
@@ -727,7 +727,7 @@ namespace SWG_Expertise_Calcualtor
                 sw1.Visible = false;
             }
 
-            TotalPointLabel.Text = totalPoints.ToString();
+            AvailablePoints.Text = totalPoints.ToString();
         }
 
         private void windgrayed_MouseHover(object sender, EventArgs e)

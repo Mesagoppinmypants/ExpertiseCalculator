@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TotalPointLabel = new System.Windows.Forms.Label();
-            this.add = new System.Windows.Forms.CheckBox();
-            this.remove = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.AvailablePoints = new System.Windows.Forms.Label();
+            this.AddPoints = new System.Windows.Forms.CheckBox();
+            this.RemovePoints = new System.Windows.Forms.CheckBox();
+            this.AvailablePointsBase = new System.Windows.Forms.Label();
+            this.AvailablePointsLabel = new System.Windows.Forms.Label();
+            this.RequiredLevelLabel = new System.Windows.Forms.Label();
             this.levelOutput = new System.Windows.Forms.Label();
             this.ResetButton = new System.Windows.Forms.Button();
             this.SaveButton = new System.Windows.Forms.Button();
@@ -84,17 +84,17 @@
             this.ExactingStrikes = new System.Windows.Forms.PictureBox();
             this.Alacrity = new System.Windows.Forms.PictureBox();
             this.ImprovedForceThrow = new System.Windows.Forms.PictureBox();
-            this.stam1 = new System.Windows.Forms.PictureBox();
-            this.agility1 = new System.Windows.Forms.PictureBox();
-            this.con1 = new System.Windows.Forms.PictureBox();
-            this.StrengthPoints = new System.Windows.Forms.PictureBox();
+            this.EnhancedStaminaPoints = new System.Windows.Forms.PictureBox();
+            this.EnhancedAgilityPoints = new System.Windows.Forms.PictureBox();
+            this.EnhancedConstitutionPoints = new System.Windows.Forms.PictureBox();
+            this.EnhancedStrengthPoints = new System.Windows.Forms.PictureBox();
             this.EnhancedStamina = new System.Windows.Forms.PictureBox();
             this.EnhancedAgility = new System.Windows.Forms.PictureBox();
             this.EnhancedConstitution = new System.Windows.Forms.PictureBox();
             this.EnhancedStrength = new System.Windows.Forms.PictureBox();
-            this.stamunhover = new System.Windows.Forms.PictureBox();
-            this.aginonhover = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.EnhancedStaminaBackground = new System.Windows.Forms.PictureBox();
+            this.EnhancedAgilityBackground = new System.Windows.Forms.PictureBox();
+            this.EnhancedConstitutionBackground = new System.Windows.Forms.PictureBox();
             this.EnhancedStrengthBackground = new System.Windows.Forms.PictureBox();
             this.Speed4 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
@@ -153,17 +153,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stam1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agility1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.con1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StrengthPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStamina)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitution)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrength)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stamunhover)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aginonhover)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Speed4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -177,75 +177,75 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             this.SuspendLayout();
             // 
-            // TotalPointLabel
+            // AvailablePoints
             // 
-            this.TotalPointLabel.AutoSize = true;
-            this.TotalPointLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalPointLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.TotalPointLabel.Location = new System.Drawing.Point(891, 612);
-            this.TotalPointLabel.Name = "TotalPointLabel";
-            this.TotalPointLabel.Size = new System.Drawing.Size(30, 24);
-            this.TotalPointLabel.TabIndex = 22;
-            this.TotalPointLabel.Text = "45";
+            this.AvailablePoints.AutoSize = true;
+            this.AvailablePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AvailablePoints.ForeColor = System.Drawing.Color.Yellow;
+            this.AvailablePoints.Location = new System.Drawing.Point(891, 612);
+            this.AvailablePoints.Name = "AvailablePoints";
+            this.AvailablePoints.Size = new System.Drawing.Size(30, 24);
+            this.AvailablePoints.TabIndex = 22;
+            this.AvailablePoints.Text = "45";
             // 
-            // add
+            // AddPoints
             // 
-            this.add.AutoSize = true;
-            this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add.ForeColor = System.Drawing.Color.White;
-            this.add.Location = new System.Drawing.Point(732, 640);
-            this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(102, 20);
-            this.add.TabIndex = 23;
-            this.add.Text = "Add Points";
-            this.add.UseVisualStyleBackColor = true;
-            this.add.CheckedChanged += new System.EventHandler(this.add_CheckedChanged);
+            this.AddPoints.AutoSize = true;
+            this.AddPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddPoints.ForeColor = System.Drawing.Color.White;
+            this.AddPoints.Location = new System.Drawing.Point(732, 640);
+            this.AddPoints.Name = "AddPoints";
+            this.AddPoints.Size = new System.Drawing.Size(102, 20);
+            this.AddPoints.TabIndex = 23;
+            this.AddPoints.Text = "Add Points";
+            this.AddPoints.UseVisualStyleBackColor = true;
+            this.AddPoints.CheckedChanged += new System.EventHandler(this.add_CheckedChanged);
             // 
-            // remove
+            // RemovePoints
             // 
-            this.remove.AutoSize = true;
-            this.remove.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.remove.ForeColor = System.Drawing.Color.White;
-            this.remove.Location = new System.Drawing.Point(840, 640);
-            this.remove.Name = "remove";
-            this.remove.Size = new System.Drawing.Size(132, 20);
-            this.remove.TabIndex = 24;
-            this.remove.Text = "Remove Points";
-            this.remove.UseVisualStyleBackColor = true;
-            this.remove.CheckedChanged += new System.EventHandler(this.remove_CheckedChanged);
+            this.RemovePoints.AutoSize = true;
+            this.RemovePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemovePoints.ForeColor = System.Drawing.Color.White;
+            this.RemovePoints.Location = new System.Drawing.Point(840, 640);
+            this.RemovePoints.Name = "RemovePoints";
+            this.RemovePoints.Size = new System.Drawing.Size(132, 20);
+            this.RemovePoints.TabIndex = 24;
+            this.RemovePoints.Text = "Remove Points";
+            this.RemovePoints.UseVisualStyleBackColor = true;
+            this.RemovePoints.CheckedChanged += new System.EventHandler(this.remove_CheckedChanged);
             // 
-            // label1
+            // AvailablePointsBase
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(917, 613);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 24);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "/ 45";
+            this.AvailablePointsBase.AutoSize = true;
+            this.AvailablePointsBase.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AvailablePointsBase.ForeColor = System.Drawing.Color.Yellow;
+            this.AvailablePointsBase.Location = new System.Drawing.Point(917, 613);
+            this.AvailablePointsBase.Name = "AvailablePointsBase";
+            this.AvailablePointsBase.Size = new System.Drawing.Size(40, 24);
+            this.AvailablePointsBase.TabIndex = 25;
+            this.AvailablePointsBase.Text = "/ 45";
             // 
-            // label2
+            // AvailablePointsLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(742, 612);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 24);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Available Points:";
+            this.AvailablePointsLabel.AutoSize = true;
+            this.AvailablePointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AvailablePointsLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.AvailablePointsLabel.Location = new System.Drawing.Point(742, 612);
+            this.AvailablePointsLabel.Name = "AvailablePointsLabel";
+            this.AvailablePointsLabel.Size = new System.Drawing.Size(147, 24);
+            this.AvailablePointsLabel.TabIndex = 26;
+            this.AvailablePointsLabel.Text = "Available Points:";
             // 
-            // label3
+            // RequiredLevelLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Yellow;
-            this.label3.Location = new System.Drawing.Point(742, 589);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 24);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "Required Level:";
+            this.RequiredLevelLabel.AutoSize = true;
+            this.RequiredLevelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RequiredLevelLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.RequiredLevelLabel.Location = new System.Drawing.Point(742, 589);
+            this.RequiredLevelLabel.Name = "RequiredLevelLabel";
+            this.RequiredLevelLabel.Size = new System.Drawing.Size(143, 24);
+            this.RequiredLevelLabel.TabIndex = 33;
+            this.RequiredLevelLabel.Text = "Required Level:";
             // 
             // levelOutput
             // 
@@ -513,7 +513,7 @@
             // pictureBox31
             // 
             this.pictureBox31.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox31.Location = new System.Drawing.Point(397, 328);
+            this.pictureBox31.Location = new System.Drawing.Point(396, 328);
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.Size = new System.Drawing.Size(25, 24);
             this.pictureBox31.TabIndex = 100;
@@ -523,7 +523,7 @@
             // pictureBox34
             // 
             this.pictureBox34.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox34.Location = new System.Drawing.Point(310, 328);
+            this.pictureBox34.Location = new System.Drawing.Point(309, 328);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(25, 24);
             this.pictureBox34.TabIndex = 97;
@@ -533,7 +533,7 @@
             // pictureBox35
             // 
             this.pictureBox35.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox35.Location = new System.Drawing.Point(221, 328);
+            this.pictureBox35.Location = new System.Drawing.Point(220, 328);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(25, 24);
             this.pictureBox35.TabIndex = 96;
@@ -543,7 +543,7 @@
             // GraceInMotion
             // 
             this.GraceInMotion.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iGraceInMotion;
-            this.GraceInMotion.Location = new System.Drawing.Point(355, 287);
+            this.GraceInMotion.Location = new System.Drawing.Point(354, 287);
             this.GraceInMotion.Name = "GraceInMotion";
             this.GraceInMotion.Size = new System.Drawing.Size(42, 42);
             this.GraceInMotion.TabIndex = 94;
@@ -552,7 +552,7 @@
             // ForceCloak
             // 
             this.ForceCloak.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iForceCloak;
-            this.ForceCloak.Location = new System.Drawing.Point(269, 287);
+            this.ForceCloak.Location = new System.Drawing.Point(268, 287);
             this.ForceCloak.Name = "ForceCloak";
             this.ForceCloak.Size = new System.Drawing.Size(42, 42);
             this.ForceCloak.TabIndex = 93;
@@ -561,7 +561,7 @@
             // Premonition
             // 
             this.Premonition.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iPremonition;
-            this.Premonition.Location = new System.Drawing.Point(182, 287);
+            this.Premonition.Location = new System.Drawing.Point(181, 287);
             this.Premonition.Name = "Premonition";
             this.Premonition.Size = new System.Drawing.Size(42, 42);
             this.Premonition.TabIndex = 92;
@@ -570,7 +570,7 @@
             // pictureBox49
             // 
             this.pictureBox49.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox49.Location = new System.Drawing.Point(332, 264);
+            this.pictureBox49.Location = new System.Drawing.Point(331, 264);
             this.pictureBox49.Name = "pictureBox49";
             this.pictureBox49.Size = new System.Drawing.Size(89, 88);
             this.pictureBox49.TabIndex = 103;
@@ -579,7 +579,7 @@
             // pictureBox50
             // 
             this.pictureBox50.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxRed;
-            this.pictureBox50.Location = new System.Drawing.Point(333, 264);
+            this.pictureBox50.Location = new System.Drawing.Point(332, 264);
             this.pictureBox50.Name = "pictureBox50";
             this.pictureBox50.Size = new System.Drawing.Size(89, 88);
             this.pictureBox50.TabIndex = 106;
@@ -588,7 +588,7 @@
             // pictureBox51
             // 
             this.pictureBox51.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxGreen;
-            this.pictureBox51.Location = new System.Drawing.Point(333, 264);
+            this.pictureBox51.Location = new System.Drawing.Point(332, 264);
             this.pictureBox51.Name = "pictureBox51";
             this.pictureBox51.Size = new System.Drawing.Size(89, 88);
             this.pictureBox51.TabIndex = 105;
@@ -597,7 +597,7 @@
             // pictureBox52
             // 
             this.pictureBox52.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxRed;
-            this.pictureBox52.Location = new System.Drawing.Point(333, 264);
+            this.pictureBox52.Location = new System.Drawing.Point(332, 264);
             this.pictureBox52.Name = "pictureBox52";
             this.pictureBox52.Size = new System.Drawing.Size(89, 88);
             this.pictureBox52.TabIndex = 104;
@@ -606,7 +606,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox3.Location = new System.Drawing.Point(133, 328);
+            this.pictureBox3.Location = new System.Drawing.Point(132, 328);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 24);
             this.pictureBox3.TabIndex = 81;
@@ -616,7 +616,7 @@
             // ImprovedCripplingAccuracy
             // 
             this.ImprovedCripplingAccuracy.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedCripplingAccuracy;
-            this.ImprovedCripplingAccuracy.Location = new System.Drawing.Point(92, 287);
+            this.ImprovedCripplingAccuracy.Location = new System.Drawing.Point(91, 287);
             this.ImprovedCripplingAccuracy.Name = "ImprovedCripplingAccuracy";
             this.ImprovedCripplingAccuracy.Size = new System.Drawing.Size(42, 42);
             this.ImprovedCripplingAccuracy.TabIndex = 80;
@@ -725,45 +725,45 @@
             this.ImprovedForceThrow.TabIndex = 49;
             this.ImprovedForceThrow.TabStop = false;
             // 
-            // stam1
+            // EnhancedStaminaPoints
             // 
-            this.stam1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.stam1.Location = new System.Drawing.Point(482, 156);
-            this.stam1.Name = "stam1";
-            this.stam1.Size = new System.Drawing.Size(25, 24);
-            this.stam1.TabIndex = 36;
-            this.stam1.TabStop = false;
-            this.stam1.Visible = false;
+            this.EnhancedStaminaPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.EnhancedStaminaPoints.Location = new System.Drawing.Point(482, 156);
+            this.EnhancedStaminaPoints.Name = "EnhancedStaminaPoints";
+            this.EnhancedStaminaPoints.Size = new System.Drawing.Size(25, 24);
+            this.EnhancedStaminaPoints.TabIndex = 36;
+            this.EnhancedStaminaPoints.TabStop = false;
+            this.EnhancedStaminaPoints.Visible = false;
             // 
-            // agility1
+            // EnhancedAgilityPoints
             // 
-            this.agility1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.agility1.Location = new System.Drawing.Point(394, 156);
-            this.agility1.Name = "agility1";
-            this.agility1.Size = new System.Drawing.Size(25, 24);
-            this.agility1.TabIndex = 31;
-            this.agility1.TabStop = false;
-            this.agility1.Visible = false;
+            this.EnhancedAgilityPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.EnhancedAgilityPoints.Location = new System.Drawing.Point(394, 156);
+            this.EnhancedAgilityPoints.Name = "EnhancedAgilityPoints";
+            this.EnhancedAgilityPoints.Size = new System.Drawing.Size(25, 24);
+            this.EnhancedAgilityPoints.TabIndex = 31;
+            this.EnhancedAgilityPoints.TabStop = false;
+            this.EnhancedAgilityPoints.Visible = false;
             // 
-            // con1
+            // EnhancedConstitutionPoints
             // 
-            this.con1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.con1.Location = new System.Drawing.Point(309, 156);
-            this.con1.Name = "con1";
-            this.con1.Size = new System.Drawing.Size(25, 24);
-            this.con1.TabIndex = 30;
-            this.con1.TabStop = false;
-            this.con1.Visible = false;
+            this.EnhancedConstitutionPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.EnhancedConstitutionPoints.Location = new System.Drawing.Point(309, 156);
+            this.EnhancedConstitutionPoints.Name = "EnhancedConstitutionPoints";
+            this.EnhancedConstitutionPoints.Size = new System.Drawing.Size(25, 24);
+            this.EnhancedConstitutionPoints.TabIndex = 30;
+            this.EnhancedConstitutionPoints.TabStop = false;
+            this.EnhancedConstitutionPoints.Visible = false;
             // 
-            // StrengthPoints
+            // EnhancedStrengthPoints
             // 
-            this.StrengthPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.StrengthPoints.Location = new System.Drawing.Point(223, 156);
-            this.StrengthPoints.Name = "StrengthPoints";
-            this.StrengthPoints.Size = new System.Drawing.Size(25, 24);
-            this.StrengthPoints.TabIndex = 27;
-            this.StrengthPoints.TabStop = false;
-            this.StrengthPoints.Visible = false;
+            this.EnhancedStrengthPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.EnhancedStrengthPoints.Location = new System.Drawing.Point(223, 156);
+            this.EnhancedStrengthPoints.Name = "EnhancedStrengthPoints";
+            this.EnhancedStrengthPoints.Size = new System.Drawing.Size(25, 24);
+            this.EnhancedStrengthPoints.TabIndex = 27;
+            this.EnhancedStrengthPoints.TabStop = false;
+            this.EnhancedStrengthPoints.Visible = false;
             // 
             // EnhancedStamina
             // 
@@ -817,32 +817,32 @@
             this.EnhancedStrength.MouseHover += new System.EventHandler(this.EnhancedStrength_MouseHover);
             this.EnhancedStrength.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedStrength_MouseMove);
             // 
-            // stamunhover
+            // EnhancedStaminaBackground
             // 
-            this.stamunhover.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.stamunhover.Location = new System.Drawing.Point(419, 92);
-            this.stamunhover.Name = "stamunhover";
-            this.stamunhover.Size = new System.Drawing.Size(89, 88);
-            this.stamunhover.TabIndex = 9;
-            this.stamunhover.TabStop = false;
+            this.EnhancedStaminaBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
+            this.EnhancedStaminaBackground.Location = new System.Drawing.Point(419, 92);
+            this.EnhancedStaminaBackground.Name = "EnhancedStaminaBackground";
+            this.EnhancedStaminaBackground.Size = new System.Drawing.Size(89, 88);
+            this.EnhancedStaminaBackground.TabIndex = 9;
+            this.EnhancedStaminaBackground.TabStop = false;
             // 
-            // aginonhover
+            // EnhancedAgilityBackground
             // 
-            this.aginonhover.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.aginonhover.Location = new System.Drawing.Point(333, 92);
-            this.aginonhover.Name = "aginonhover";
-            this.aginonhover.Size = new System.Drawing.Size(89, 88);
-            this.aginonhover.TabIndex = 8;
-            this.aginonhover.TabStop = false;
+            this.EnhancedAgilityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
+            this.EnhancedAgilityBackground.Location = new System.Drawing.Point(333, 92);
+            this.EnhancedAgilityBackground.Name = "EnhancedAgilityBackground";
+            this.EnhancedAgilityBackground.Size = new System.Drawing.Size(89, 88);
+            this.EnhancedAgilityBackground.TabIndex = 8;
+            this.EnhancedAgilityBackground.TabStop = false;
             // 
-            // pictureBox4
+            // EnhancedConstitutionBackground
             // 
-            this.pictureBox4.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.pictureBox4.Location = new System.Drawing.Point(246, 92);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
+            this.EnhancedConstitutionBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
+            this.EnhancedConstitutionBackground.Location = new System.Drawing.Point(246, 92);
+            this.EnhancedConstitutionBackground.Name = "EnhancedConstitutionBackground";
+            this.EnhancedConstitutionBackground.Size = new System.Drawing.Size(89, 88);
+            this.EnhancedConstitutionBackground.TabIndex = 3;
+            this.EnhancedConstitutionBackground.TabStop = false;
             // 
             // EnhancedStrengthBackground
             // 
@@ -901,7 +901,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox8.Location = new System.Drawing.Point(245, 264);
+            this.pictureBox8.Location = new System.Drawing.Point(244, 264);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(89, 88);
             this.pictureBox8.TabIndex = 147;
@@ -910,7 +910,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox5.Location = new System.Drawing.Point(157, 264);
+            this.pictureBox5.Location = new System.Drawing.Point(156, 264);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(89, 88);
             this.pictureBox5.TabIndex = 146;
@@ -919,7 +919,7 @@
             // pictureBox19
             // 
             this.pictureBox19.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox19.Location = new System.Drawing.Point(68, 264);
+            this.pictureBox19.Location = new System.Drawing.Point(67, 264);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(89, 88);
             this.pictureBox19.TabIndex = 150;
@@ -1000,24 +1000,24 @@
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.Alacrity);
             this.Controls.Add(this.ImprovedForceThrow);
-            this.Controls.Add(this.stam1);
+            this.Controls.Add(this.EnhancedStaminaPoints);
             this.Controls.Add(this.levelOutput);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.agility1);
-            this.Controls.Add(this.con1);
-            this.Controls.Add(this.StrengthPoints);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.remove);
-            this.Controls.Add(this.add);
-            this.Controls.Add(this.TotalPointLabel);
+            this.Controls.Add(this.RequiredLevelLabel);
+            this.Controls.Add(this.EnhancedAgilityPoints);
+            this.Controls.Add(this.EnhancedConstitutionPoints);
+            this.Controls.Add(this.EnhancedStrengthPoints);
+            this.Controls.Add(this.AvailablePointsLabel);
+            this.Controls.Add(this.AvailablePointsBase);
+            this.Controls.Add(this.RemovePoints);
+            this.Controls.Add(this.AddPoints);
+            this.Controls.Add(this.AvailablePoints);
             this.Controls.Add(this.EnhancedStamina);
             this.Controls.Add(this.EnhancedAgility);
             this.Controls.Add(this.EnhancedConstitution);
             this.Controls.Add(this.EnhancedStrength);
-            this.Controls.Add(this.stamunhover);
-            this.Controls.Add(this.aginonhover);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.EnhancedStaminaBackground);
+            this.Controls.Add(this.EnhancedAgilityBackground);
+            this.Controls.Add(this.EnhancedConstitutionBackground);
             this.Controls.Add(this.EnhancedStrengthBackground);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox15);
@@ -1079,17 +1079,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stam1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agility1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.con1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StrengthPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStamina)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgility)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitution)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrength)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stamunhover)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aginonhover)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Speed4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -1109,24 +1109,24 @@
         #endregion
 
         private System.Windows.Forms.PictureBox EnhancedStrengthBackground;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox stamunhover;
-        private System.Windows.Forms.PictureBox aginonhover;
+        private System.Windows.Forms.PictureBox EnhancedConstitutionBackground;
+        private System.Windows.Forms.PictureBox EnhancedStaminaBackground;
+        private System.Windows.Forms.PictureBox EnhancedAgilityBackground;
         private System.Windows.Forms.PictureBox EnhancedStrength;
         private System.Windows.Forms.PictureBox EnhancedConstitution;
         private System.Windows.Forms.PictureBox EnhancedAgility;
         private System.Windows.Forms.PictureBox EnhancedStamina;
-        private System.Windows.Forms.Label TotalPointLabel;
-        private System.Windows.Forms.CheckBox add;
-        private System.Windows.Forms.CheckBox remove;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox StrengthPoints;
-        private System.Windows.Forms.PictureBox con1;
-        private System.Windows.Forms.PictureBox agility1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label AvailablePoints;
+        private System.Windows.Forms.CheckBox AddPoints;
+        private System.Windows.Forms.CheckBox RemovePoints;
+        private System.Windows.Forms.Label AvailablePointsBase;
+        private System.Windows.Forms.Label AvailablePointsLabel;
+        private System.Windows.Forms.PictureBox EnhancedStrengthPoints;
+        private System.Windows.Forms.PictureBox EnhancedConstitutionPoints;
+        private System.Windows.Forms.PictureBox EnhancedAgilityPoints;
+        private System.Windows.Forms.Label RequiredLevelLabel;
         private System.Windows.Forms.Label levelOutput;
-        private System.Windows.Forms.PictureBox stam1;
+        private System.Windows.Forms.PictureBox EnhancedStaminaPoints;
         private System.Windows.Forms.PictureBox hs1;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;

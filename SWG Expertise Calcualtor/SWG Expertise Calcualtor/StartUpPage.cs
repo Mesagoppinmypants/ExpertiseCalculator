@@ -15,16 +15,22 @@ namespace SWG_Expertise_Calcualtor
         public StartUpPage()
         {
             InitializeComponent();
-            comboBox1.SelectedIndex = 0;
+            ProfessionSelection.SelectedIndex = 0;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == 1)
+            if (ProfessionSelection.SelectedIndex == 1)
             {
                 Jedi jedi = new Jedi();
                 jedi.Show();
                 Visible = false;
+            }
+
+            if (ProfessionSelection.SelectedIndex == 2)
+            {
+                ProfessionSelection.SelectedIndex = 0;
+                MessageBox.Show("Sorry, the Bounty Hunter expertise tree isn't implemented yet.");
             }
         }
 
