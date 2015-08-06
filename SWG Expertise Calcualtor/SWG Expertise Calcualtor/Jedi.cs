@@ -42,6 +42,7 @@ namespace SWG_Expertise_Calcualtor
 
         // Page Functions
 
+        // Makes sure that the required level is correct -- Finish this
         private void CheckLevel()
         {
             if (totalPoints >= 40)
@@ -55,6 +56,20 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        // Changes the backgrounds for each row when the user hits a certain amount of totalPoints -- Fix this
+        private void CheckSecondRowBackgrounds()
+        {
+            if (totalPoints <= 40)
+            {
+                HeightenedSpeedBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                HeightenedSpeedBackground.Image = Properties.Resources.iSkillBox;
+            }
+        }
+
+        // Makes sure that either add/remove points checkbox is checked
         private void AddPoints_CheckedChanged(object sender, EventArgs e)
         {
             if (AddPoints.Checked == true)
@@ -349,7 +364,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void HeightenedSpeed_MouseLeave(object sender, EventArgs e)
         {
-            if (totalPoints < 40)
+            if (totalPoints <= 40)
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.aSkillBox;
             }
@@ -361,7 +376,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void HeightenedSpeed_MouseHover(object sender, EventArgs e)
         {
-            if (totalPoints < 40)
+            if (totalPoints <= 40)
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.aSkillBoxGreen;
             }
@@ -373,7 +388,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void HeightenedSpeed_MouseMove(object sender, MouseEventArgs e)
         {
-            if (totalPoints < 40)
+            if (totalPoints <= 40)
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.aSkillBoxGreen;
             }
