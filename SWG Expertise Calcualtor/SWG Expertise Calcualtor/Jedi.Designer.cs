@@ -199,7 +199,7 @@
             this.AddPoints.TabIndex = 23;
             this.AddPoints.Text = "Add Points";
             this.AddPoints.UseVisualStyleBackColor = true;
-            this.AddPoints.CheckedChanged += new System.EventHandler(this.add_CheckedChanged);
+            this.AddPoints.CheckedChanged += new System.EventHandler(this.AddPoints_CheckedChanged);
             // 
             // RemovePoints
             // 
@@ -212,7 +212,7 @@
             this.RemovePoints.TabIndex = 24;
             this.RemovePoints.Text = "Remove Points";
             this.RemovePoints.UseVisualStyleBackColor = true;
-            this.RemovePoints.CheckedChanged += new System.EventHandler(this.remove_CheckedChanged);
+            this.RemovePoints.CheckedChanged += new System.EventHandler(this.RemovePoints_CheckedChanged);
             // 
             // AvailablePointsBase
             // 
@@ -799,10 +799,10 @@
             this.EnhancedConstitution.Size = new System.Drawing.Size(42, 42);
             this.EnhancedConstitution.TabIndex = 19;
             this.EnhancedConstitution.TabStop = false;
-            this.EnhancedConstitution.Click += new System.EventHandler(this.congrayed_Click);
-            this.EnhancedConstitution.MouseLeave += new System.EventHandler(this.congrayed_MouseLeave);
-            this.EnhancedConstitution.MouseHover += new System.EventHandler(this.congrayed_MouseHover);
-            this.EnhancedConstitution.MouseMove += new System.Windows.Forms.MouseEventHandler(this.congrayed_MouseMove);
+            this.EnhancedConstitution.Click += new System.EventHandler(this.EnhancedConstitution_Click);
+            this.EnhancedConstitution.MouseLeave += new System.EventHandler(this.EnhancedConstitution_MouseLeave);
+            this.EnhancedConstitution.MouseHover += new System.EventHandler(this.EnhancedConstitution_MouseHover);
+            this.EnhancedConstitution.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedConstitution_MouseMove);
             // 
             // EnhancedStrength
             // 
@@ -813,7 +813,7 @@
             this.EnhancedStrength.TabIndex = 18;
             this.EnhancedStrength.TabStop = false;
             this.EnhancedStrength.Click += new System.EventHandler(this.EnhancedStrength_Click);
-            this.EnhancedStrength.MouseLeave += new System.EventHandler(this.strengthgrayed_MouseLeave);
+            this.EnhancedStrength.MouseLeave += new System.EventHandler(this.EnhancedStrength_MouseLeave);
             this.EnhancedStrength.MouseHover += new System.EventHandler(this.EnhancedStrength_MouseHover);
             this.EnhancedStrength.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedStrength_MouseMove);
             // 

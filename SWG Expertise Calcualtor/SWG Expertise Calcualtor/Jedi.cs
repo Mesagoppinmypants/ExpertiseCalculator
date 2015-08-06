@@ -60,19 +60,7 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            AddPoints.Checked = false;
-            RemovePoints.Checked = true;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            AddPoints.Checked = true;
-            RemovePoints.Checked = false;
-        }
-
-        private void add_CheckedChanged(object sender, EventArgs e)
+        private void AddPoints_CheckedChanged(object sender, EventArgs e)
         {
             if (AddPoints.Checked == true)
             {
@@ -80,7 +68,7 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
-        private void remove_CheckedChanged(object sender, EventArgs e)
+        private void RemovePoints_CheckedChanged(object sender, EventArgs e)
         {
             if (RemovePoints.Checked == true)
             {
@@ -100,12 +88,7 @@ namespace SWG_Expertise_Calcualtor
             EnhancedStrengthBackground.Image = Properties.Resources.aSkillBoxGreen;
         }
 
-        private void strength_MouseLeave(object sender, EventArgs e)
-        {
-            EnhancedStrengthBackground.Visible = true;
-        }
-
-        private void strengthgrayed_MouseLeave(object sender, EventArgs e)
+        private void EnhancedStrength_MouseLeave(object sender, EventArgs e)
         {
             EnhancedStrengthBackground.Image = Properties.Resources.aSkillBox;
         }
@@ -154,103 +137,8 @@ namespace SWG_Expertise_Calcualtor
             AvailablePoints.Text = totalPoints.ToString();
         }
 
-        
-
-        private void strength_Click(object sender, EventArgs e)
-        {
-            if (RemovePoints.Checked == true && strpoints <= 2 && strpoints > 0)
-            {
-                totalPoints++;
-                strpoints--;
-            }
-
-            if (AddPoints.Checked == true && totalPoints > 0 && strpoints >= 0 && strpoints < 2)
-            {
-                totalPoints--;
-                strpoints++;
-            }
-
-            if (strpoints >= 1)
-            {
-                EnhancedStrength.Visible = false;
-            }
-
-            if (strpoints == 0)
-            {
-                EnhancedStrength.Visible = true;
-                EnhancedStrengthPoints.Visible = false;
-            }
-
-            if (strpoints == 1)
-            {
-                EnhancedStrengthPoints.Visible = true;
-            }
-
-            if (strpoints == 2)
-            {
-                EnhancedStrengthPoints.Visible = false;
-            }
-
-            AvailablePoints.Text = totalPoints.ToString();
-        }
-
-        
-
         // Enhanced Constitution    
-        private void congrayed_Click(object sender, EventArgs e)
-        {
-            if (RemovePoints.Checked == true && strpoints <= 2 && strpoints > 0)
-            {
-                totalPoints++;
-                strpoints--;
-            }
-
-            if (AddPoints.Checked == true && totalPoints > 0 && strpoints >= 0 && strpoints < 2)
-            {
-                totalPoints--;
-                strpoints++;
-            }
-
-            if (strpoints >= 1)
-            {
-                EnhancedStrengthPoints.Visible = true;
-                EnhancedStrength.Image = Properties.Resources.aEnhancedStrength;
-            }
-
-            if (strpoints == 1)
-            {
-                EnhancedStrengthPoints.Image = Properties.Resources.skillpoints1;
-            }
-
-            if (strpoints == 2)
-            {
-                EnhancedStrengthPoints.Image = Properties.Resources.skillpoints2;
-            }
-
-            if (strpoints == 0)
-            {
-                EnhancedStrength.Image = Properties.Resources.iEnhancedStrength;
-                EnhancedStrengthPoints.Visible = false;
-            }
-
-            AvailablePoints.Text = totalPoints.ToString();
-        }
-
-        private void congrayed_MouseHover(object sender, EventArgs e)
-        {
-        }
-
-        private void congrayed_MouseMove(object sender, MouseEventArgs e)
-        {
-        }
-
-        private void congrayed_MouseLeave(object sender, EventArgs e)
-        {
-        }
-
-        
-
-        private void con_Click(object sender, EventArgs e)
+        private void EnhancedConstitution_Click(object sender, EventArgs e)
         {
             if (RemovePoints.Checked == true && conpoints <= 2 && conpoints > 0)
             {
@@ -266,41 +154,42 @@ namespace SWG_Expertise_Calcualtor
 
             if (conpoints >= 1)
             {
-                EnhancedConstitution.Visible = false;
-            }
-
-            if (conpoints == 0)
-            {
-                EnhancedConstitution.Visible = true;
-                EnhancedConstitutionPoints.Visible = false;
+                EnhancedConstitutionPoints.Visible = true;
+                EnhancedConstitution.Image = Properties.Resources.aEnhancedConstitution;
             }
 
             if (conpoints == 1)
             {
-                EnhancedConstitutionPoints.Visible = true;
+                EnhancedConstitutionPoints.Image = Properties.Resources.skillpoints1;
             }
 
             if (conpoints == 2)
             {
+                EnhancedConstitutionPoints.Image = Properties.Resources.skillpoints2;
+            }
+
+            if (conpoints == 0)
+            {
+                EnhancedConstitution.Image = Properties.Resources.iEnhancedConstitution;
                 EnhancedConstitutionPoints.Visible = false;
             }
 
             AvailablePoints.Text = totalPoints.ToString();
         }
 
-        private void con_MouseHover(object sender, EventArgs e)
+        private void EnhancedConstitution_MouseHover(object sender, EventArgs e)
         {
-            EnhancedConstitutionBackground.Visible = false;
+            EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBoxGreen;
         }
 
-        private void con_MouseMove(object sender, MouseEventArgs e)
+        private void EnhancedConstitution_MouseMove(object sender, MouseEventArgs e)
         {
-            EnhancedConstitutionBackground.Visible = false;
+            EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBoxGreen;
         }
 
-        private void con_MouseLeave(object sender, EventArgs e)
+        private void EnhancedConstitution_MouseLeave(object sender, EventArgs e)
         {
-            EnhancedConstitutionBackground.Visible = true;
+            EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBox;
         }
 
         // Enhanced Agility
