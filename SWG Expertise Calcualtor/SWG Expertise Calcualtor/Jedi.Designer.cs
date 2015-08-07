@@ -1185,7 +1185,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jedi";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Jedi_FormClosing);
-            this.Load += new System.EventHandler(this.Jedi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PreviewSkillPictureBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikes)).EndInit();

@@ -22,6 +22,14 @@ namespace SWG_Expertise_Calcualtor
 
         public int totalPoints = 45;
 
+        // Mouse Hover Status
+        // First Row
+        public bool EnhancedStrengthHover = false;
+        public bool EnhancedConstitutionHover = false;
+        public bool EnhancedAgilityHover = false;
+        public bool EnhancedStaminaHover = false;
+
+        // Skill Points
         // First Row
         public int strpoints = 0;
         public int conpoints = 0;
@@ -284,6 +292,46 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        // Changes the background for each skill if they are hovered.
+        private void CheckBackgroundsHover()
+        {
+            if (EnhancedStrengthHover == true)
+            {
+                EnhancedStrengthBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                EnhancedStrengthBackground.Image = Properties.Resources.aSkillBox;
+            }
+
+            if (EnhancedConstitutionHover == true)
+            {
+                EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBox;
+            }
+
+            if (EnhancedAgilityHover == true)
+            {
+                EnhancedAgilityBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                EnhancedAgilityBackground.Image = Properties.Resources.aSkillBox;
+            }
+
+            if (EnhancedStaminaHover == true)
+            {
+                EnhancedStaminaBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBox;
+            }
+        }
+
         // Makes sure that either add/remove points checkbox is checked
         private void AddPoints_CheckedChanged(object sender, EventArgs e)
         {
@@ -302,26 +350,6 @@ namespace SWG_Expertise_Calcualtor
         }
 
         // Enhanced Strength
-
-        private void EnhancedStrength_MouseMove(object sender, MouseEventArgs e)
-        {
-            EnhancedStrengthBackground.Image = Properties.Resources.aSkillBoxGreen;
-        }
-
-        private void EnhancedStrength_MouseHover(object sender, EventArgs e)
-        {
-            EnhancedStrengthBackground.Image = Properties.Resources.aSkillBoxGreen;
-        }
-
-        private void EnhancedStrength_MouseLeave(object sender, EventArgs e)
-        {
-            EnhancedStrengthBackground.Image = Properties.Resources.aSkillBox;
-        }
-
-        private void Jedi_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void EnhancedStrength_Click(object sender, EventArgs e)
         {
@@ -361,6 +389,24 @@ namespace SWG_Expertise_Calcualtor
 
             AvailablePoints.Text = totalPoints.ToString();
             CheckFunctions();
+        }
+
+        private void EnhancedStrength_MouseMove(object sender, MouseEventArgs e)
+        {
+            EnhancedStrengthHover = true;
+            CheckBackgroundsHover();
+        }
+
+        private void EnhancedStrength_MouseHover(object sender, EventArgs e)
+        {
+            EnhancedStrengthHover = true;
+            CheckBackgroundsHover();
+        }
+
+        private void EnhancedStrength_MouseLeave(object sender, EventArgs e)
+        {
+            EnhancedStrengthHover = false;
+            CheckBackgroundsHover();
         }
 
         // Enhanced Constitution    
@@ -406,17 +452,20 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedConstitution_MouseHover(object sender, EventArgs e)
         {
-            EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBoxGreen;
+            EnhancedConstitutionHover = true;
+            CheckBackgroundsHover();
         }
 
         private void EnhancedConstitution_MouseMove(object sender, MouseEventArgs e)
         {
-            EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBoxGreen;
+            EnhancedConstitutionHover = true;
+            CheckBackgroundsHover();
         }
 
         private void EnhancedConstitution_MouseLeave(object sender, EventArgs e)
         {
-            EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBox;
+            EnhancedConstitutionHover = false;
+            CheckBackgroundsHover();
         }
 
         // Enhanced Agility
@@ -462,17 +511,20 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedAgility_MouseHover(object sender, EventArgs e)
         {
-            EnhancedAgilityBackground.Image = Properties.Resources.aSkillBoxGreen;
+            EnhancedAgilityHover = true;
+            CheckBackgroundsHover();
         }
 
         private void EnhancedAgility_MouseMove(object sender, MouseEventArgs e)
         {
-            EnhancedAgilityBackground.Image = Properties.Resources.aSkillBoxGreen;
+            EnhancedAgilityHover = true;
+            CheckBackgroundsHover();
         }
 
         private void EnhancedAgility_MouseLeave(object sender, EventArgs e)
         {
-            EnhancedAgilityBackground.Image = Properties.Resources.aSkillBox;
+            EnhancedAgilityHover = false;
+            CheckBackgroundsHover();
         }
 
         // Enhanced Stamina
@@ -518,17 +570,20 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStamina_MouseHover(object sender, EventArgs e)
         {
-            EnhancedStaminaBackground.Image = Properties.Resources.aSkillBoxGreen;
+            EnhancedStaminaHover = true;
+            CheckBackgroundsHover();
         }
 
         private void EnhancedStamina_MouseMove(object sender, MouseEventArgs e)
         {
-            EnhancedStaminaBackground.Image = Properties.Resources.aSkillBoxGreen;
+            EnhancedStaminaHover = true;
+            CheckBackgroundsHover();
         }
 
         private void EnhancedStamina_MouseLeave(object sender, EventArgs e)
         {
-            EnhancedStaminaBackground.Image = Properties.Resources.aSkillBox;
+            EnhancedStaminaHover = false;
+            CheckBackgroundsHover();
         }
 
         // Heightened Speed
