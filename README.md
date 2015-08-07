@@ -3,18 +3,8 @@
 Started by Iosnowore Kun
 Made for ProjectSWG
 
-This is an NGE profession expertise calculator made for Windows.
+For now it's just me making this but anyone is allowed to make changes and create a pull request.
+
+This is an NGE profession expertise calculator made for Windows that won't require internet.
 
 http://www.oekevo.org/expertisecalculator
-
-Developer Notes:
-
-Available To Spec:
-aSkillBox = 1
-aSkillBoxGreen = 2
-aSkillBoxRed = 3
-
-Not Available to Spec:
-iSkillBox = 4
-iSkillBoxGreen = 5
-iSkillBoxRed = 6
