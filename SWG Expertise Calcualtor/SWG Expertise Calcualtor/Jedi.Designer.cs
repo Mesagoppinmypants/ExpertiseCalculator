@@ -82,7 +82,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.ImprovedCripplingAccuracy = new System.Windows.Forms.PictureBox();
             this.sw1 = new System.Windows.Forms.PictureBox();
-            this.SecondWind = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.Alacrity = new System.Windows.Forms.PictureBox();
@@ -163,7 +162,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sw1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).BeginInit();
@@ -720,14 +718,6 @@
             this.sw1.TabStop = false;
             this.sw1.Visible = false;
             // 
-            // SecondWind
-            // 
-            this.SecondWind.Location = new System.Drawing.Point(0, 0);
-            this.SecondWind.Name = "SecondWind";
-            this.SecondWind.Size = new System.Drawing.Size(100, 50);
-            this.SecondWind.TabIndex = 185;
-            this.SecondWind.TabStop = false;
-            // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
@@ -1160,7 +1150,6 @@
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.sw1);
-            this.Controls.Add(this.SecondWind);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.Alacrity);
@@ -1242,7 +1231,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sw1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).EndInit();
@@ -1303,7 +1291,6 @@
         private System.Windows.Forms.PictureBox Alacrity;
         private System.Windows.Forms.PictureBox ImprovedForceThrow;
         private System.Windows.Forms.PictureBox sw1;
-        private System.Windows.Forms.PictureBox SecondWind;
         private System.Windows.Forms.PictureBox HeightenedSpeedBackground;
         private System.Windows.Forms.Button ResetButton;
         private System.Windows.Forms.Button SaveButton;
