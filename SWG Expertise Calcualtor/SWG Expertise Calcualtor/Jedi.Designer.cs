@@ -320,6 +320,10 @@
             this.ExactingStrikes.Size = new System.Drawing.Size(42, 42);
             this.ExactingStrikes.TabIndex = 51;
             this.ExactingStrikes.TabStop = false;
+            this.ExactingStrikes.Click += new System.EventHandler(this.ExactingStrikes_Click);
+            this.ExactingStrikes.MouseLeave += new System.EventHandler(this.ExactingStrikes_MouseLeave);
+            this.ExactingStrikes.MouseHover += new System.EventHandler(this.ExactingStrikes_MouseHover);
+            this.ExactingStrikes.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ExactingStrikes_MouseMove);
             // 
             // pictureBox18
             // 
@@ -718,16 +722,11 @@
             // 
             // SecondWind
             // 
-            this.SecondWind.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSecondWind;
-            this.SecondWind.Location = new System.Drawing.Point(441, 287);
+            this.SecondWind.Location = new System.Drawing.Point(0, 0);
             this.SecondWind.Name = "SecondWind";
-            this.SecondWind.Size = new System.Drawing.Size(42, 42);
-            this.SecondWind.TabIndex = 66;
+            this.SecondWind.Size = new System.Drawing.Size(100, 50);
+            this.SecondWind.TabIndex = 185;
             this.SecondWind.TabStop = false;
-            this.SecondWind.Click += new System.EventHandler(this.windgrayed_Click);
-            this.SecondWind.MouseLeave += new System.EventHandler(this.windgrayed_MouseLeave);
-            this.SecondWind.MouseHover += new System.EventHandler(this.windgrayed_MouseHover);
-            this.SecondWind.MouseMove += new System.Windows.Forms.MouseEventHandler(this.windgrayed_MouseMove);
             // 
             // pictureBox7
             // 

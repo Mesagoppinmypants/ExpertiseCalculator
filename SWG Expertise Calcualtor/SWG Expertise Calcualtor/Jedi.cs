@@ -48,6 +48,17 @@ namespace SWG_Expertise_Calcualtor
             CheckBackgrounds();
         }
 
+        // Save Button and Reset Button Functions
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Testing the save button function. This button isn't implemented yet.");
+        }
+
+        private void ResetButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Testing the reset button function. This button isn't implemented yet.");
+        }
+
         // Makes sure that the required level is correct
         private void CheckLevel()
         {
@@ -604,123 +615,25 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
-        private void windgrayed_Click(object sender, EventArgs e)
-        {
-            if (RemovePoints.Checked == true && swpoints <= 2 && swpoints > 0)
-            {
-                totalPoints++;
-                swpoints--;
-            }
-
-            if (AddPoints.Checked == true && totalPoints > 0 && swpoints >= 0 && swpoints < 2 && hspoints == 4)
-            {
-                totalPoints--;
-                swpoints++;
-            }
-
-            if (swpoints >= 1)
-            {
-                SecondWind.Visible = false;
-            }
-
-            if (swpoints == 1)
-            {
-                sw1.Visible = true;
-            }
-
-            if (swpoints == 2)
-            {
-
-            }
-
-            if (swpoints == 0)
-            {
-                sw1.Visible = false;
-            }
-
-            AvailablePoints.Text = totalPoints.ToString();
-        }
-
-        private void wind_Click(object sender, EventArgs e)
-        {
-            if (RemovePoints.Checked == true && swpoints <= 2 && swpoints > 0 && totalPoints >= 40)
-            {
-                totalPoints++;
-                swpoints--;
-            }
-
-            if (AddPoints.Checked == true && totalPoints > 0 && swpoints >= 0 && swpoints < 2)
-            {
-                totalPoints--;
-                swpoints++;
-            }
-
-            if (swpoints >= 1)
-            {
-                SecondWind.Visible = false;
-            }
-
-            if (swpoints == 0)
-            {
-                SecondWind.Visible = true;
-                sw1.Visible = false;
-            }
-
-            if (swpoints == 1)
-            {
-
-            }
-
-            if (swpoints == 2)
-            {
-                sw1.Visible = false;
-            }
-
-            AvailablePoints.Text = totalPoints.ToString();
-        }
-
-        private void windgrayed_MouseHover(object sender, EventArgs e)
-        {
-            if (hspoints == 4)
-            {
-
-            }
-            else
-            {
-
-            }
-        }
-
-        private void windgrayed_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (hspoints == 4)
-            {
-
-            }
-            else
-            {
-
-            }
-        }
-
-        private void windgrayed_MouseLeave(object sender, EventArgs e)
+        // Exacting Strikes
+        private void ExactingStrikes_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void wind_MouseHover(object sender, EventArgs e)
+        private void ExactingStrikes_MouseHover(object sender, EventArgs e)
         {
 
         }
 
-        private void SaveButton_Click(object sender, EventArgs e)
+        private void ExactingStrikes_MouseMove(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("Testing the save button function. This button isn't implemented yet.");
+
         }
 
-        private void ResetButton_Click(object sender, EventArgs e)
+        private void ExactingStrikes_MouseLeave(object sender, EventArgs e)
         {
-            MessageBox.Show("Testing the reset button function. This button isn't implemented yet.");
-        }       
+
+        }
     }
 }
