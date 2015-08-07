@@ -30,6 +30,7 @@ namespace SWG_Expertise_Calcualtor
 
         // Second Row
         public int hspoints = 0;
+        public int espoints = 0;
 
         // Third Row
         public int swpoints = 0;
@@ -271,13 +272,15 @@ namespace SWG_Expertise_Calcualtor
         // Changes the backgrounds for each row when the user hits a certain amount of totalPoints -- Fix this
         private void CheckBackgrounds()
         {
-            if (totalPoints <= 40)
+            if (totalPoints <= 41)
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.aSkillBox;
+                ExactingStrikesBackground.Image = Properties.Resources.aSkillBox;
             }
             else
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.iSkillBox;
+                ExactingStrikesBackground.Image = Properties.Resources.iSkillBox;
             }
         }
 
@@ -581,7 +584,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void HeightenedSpeed_MouseLeave(object sender, EventArgs e)
         {
-            if (totalPoints <= 40)
+            if (totalPoints <= 41)
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.aSkillBox;
             }
@@ -593,7 +596,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void HeightenedSpeed_MouseHover(object sender, EventArgs e)
         {
-            if (totalPoints <= 40)
+            if (totalPoints <= 41)
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.aSkillBoxGreen;
             }
@@ -605,7 +608,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void HeightenedSpeed_MouseMove(object sender, MouseEventArgs e)
         {
-            if (totalPoints <= 40)
+            if (totalPoints <= 41)
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.aSkillBoxGreen;
             }
@@ -618,22 +621,88 @@ namespace SWG_Expertise_Calcualtor
         // Exacting Strikes
         private void ExactingStrikes_Click(object sender, EventArgs e)
         {
+            if (RemovePoints.Checked == true && espoints <= 4 && espoints > 0)
+            {
+                totalPoints++;
+                espoints--;
+            }
 
+            if (AddPoints.Checked == true && totalPoints > 0 && espoints >= 0 && espoints < 4)
+            {
+                totalPoints--;
+                espoints++;
+            }
+
+            if (espoints >= 1)
+            {
+                ExactingStrikesPoints.Visible = true;
+                ExactingStrikes.Image = Properties.Resources.aExactingStrikes;
+            }
+
+            if (espoints == 1)
+            {
+                ExactingStrikesPoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (espoints == 2)
+            {
+                ExactingStrikesPoints.Image = Properties.Resources.skillpoints2;
+            }
+
+            if (espoints == 3)
+            {
+                ExactingStrikesPoints.Image = Properties.Resources.skillpoints3;
+            }
+
+            if (espoints == 4)
+            {
+                ExactingStrikesPoints.Image = Properties.Resources.skillpoints4;
+            }
+
+            if (espoints == 0)
+            {
+                ExactingStrikes.Image = Properties.Resources.iExactingStrikes;
+                ExactingStrikesPoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            CheckFunctions();
         }
 
         private void ExactingStrikes_MouseHover(object sender, EventArgs e)
         {
-
+            if (totalPoints <= 41)
+            {
+                ExactingStrikesBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ExactingStrikesBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void ExactingStrikes_MouseMove(object sender, MouseEventArgs e)
         {
-
+            if (totalPoints <= 41)
+            {
+                ExactingStrikesBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ExactingStrikesBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void ExactingStrikes_MouseLeave(object sender, EventArgs e)
         {
-
+            if (totalPoints <= 41)
+            {
+                ExactingStrikesBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ExactingStrikesBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
     }
 }
