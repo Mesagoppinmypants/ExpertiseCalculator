@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TotalPointsService.cs" />
     <Compile Include="GuiController.cs" />
     <Compile Include="Jedi.cs">
       <SubType>Form</SubType>

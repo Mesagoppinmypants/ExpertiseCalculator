@@ -1125,7 +1125,7 @@
         private System.Windows.Forms.PictureBox EnhancedConstitutionPoints;
         private System.Windows.Forms.PictureBox EnhancedAgilityPoints;
         private System.Windows.Forms.Label RequiredLevelLabel;
-        private System.Windows.Forms.Label levelOutput;
+        public System.Windows.Forms.Label levelOutput;
         private System.Windows.Forms.PictureBox EnhancedStaminaPoints;
         private System.Windows.Forms.PictureBox HeightenedSpeedPoints;
         private System.Windows.Forms.PictureBox pictureBox6;
