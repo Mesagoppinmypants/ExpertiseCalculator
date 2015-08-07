@@ -520,13 +520,13 @@ namespace SWG_Expertise_Calcualtor
         // Heightened Speed
         private void HeightenedSpeed_Click(object sender, EventArgs e)
         {
-            if (RemovePoints.Checked == true && hspoints <= 2 && hspoints > 0)
+            if (RemovePoints.Checked == true && hspoints <= 4 && hspoints > 0)
             {
                 totalPoints++;
                 hspoints--;
             }
 
-            if (AddPoints.Checked == true && totalPoints > 0 && hspoints >= 0 && hspoints < 2)
+            if (AddPoints.Checked == true && totalPoints > 0 && hspoints >= 0 && hspoints < 4)
             {
                 totalPoints--;
                 hspoints++;
