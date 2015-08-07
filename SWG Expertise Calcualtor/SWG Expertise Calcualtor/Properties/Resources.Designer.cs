@@ -513,6 +513,16 @@ namespace SWG_Expertise_Calcualtor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SkillBox {
+            get {
+                object obj = ResourceManager.GetObject("SkillBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap skillpoints1 {
             get {
                 object obj = ResourceManager.GetObject("skillpoints1", resourceCulture);

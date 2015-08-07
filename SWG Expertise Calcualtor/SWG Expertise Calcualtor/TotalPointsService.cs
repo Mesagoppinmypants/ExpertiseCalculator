@@ -12,7 +12,7 @@ namespace SWG_Expertise_Calcualtor
         int totalPoints = 0;
         public void CheckLevel()
         {
-            if (totalPoints >= 40)
+/*            if (totalPoints >= 40)
             {
                 levelOutput.Text = "10";
             }
@@ -215,7 +215,7 @@ namespace SWG_Expertise_Calcualtor
             if (totalPoints == 0)
             {
                 levelOutput.Text = "90";
-            }
+            }*/
         }
     }
 }
