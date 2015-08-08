@@ -28,8 +28,30 @@ namespace SWG_Expertise_Calcualtor
         public bool EnhancedConstitutionHover = false;
         public bool EnhancedAgilityHover = false;
         public bool EnhancedStaminaHover = false;
+
+        // Second Row
         public bool HeightenedSpeedHover = false;
         public bool ExactingStrikesHover = false;
+        public bool AlacrityHover = false;
+        public bool ImprovedForceThrowHover = false;
+
+        // Third Row
+        public bool SecondWindHover = false;
+        public bool GraceInMotionHover = false;
+        public bool ForceCloakHover = false;
+        public bool PremonitionHover = false;
+        public bool ImprovedCripplingAccuracyHover = false;
+
+        // Fourth Row
+        public bool FidelityHover = false;
+        public bool ImprovedSaberBlockHover = false;
+        public bool DefensiveFightingHover = false;
+
+        // Fifth Row
+        public bool IncisivenessHover = false;
+        public bool ImprovedForceCloakHover = false;
+        public bool ImprovedForceShockwaveHover = false;
+        public bool ForceShockwaveHover = false;
 
         // Skill Points
         // First Row
@@ -41,9 +63,26 @@ namespace SWG_Expertise_Calcualtor
         // Second Row
         public int hspoints = 0;
         public int espoints = 0;
+        public int apoints = 0;
+        public int iftpoints = 0;
 
         // Third Row
         public int swpoints = 0;
+        public int gimpoints = 0;
+        public int fcpoints = 0;
+        public int ppoints = 0;
+        public int icapoints = 0;
+
+        // Fourth Row
+        public int fpoints = 0;
+        public int isbpoints = 0;
+        public int dfpoints = 0;
+
+        // Fifth Row
+        public int ipoints = 0;
+        public int ifcpoints = 0;
+        public int ifspoints = 0;
+        public int fspoints = 0;
 
         private void Jedi_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -282,18 +321,22 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
-        // Changes the backgrounds for each row when the user hits a certain amount of totalPoints -- Fix this
+        // Changes the backgrounds for each row when the user hits a certain amount of totalPoints -- Finish this for the other rows
         private void CheckBackgrounds()
         {
             if (totalPoints <= 41)
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.aSkillBox;
                 ExactingStrikesBackground.Image = Properties.Resources.aSkillBox;
+                AlacrityBackground.Image = Properties.Resources.aSkillBox;
+                ImprovedForceThrowBackground.Image = Properties.Resources.aSkillBox;
             }
             else
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.iSkillBox;
                 ExactingStrikesBackground.Image = Properties.Resources.iSkillBox;
+                AlacrityBackground.Image = Properties.Resources.iSkillBox;
+                ImprovedForceThrowBackground.Image = Properties.Resources.iSkillBox;
             }
         }
 
@@ -319,6 +362,15 @@ namespace SWG_Expertise_Calcualtor
                 {
                     Rank1Modifier.Visible = true;
                     Rank2Modifier.Visible = true;
+                }
+
+                // Rank 4 Modifiers
+                if (HeightenedSpeedHover || ExactingStrikesHover == true)
+                {
+                    Rank1Modifier.Visible = true;
+                    Rank2Modifier.Visible = true;
+                    Rank3Modifier.Visible = true;
+                    Rank4Modifier.Visible = true;
                 }
             }
         }
@@ -430,6 +482,84 @@ namespace SWG_Expertise_Calcualtor
                 if (stapoints == 2)
                 {
                     SkillRank.Text = "2/2";
+                }
+            }
+
+            // Heightened Speed
+            if (HeightenedSpeedHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aHeightenedSpeed;
+                SkillTitle.Text = "Heightened Speed";
+                SkillSummary.Text = "Force Run's speed is increased by 10% per point spent.";
+                SkillRequirements.Text = "4 Points In Jedi General";
+                SkillModifierTitle.Text = "FORCE RUN MOVEMENT";
+                Rank1Modifier.Text = "10";
+                Rank2Modifier.Text = "20";
+                Rank3Modifier.Text = "30";
+                Rank4Modifier.Text = "40";
+
+                if (hspoints == 0)
+                {
+                    SkillRank.Text = "0/4";
+                }
+
+                if (hspoints == 1)
+                {
+                    SkillRank.Text = "1/4";
+                }
+
+                if (hspoints == 2)
+                {
+                    SkillRank.Text = "2/4";
+                }
+
+                if (hspoints == 3)
+                {
+                    SkillRank.Text = "3/4";
+                }
+
+                if (hspoints == 4)
+                {
+                    SkillRank.Text = "4/4";
+                }
+            }
+
+            // Exacting Strikes
+            if (ExactingStrikesHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aExactingStrikes;
+                SkillTitle.Text = "Exacting Strikes";
+                SkillSummary.Text = "Fix this...";
+                SkillRequirements.Text = "4 Points In Jedi General";
+                SkillModifierTitle.Text = "Fix this...";
+                Rank1Modifier.Text = "10";
+                Rank2Modifier.Text = "20";
+                Rank3Modifier.Text = "30";
+                Rank4Modifier.Text = "40";
+
+                if (espoints == 0)
+                {
+                    SkillRank.Text = "0/4";
+                }
+
+                if (espoints == 1)
+                {
+                    SkillRank.Text = "1/4";
+                }
+
+                if (espoints == 2)
+                {
+                    SkillRank.Text = "2/4";
+                }
+
+                if (espoints == 3)
+                {
+                    SkillRank.Text = "3/4";
+                }
+
+                if (espoints == 4)
+                {
+                    SkillRank.Text = "4/4";
                 }
             }
         }
@@ -858,12 +988,35 @@ namespace SWG_Expertise_Calcualtor
                 HeightenedSpeedPoints.Visible = false;
             }
 
+            if (hspoints == 1 && HeightenedSpeedHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (hspoints == 2 && HeightenedSpeedHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            if (hspoints == 3 && HeightenedSpeedHover == true)
+            {
+                ThreeRankPoints();
+            }
+
+            if (hspoints == 4 && HeightenedSpeedHover == true)
+            {
+                FourRankPoints();
+            }
+
             AvailablePoints.Text = totalPoints.ToString();
             PageFunctions();
         }
 
         private void HeightenedSpeed_MouseLeave(object sender, EventArgs e)
         {
+
+            HeightenedSpeedHover = false;
+            PageFunctions();
             if (totalPoints <= 41)
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.aSkillBox;
@@ -876,6 +1029,8 @@ namespace SWG_Expertise_Calcualtor
 
         private void HeightenedSpeed_MouseHover(object sender, EventArgs e)
         {
+            HeightenedSpeedHover = true;
+            PageFunctions();
             if (totalPoints <= 41)
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -888,6 +1043,8 @@ namespace SWG_Expertise_Calcualtor
 
         private void HeightenedSpeed_MouseMove(object sender, MouseEventArgs e)
         {
+            HeightenedSpeedHover = true;
+            PageFunctions();
             if (totalPoints <= 41)
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -951,6 +1108,8 @@ namespace SWG_Expertise_Calcualtor
 
         private void ExactingStrikes_MouseHover(object sender, EventArgs e)
         {
+            ExactingStrikesHover = true;
+            PageFunctions();
             if (totalPoints <= 41)
             {
                 ExactingStrikesBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -963,6 +1122,8 @@ namespace SWG_Expertise_Calcualtor
 
         private void ExactingStrikes_MouseMove(object sender, MouseEventArgs e)
         {
+            ExactingStrikesHover = true;
+            PageFunctions();
             if (totalPoints <= 41)
             {
                 ExactingStrikesBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -975,6 +1136,8 @@ namespace SWG_Expertise_Calcualtor
 
         private void ExactingStrikes_MouseLeave(object sender, EventArgs e)
         {
+            ExactingStrikesHover = false;
+            PageFunctions();
             if (totalPoints <= 41)
             {
                 ExactingStrikesBackground.Image = Properties.Resources.aSkillBox;

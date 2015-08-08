@@ -81,9 +81,9 @@
             this.pictureBox52 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.ImprovedCripplingAccuracy = new System.Windows.Forms.PictureBox();
-            this.sw1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.SecondWindPoints = new System.Windows.Forms.PictureBox();
+            this.AlacrityPoints = new System.Windows.Forms.PictureBox();
+            this.ImprovedForceThrowPoints = new System.Windows.Forms.PictureBox();
             this.Alacrity = new System.Windows.Forms.PictureBox();
             this.ImprovedForceThrow = new System.Windows.Forms.PictureBox();
             this.EnhancedStaminaPoints = new System.Windows.Forms.PictureBox();
@@ -98,9 +98,9 @@
             this.EnhancedAgilityBackground = new System.Windows.Forms.PictureBox();
             this.EnhancedConstitutionBackground = new System.Windows.Forms.PictureBox();
             this.EnhancedStrengthBackground = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.SecondWindBackground = new System.Windows.Forms.PictureBox();
+            this.ImprovedForceThrowBackground = new System.Windows.Forms.PictureBox();
+            this.AlacrityBackground = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
@@ -119,6 +119,7 @@
             this.Rank2Modifier = new System.Windows.Forms.Label();
             this.Rank3Modifier = new System.Windows.Forms.Label();
             this.Rank4Modifier = new System.Windows.Forms.Label();
+            this.SecondWind = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.SkillPictureBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikes)).BeginInit();
@@ -163,9 +164,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sw1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWindPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlacrityPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaPoints)).BeginInit();
@@ -180,15 +181,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWindBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlacrityBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).BeginInit();
             this.SuspendLayout();
             // 
             // AvailablePoints
@@ -649,7 +651,7 @@
             // Premonition
             // 
             this.Premonition.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iPremonition;
-            this.Premonition.Location = new System.Drawing.Point(181, 287);
+            this.Premonition.Location = new System.Drawing.Point(179, 287);
             this.Premonition.Name = "Premonition";
             this.Premonition.Size = new System.Drawing.Size(42, 42);
             this.Premonition.TabIndex = 92;
@@ -704,41 +706,41 @@
             // ImprovedCripplingAccuracy
             // 
             this.ImprovedCripplingAccuracy.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedCripplingAccuracy;
-            this.ImprovedCripplingAccuracy.Location = new System.Drawing.Point(91, 287);
+            this.ImprovedCripplingAccuracy.Location = new System.Drawing.Point(90, 287);
             this.ImprovedCripplingAccuracy.Name = "ImprovedCripplingAccuracy";
             this.ImprovedCripplingAccuracy.Size = new System.Drawing.Size(42, 42);
             this.ImprovedCripplingAccuracy.TabIndex = 80;
             this.ImprovedCripplingAccuracy.TabStop = false;
             // 
-            // sw1
+            // SecondWindPoints
             // 
-            this.sw1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.sw1.Location = new System.Drawing.Point(483, 328);
-            this.sw1.Name = "sw1";
-            this.sw1.Size = new System.Drawing.Size(25, 24);
-            this.sw1.TabIndex = 68;
-            this.sw1.TabStop = false;
-            this.sw1.Visible = false;
+            this.SecondWindPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.SecondWindPoints.Location = new System.Drawing.Point(483, 328);
+            this.SecondWindPoints.Name = "SecondWindPoints";
+            this.SecondWindPoints.Size = new System.Drawing.Size(25, 24);
+            this.SecondWindPoints.TabIndex = 68;
+            this.SecondWindPoints.TabStop = false;
+            this.SecondWindPoints.Visible = false;
             // 
-            // pictureBox7
+            // AlacrityPoints
             // 
-            this.pictureBox7.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox7.Location = new System.Drawing.Point(308, 242);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox7.TabIndex = 56;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Visible = false;
+            this.AlacrityPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.AlacrityPoints.Location = new System.Drawing.Point(308, 242);
+            this.AlacrityPoints.Name = "AlacrityPoints";
+            this.AlacrityPoints.Size = new System.Drawing.Size(25, 24);
+            this.AlacrityPoints.TabIndex = 56;
+            this.AlacrityPoints.TabStop = false;
+            this.AlacrityPoints.Visible = false;
             // 
-            // pictureBox10
+            // ImprovedForceThrowPoints
             // 
-            this.pictureBox10.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.pictureBox10.Location = new System.Drawing.Point(134, 242);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(25, 24);
-            this.pictureBox10.TabIndex = 53;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Visible = false;
+            this.ImprovedForceThrowPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.ImprovedForceThrowPoints.Location = new System.Drawing.Point(134, 242);
+            this.ImprovedForceThrowPoints.Name = "ImprovedForceThrowPoints";
+            this.ImprovedForceThrowPoints.Size = new System.Drawing.Size(25, 24);
+            this.ImprovedForceThrowPoints.TabIndex = 53;
+            this.ImprovedForceThrowPoints.TabStop = false;
+            this.ImprovedForceThrowPoints.Visible = false;
             // 
             // Alacrity
             // 
@@ -886,32 +888,32 @@
             this.EnhancedStrengthBackground.TabIndex = 0;
             this.EnhancedStrengthBackground.TabStop = false;
             // 
-            // pictureBox14
+            // SecondWindBackground
             // 
-            this.pictureBox14.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox14.Location = new System.Drawing.Point(419, 264);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox14.TabIndex = 144;
-            this.pictureBox14.TabStop = false;
+            this.SecondWindBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            this.SecondWindBackground.Location = new System.Drawing.Point(419, 264);
+            this.SecondWindBackground.Name = "SecondWindBackground";
+            this.SecondWindBackground.Size = new System.Drawing.Size(89, 88);
+            this.SecondWindBackground.TabIndex = 144;
+            this.SecondWindBackground.TabStop = false;
             // 
-            // pictureBox15
+            // ImprovedForceThrowBackground
             // 
-            this.pictureBox15.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox15.Location = new System.Drawing.Point(71, 178);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox15.TabIndex = 145;
-            this.pictureBox15.TabStop = false;
+            this.ImprovedForceThrowBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            this.ImprovedForceThrowBackground.Location = new System.Drawing.Point(71, 178);
+            this.ImprovedForceThrowBackground.Name = "ImprovedForceThrowBackground";
+            this.ImprovedForceThrowBackground.Size = new System.Drawing.Size(89, 88);
+            this.ImprovedForceThrowBackground.TabIndex = 145;
+            this.ImprovedForceThrowBackground.TabStop = false;
             // 
-            // pictureBox9
+            // AlacrityBackground
             // 
-            this.pictureBox9.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.pictureBox9.Location = new System.Drawing.Point(244, 178);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox9.TabIndex = 148;
-            this.pictureBox9.TabStop = false;
+            this.AlacrityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            this.AlacrityBackground.Location = new System.Drawing.Point(244, 178);
+            this.AlacrityBackground.Name = "AlacrityBackground";
+            this.AlacrityBackground.Size = new System.Drawing.Size(89, 88);
+            this.AlacrityBackground.TabIndex = 148;
+            this.AlacrityBackground.TabStop = false;
             // 
             // pictureBox8
             // 
@@ -1112,12 +1114,22 @@
             this.Rank4Modifier.Text = "100";
             this.Rank4Modifier.Visible = false;
             // 
+            // SecondWind
+            // 
+            this.SecondWind.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSecondWind;
+            this.SecondWind.Location = new System.Drawing.Point(442, 287);
+            this.SecondWind.Name = "SecondWind";
+            this.SecondWind.Size = new System.Drawing.Size(42, 42);
+            this.SecondWind.TabIndex = 187;
+            this.SecondWind.TabStop = false;
+            // 
             // Jedi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(984, 696);
+            this.Controls.Add(this.SecondWind);
             this.Controls.Add(this.Rank4Modifier);
             this.Controls.Add(this.Rank3Modifier);
             this.Controls.Add(this.Rank2Modifier);
@@ -1177,9 +1189,9 @@
             this.Controls.Add(this.ImprovedCripplingAccuracy);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.ResetButton);
-            this.Controls.Add(this.sw1);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.SecondWindPoints);
+            this.Controls.Add(this.AlacrityPoints);
+            this.Controls.Add(this.ImprovedForceThrowPoints);
             this.Controls.Add(this.Alacrity);
             this.Controls.Add(this.ImprovedForceThrow);
             this.Controls.Add(this.EnhancedStaminaPoints);
@@ -1201,9 +1213,9 @@
             this.Controls.Add(this.EnhancedAgilityBackground);
             this.Controls.Add(this.EnhancedConstitutionBackground);
             this.Controls.Add(this.EnhancedStrengthBackground);
-            this.Controls.Add(this.pictureBox14);
-            this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.SecondWindBackground);
+            this.Controls.Add(this.ImprovedForceThrowBackground);
+            this.Controls.Add(this.AlacrityBackground);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox19);
@@ -1257,9 +1269,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sw1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWindPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlacrityPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaPoints)).EndInit();
@@ -1274,15 +1286,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWindBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlacrityBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1311,13 +1324,13 @@
         private System.Windows.Forms.PictureBox EnhancedStaminaPoints;
         private System.Windows.Forms.PictureBox HeightenedSpeedPoints;
         private System.Windows.Forms.PictureBox ExactingStrikesPoints;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox AlacrityPoints;
+        private System.Windows.Forms.PictureBox ImprovedForceThrowPoints;
         private System.Windows.Forms.PictureBox HeightenedSpeed;
         private System.Windows.Forms.PictureBox ExactingStrikes;
         private System.Windows.Forms.PictureBox Alacrity;
         private System.Windows.Forms.PictureBox ImprovedForceThrow;
-        private System.Windows.Forms.PictureBox sw1;
+        private System.Windows.Forms.PictureBox SecondWindPoints;
         private System.Windows.Forms.PictureBox HeightenedSpeedBackground;
         private System.Windows.Forms.Button ResetButton;
         private System.Windows.Forms.Button SaveButton;
@@ -1343,11 +1356,11 @@
         private System.Windows.Forms.PictureBox pictureBox76;
         private System.Windows.Forms.PictureBox pictureBox78;
         private System.Windows.Forms.PictureBox DefensiveFighting;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox SecondWindBackground;
+        private System.Windows.Forms.PictureBox ImprovedForceThrowBackground;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox AlacrityBackground;
         private System.Windows.Forms.PictureBox ExactingStrikesBackground;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox20;
@@ -1381,5 +1394,6 @@
         private System.Windows.Forms.Label Rank2Modifier;
         private System.Windows.Forms.Label Rank3Modifier;
         private System.Windows.Forms.Label Rank4Modifier;
+        private System.Windows.Forms.PictureBox SecondWind;
     }
 }
