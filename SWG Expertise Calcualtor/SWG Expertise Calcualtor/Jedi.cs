@@ -53,10 +53,13 @@ namespace SWG_Expertise_Calcualtor
 
         // Page Functions
 
-        private void CheckFunctions()
+        private void PageFunctions()
         {
             CheckLevel();
             CheckBackgrounds();
+            CheckBackgroundsHover();
+            SkillDescriptionVisiblity();
+            SkillDescription();
         }
 
         // Save Button and Reset Button Functions
@@ -318,10 +321,11 @@ namespace SWG_Expertise_Calcualtor
                     Rank2Modifier.Visible = true;
                 }
             }
-        }           
+        }
 
         private void SkillDescription()
         {
+            // Enhanced Strength
             if (EnhancedStrengthHover == true)
             {
                 SkillPicture.Image = Properties.Resources.aEnhancedStrength;
@@ -344,9 +348,129 @@ namespace SWG_Expertise_Calcualtor
 
                 if (strpoints == 2)
                 {
-                    SkillRank.Text = "1/2";
+                    SkillRank.Text = "2/2";
                 }
             }
+
+            // Enhanced Constitution
+            if (EnhancedConstitutionHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aEnhancedConstitution;
+                SkillTitle.Text = "Enhanced Constitution";
+                SkillSummary.Text = "Constitution increased by 25 points per point spent.";
+                SkillRequirements.Text = "None";
+                SkillModifierTitle.Text = "CONSTITUTION";
+                Rank1Modifier.Text = "25";
+                Rank2Modifier.Text = "50";
+
+                if (conpoints == 0)
+                {
+                    SkillRank.Text = "0/2";
+                }
+
+                if (conpoints == 1)
+                {
+                    SkillRank.Text = "1/2";
+                }
+
+                if (conpoints == 2)
+                {
+                    SkillRank.Text = "2/2";
+                }
+            }
+
+            // Enhanced Agility
+            if (EnhancedAgilityHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aEnhancedAgility;
+                SkillTitle.Text = "Enhanced Agility";
+                SkillSummary.Text = "Agility increased by 25 points per point spent.";
+                SkillRequirements.Text = "None";
+                SkillModifierTitle.Text = "AGILITY";
+                Rank1Modifier.Text = "25";
+                Rank2Modifier.Text = "50";
+
+                if (agipoints == 0)
+                {
+                    SkillRank.Text = "0/2";
+                }
+
+                if (agipoints == 1)
+                {
+                    SkillRank.Text = "1/2";
+                }
+
+                if (agipoints == 2)
+                {
+                    SkillRank.Text = "2/2";
+                }
+            }
+
+            // Enhanced Stamina
+            if (EnhancedStaminaHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aEnhancedStamina;
+                SkillTitle.Text = "Enhanced Stamina";
+                SkillSummary.Text = "Stamina increased by 25 points per point spent.";
+                SkillRequirements.Text = "None";
+                SkillModifierTitle.Text = "STAMINA";
+                Rank1Modifier.Text = "25";
+                Rank2Modifier.Text = "50";
+
+                if (stapoints == 0)
+                {
+                    SkillRank.Text = "0/2";
+                }
+
+                if (stapoints == 1)
+                {
+                    SkillRank.Text = "1/2";
+                }
+
+                if (stapoints == 2)
+                {
+                    SkillRank.Text = "2/2";
+                }
+            }
+        }
+
+        private void OneRankPoints()
+        {
+            Rank1Modifier.BackColor = Color.LightGray;
+        }
+
+        private void TwoRankPoints()
+        {
+            Rank1Modifier.BackColor = Color.LightGray;
+            Rank2Modifier.BackColor = Color.LightGray;
+        }
+
+        private void ThreeRankPoints()
+        {
+            Rank1Modifier.BackColor = Color.LightGray;
+            Rank2Modifier.BackColor = Color.LightGray;
+            Rank3Modifier.BackColor = Color.LightGray;
+        }
+
+        private void FourRankPoints()
+        {
+            Rank1Modifier.BackColor = Color.LightGray;
+            Rank2Modifier.BackColor = Color.LightGray;
+            Rank3Modifier.BackColor = Color.LightGray;
+            Rank4Modifier.BackColor = Color.LightGray;
+        }
+
+        private void ResetRankPoints()
+        {
+            Rank1Modifier.BackColor = Color.Transparent;
+            Rank2Modifier.BackColor = Color.Transparent;
+            Rank3Modifier.BackColor = Color.Transparent;
+            Rank4Modifier.BackColor = Color.Transparent;
+        }
+
+        private void ResetSkillRank()
+        {
+
         }
 
         // Changes the background for each skill if they are hovered.
@@ -448,45 +572,34 @@ namespace SWG_Expertise_Calcualtor
 
             if (strpoints == 1 && EnhancedStrengthHover == true)
             {
-                Rank1Modifier.BackColor = Color.LightGray;
+                OneRankPoints();
             }
 
             if (strpoints == 2 && EnhancedStrengthHover == true)
             {
-                Rank1Modifier.BackColor = Color.LightGray;
-                Rank2Modifier.BackColor = Color.LightGray;
-            }
-
-            if (EnhancedStrengthHover == false)
-            {
-                Rank1Modifier.BackColor = Color.Transparent;
-                Rank2Modifier.BackColor = Color.Transparent;
-            }
+                TwoRankPoints();
+            } 
 
             AvailablePoints.Text = totalPoints.ToString();
-            CheckFunctions();
+            PageFunctions();
         }
 
         private void EnhancedStrength_MouseMove(object sender, MouseEventArgs e)
         {
             EnhancedStrengthHover = true;
-            CheckBackgroundsHover();
-            SkillDescriptionVisiblity();
-            SkillDescription();
+            PageFunctions();
         }
 
         private void EnhancedStrength_MouseHover(object sender, EventArgs e)
         {
             EnhancedStrengthHover = true;
-            CheckBackgroundsHover();
-            SkillDescriptionVisiblity();
-            SkillDescription();
+            PageFunctions();
         }
 
         private void EnhancedStrength_MouseLeave(object sender, EventArgs e)
         {
             EnhancedStrengthHover = false;
-            CheckBackgroundsHover();
+            PageFunctions();
         }
 
         // Enhanced Constitution    
@@ -513,6 +626,7 @@ namespace SWG_Expertise_Calcualtor
             if (conpoints == 1)
             {
                 EnhancedConstitutionPoints.Image = Properties.Resources.skillpoints1;
+                Rank2Modifier.BackColor = Color.Transparent;
             }
 
             if (conpoints == 2)
@@ -524,28 +638,39 @@ namespace SWG_Expertise_Calcualtor
             {
                 EnhancedConstitution.Image = Properties.Resources.iEnhancedConstitution;
                 EnhancedConstitutionPoints.Visible = false;
+                Rank1Modifier.BackColor = Color.Transparent;
+            }
+
+            if (conpoints == 1 && EnhancedConstitutionHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (conpoints == 2 && EnhancedConstitutionHover == true)
+            {
+                TwoRankPoints();
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            CheckFunctions();
+            PageFunctions();
         }
 
         private void EnhancedConstitution_MouseHover(object sender, EventArgs e)
         {
             EnhancedConstitutionHover = true;
-            CheckBackgroundsHover();
+            PageFunctions();
         }
 
         private void EnhancedConstitution_MouseMove(object sender, MouseEventArgs e)
         {
             EnhancedConstitutionHover = true;
-            CheckBackgroundsHover();
+            PageFunctions();
         }
 
         private void EnhancedConstitution_MouseLeave(object sender, EventArgs e)
         {
             EnhancedConstitutionHover = false;
-            CheckBackgroundsHover();
+            PageFunctions();
         }
 
         // Enhanced Agility
@@ -585,26 +710,36 @@ namespace SWG_Expertise_Calcualtor
                 EnhancedAgilityPoints.Visible = false;
             }
 
+            if (agipoints == 1 && EnhancedAgilityHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (agipoints == 2 && EnhancedAgilityHover == true)
+            {
+                TwoRankPoints();
+            }
+
             AvailablePoints.Text = totalPoints.ToString();
-            CheckFunctions();
+            PageFunctions();
         }
 
         private void EnhancedAgility_MouseHover(object sender, EventArgs e)
         {
             EnhancedAgilityHover = true;
-            CheckBackgroundsHover();
+            PageFunctions();
         }
 
         private void EnhancedAgility_MouseMove(object sender, MouseEventArgs e)
         {
             EnhancedAgilityHover = true;
-            CheckBackgroundsHover();
+            PageFunctions();
         }
 
         private void EnhancedAgility_MouseLeave(object sender, EventArgs e)
         {
             EnhancedAgilityHover = false;
-            CheckBackgroundsHover();
+            PageFunctions();
         }
 
         // Enhanced Stamina
@@ -644,26 +779,36 @@ namespace SWG_Expertise_Calcualtor
                 EnhancedStaminaPoints.Visible = false;
             }
 
+            if (stapoints == 1 && EnhancedStaminaHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (stapoints == 2 && EnhancedStaminaHover == true)
+            {
+                TwoRankPoints();
+            }
+
             AvailablePoints.Text = totalPoints.ToString();
-            CheckFunctions();
+            PageFunctions();
         }
 
         private void EnhancedStamina_MouseHover(object sender, EventArgs e)
         {
             EnhancedStaminaHover = true;
-            CheckBackgroundsHover();
+            PageFunctions();
         }
 
         private void EnhancedStamina_MouseMove(object sender, MouseEventArgs e)
         {
             EnhancedStaminaHover = true;
-            CheckBackgroundsHover();
+            PageFunctions();
         }
 
         private void EnhancedStamina_MouseLeave(object sender, EventArgs e)
         {
             EnhancedStaminaHover = false;
-            CheckBackgroundsHover();
+            PageFunctions();
         }
 
         // Heightened Speed
@@ -714,7 +859,7 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            CheckFunctions();
+            PageFunctions();
         }
 
         private void HeightenedSpeed_MouseLeave(object sender, EventArgs e)
@@ -801,7 +946,7 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            CheckFunctions();
+            PageFunctions();
         }
 
         private void ExactingStrikes_MouseHover(object sender, EventArgs e)
