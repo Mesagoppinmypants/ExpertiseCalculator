@@ -28,6 +28,8 @@ namespace SWG_Expertise_Calcualtor
         public bool EnhancedConstitutionHover = false;
         public bool EnhancedAgilityHover = false;
         public bool EnhancedStaminaHover = false;
+        public bool HeightenedSpeedHover = false;
+        public bool ExactingStrikesHover = false;
 
         // Skill Points
         // First Row
@@ -292,9 +294,11 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        // This controls the skill description visibility
         private void SkillDescriptionVisiblity()
         {
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover == true)
+            // Enables the general titles and descriptions that all skills use
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover == true)
             {
                 SkillPictureBackground.Visible = true;
                 SkillPicture.Visible = true;
@@ -438,6 +442,26 @@ namespace SWG_Expertise_Calcualtor
             {
                 EnhancedStrength.Image = Properties.Resources.iEnhancedStrength;
                 EnhancedStrengthPoints.Visible = false;
+            }
+
+            if (strpoints == 1 && EnhancedStrengthHover == true)
+            {
+                Rank1Modifier.BackColor = Color.LightGray;
+            }
+            else
+            {
+                Rank1Modifier.BackColor = Color.Transparent;
+            }
+
+            if (strpoints == 2 && EnhancedStrengthHover == true)
+            {
+                Rank1Modifier.BackColor = Color.LightGray;
+                Rank2Modifier.BackColor = Color.LightGray;
+            }
+            else
+            {
+                Rank1Modifier.BackColor = Color.Transparent;
+                Rank2Modifier.BackColor = Color.Transparent;
             }
 
             AvailablePoints.Text = totalPoints.ToString();
