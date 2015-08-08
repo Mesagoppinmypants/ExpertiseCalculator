@@ -431,6 +431,7 @@ namespace SWG_Expertise_Calcualtor
             if (strpoints == 1)
             {
                 EnhancedStrengthPoints.Image = Properties.Resources.skillpoints1;
+                Rank2Modifier.BackColor = Color.Transparent;
             }
 
             if (strpoints == 2)
@@ -442,15 +443,12 @@ namespace SWG_Expertise_Calcualtor
             {
                 EnhancedStrength.Image = Properties.Resources.iEnhancedStrength;
                 EnhancedStrengthPoints.Visible = false;
+                Rank1Modifier.BackColor = Color.Transparent;
             }
 
             if (strpoints == 1 && EnhancedStrengthHover == true)
             {
                 Rank1Modifier.BackColor = Color.LightGray;
-            }
-            else
-            {
-                Rank1Modifier.BackColor = Color.Transparent;
             }
 
             if (strpoints == 2 && EnhancedStrengthHover == true)
@@ -458,7 +456,8 @@ namespace SWG_Expertise_Calcualtor
                 Rank1Modifier.BackColor = Color.LightGray;
                 Rank2Modifier.BackColor = Color.LightGray;
             }
-            else
+
+            if (EnhancedStrengthHover == false)
             {
                 Rank1Modifier.BackColor = Color.Transparent;
                 Rank2Modifier.BackColor = Color.Transparent;
