@@ -292,6 +292,59 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        private void SkillDescriptionVisiblity()
+        {
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover == true)
+            {
+                SkillPictureBackground.Visible = true;
+                SkillPicture.Visible = true;
+                SkillTitle.Visible = true;
+                SkillSummary.Visible = true;
+                RequiresLabel.Visible = true;
+                SkillRequirements.Visible = true;
+                RankLabel.Visible = true;
+                SkillRank.Visible = true;
+                GrandsModifiersLabel.Visible = true;
+                SkillModifierTitle.Visible = true;
+
+                // Rank 2 Modifiers
+                if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover == true)
+                {
+                    Rank1Modifier.Visible = true;
+                    Rank2Modifier.Visible = true;
+                }
+            }
+        }           
+
+        private void SkillDescription()
+        {
+            if (EnhancedStrengthHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aEnhancedStrength;
+                SkillTitle.Text = "Enhanced Strength";
+                SkillSummary.Text = "Strength increased by 25 points per point spent.";
+                SkillRequirements.Text = "None";
+                SkillModifierTitle.Text = "STRENGTH";
+                Rank1Modifier.Text = "25";
+                Rank2Modifier.Text = "50";
+
+                if (strpoints == 0)
+                {
+                    SkillRank.Text = "0/2";
+                }
+
+                if (strpoints == 1)
+                {
+                    SkillRank.Text = "1/2";
+                }
+
+                if (strpoints == 2)
+                {
+                    SkillRank.Text = "1/2";
+                }
+            }
+        }
+
         // Changes the background for each skill if they are hovered.
         private void CheckBackgroundsHover()
         {
@@ -395,12 +448,16 @@ namespace SWG_Expertise_Calcualtor
         {
             EnhancedStrengthHover = true;
             CheckBackgroundsHover();
+            SkillDescriptionVisiblity();
+            SkillDescription();
         }
 
         private void EnhancedStrength_MouseHover(object sender, EventArgs e)
         {
             EnhancedStrengthHover = true;
             CheckBackgroundsHover();
+            SkillDescriptionVisiblity();
+            SkillDescription();
         }
 
         private void EnhancedStrength_MouseLeave(object sender, EventArgs e)

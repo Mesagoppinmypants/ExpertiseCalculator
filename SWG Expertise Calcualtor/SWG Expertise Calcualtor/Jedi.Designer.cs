@@ -37,7 +37,7 @@
             this.levelOutput = new System.Windows.Forms.Label();
             this.ResetButton = new System.Windows.Forms.Button();
             this.SaveButton = new System.Windows.Forms.Button();
-            this.PreviewSkillPictureBackground = new System.Windows.Forms.PictureBox();
+            this.SkillPictureBackground = new System.Windows.Forms.PictureBox();
             this.ExactingStrikesPoints = new System.Windows.Forms.PictureBox();
             this.ExactingStrikes = new System.Windows.Forms.PictureBox();
             this.ExactingStrikesBackground = new System.Windows.Forms.PictureBox();
@@ -106,18 +106,20 @@
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.PreviewSkillPicture = new System.Windows.Forms.PictureBox();
-            this.PreviewSkillTitle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.PreviewSkillPictureBackground)).BeginInit();
+            this.SkillPicture = new System.Windows.Forms.PictureBox();
+            this.SkillTitle = new System.Windows.Forms.Label();
+            this.SkillSummary = new System.Windows.Forms.Label();
+            this.RequiresLabel = new System.Windows.Forms.Label();
+            this.SkillRequirements = new System.Windows.Forms.Label();
+            this.RankLabel = new System.Windows.Forms.Label();
+            this.SkillRank = new System.Windows.Forms.Label();
+            this.GrandsModifiersLabel = new System.Windows.Forms.Label();
+            this.SkillModifierTitle = new System.Windows.Forms.Label();
+            this.Rank1Modifier = new System.Windows.Forms.Label();
+            this.Rank2Modifier = new System.Windows.Forms.Label();
+            this.Rank3Modifier = new System.Windows.Forms.Label();
+            this.Rank4Modifier = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.SkillPictureBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesBackground)).BeginInit();
@@ -186,7 +188,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PreviewSkillPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // AvailablePoints
@@ -290,15 +292,15 @@
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // PreviewSkillPictureBackground
+            // SkillPictureBackground
             // 
-            this.PreviewSkillPictureBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.SkillBox;
-            this.PreviewSkillPictureBackground.Location = new System.Drawing.Point(650, 45);
-            this.PreviewSkillPictureBackground.Name = "PreviewSkillPictureBackground";
-            this.PreviewSkillPictureBackground.Size = new System.Drawing.Size(52, 50);
-            this.PreviewSkillPictureBackground.TabIndex = 173;
-            this.PreviewSkillPictureBackground.TabStop = false;
-            this.PreviewSkillPictureBackground.Visible = false;
+            this.SkillPictureBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.SkillBox;
+            this.SkillPictureBackground.Location = new System.Drawing.Point(650, 45);
+            this.SkillPictureBackground.Name = "SkillPictureBackground";
+            this.SkillPictureBackground.Size = new System.Drawing.Size(52, 50);
+            this.SkillPictureBackground.TabIndex = 173;
+            this.SkillPictureBackground.TabStop = false;
+            this.SkillPictureBackground.Visible = false;
             // 
             // ExactingStrikesPoints
             // 
@@ -956,135 +958,159 @@
             this.pictureBox21.TabIndex = 152;
             this.pictureBox21.TabStop = false;
             // 
-            // PreviewSkillPicture
+            // SkillPicture
             // 
-            this.PreviewSkillPicture.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aEnhancedStrength;
-            this.PreviewSkillPicture.Location = new System.Drawing.Point(655, 49);
-            this.PreviewSkillPicture.Name = "PreviewSkillPicture";
-            this.PreviewSkillPicture.Size = new System.Drawing.Size(42, 42);
-            this.PreviewSkillPicture.TabIndex = 174;
-            this.PreviewSkillPicture.TabStop = false;
-            this.PreviewSkillPicture.Visible = false;
+            this.SkillPicture.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aEnhancedStrength;
+            this.SkillPicture.Location = new System.Drawing.Point(655, 49);
+            this.SkillPicture.Name = "SkillPicture";
+            this.SkillPicture.Size = new System.Drawing.Size(42, 42);
+            this.SkillPicture.TabIndex = 174;
+            this.SkillPicture.TabStop = false;
+            this.SkillPicture.Visible = false;
             // 
-            // PreviewSkillTitle
+            // SkillTitle
             // 
-            this.PreviewSkillTitle.AutoSize = true;
-            this.PreviewSkillTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PreviewSkillTitle.ForeColor = System.Drawing.Color.Khaki;
-            this.PreviewSkillTitle.Location = new System.Drawing.Point(708, 58);
-            this.PreviewSkillTitle.Name = "PreviewSkillTitle";
-            this.PreviewSkillTitle.Size = new System.Drawing.Size(213, 25);
-            this.PreviewSkillTitle.TabIndex = 175;
-            this.PreviewSkillTitle.Text = "Enhanced Strength";
-            this.PreviewSkillTitle.Visible = false;
+            this.SkillTitle.AutoSize = true;
+            this.SkillTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkillTitle.ForeColor = System.Drawing.Color.Khaki;
+            this.SkillTitle.Location = new System.Drawing.Point(708, 58);
+            this.SkillTitle.Name = "SkillTitle";
+            this.SkillTitle.Size = new System.Drawing.Size(110, 25);
+            this.SkillTitle.TabIndex = 175;
+            this.SkillTitle.Text = "Skill Title";
+            this.SkillTitle.Visible = false;
             // 
-            // label1
+            // SkillSummary
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Khaki;
-            this.label1.Location = new System.Drawing.Point(645, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(336, 16);
-            this.label1.TabIndex = 176;
-            this.label1.Text = "Strength increased by 25 points per point spent.";
-            this.label1.Visible = false;
+            this.SkillSummary.AutoSize = true;
+            this.SkillSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkillSummary.ForeColor = System.Drawing.Color.Khaki;
+            this.SkillSummary.Location = new System.Drawing.Point(645, 98);
+            this.SkillSummary.Name = "SkillSummary";
+            this.SkillSummary.Size = new System.Drawing.Size(142, 16);
+            this.SkillSummary.TabIndex = 176;
+            this.SkillSummary.Text = "Brief Skill Summary";
+            this.SkillSummary.Visible = false;
             // 
-            // label2
+            // RequiresLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(647, 141);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 16);
-            this.label2.TabIndex = 177;
-            this.label2.Text = "Requires:";
-            this.label2.Visible = false;
+            this.RequiresLabel.AutoSize = true;
+            this.RequiresLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RequiresLabel.ForeColor = System.Drawing.Color.White;
+            this.RequiresLabel.Location = new System.Drawing.Point(647, 141);
+            this.RequiresLabel.Name = "RequiresLabel";
+            this.RequiresLabel.Size = new System.Drawing.Size(75, 16);
+            this.RequiresLabel.TabIndex = 177;
+            this.RequiresLabel.Text = "Requires:";
+            this.RequiresLabel.Visible = false;
             // 
-            // label3
+            // SkillRequirements
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(728, 141);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 16);
-            this.label3.TabIndex = 178;
-            this.label3.Text = "None";
-            this.label3.Visible = false;
+            this.SkillRequirements.AutoSize = true;
+            this.SkillRequirements.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkillRequirements.ForeColor = System.Drawing.Color.White;
+            this.SkillRequirements.Location = new System.Drawing.Point(728, 141);
+            this.SkillRequirements.Name = "SkillRequirements";
+            this.SkillRequirements.Size = new System.Drawing.Size(45, 16);
+            this.SkillRequirements.TabIndex = 178;
+            this.SkillRequirements.Text = "None";
+            this.SkillRequirements.Visible = false;
             // 
-            // label4
+            // RankLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(647, 178);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 16);
-            this.label4.TabIndex = 179;
-            this.label4.Text = "Rank:";
-            this.label4.Visible = false;
+            this.RankLabel.AutoSize = true;
+            this.RankLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RankLabel.ForeColor = System.Drawing.Color.White;
+            this.RankLabel.Location = new System.Drawing.Point(647, 178);
+            this.RankLabel.Name = "RankLabel";
+            this.RankLabel.Size = new System.Drawing.Size(48, 16);
+            this.RankLabel.TabIndex = 179;
+            this.RankLabel.Text = "Rank:";
+            this.RankLabel.Visible = false;
             // 
-            // label5
+            // SkillRank
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(693, 178);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 16);
-            this.label5.TabIndex = 180;
-            this.label5.Text = "0/2";
-            this.label5.Visible = false;
+            this.SkillRank.AutoSize = true;
+            this.SkillRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkillRank.ForeColor = System.Drawing.Color.White;
+            this.SkillRank.Location = new System.Drawing.Point(693, 178);
+            this.SkillRank.Name = "SkillRank";
+            this.SkillRank.Size = new System.Drawing.Size(29, 16);
+            this.SkillRank.TabIndex = 180;
+            this.SkillRank.Text = "0/2";
+            this.SkillRank.Visible = false;
             // 
-            // label6
+            // GrandsModifiersLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(647, 227);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 16);
-            this.label6.TabIndex = 181;
-            this.label6.Text = "Grands Modifiers:";
-            this.label6.Visible = false;
+            this.GrandsModifiersLabel.AutoSize = true;
+            this.GrandsModifiersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrandsModifiersLabel.ForeColor = System.Drawing.Color.White;
+            this.GrandsModifiersLabel.Location = new System.Drawing.Point(647, 227);
+            this.GrandsModifiersLabel.Name = "GrandsModifiersLabel";
+            this.GrandsModifiersLabel.Size = new System.Drawing.Size(130, 16);
+            this.GrandsModifiersLabel.TabIndex = 181;
+            this.GrandsModifiersLabel.Text = "Grands Modifiers:";
+            this.GrandsModifiersLabel.Visible = false;
             // 
-            // label7
+            // SkillModifierTitle
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(667, 254);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 29);
-            this.label7.TabIndex = 182;
-            this.label7.Text = "STRENGTH";
-            this.label7.Visible = false;
+            this.SkillModifierTitle.AutoSize = true;
+            this.SkillModifierTitle.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkillModifierTitle.ForeColor = System.Drawing.Color.White;
+            this.SkillModifierTitle.Location = new System.Drawing.Point(647, 254);
+            this.SkillModifierTitle.Name = "SkillModifierTitle";
+            this.SkillModifierTitle.Size = new System.Drawing.Size(154, 29);
+            this.SkillModifierTitle.TabIndex = 182;
+            this.SkillModifierTitle.Text = "Modifier Name";
+            this.SkillModifierTitle.Visible = false;
             // 
-            // label8
+            // Rank1Modifier
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(668, 298);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 20);
-            this.label8.TabIndex = 183;
-            this.label8.Text = "25";
-            this.label8.Visible = false;
+            this.Rank1Modifier.AutoSize = true;
+            this.Rank1Modifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rank1Modifier.ForeColor = System.Drawing.Color.White;
+            this.Rank1Modifier.Location = new System.Drawing.Point(668, 298);
+            this.Rank1Modifier.Name = "Rank1Modifier";
+            this.Rank1Modifier.Size = new System.Drawing.Size(29, 20);
+            this.Rank1Modifier.TabIndex = 183;
+            this.Rank1Modifier.Text = "25";
+            this.Rank1Modifier.Visible = false;
             // 
-            // label9
+            // Rank2Modifier
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(742, 298);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(29, 20);
-            this.label9.TabIndex = 184;
-            this.label9.Text = "50";
-            this.label9.Visible = false;
+            this.Rank2Modifier.AutoSize = true;
+            this.Rank2Modifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rank2Modifier.ForeColor = System.Drawing.Color.White;
+            this.Rank2Modifier.Location = new System.Drawing.Point(742, 298);
+            this.Rank2Modifier.Name = "Rank2Modifier";
+            this.Rank2Modifier.Size = new System.Drawing.Size(29, 20);
+            this.Rank2Modifier.TabIndex = 184;
+            this.Rank2Modifier.Text = "50";
+            this.Rank2Modifier.Visible = false;
+            // 
+            // Rank3Modifier
+            // 
+            this.Rank3Modifier.AutoSize = true;
+            this.Rank3Modifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rank3Modifier.ForeColor = System.Drawing.Color.White;
+            this.Rank3Modifier.Location = new System.Drawing.Point(819, 298);
+            this.Rank3Modifier.Name = "Rank3Modifier";
+            this.Rank3Modifier.Size = new System.Drawing.Size(29, 20);
+            this.Rank3Modifier.TabIndex = 185;
+            this.Rank3Modifier.Text = "75";
+            this.Rank3Modifier.Visible = false;
+            // 
+            // Rank4Modifier
+            // 
+            this.Rank4Modifier.AutoSize = true;
+            this.Rank4Modifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rank4Modifier.ForeColor = System.Drawing.Color.White;
+            this.Rank4Modifier.Location = new System.Drawing.Point(891, 298);
+            this.Rank4Modifier.Name = "Rank4Modifier";
+            this.Rank4Modifier.Size = new System.Drawing.Size(39, 20);
+            this.Rank4Modifier.TabIndex = 186;
+            this.Rank4Modifier.Text = "100";
+            this.Rank4Modifier.Visible = false;
             // 
             // Jedi
             // 
@@ -1092,18 +1118,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(984, 696);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.PreviewSkillTitle);
-            this.Controls.Add(this.PreviewSkillPicture);
-            this.Controls.Add(this.PreviewSkillPictureBackground);
+            this.Controls.Add(this.Rank4Modifier);
+            this.Controls.Add(this.Rank3Modifier);
+            this.Controls.Add(this.Rank2Modifier);
+            this.Controls.Add(this.Rank1Modifier);
+            this.Controls.Add(this.SkillModifierTitle);
+            this.Controls.Add(this.GrandsModifiersLabel);
+            this.Controls.Add(this.SkillRank);
+            this.Controls.Add(this.RankLabel);
+            this.Controls.Add(this.SkillRequirements);
+            this.Controls.Add(this.RequiresLabel);
+            this.Controls.Add(this.SkillSummary);
+            this.Controls.Add(this.SkillTitle);
+            this.Controls.Add(this.SkillPicture);
+            this.Controls.Add(this.SkillPictureBackground);
             this.Controls.Add(this.ExactingStrikesPoints);
             this.Controls.Add(this.ExactingStrikes);
             this.Controls.Add(this.ExactingStrikesBackground);
@@ -1185,7 +1213,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jedi";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Jedi_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.PreviewSkillPictureBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SkillPictureBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesBackground)).EndInit();
@@ -1254,7 +1282,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PreviewSkillPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1339,17 +1367,19 @@
         private System.Windows.Forms.PictureBox pictureBox48;
         private System.Windows.Forms.PictureBox pictureBox53;
         private System.Windows.Forms.PictureBox pictureBox54;
-        private System.Windows.Forms.PictureBox PreviewSkillPictureBackground;
-        private System.Windows.Forms.PictureBox PreviewSkillPicture;
-        private System.Windows.Forms.Label PreviewSkillTitle;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox SkillPictureBackground;
+        private System.Windows.Forms.PictureBox SkillPicture;
+        private System.Windows.Forms.Label SkillTitle;
+        private System.Windows.Forms.Label SkillSummary;
+        private System.Windows.Forms.Label RequiresLabel;
+        private System.Windows.Forms.Label SkillRequirements;
+        private System.Windows.Forms.Label RankLabel;
+        private System.Windows.Forms.Label SkillRank;
+        private System.Windows.Forms.Label GrandsModifiersLabel;
+        private System.Windows.Forms.Label SkillModifierTitle;
+        private System.Windows.Forms.Label Rank1Modifier;
+        private System.Windows.Forms.Label Rank2Modifier;
+        private System.Windows.Forms.Label Rank3Modifier;
+        private System.Windows.Forms.Label Rank4Modifier;
     }
 }
