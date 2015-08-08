@@ -381,7 +381,7 @@ namespace SWG_Expertise_Calcualtor
             }
             else
             {
-                EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBox;
+                EnhancedStaminaBackground.Image = Properties.Resources.aSkillBox;
             }
         }
 
