@@ -937,7 +937,7 @@ namespace SWG_Expertise_Calcualtor
             // Second Row - 4 General Jedi points Needs to be spent
             if (SkillRequirements1.Text == "4 Points In Jedi General" && totalPoints <= 41 && HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover == true)
             {
-                SkillRequirements1.ForeColor = Color.Green;
+                SkillRequirements1.ForeColor = Color.White;
             }
 
             // Exacting Strikes

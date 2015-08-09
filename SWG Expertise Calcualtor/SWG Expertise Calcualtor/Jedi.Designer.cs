@@ -386,9 +386,9 @@
             this.GrandsModifiersLabel.ForeColor = System.Drawing.Color.White;
             this.GrandsModifiersLabel.Location = new System.Drawing.Point(647, 246);
             this.GrandsModifiersLabel.Name = "GrandsModifiersLabel";
-            this.GrandsModifiersLabel.Size = new System.Drawing.Size(130, 16);
+            this.GrandsModifiersLabel.Size = new System.Drawing.Size(125, 16);
             this.GrandsModifiersLabel.TabIndex = 181;
-            this.GrandsModifiersLabel.Text = "Grands Modifiers:";
+            this.GrandsModifiersLabel.Text = "Grants Modifiers:";
             this.GrandsModifiersLabel.Visible = false;
             // 
             // SkillModifierTitle1
