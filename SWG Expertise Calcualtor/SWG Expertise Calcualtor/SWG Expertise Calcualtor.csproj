@@ -46,14 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TotalPointsService.cs" />
-    <Compile Include="GuiController.cs" />
+    <Compile Include="Controllers\Services\TotalPointsService.cs" />
+    <Compile Include="Controllers\GuiController.cs" />
     <Compile Include="Jedi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Jedi.Designer.cs">
       <DependentUpon>Jedi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\Services\JediSkillHoverService.cs" />
     <Compile Include="StartUpPage.cs">
       <SubType>Form</SubType>
     </Compile>
