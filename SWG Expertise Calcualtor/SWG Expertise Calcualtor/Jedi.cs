@@ -101,6 +101,7 @@ namespace SWG_Expertise_Calcualtor
             SkillDescriptionVisiblity();
             SkillDescription();
             CheckRequirements();
+            HideSecondRankRow();
         }
 
         // Save Button and Reset Button Functions
@@ -357,22 +358,36 @@ namespace SWG_Expertise_Calcualtor
                 RankLabel.Visible = true;
                 SkillRank.Visible = true;
                 GrandsModifiersLabel.Visible = true;
-                SkillModifierTitle.Visible = true;
+                SkillModifierTitle1.Visible = true;
 
-                // Rank 2 Modifiers
+                // Rank 2 Modifiers - 1 Row
                 if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover == true)
                 {
-                    Rank1Modifier.Visible = true;
-                    Rank2Modifier.Visible = true;
+                    Rank1Modifier1.Visible = true;
+                    Rank2Modifier1.Visible = true;
                 }
 
-                // Rank 4 Modifiers
-                if (HeightenedSpeedHover || ExactingStrikesHover == true)
+                // Rank 4 Modifiers - 1 Row
+                if (HeightenedSpeedHover == true)
                 {
-                    Rank1Modifier.Visible = true;
-                    Rank2Modifier.Visible = true;
-                    Rank3Modifier.Visible = true;
-                    Rank4Modifier.Visible = true;
+                    Rank1Modifier1.Visible = true;
+                    Rank2Modifier1.Visible = true;
+                    Rank3Modifier1.Visible = true;
+                    Rank4Modifier1.Visible = true;
+                }
+
+                // Rank 4 Modifiers - 2 Rows
+                if (ExactingStrikesHover == true)
+                {
+                    SkillModifierTitle2.Visible = true;
+                    Rank1Modifier1.Visible = true;
+                    Rank2Modifier1.Visible = true;
+                    Rank3Modifier1.Visible = true;
+                    Rank4Modifier1.Visible = true;
+                    Rank1Modifier2.Visible = true;
+                    Rank2Modifier2.Visible = true;
+                    Rank3Modifier2.Visible = true;
+                    Rank4Modifier2.Visible = true;
                 }
             }
         }
@@ -386,9 +401,9 @@ namespace SWG_Expertise_Calcualtor
                 SkillTitle.Text = "Enhanced Strength";
                 SkillSummary.Text = "Strength increased by 25 points per point spent.";
                 SkillRequirements.Text = "None";
-                SkillModifierTitle.Text = "STRENGTH";
-                Rank1Modifier.Text = "25";
-                Rank2Modifier.Text = "50";
+                SkillModifierTitle1.Text = "STRENGTH";
+                Rank1Modifier1.Text = "25";
+                Rank2Modifier1.Text = "50";
 
                 TwoModifierBoxes();
 
@@ -415,9 +430,9 @@ namespace SWG_Expertise_Calcualtor
                 SkillTitle.Text = "Enhanced Constitution";
                 SkillSummary.Text = "Constitution increased by 25 points per point spent.";
                 SkillRequirements.Text = "None";
-                SkillModifierTitle.Text = "CONSTITUTION";
-                Rank1Modifier.Text = "25";
-                Rank2Modifier.Text = "50";
+                SkillModifierTitle1.Text = "CONSTITUTION";
+                Rank1Modifier1.Text = "25";
+                Rank2Modifier1.Text = "50";
 
                 TwoModifierBoxes();
 
@@ -444,9 +459,9 @@ namespace SWG_Expertise_Calcualtor
                 SkillTitle.Text = "Enhanced Agility";
                 SkillSummary.Text = "Agility increased by 25 points per point spent.";
                 SkillRequirements.Text = "None";
-                SkillModifierTitle.Text = "AGILITY";
-                Rank1Modifier.Text = "25";
-                Rank2Modifier.Text = "50";
+                SkillModifierTitle1.Text = "AGILITY";
+                Rank1Modifier1.Text = "25";
+                Rank2Modifier1.Text = "50";
 
                 TwoModifierBoxes();
 
@@ -473,9 +488,9 @@ namespace SWG_Expertise_Calcualtor
                 SkillTitle.Text = "Enhanced Stamina";
                 SkillSummary.Text = "Stamina increased by 25 points per point spent.";
                 SkillRequirements.Text = "None";
-                SkillModifierTitle.Text = "STAMINA";
-                Rank1Modifier.Text = "25";
-                Rank2Modifier.Text = "50";
+                SkillModifierTitle1.Text = "STAMINA";
+                Rank1Modifier1.Text = "25";
+                Rank2Modifier1.Text = "50";
 
                 TwoModifierBoxes();
 
@@ -502,11 +517,11 @@ namespace SWG_Expertise_Calcualtor
                 SkillTitle.Text = "Heightened Speed";
                 SkillSummary.Text = "Force Run's speed is increased by 10% per point spent.";
                 SkillRequirements.Text = "4 Points In Jedi General";
-                SkillModifierTitle.Text = "FORCE RUN MOVEMENT";
-                Rank1Modifier.Text = "10";
-                Rank2Modifier.Text = "20";
-                Rank3Modifier.Text = "30";
-                Rank4Modifier.Text = "40";
+                SkillModifierTitle1.Text = "FORCE RUN MOVEMENT";
+                Rank1Modifier1.Text = "10";
+                Rank2Modifier1.Text = "20";
+                Rank3Modifier1.Text = "30";
+                Rank4Modifier1.Text = "40";
 
                 FourModifierBoxes();
 
@@ -543,11 +558,16 @@ namespace SWG_Expertise_Calcualtor
                 SkillTitle.Text = "Exacting Strikes";
                 SkillSummary.Text = "Strike and sweep damage is increased to 2% per point spent.";
                 SkillRequirements.Text = "4 Points In Jedi General";
-                SkillModifierTitle.Text = "SWEEP DAMAGE";
-                Rank1Modifier.Text = "2";
-                Rank2Modifier.Text = "4";
-                Rank3Modifier.Text = "6";
-                Rank4Modifier.Text = "8";
+                SkillModifierTitle1.Text = "SWEEP DAMAGE";
+                SkillModifierTitle2.Text = "STRIKE DAMAGE";
+                Rank1Modifier1.Text = "2";
+                Rank2Modifier1.Text = "4";
+                Rank3Modifier1.Text = "6";
+                Rank4Modifier1.Text = "8";
+                Rank1Modifier2.Text = "2";
+                Rank2Modifier2.Text = "4";
+                Rank3Modifier2.Text = "6";
+                Rank4Modifier2.Text = "8";
 
                 FourModifierBoxes();
 
@@ -580,42 +600,62 @@ namespace SWG_Expertise_Calcualtor
 
         private void OneRankPoints()
         {
-            Rank1Modifier.BackColor = Color.LightGray;
-            Rank2Modifier.BackColor = Color.Transparent;
-            Rank3Modifier.BackColor = Color.Transparent;
-            Rank4Modifier.BackColor = Color.Transparent;
+            Rank1Modifier1.BackColor = Color.LightGray;
+            Rank2Modifier1.BackColor = Color.Transparent;
+            Rank3Modifier1.BackColor = Color.Transparent;
+            Rank4Modifier1.BackColor = Color.Transparent;
+            Rank1Modifier2.BackColor = Color.LightGray;
+            Rank2Modifier2.BackColor = Color.Transparent;
+            Rank3Modifier2.BackColor = Color.Transparent;
+            Rank4Modifier2.BackColor = Color.Transparent;
         }
 
         private void TwoRankPoints()
         {
-            Rank1Modifier.BackColor = Color.LightGray;
-            Rank2Modifier.BackColor = Color.LightGray;
-            Rank3Modifier.BackColor = Color.Transparent;
-            Rank4Modifier.BackColor = Color.Transparent;
+            Rank1Modifier1.BackColor = Color.LightGray;
+            Rank2Modifier1.BackColor = Color.LightGray;
+            Rank3Modifier1.BackColor = Color.Transparent;
+            Rank4Modifier1.BackColor = Color.Transparent;
+            Rank1Modifier2.BackColor = Color.LightGray;
+            Rank2Modifier2.BackColor = Color.LightGray;
+            Rank3Modifier2.BackColor = Color.Transparent;
+            Rank4Modifier2.BackColor = Color.Transparent;
         }
 
         private void ThreeRankPoints()
         {
-            Rank1Modifier.BackColor = Color.LightGray;
-            Rank2Modifier.BackColor = Color.LightGray;
-            Rank3Modifier.BackColor = Color.LightGray;
-            Rank4Modifier.BackColor = Color.Transparent;
+            Rank1Modifier1.BackColor = Color.LightGray;
+            Rank2Modifier1.BackColor = Color.LightGray;
+            Rank3Modifier1.BackColor = Color.LightGray;
+            Rank4Modifier1.BackColor = Color.Transparent;
+            Rank1Modifier2.BackColor = Color.LightGray;
+            Rank2Modifier2.BackColor = Color.LightGray;
+            Rank3Modifier2.BackColor = Color.LightGray;
+            Rank4Modifier2.BackColor = Color.Transparent;
         }
 
         private void FourRankPoints()
         {
-            Rank1Modifier.BackColor = Color.LightGray;
-            Rank2Modifier.BackColor = Color.LightGray;
-            Rank3Modifier.BackColor = Color.LightGray;
-            Rank4Modifier.BackColor = Color.LightGray;
+            Rank1Modifier1.BackColor = Color.LightGray;
+            Rank2Modifier1.BackColor = Color.LightGray;
+            Rank3Modifier1.BackColor = Color.LightGray;
+            Rank4Modifier1.BackColor = Color.LightGray;
+            Rank1Modifier2.BackColor = Color.LightGray;
+            Rank2Modifier2.BackColor = Color.LightGray;
+            Rank3Modifier2.BackColor = Color.LightGray;
+            Rank4Modifier2.BackColor = Color.LightGray;
         }
 
         private void ZeroRankPoints()
         {
-            Rank1Modifier.BackColor = Color.Transparent;
-            Rank2Modifier.BackColor = Color.Transparent;
-            Rank3Modifier.BackColor = Color.Transparent;
-            Rank4Modifier.BackColor = Color.Transparent;
+            Rank1Modifier1.BackColor = Color.Transparent;
+            Rank2Modifier1.BackColor = Color.Transparent;
+            Rank3Modifier1.BackColor = Color.Transparent;
+            Rank4Modifier1.BackColor = Color.Transparent;
+            Rank1Modifier2.BackColor = Color.Transparent;
+            Rank2Modifier2.BackColor = Color.Transparent;
+            Rank3Modifier2.BackColor = Color.Transparent;
+            Rank4Modifier2.BackColor = Color.Transparent;
         }
 
         private void CheckSkillRank()
@@ -623,7 +663,7 @@ namespace SWG_Expertise_Calcualtor
             // Enhanced Strength
             if (strpoints == 0 && EnhancedStrengthHover == true)
             {
-                Rank1Modifier.BackColor = Color.Transparent;
+                Rank1Modifier1.BackColor = Color.Transparent;
                 ZeroRankPoints();
             }
 
@@ -740,34 +780,46 @@ namespace SWG_Expertise_Calcualtor
         
         private void OneModifierBoxes()
         {
-            Rank1Modifier.Visible = true;
-            Rank2Modifier.Visible = false;
-            Rank3Modifier.Visible = false;
-            Rank4Modifier.Visible = false;
+            Rank1Modifier1.Visible = true;
+            Rank2Modifier1.Visible = false;
+            Rank3Modifier1.Visible = false;
+            Rank4Modifier1.Visible = false;
         }
 
         private void TwoModifierBoxes()
         {
-            Rank1Modifier.Visible = true;
-            Rank2Modifier.Visible = true;
-            Rank3Modifier.Visible = false;
-            Rank4Modifier.Visible = false;
+            Rank1Modifier1.Visible = true;
+            Rank2Modifier1.Visible = true;
+            Rank3Modifier1.Visible = false;
+            Rank4Modifier1.Visible = false;
         }
 
         private void ThreeModifierBoxes()
         {
-            Rank1Modifier.Visible = true;
-            Rank2Modifier.Visible = true;
-            Rank3Modifier.Visible = true;
-            Rank4Modifier.Visible = false;
+            Rank1Modifier1.Visible = true;
+            Rank2Modifier1.Visible = true;
+            Rank3Modifier1.Visible = true;
+            Rank4Modifier1.Visible = false;
         }
 
         private void FourModifierBoxes()
         {
-            Rank1Modifier.Visible = true;
-            Rank2Modifier.Visible = true;
-            Rank3Modifier.Visible = true;
-            Rank4Modifier.Visible = true;
+            Rank1Modifier1.Visible = true;
+            Rank2Modifier1.Visible = true;
+            Rank3Modifier1.Visible = true;
+            Rank4Modifier1.Visible = true;
+        }
+
+        private void HideSecondRankRow()
+        {
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover == true)
+            {
+                SkillModifierTitle2.Visible = false;
+                Rank1Modifier2.Visible = false;
+                Rank2Modifier2.Visible = false;
+                Rank3Modifier2.Visible = false;
+                Rank4Modifier2.Visible = false;
+            }
         }
 
         private void CheckRequirements()
@@ -870,7 +922,7 @@ namespace SWG_Expertise_Calcualtor
             if (strpoints == 1)
             {
                 EnhancedStrengthPoints.Image = Properties.Resources.skillpoints1;
-                Rank2Modifier.BackColor = Color.Transparent;
+                Rank2Modifier1.BackColor = Color.Transparent;
             }
 
             if (strpoints == 2)
@@ -882,7 +934,7 @@ namespace SWG_Expertise_Calcualtor
             {
                 EnhancedStrength.Image = Properties.Resources.iEnhancedStrength;
                 EnhancedStrengthPoints.Visible = false;
-                Rank1Modifier.BackColor = Color.Transparent;
+                Rank1Modifier1.BackColor = Color.Transparent;
             }
 
             if (strpoints == 1 && EnhancedStrengthHover == true)
@@ -941,7 +993,7 @@ namespace SWG_Expertise_Calcualtor
             if (conpoints == 1)
             {
                 EnhancedConstitutionPoints.Image = Properties.Resources.skillpoints1;
-                Rank2Modifier.BackColor = Color.Transparent;
+                Rank2Modifier1.BackColor = Color.Transparent;
             }
 
             if (conpoints == 2)
@@ -953,7 +1005,7 @@ namespace SWG_Expertise_Calcualtor
             {
                 EnhancedConstitution.Image = Properties.Resources.iEnhancedConstitution;
                 EnhancedConstitutionPoints.Visible = false;
-                Rank1Modifier.BackColor = Color.Transparent;
+                Rank1Modifier1.BackColor = Color.Transparent;
             }
 
             if (conpoints == 1 && EnhancedConstitutionHover == true)
