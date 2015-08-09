@@ -100,6 +100,7 @@ namespace SWG_Expertise_Calcualtor
             CheckBackgroundsHover();
             SkillDescriptionVisiblity();
             SkillDescription();
+            CheckRequirements();
         }
 
         // Save Button and Reset Button Functions
@@ -540,13 +541,13 @@ namespace SWG_Expertise_Calcualtor
             {
                 SkillPicture.Image = Properties.Resources.aExactingStrikes;
                 SkillTitle.Text = "Exacting Strikes";
-                SkillSummary.Text = "Fix this...";
+                SkillSummary.Text = "Strike and sweep damage is increased to 2% per point spent.";
                 SkillRequirements.Text = "4 Points In Jedi General";
-                SkillModifierTitle.Text = "Fix this...";
-                Rank1Modifier.Text = "10";
-                Rank2Modifier.Text = "20";
-                Rank3Modifier.Text = "30";
-                Rank4Modifier.Text = "40";
+                SkillModifierTitle.Text = "SWEEP DAMAGE";
+                Rank1Modifier.Text = "2";
+                Rank2Modifier.Text = "4";
+                Rank3Modifier.Text = "6";
+                Rank4Modifier.Text = "8";
 
                 FourModifierBoxes();
 
@@ -768,6 +769,25 @@ namespace SWG_Expertise_Calcualtor
             Rank3Modifier.Visible = true;
             Rank4Modifier.Visible = true;
         }
+
+        private void CheckRequirements()
+        {
+            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints <= 41 && HeightenedSpeedHover || ExactingStrikesHover == true)
+            {
+                SkillRequirements.ForeColor = Color.Green;
+            }
+
+            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints < 41 && HeightenedSpeedHover || ExactingStrikesHover == true)
+            {
+                SkillRequirements.ForeColor = Color.Red;
+            }
+
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover == true)
+            {
+                SkillRequirements.ForeColor = Color.White;
+            }
+        }
+
         // Changes the background for each skill if they are hovered.
         private void CheckBackgroundsHover()
         {
