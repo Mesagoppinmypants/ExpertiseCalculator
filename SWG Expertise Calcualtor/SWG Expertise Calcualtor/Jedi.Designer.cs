@@ -675,7 +675,7 @@
             // ImprovedForceCloak
             // 
             this.ImprovedForceCloak.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedForceCloak;
-            this.ImprovedForceCloak.Location = new System.Drawing.Point(269, 463);
+            this.ImprovedForceCloak.Location = new System.Drawing.Point(268, 462);
             this.ImprovedForceCloak.Name = "ImprovedForceCloak";
             this.ImprovedForceCloak.Size = new System.Drawing.Size(42, 42);
             this.ImprovedForceCloak.TabIndex = 160;
@@ -909,7 +909,7 @@
             // ForceCloak
             // 
             this.ForceCloak.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iForceCloak;
-            this.ForceCloak.Location = new System.Drawing.Point(268, 287);
+            this.ForceCloak.Location = new System.Drawing.Point(267, 288);
             this.ForceCloak.Name = "ForceCloak";
             this.ForceCloak.Size = new System.Drawing.Size(42, 42);
             this.ForceCloak.TabIndex = 93;
@@ -1012,7 +1012,7 @@
             // Alacrity
             // 
             this.Alacrity.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iAlacrity;
-            this.Alacrity.Location = new System.Drawing.Point(267, 201);
+            this.Alacrity.Location = new System.Drawing.Point(268, 201);
             this.Alacrity.Name = "Alacrity";
             this.Alacrity.Size = new System.Drawing.Size(42, 42);
             this.Alacrity.TabIndex = 50;
@@ -1184,7 +1184,7 @@
             // AlacrityBackground
             // 
             this.AlacrityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.AlacrityBackground.Location = new System.Drawing.Point(244, 178);
+            this.AlacrityBackground.Location = new System.Drawing.Point(245, 178);
             this.AlacrityBackground.Name = "AlacrityBackground";
             this.AlacrityBackground.Size = new System.Drawing.Size(89, 88);
             this.AlacrityBackground.TabIndex = 148;
@@ -1193,7 +1193,7 @@
             // ForceCloakBackground
             // 
             this.ForceCloakBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.ForceCloakBackground.Location = new System.Drawing.Point(244, 264);
+            this.ForceCloakBackground.Location = new System.Drawing.Point(245, 265);
             this.ForceCloakBackground.Name = "ForceCloakBackground";
             this.ForceCloakBackground.Size = new System.Drawing.Size(89, 88);
             this.ForceCloakBackground.TabIndex = 147;
@@ -1253,6 +1253,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(984, 696);
+            this.Controls.Add(this.ForceCloakPoints);
+            this.Controls.Add(this.ForceCloak);
+            this.Controls.Add(this.ForceCloakBackground);
+            this.Controls.Add(this.AlacrityPoints);
+            this.Controls.Add(this.Alacrity);
+            this.Controls.Add(this.AlacrityBackground);
             this.Controls.Add(this.SkillRequirements2);
             this.Controls.Add(this.SecondWindPoints);
             this.Controls.Add(this.SecondWind);
@@ -1310,10 +1316,8 @@
             this.Controls.Add(this.DefensiveFightingPoints);
             this.Controls.Add(this.DefensiveFighting);
             this.Controls.Add(this.GraceInMotionPoints);
-            this.Controls.Add(this.ForceCloakPoints);
             this.Controls.Add(this.PremonitionPoints);
             this.Controls.Add(this.GraceInMotion);
-            this.Controls.Add(this.ForceCloak);
             this.Controls.Add(this.Premonition);
             this.Controls.Add(this.GraceInMotionBackground);
             this.Controls.Add(this.pictureBox50);
@@ -1323,9 +1327,7 @@
             this.Controls.Add(this.ImprovedCripplingAccuracy);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.ResetButton);
-            this.Controls.Add(this.AlacrityPoints);
             this.Controls.Add(this.ImprovedForceThrowPoints);
-            this.Controls.Add(this.Alacrity);
             this.Controls.Add(this.ImprovedForceThrow);
             this.Controls.Add(this.EnhancedStaminaPoints);
             this.Controls.Add(this.levelOutput);
@@ -1347,8 +1349,6 @@
             this.Controls.Add(this.EnhancedConstitutionBackground);
             this.Controls.Add(this.EnhancedStrengthBackground);
             this.Controls.Add(this.ImprovedForceThrowBackground);
-            this.Controls.Add(this.AlacrityBackground);
-            this.Controls.Add(this.ForceCloakBackground);
             this.Controls.Add(this.PremonitionBackground);
             this.Controls.Add(this.ImprovedCripplingAccuracyBackground);
             this.Controls.Add(this.DefensiveFightingBackground);

@@ -1660,21 +1660,21 @@ namespace SWG_Expertise_Calcualtor
 
             if (iftpoints >= 1)
             {
-                ImprovedForceThrow.Visible = true;
+                ImprovedForceThrowPoints.Visible = true;
                 ImprovedForceThrow.Image = Properties.Resources.aImprovedForceThrow;
             }
 
             if (iftpoints == 1)
             {
-                ImprovedForceThrow.Image = Properties.Resources.skillpoints1;
+                ImprovedForceThrowPoints.Image = Properties.Resources.skillpoints1;
             }
 
             if (iftpoints == 2)
             {
-                ImprovedForceThrow.Image = Properties.Resources.skillpoints2;
+                ImprovedForceThrowPoints.Image = Properties.Resources.skillpoints2;
             }
 
-            if (espoints == 0)
+            if (iftpoints == 0)
             {
                 ImprovedForceThrow.Image = Properties.Resources.iImprovedForceThrow;
                 ImprovedForceThrowPoints.Visible = false;
