@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SWG_Expertise_Calcualtor.Controllers.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,7 @@ namespace SWG_Expertise_Calcualtor
         }
 
         GuiController gc = new GuiController();
+        MessageBoxService mbs = new MessageBoxService();
 
         public int totalPoints = 45;
 
@@ -112,12 +114,12 @@ namespace SWG_Expertise_Calcualtor
         // Save Button and Reset Button Functions
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Testing the save button function. This button isn't implemented yet.");
+            mbs.SaveButton();
         }
 
         private void ResetButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Testing the reset button function. This button isn't implemented yet.");
+            mbs.ResetButton();
         }
 
         // Makes sure that the required level is correct

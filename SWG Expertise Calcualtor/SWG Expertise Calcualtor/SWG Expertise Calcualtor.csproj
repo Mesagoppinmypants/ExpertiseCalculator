@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Services\MessageBoxService.cs" />
     <Compile Include="Controllers\Services\TotalPointsService.cs" />
     <Compile Include="Controllers\GuiController.cs" />
     <Compile Include="Jedi.cs">
