@@ -308,11 +308,12 @@
             // SkillTitle
             // 
             this.SkillTitle.AutoSize = true;
-            this.SkillTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkillTitle.BackColor = System.Drawing.Color.Transparent;
+            this.SkillTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SkillTitle.ForeColor = System.Drawing.Color.Khaki;
-            this.SkillTitle.Location = new System.Drawing.Point(708, 58);
+            this.SkillTitle.Location = new System.Drawing.Point(699, 58);
             this.SkillTitle.Name = "SkillTitle";
-            this.SkillTitle.Size = new System.Drawing.Size(110, 25);
+            this.SkillTitle.Size = new System.Drawing.Size(94, 24);
             this.SkillTitle.TabIndex = 175;
             this.SkillTitle.Text = "Skill Title";
             this.SkillTitle.Visible = false;
@@ -1028,6 +1029,7 @@
             this.ImprovedForceThrow.Size = new System.Drawing.Size(42, 42);
             this.ImprovedForceThrow.TabIndex = 49;
             this.ImprovedForceThrow.TabStop = false;
+            this.ImprovedForceThrow.Click += new System.EventHandler(this.ImprovedForceThrow_Click);
             this.ImprovedForceThrow.MouseLeave += new System.EventHandler(this.ImprovedForceThrow_MouseLeave);
             this.ImprovedForceThrow.MouseHover += new System.EventHandler(this.ImprovedForceThrow_MouseHover);
             this.ImprovedForceThrow.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ImprovedForceThrow_MouseMove);
@@ -1260,7 +1262,6 @@
             this.Controls.Add(this.SkillRequirements);
             this.Controls.Add(this.RequiresLabel);
             this.Controls.Add(this.SkillSummary);
-            this.Controls.Add(this.SkillTitle);
             this.Controls.Add(this.SkillPicture);
             this.Controls.Add(this.SkillPictureBackground);
             this.Controls.Add(this.ExactingStrikesPoints);
@@ -1338,6 +1339,7 @@
             this.Controls.Add(this.ImprovedCripplingAccuracyBackground);
             this.Controls.Add(this.DefensiveFightingBackground);
             this.Controls.Add(this.ImprovedSaberBlockBackground);
+            this.Controls.Add(this.SkillTitle);
             this.Name = "Jedi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jedi";

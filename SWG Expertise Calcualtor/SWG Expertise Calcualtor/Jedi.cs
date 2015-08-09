@@ -352,7 +352,7 @@ namespace SWG_Expertise_Calcualtor
         private void SkillDescriptionVisiblity()
         {
             // Enables the general titles and descriptions that all skills use
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover == true)
             {
                 SkillPictureBackground.Visible = true;
                 SkillPicture.Visible = true;
@@ -366,7 +366,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillModifierTitle1.Visible = true;
 
                 // Rank 2 Modifiers - 1 Row
-                if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover == true)
+                if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || ImprovedForceThrowHover == true)
                 {
                     Rank1Modifier1.Visible = true;
                     Rank2Modifier1.Visible = true;
@@ -642,6 +642,35 @@ namespace SWG_Expertise_Calcualtor
                     SkillRank.Text = "4/4";
                 }
             }
+
+            // Improved Force Throw
+            if (ImprovedForceThrowHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aImprovedForceThrow;
+                SkillTitle.Text = "IMPROVED FORCE THROW";
+                SkillSummary.Text = "Force Throw's damage is increased by 5%" + "\r\n" + "per point spent.";
+                SkillRequirements.Text = "4 Points In Jedi General";
+                SkillModifierTitle1.Text = "FORCE THROW DAMAGE";
+                Rank1Modifier1.Text = " 5 ";
+                Rank2Modifier1.Text = " 10 ";
+
+                TwoModifierBoxes();
+
+                if (iftpoints == 0)
+                {
+                    SkillRank.Text = "0/2";
+                }
+
+                if (iftpoints == 1)
+                {
+                    SkillRank.Text = "1/2";
+                }
+
+                if (iftpoints == 2)
+                {
+                    SkillRank.Text = "2/2";
+                }
+            }
         }
 
         private void OneRankPoints()
@@ -848,6 +877,22 @@ namespace SWG_Expertise_Calcualtor
             {
                 FourRankPoints();
             }
+
+            // Improved Force Throw
+            if (iftpoints == 0 && ImprovedForceThrowHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (iftpoints == 1 && ImprovedForceThrowHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (iftpoints == 2 && ImprovedForceThrowHover == true)
+            {
+                TwoRankPoints();
+            }
         }
         
         private void OneModifierBoxes()
@@ -884,7 +929,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void HideSecondRankRow()
         {
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || AlacrityHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || AlacrityHover || ImprovedForceThrowHover == true)
             {
                 SkillModifierTitle2.Visible = false;
                 Rank1Modifier2.Visible = false;
@@ -896,30 +941,40 @@ namespace SWG_Expertise_Calcualtor
 
         private void CheckRequirements()
         {
+            // First Row - No requirements
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover == true)
+            {
+                SkillRequirements.ForeColor = Color.White;
+            }
+
             // Second Row - 4 General Jedi points Needs to be spent
-            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints <= 41 && HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover == true)
+            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints <= 41 && HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover == true)
             {
                 SkillRequirements.ForeColor = Color.Green;
             }
 
+            // Exacting Strikes
             if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && ExactingStrikesHover == true)
             {
                 SkillRequirements.ForeColor = Color.Red;
             }
 
+            // Heightened Speed
             if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && HeightenedSpeedHover == true)
             {
                 SkillRequirements.ForeColor = Color.Red;
             }
 
+            // Alacrity
             if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && AlacrityHover == true)
             {
                 SkillRequirements.ForeColor = Color.Red;
             }
 
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover == true)
+            // Enhanced Force Throw
+            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && ImprovedForceThrowHover == true)
             {
-                SkillRequirements.ForeColor = Color.White;
+                SkillRequirements.ForeColor = Color.Red;
             }
         }
 
@@ -1562,17 +1617,84 @@ namespace SWG_Expertise_Calcualtor
         // Improved Force Throw
         private void ImprovedForceThrow_MouseMove(object sender, MouseEventArgs e)
         {
-
+            ImprovedForceThrowHover = true;
+            PageFunctions();
+            if (totalPoints <= 41)
+            {
+                ImprovedForceThrowBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ImprovedForceThrowBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void ImprovedForceThrow_MouseHover(object sender, EventArgs e)
         {
-
+            ImprovedForceThrowHover = true;
+            PageFunctions();
+            if (totalPoints <= 41)
+            {
+                ImprovedForceThrowBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ImprovedForceThrowBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void ImprovedForceThrow_MouseLeave(object sender, EventArgs e)
         {
+            ImprovedForceThrowHover = false;
+            PageFunctions();
+            if (totalPoints <= 41)
+            {
+                ImprovedForceThrowBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ImprovedForceThrowBackground.Image = Properties.Resources.iSkillBox;
+            }
+        }
 
+        private void ImprovedForceThrow_Click(object sender, EventArgs e)
+        {
+            if (RemovePoints.Checked == true && ifspoints <= 2 && iftpoints > 0)
+            {
+                totalPoints++;
+                iftpoints--;
+            }
+
+            if (AddPoints.Checked == true && totalPoints <= 41 && iftpoints >= 0 && iftpoints < 2)
+            {
+                totalPoints--;
+                iftpoints++;
+            }
+
+            if (iftpoints >= 1)
+            {
+                ImprovedForceThrow.Visible = true;
+                ImprovedForceThrow.Image = Properties.Resources.aImprovedForceThrow;
+            }
+
+            if (iftpoints == 1)
+            {
+                ImprovedForceThrow.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (iftpoints == 2)
+            {
+                ImprovedForceThrow.Image = Properties.Resources.skillpoints2;
+            }
+
+            if (espoints == 0)
+            {
+                ImprovedForceThrow.Image = Properties.Resources.iImprovedForceThrow;
+                ImprovedForceThrowPoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
         }
     }
 }
