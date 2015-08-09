@@ -834,7 +834,12 @@ namespace SWG_Expertise_Calcualtor
                 SkillRequirements.ForeColor = Color.Green;
             }
 
-            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && HeightenedSpeedHover || ExactingStrikesHover == true)
+            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && ExactingStrikesHover == true)
+            {
+                SkillRequirements.ForeColor = Color.Red;
+            }
+
+            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && HeightenedSpeedHover == true)
             {
                 SkillRequirements.ForeColor = Color.Red;
             }
