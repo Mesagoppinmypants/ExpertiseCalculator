@@ -542,7 +542,7 @@
             // SecondWind
             // 
             this.SecondWind.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSecondWind;
-            this.SecondWind.Location = new System.Drawing.Point(442, 287);
+            this.SecondWind.Location = new System.Drawing.Point(441, 287);
             this.SecondWind.Name = "SecondWind";
             this.SecondWind.Size = new System.Drawing.Size(42, 42);
             this.SecondWind.TabIndex = 187;
@@ -878,7 +878,7 @@
             // ForceCloakPoints
             // 
             this.ForceCloakPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ForceCloakPoints.Location = new System.Drawing.Point(309, 328);
+            this.ForceCloakPoints.Location = new System.Drawing.Point(307, 328);
             this.ForceCloakPoints.Name = "ForceCloakPoints";
             this.ForceCloakPoints.Size = new System.Drawing.Size(25, 24);
             this.ForceCloakPoints.TabIndex = 97;
@@ -888,7 +888,7 @@
             // PremonitionPoints
             // 
             this.PremonitionPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.PremonitionPoints.Location = new System.Drawing.Point(220, 328);
+            this.PremonitionPoints.Location = new System.Drawing.Point(220, 329);
             this.PremonitionPoints.Name = "PremonitionPoints";
             this.PremonitionPoints.Size = new System.Drawing.Size(25, 24);
             this.PremonitionPoints.TabIndex = 96;
@@ -916,7 +916,7 @@
             // Premonition
             // 
             this.Premonition.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iPremonition;
-            this.Premonition.Location = new System.Drawing.Point(179, 287);
+            this.Premonition.Location = new System.Drawing.Point(179, 288);
             this.Premonition.Name = "Premonition";
             this.Premonition.Size = new System.Drawing.Size(42, 42);
             this.Premonition.TabIndex = 92;
@@ -971,7 +971,7 @@
             // ImprovedCripplingAccuracy
             // 
             this.ImprovedCripplingAccuracy.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedCripplingAccuracy;
-            this.ImprovedCripplingAccuracy.Location = new System.Drawing.Point(90, 287);
+            this.ImprovedCripplingAccuracy.Location = new System.Drawing.Point(92, 287);
             this.ImprovedCripplingAccuracy.Name = "ImprovedCripplingAccuracy";
             this.ImprovedCripplingAccuracy.Size = new System.Drawing.Size(42, 42);
             this.ImprovedCripplingAccuracy.TabIndex = 80;
@@ -1000,7 +1000,7 @@
             // ImprovedForceThrowPoints
             // 
             this.ImprovedForceThrowPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ImprovedForceThrowPoints.Location = new System.Drawing.Point(134, 242);
+            this.ImprovedForceThrowPoints.Location = new System.Drawing.Point(133, 242);
             this.ImprovedForceThrowPoints.Name = "ImprovedForceThrowPoints";
             this.ImprovedForceThrowPoints.Size = new System.Drawing.Size(25, 24);
             this.ImprovedForceThrowPoints.TabIndex = 53;
@@ -1023,7 +1023,7 @@
             // ImprovedForceThrow
             // 
             this.ImprovedForceThrow.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedForceThrow;
-            this.ImprovedForceThrow.Location = new System.Drawing.Point(94, 201);
+            this.ImprovedForceThrow.Location = new System.Drawing.Point(93, 201);
             this.ImprovedForceThrow.Name = "ImprovedForceThrow";
             this.ImprovedForceThrow.Size = new System.Drawing.Size(42, 42);
             this.ImprovedForceThrow.TabIndex = 49;
@@ -1055,7 +1055,7 @@
             // EnhancedConstitutionPoints
             // 
             this.EnhancedConstitutionPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.EnhancedConstitutionPoints.Location = new System.Drawing.Point(309, 156);
+            this.EnhancedConstitutionPoints.Location = new System.Drawing.Point(308, 156);
             this.EnhancedConstitutionPoints.Name = "EnhancedConstitutionPoints";
             this.EnhancedConstitutionPoints.Size = new System.Drawing.Size(25, 24);
             this.EnhancedConstitutionPoints.TabIndex = 30;
@@ -1065,7 +1065,7 @@
             // EnhancedStrengthPoints
             // 
             this.EnhancedStrengthPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.EnhancedStrengthPoints.Location = new System.Drawing.Point(223, 156);
+            this.EnhancedStrengthPoints.Location = new System.Drawing.Point(222, 156);
             this.EnhancedStrengthPoints.Name = "EnhancedStrengthPoints";
             this.EnhancedStrengthPoints.Size = new System.Drawing.Size(25, 24);
             this.EnhancedStrengthPoints.TabIndex = 27;
@@ -1101,7 +1101,7 @@
             // EnhancedConstitution
             // 
             this.EnhancedConstitution.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedConstitution;
-            this.EnhancedConstitution.Location = new System.Drawing.Point(269, 115);
+            this.EnhancedConstitution.Location = new System.Drawing.Point(268, 115);
             this.EnhancedConstitution.Name = "EnhancedConstitution";
             this.EnhancedConstitution.Size = new System.Drawing.Size(42, 42);
             this.EnhancedConstitution.TabIndex = 19;
@@ -1114,7 +1114,7 @@
             // EnhancedStrength
             // 
             this.EnhancedStrength.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStrength;
-            this.EnhancedStrength.Location = new System.Drawing.Point(182, 115);
+            this.EnhancedStrength.Location = new System.Drawing.Point(181, 115);
             this.EnhancedStrength.Name = "EnhancedStrength";
             this.EnhancedStrength.Size = new System.Drawing.Size(42, 42);
             this.EnhancedStrength.TabIndex = 18;
@@ -1145,7 +1145,7 @@
             // EnhancedConstitutionBackground
             // 
             this.EnhancedConstitutionBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.EnhancedConstitutionBackground.Location = new System.Drawing.Point(246, 92);
+            this.EnhancedConstitutionBackground.Location = new System.Drawing.Point(245, 92);
             this.EnhancedConstitutionBackground.Name = "EnhancedConstitutionBackground";
             this.EnhancedConstitutionBackground.Size = new System.Drawing.Size(89, 88);
             this.EnhancedConstitutionBackground.TabIndex = 3;
@@ -1154,7 +1154,7 @@
             // EnhancedStrengthBackground
             // 
             this.EnhancedStrengthBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.EnhancedStrengthBackground.Location = new System.Drawing.Point(159, 92);
+            this.EnhancedStrengthBackground.Location = new System.Drawing.Point(158, 92);
             this.EnhancedStrengthBackground.Name = "EnhancedStrengthBackground";
             this.EnhancedStrengthBackground.Size = new System.Drawing.Size(89, 88);
             this.EnhancedStrengthBackground.TabIndex = 0;
@@ -1163,7 +1163,7 @@
             // SecondWindBackground
             // 
             this.SecondWindBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.SecondWindBackground.Location = new System.Drawing.Point(419, 264);
+            this.SecondWindBackground.Location = new System.Drawing.Point(419, 265);
             this.SecondWindBackground.Name = "SecondWindBackground";
             this.SecondWindBackground.Size = new System.Drawing.Size(89, 88);
             this.SecondWindBackground.TabIndex = 144;
@@ -1172,7 +1172,7 @@
             // ImprovedForceThrowBackground
             // 
             this.ImprovedForceThrowBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.ImprovedForceThrowBackground.Location = new System.Drawing.Point(71, 178);
+            this.ImprovedForceThrowBackground.Location = new System.Drawing.Point(70, 178);
             this.ImprovedForceThrowBackground.Name = "ImprovedForceThrowBackground";
             this.ImprovedForceThrowBackground.Size = new System.Drawing.Size(89, 88);
             this.ImprovedForceThrowBackground.TabIndex = 145;
@@ -1199,7 +1199,7 @@
             // PremonitionBackground
             // 
             this.PremonitionBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.PremonitionBackground.Location = new System.Drawing.Point(156, 264);
+            this.PremonitionBackground.Location = new System.Drawing.Point(156, 265);
             this.PremonitionBackground.Name = "PremonitionBackground";
             this.PremonitionBackground.Size = new System.Drawing.Size(89, 88);
             this.PremonitionBackground.TabIndex = 146;
@@ -1208,7 +1208,7 @@
             // ImprovedCripplingAccuracyBackground
             // 
             this.ImprovedCripplingAccuracyBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.ImprovedCripplingAccuracyBackground.Location = new System.Drawing.Point(67, 264);
+            this.ImprovedCripplingAccuracyBackground.Location = new System.Drawing.Point(69, 264);
             this.ImprovedCripplingAccuracyBackground.Name = "ImprovedCripplingAccuracyBackground";
             this.ImprovedCripplingAccuracyBackground.Size = new System.Drawing.Size(89, 88);
             this.ImprovedCripplingAccuracyBackground.TabIndex = 150;
@@ -1217,7 +1217,7 @@
             // DefensiveFightingBackground
             // 
             this.DefensiveFightingBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.DefensiveFightingBackground.Location = new System.Drawing.Point(70, 352);
+            this.DefensiveFightingBackground.Location = new System.Drawing.Point(69, 352);
             this.DefensiveFightingBackground.Name = "DefensiveFightingBackground";
             this.DefensiveFightingBackground.Size = new System.Drawing.Size(89, 88);
             this.DefensiveFightingBackground.TabIndex = 151;
@@ -1238,6 +1238,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(984, 696);
+            this.Controls.Add(this.SecondWindPoints);
+            this.Controls.Add(this.SecondWind);
+            this.Controls.Add(this.SecondWindBackground);
             this.Controls.Add(this.ForceCloakLineEnd);
             this.Controls.Add(this.ForceCloakLineStart);
             this.Controls.Add(this.ForceCloakLine);
@@ -1246,7 +1249,6 @@
             this.Controls.Add(this.Rank2Modifier2);
             this.Controls.Add(this.Rank1Modifier2);
             this.Controls.Add(this.SkillModifierTitle2);
-            this.Controls.Add(this.SecondWind);
             this.Controls.Add(this.Rank4Modifier1);
             this.Controls.Add(this.Rank3Modifier1);
             this.Controls.Add(this.Rank2Modifier1);
@@ -1306,7 +1308,6 @@
             this.Controls.Add(this.ImprovedCripplingAccuracy);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.ResetButton);
-            this.Controls.Add(this.SecondWindPoints);
             this.Controls.Add(this.AlacrityPoints);
             this.Controls.Add(this.ImprovedForceThrowPoints);
             this.Controls.Add(this.Alacrity);
@@ -1330,7 +1331,6 @@
             this.Controls.Add(this.EnhancedAgilityBackground);
             this.Controls.Add(this.EnhancedConstitutionBackground);
             this.Controls.Add(this.EnhancedStrengthBackground);
-            this.Controls.Add(this.SecondWindBackground);
             this.Controls.Add(this.ImprovedForceThrowBackground);
             this.Controls.Add(this.AlacrityBackground);
             this.Controls.Add(this.ForceCloakBackground);
