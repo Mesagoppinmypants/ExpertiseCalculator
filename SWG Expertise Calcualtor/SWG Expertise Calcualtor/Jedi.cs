@@ -96,6 +96,7 @@ namespace SWG_Expertise_Calcualtor
         {
             CheckLevel();
             CheckBackgrounds();
+            CheckSkillRank();
             CheckBackgroundsHover();
             SkillDescriptionVisiblity();
             SkillDescription();
@@ -567,12 +568,17 @@ namespace SWG_Expertise_Calcualtor
         private void OneRankPoints()
         {
             Rank1Modifier.BackColor = Color.LightGray;
+            Rank2Modifier.BackColor = Color.Transparent;
+            Rank3Modifier.BackColor = Color.Transparent;
+            Rank4Modifier.BackColor = Color.Transparent;
         }
 
         private void TwoRankPoints()
         {
             Rank1Modifier.BackColor = Color.LightGray;
             Rank2Modifier.BackColor = Color.LightGray;
+            Rank3Modifier.BackColor = Color.Transparent;
+            Rank4Modifier.BackColor = Color.Transparent;
         }
 
         private void ThreeRankPoints()
@@ -580,6 +586,7 @@ namespace SWG_Expertise_Calcualtor
             Rank1Modifier.BackColor = Color.LightGray;
             Rank2Modifier.BackColor = Color.LightGray;
             Rank3Modifier.BackColor = Color.LightGray;
+            Rank4Modifier.BackColor = Color.Transparent;
         }
 
         private void FourRankPoints()
@@ -590,7 +597,7 @@ namespace SWG_Expertise_Calcualtor
             Rank4Modifier.BackColor = Color.LightGray;
         }
 
-        private void ResetRankPoints()
+        private void ZeroRankPoints()
         {
             Rank1Modifier.BackColor = Color.Transparent;
             Rank2Modifier.BackColor = Color.Transparent;
@@ -598,9 +605,124 @@ namespace SWG_Expertise_Calcualtor
             Rank4Modifier.BackColor = Color.Transparent;
         }
 
-        private void ResetSkillRank()
+        private void CheckSkillRank()
         {
+            // Enhanced Strength
+            if (strpoints == 0 && EnhancedStrengthHover == true)
+            {
+                Rank1Modifier.BackColor = Color.Transparent;
+                ZeroRankPoints();
+            }
 
+            if (strpoints == 1 && EnhancedStrengthHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (strpoints == 2 && EnhancedStrengthHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            // Enhanced Constitution
+            if (conpoints == 0 && EnhancedConstitutionHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (conpoints == 1 && EnhancedConstitutionHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (conpoints == 2 && EnhancedConstitutionHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            // Enhanced Agility
+            if (agipoints == 0 && EnhancedAgilityHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (agipoints == 1 && EnhancedAgilityHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (agipoints == 2 && EnhancedAgilityHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            // Enhanced Stamina
+            if (stapoints == 0 && EnhancedStaminaHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (stapoints == 1 && EnhancedStaminaHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (stapoints == 2 && EnhancedStaminaHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            // Heightened Speed
+            if (hspoints == 0 && HeightenedSpeedHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (hspoints == 1 && HeightenedSpeedHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (hspoints == 2 && HeightenedSpeedHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            if (hspoints == 3 && HeightenedSpeedHover == true)
+            {
+                ThreeRankPoints();
+            }
+
+            if (hspoints == 4 && HeightenedSpeedHover == true)
+            {
+                FourRankPoints();
+            }
+
+            // Exacting Strikes
+            if (espoints == 0 && ExactingStrikesHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (espoints == 1 && ExactingStrikesHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (espoints == 2 && ExactingStrikesHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            if (espoints == 3 && ExactingStrikesHover == true)
+            {
+                ThreeRankPoints();
+            }
+
+            if (espoints == 4 && ExactingStrikesHover == true)
+            {
+                FourRankPoints();
+            }
         }
 
         // Changes the background for each skill if they are hovered.
