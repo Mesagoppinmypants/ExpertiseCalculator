@@ -360,7 +360,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillTitle.Visible = true;
                 SkillSummary.Visible = true;
                 RequiresLabel.Visible = true;
-                SkillRequirements.Visible = true;
+                SkillRequirements1.Visible = true;
                 RankLabel.Visible = true;
                 SkillRank.Visible = true;
                 GrandsModifiersLabel.Visible = true;
@@ -392,7 +392,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillPicture.Image = Properties.Resources.aEnhancedStrength;
                 SkillTitle.Text = "ENHANCED STRENGTH";
                 SkillSummary.Text = "Strength increased by 25 points per point" + "\r\n" + "spent.";
-                SkillRequirements.Text = "None";
+                SkillRequirements1.Text = "None";
                 SkillModifierTitle1.Text = "STRENGTH";
                 Rank1Modifier1.Text = " 25 ";
                 Rank2Modifier1.Text = " 50 ";
@@ -421,7 +421,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillPicture.Image = Properties.Resources.aEnhancedConstitution;
                 SkillTitle.Text = "ENHANCED CONSTITUTION";
                 SkillSummary.Text = "Constitution increased by 25 points per point" + "\r\n" + "spent.";
-                SkillRequirements.Text = "None";
+                SkillRequirements1.Text = "None";
                 SkillModifierTitle1.Text = "CONSTITUTION";
                 Rank1Modifier1.Text = " 25 ";
                 Rank2Modifier1.Text = " 50 ";
@@ -450,7 +450,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillPicture.Image = Properties.Resources.aEnhancedAgility;
                 SkillTitle.Text = "ENHANCED AGILITY";
                 SkillSummary.Text = "Agility increased by 25 points per point" + "\r\n" + "spent.";
-                SkillRequirements.Text = "None";
+                SkillRequirements1.Text = "None";
                 SkillModifierTitle1.Text = "AGILITY";
                 Rank1Modifier1.Text = " 25 ";
                 Rank2Modifier1.Text = " 50 ";
@@ -479,7 +479,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillPicture.Image = Properties.Resources.aEnhancedStamina;
                 SkillTitle.Text = "ENHANCED STAMINA";
                 SkillSummary.Text = "Stamina increased by 25 points per point" + "\r\n" + "spent.";
-                SkillRequirements.Text = "None";
+                SkillRequirements1.Text = "None";
                 SkillModifierTitle1.Text = "STAMINA";
                 Rank1Modifier1.Text = " 25 ";
                 Rank2Modifier1.Text = " 50 ";
@@ -508,7 +508,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillPicture.Image = Properties.Resources.aHeightenedSpeed;
                 SkillTitle.Text = "HEIGHTENED SPEED";
                 SkillSummary.Text = "Force Run's speed is increased by 10% per" + "\r\n" + "point spent.";
-                SkillRequirements.Text = "4 Points In Jedi General";
+                SkillRequirements1.Text = "4 Points In Jedi General";
                 SkillModifierTitle1.Text = "FORCE RUN MOVEMENT";
                 Rank1Modifier1.Text = " 10 ";
                 Rank2Modifier1.Text = " 20 ";
@@ -549,7 +549,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillPicture.Image = Properties.Resources.aExactingStrikes;
                 SkillTitle.Text = "EXACTING STRIKES";
                 SkillSummary.Text = "Strike and sweep damage is increased by" + "\r\n" + "2% per point spent.";
-                SkillRequirements.Text = "4 Points In Jedi General";
+                SkillRequirements1.Text = "4 Points In Jedi General";
                 SkillModifierTitle1.Text = "SWEEP DAMAGE";
                 SkillModifierTitle2.Text = "STRIKE DAMAGE";
                 Rank1Modifier1.Text = " 2 ";
@@ -595,7 +595,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillPicture.Image = Properties.Resources.aAlacrity;
                 SkillTitle.Text = "ALACRITY";
                 SkillSummary.Text = "The chance for a blow to glance off you is" + "\r\n" + "increased by 2% per point spent.";
-                SkillRequirements.Text = "4 Points In Jedi General";
+                SkillRequirements1.Text = "4 Points In Jedi General";
                 SkillModifierTitle1.Text = "GLANCING BLOW INCREASE";
                 Rank1Modifier1.Text = " 2 ";
                 Rank2Modifier1.Text = " 4 ";
@@ -636,7 +636,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillPicture.Image = Properties.Resources.aImprovedForceThrow;
                 SkillTitle.Text = "IMPROVED FORCE THROW";
                 SkillSummary.Text = "Force Throw's damage is increased by 5%" + "\r\n" + "per point spent.";
-                SkillRequirements.Text = "4 Points In Jedi General";
+                SkillRequirements1.Text = "4 Points In Jedi General";
                 SkillModifierTitle1.Text = "FORCE THROW DAMAGE";
                 Rank1Modifier1.Text = " 5 ";
                 Rank2Modifier1.Text = " 10 ";
@@ -931,37 +931,37 @@ namespace SWG_Expertise_Calcualtor
             // First Row - No requirements
             if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover == true)
             {
-                SkillRequirements.ForeColor = Color.White;
+                SkillRequirements1.ForeColor = Color.White;
             }
 
             // Second Row - 4 General Jedi points Needs to be spent
-            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints <= 41 && HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover == true)
+            if (SkillRequirements1.Text == "4 Points In Jedi General" && totalPoints <= 41 && HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover == true)
             {
-                SkillRequirements.ForeColor = Color.Green;
+                SkillRequirements1.ForeColor = Color.Green;
             }
 
             // Exacting Strikes
-            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && ExactingStrikesHover == true)
+            if (SkillRequirements1.Text == "4 Points In Jedi General" && totalPoints > 41 && ExactingStrikesHover == true)
             {
-                SkillRequirements.ForeColor = Color.Red;
+                SkillRequirements1.ForeColor = Color.Red;
             }
 
             // Heightened Speed
-            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && HeightenedSpeedHover == true)
+            if (SkillRequirements1.Text == "4 Points In Jedi General" && totalPoints > 41 && HeightenedSpeedHover == true)
             {
-                SkillRequirements.ForeColor = Color.Red;
+                SkillRequirements1.ForeColor = Color.Red;
             }
 
             // Alacrity
-            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && AlacrityHover == true)
+            if (SkillRequirements1.Text == "4 Points In Jedi General" && totalPoints > 41 && AlacrityHover == true)
             {
-                SkillRequirements.ForeColor = Color.Red;
+                SkillRequirements1.ForeColor = Color.Red;
             }
 
             // Enhanced Force Throw
-            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && ImprovedForceThrowHover == true)
+            if (SkillRequirements1.Text == "4 Points In Jedi General" && totalPoints > 41 && ImprovedForceThrowHover == true)
             {
-                SkillRequirements.ForeColor = Color.Red;
+                SkillRequirements1.ForeColor = Color.Red;
             }
         }
 
