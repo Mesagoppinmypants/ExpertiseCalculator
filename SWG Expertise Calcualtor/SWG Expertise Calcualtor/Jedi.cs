@@ -21,6 +21,7 @@ namespace SWG_Expertise_Calcualtor
 
         GuiController gc = new GuiController();
         MessageBoxService mbs = new MessageBoxService();
+        TotalPointsService tps = new TotalPointsService();
 
         public int totalPoints = 45;
 
@@ -329,6 +330,8 @@ namespace SWG_Expertise_Calcualtor
             {
                 levelOutput.Text = "90";
             }
+            
+            //tps.CheckLevelTest();
         }
 
         // Changes the backgrounds for each row when the user hits a certain amount of totalPoints -- Finish this for the other rows
