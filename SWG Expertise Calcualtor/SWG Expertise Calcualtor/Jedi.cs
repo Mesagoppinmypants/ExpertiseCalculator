@@ -332,6 +332,7 @@ namespace SWG_Expertise_Calcualtor
         // Changes the backgrounds for each row when the user hits a certain amount of totalPoints -- Finish this for the other rows
         private void CheckBackgrounds()
         {
+            // Second Row
             if (totalPoints <= 41)
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.aSkillBox;
@@ -364,22 +365,8 @@ namespace SWG_Expertise_Calcualtor
                 SkillRank.Visible = true;
                 GrandsModifiersLabel.Visible = true;
                 SkillModifierTitle1.Visible = true;
-
-                // Rank 2 Modifiers - 1 Row
-                if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || ImprovedForceThrowHover == true)
-                {
-                    Rank1Modifier1.Visible = true;
-                    Rank2Modifier1.Visible = true;
-                }
-
-                // Rank 4 Modifiers - 1 Row
-                if (HeightenedSpeedHover || AlacrityHover == true)
-                {
-                    Rank1Modifier1.Visible = true;
-                    Rank2Modifier1.Visible = true;
-                    Rank3Modifier1.Visible = true;
-                    Rank4Modifier1.Visible = true;
-                }
+                Rank1Modifier1.Visible = true;
+                Rank2Modifier1.Visible = true;
 
                 // Rank 4 Modifiers - 2 Rows
                 if (ExactingStrikesHover == true)
