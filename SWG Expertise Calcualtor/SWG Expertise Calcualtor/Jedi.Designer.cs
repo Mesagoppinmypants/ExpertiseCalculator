@@ -129,6 +129,9 @@
             this.DefensiveFightingBackground = new System.Windows.Forms.PictureBox();
             this.ImprovedSaberBlockBackground = new System.Windows.Forms.PictureBox();
             this.SkillRequirements2 = new System.Windows.Forms.Label();
+            this.JediGeneral = new System.Windows.Forms.Label();
+            this.Path = new System.Windows.Forms.Label();
+            this.BeastMastery = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineEnd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLine)).BeginInit();
@@ -1263,12 +1266,50 @@
             this.SkillRequirements2.Text = "None";
             this.SkillRequirements2.Visible = false;
             // 
+            // JediGeneral
+            // 
+            this.JediGeneral.AutoSize = true;
+            this.JediGeneral.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JediGeneral.ForeColor = System.Drawing.Color.White;
+            this.JediGeneral.Location = new System.Drawing.Point(12, 9);
+            this.JediGeneral.Name = "JediGeneral";
+            this.JediGeneral.Size = new System.Drawing.Size(160, 31);
+            this.JediGeneral.TabIndex = 197;
+            this.JediGeneral.Text = "jedi general";
+            this.JediGeneral.MouseHover += new System.EventHandler(this.JediGeneral_MouseHover);
+            this.JediGeneral.MouseMove += new System.Windows.Forms.MouseEventHandler(this.JediGeneral_MouseMove);
+            // 
+            // Path
+            // 
+            this.Path.AutoSize = true;
+            this.Path.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Path.ForeColor = System.Drawing.Color.White;
+            this.Path.Location = new System.Drawing.Point(215, 9);
+            this.Path.Name = "Path";
+            this.Path.Size = new System.Drawing.Size(68, 31);
+            this.Path.TabIndex = 198;
+            this.Path.Text = "path";
+            // 
+            // BeastMastery
+            // 
+            this.BeastMastery.AutoSize = true;
+            this.BeastMastery.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BeastMastery.ForeColor = System.Drawing.Color.White;
+            this.BeastMastery.Location = new System.Drawing.Point(326, 9);
+            this.BeastMastery.Name = "BeastMastery";
+            this.BeastMastery.Size = new System.Drawing.Size(184, 31);
+            this.BeastMastery.TabIndex = 199;
+            this.BeastMastery.Text = "beast mastery";
+            // 
             // Jedi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(984, 696);
+            this.Controls.Add(this.BeastMastery);
+            this.Controls.Add(this.Path);
+            this.Controls.Add(this.JediGeneral);
             this.Controls.Add(this.ForceCloakPoints);
             this.Controls.Add(this.ForceCloak);
             this.Controls.Add(this.ForceCloakBackground);
@@ -1557,5 +1598,8 @@
         private System.Windows.Forms.PictureBox ForceCloakLineStart;
         private System.Windows.Forms.PictureBox ForceCloakLineEnd;
         private System.Windows.Forms.Label SkillRequirements2;
+        public System.Windows.Forms.Label JediGeneral;
+        private System.Windows.Forms.Label Path;
+        private System.Windows.Forms.Label BeastMastery;
     }
 }

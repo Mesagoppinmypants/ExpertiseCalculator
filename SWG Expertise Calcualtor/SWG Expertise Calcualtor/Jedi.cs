@@ -56,6 +56,9 @@ namespace SWG_Expertise_Calcualtor
         public bool ImprovedForceShockwaveHover = false;
         public bool ForceShockwaveHover = false;
 
+        // Skill Tree Tabs
+        public bool GeneralTabHover = false;
+
         // Skill Points
         // First Row
         public int strpoints = 0;
@@ -1936,6 +1939,18 @@ namespace SWG_Expertise_Calcualtor
             {
                 PremonitionBackground.Image = Properties.Resources.iSkillBox;
             }
+        }
+
+        private void JediGeneral_MouseMove(object sender, MouseEventArgs e)
+        {
+            GeneralTabHover = true;
+            gc.TabHoverControls();
+        }
+
+        private void JediGeneral_MouseHover(object sender, EventArgs e)
+        {
+            GeneralTabHover = true;
+            gc.TabHoverControls();
         }
     }
 }
