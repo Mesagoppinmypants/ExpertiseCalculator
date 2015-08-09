@@ -973,7 +973,6 @@
             this.SkillPicture.Size = new System.Drawing.Size(42, 42);
             this.SkillPicture.TabIndex = 174;
             this.SkillPicture.TabStop = false;
-            this.SkillPicture.Visible = false;
             // 
             // SkillTitle
             // 
@@ -1295,6 +1294,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jedi";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Jedi_FormClosing);
+            this.Load += new System.EventHandler(this.Jedi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SkillPictureBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikes)).EndInit();

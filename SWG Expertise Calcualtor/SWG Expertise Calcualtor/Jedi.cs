@@ -90,6 +90,11 @@ namespace SWG_Expertise_Calcualtor
             start.Visible = true;
         }
 
+        private void Jedi_Load(object sender, EventArgs e)
+        {
+            SkillPicture.Visible = false;
+        }
+
         // Page Functions
 
         private void PageFunctions()
@@ -829,7 +834,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillRequirements.ForeColor = Color.Green;
             }
 
-            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints < 41 && HeightenedSpeedHover || ExactingStrikesHover == true)
+            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && HeightenedSpeedHover || ExactingStrikesHover == true)
             {
                 SkillRequirements.ForeColor = Color.Red;
             }
