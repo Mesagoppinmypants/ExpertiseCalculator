@@ -8,214 +8,213 @@ namespace SWG_Expertise_Calcualtor
 {
     class TotalPointsService
     {
-        private readonly object levelOutput;
-        int totalPoints = 0;
         public void CheckLevel()
         {
-/*            if (totalPoints >= 40)
+            Jedi jedi = new Jedi();
+            if (jedi.totalPoints  >= 40)
             {
-                levelOutput.Text = "10";
+                jedi.levelOutput.Text = "10";
             }
 
-            if (totalPoints == 39)
+            if (jedi.totalPoints  == 39)
             {
-                levelOutput.Text = "12";
+                jedi.levelOutput.Text = "12";
             }
 
-            if (totalPoints == 38)
+            if (jedi.totalPoints  == 38)
             {
-                levelOutput.Text = "14";
+                jedi.levelOutput.Text = "14";
             }
 
-            if (totalPoints == 37)
+            if (jedi.totalPoints  == 37)
             {
-                levelOutput.Text = "16";
+                jedi.levelOutput.Text = "16";
             }
 
-            if (totalPoints == 36)
+            if (jedi.totalPoints  == 36)
             {
-                levelOutput.Text = "18";
+                jedi.levelOutput.Text = "18";
             }
 
-            if (totalPoints == 35)
+            if (jedi.totalPoints  == 35)
             {
-                levelOutput.Text = "20";
+                jedi.levelOutput.Text = "20";
             }
 
-            if (totalPoints == 34)
+            if (jedi.totalPoints  == 34)
             {
-                levelOutput.Text = "22";
+                jedi.levelOutput.Text = "22";
             }
 
-            if (totalPoints == 33)
+            if (jedi.totalPoints  == 33)
             {
-                levelOutput.Text = "24";
+                jedi.levelOutput.Text = "24";
             }
 
-            if (totalPoints == 32)
+            if (jedi.totalPoints  == 32)
             {
-                levelOutput.Text = "26";
+                jedi.levelOutput.Text = "26";
             }
 
-            if (totalPoints == 31)
+            if (jedi.totalPoints  == 31)
             {
-                levelOutput.Text = "28";
+                jedi.levelOutput.Text = "28";
             }
 
-            if (totalPoints == 30)
+            if (jedi.totalPoints  == 30)
             {
-                levelOutput.Text = "30";
+                jedi.levelOutput.Text = "30";
             }
 
-            if (totalPoints == 29)
+            if (jedi.totalPoints  == 29)
             {
-                levelOutput.Text = "32";
+                jedi.levelOutput.Text = "32";
             }
 
-            if (totalPoints == 28)
+            if (jedi.totalPoints  == 28)
             {
-                levelOutput.Text = "34";
+                jedi.levelOutput.Text = "34";
             }
 
-            if (totalPoints == 27)
+            if (jedi.totalPoints  == 27)
             {
-                levelOutput.Text = "36";
+                jedi.levelOutput.Text = "36";
             }
 
-            if (totalPoints == 26)
+            if (jedi.totalPoints  == 26)
             {
-                levelOutput.Text = "38";
+                jedi.levelOutput.Text = "38";
             }
 
-            if (totalPoints == 25)
+            if (jedi.totalPoints  == 25)
             {
-                levelOutput.Text = "40";
+                jedi.levelOutput.Text = "40";
             }
 
-            if (totalPoints == 24)
+            if (jedi.totalPoints  == 24)
             {
-                levelOutput.Text = "42";
+                jedi.levelOutput.Text = "42";
             }
 
-            if (totalPoints == 23)
+            if (jedi.totalPoints  == 23)
             {
-                levelOutput.Text = "44";
+                jedi.levelOutput.Text = "44";
             }
 
-            if (totalPoints == 22)
+            if (jedi.totalPoints  == 22)
             {
-                levelOutput.Text = "46";
+                jedi.levelOutput.Text = "46";
             }
 
-            if (totalPoints == 21)
+            if (jedi.totalPoints  == 21)
             {
-                levelOutput.Text = "48";
+                jedi.levelOutput.Text = "48";
             }
 
-            if (totalPoints == 20)
+            if (jedi.totalPoints  == 20)
             {
-                levelOutput.Text = "50";
+                jedi.levelOutput.Text = "50";
             }
 
-            if (totalPoints == 19)
+            if (jedi.totalPoints  == 19)
             {
-                levelOutput.Text = "52";
+                jedi.levelOutput.Text = "52";
             }
 
-            if (totalPoints == 18)
+            if (jedi.totalPoints  == 18)
             {
-                levelOutput.Text = "54";
+                jedi.levelOutput.Text = "54";
             }
 
-            if (totalPoints == 17)
+            if (jedi.totalPoints  == 17)
             {
-                levelOutput.Text = "56";
+                jedi.levelOutput.Text = "56";
             }
 
-            if (totalPoints == 16)
+            if (jedi.totalPoints  == 16)
             {
-                levelOutput.Text = "58";
+                jedi.levelOutput.Text = "58";
             }
 
-            if (totalPoints == 15)
+            if (jedi.totalPoints  == 15)
             {
-                levelOutput.Text = "60";
+                jedi.levelOutput.Text = "60";
             }
 
-            if (totalPoints == 14)
+            if (jedi.totalPoints  == 14)
             {
-                levelOutput.Text = "62";
+                jedi.levelOutput.Text = "62";
             }
 
-            if (totalPoints == 13)
+            if (jedi.totalPoints  == 13)
             {
-                levelOutput.Text = "64";
+                jedi.levelOutput.Text = "64";
             }
 
-            if (totalPoints == 12)
+            if (jedi.totalPoints  == 12)
             {
-                levelOutput.Text = "66";
+                jedi.levelOutput.Text = "66";
             }
 
-            if (totalPoints == 11)
+            if (jedi.totalPoints  == 11)
             {
-                levelOutput.Text = "68";
+                jedi.levelOutput.Text = "68";
             }
 
-            if (totalPoints == 10)
+            if (jedi.totalPoints  == 10)
             {
-                levelOutput.Text = "70";
+                jedi.levelOutput.Text = "70";
             }
 
-            if (totalPoints == 9)
+            if (jedi.totalPoints  == 9)
             {
-                levelOutput.Text = "72";
+                jedi.levelOutput.Text = "72";
             }
 
-            if (totalPoints == 8)
+            if (jedi.totalPoints  == 8)
             {
-                levelOutput.Text = "74";
+                jedi.levelOutput.Text = "74";
             }
 
-            if (totalPoints == 7)
+            if (jedi.totalPoints  == 7)
             {
-                levelOutput.Text = "76";
+                jedi.levelOutput.Text = "76";
             }
 
-            if (totalPoints == 6)
+            if (jedi.totalPoints  == 6)
             {
-                levelOutput.Text = "78";
+                jedi.levelOutput.Text = "78";
             }
 
-            if (totalPoints == 5)
+            if (jedi.totalPoints  == 5)
             {
-                levelOutput.Text = "80";
+                jedi.levelOutput.Text = "80";
             }
 
-            if (totalPoints == 4)
+            if (jedi.totalPoints  == 4)
             {
-                levelOutput.Text = "82";
+                jedi.levelOutput.Text = "82";
             }
 
-            if (totalPoints == 3)
+            if (jedi.totalPoints  == 3)
             {
-                levelOutput.Text = "84";
+                jedi.levelOutput.Text = "84";
             }
 
-            if (totalPoints == 2)
+            if (jedi.totalPoints  == 2)
             {
-                levelOutput.Text = "86";
+                jedi.levelOutput.Text = "86";
             }
 
-            if (totalPoints == 1)
+            if (jedi.totalPoints  == 1)
             {
-                levelOutput.Text = "88";
+                jedi.levelOutput.Text = "88";
             }
 
-            if (totalPoints == 0)
+            if (jedi.totalPoints  == 0)
             {
-                levelOutput.Text = "90";
-            }*/
+                jedi.levelOutput.Text = "90";
+            }
         }
     }
 }
