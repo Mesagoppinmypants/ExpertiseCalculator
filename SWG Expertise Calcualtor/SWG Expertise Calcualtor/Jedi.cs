@@ -389,6 +389,8 @@ namespace SWG_Expertise_Calcualtor
                 Rank1Modifier.Text = "25";
                 Rank2Modifier.Text = "50";
 
+                TwoModifierBoxes();
+
                 if (strpoints == 0)
                 {
                     SkillRank.Text = "0/2";
@@ -415,6 +417,8 @@ namespace SWG_Expertise_Calcualtor
                 SkillModifierTitle.Text = "CONSTITUTION";
                 Rank1Modifier.Text = "25";
                 Rank2Modifier.Text = "50";
+
+                TwoModifierBoxes();
 
                 if (conpoints == 0)
                 {
@@ -443,6 +447,8 @@ namespace SWG_Expertise_Calcualtor
                 Rank1Modifier.Text = "25";
                 Rank2Modifier.Text = "50";
 
+                TwoModifierBoxes();
+
                 if (agipoints == 0)
                 {
                     SkillRank.Text = "0/2";
@@ -469,6 +475,8 @@ namespace SWG_Expertise_Calcualtor
                 SkillModifierTitle.Text = "STAMINA";
                 Rank1Modifier.Text = "25";
                 Rank2Modifier.Text = "50";
+
+                TwoModifierBoxes();
 
                 if (stapoints == 0)
                 {
@@ -498,6 +506,8 @@ namespace SWG_Expertise_Calcualtor
                 Rank2Modifier.Text = "20";
                 Rank3Modifier.Text = "30";
                 Rank4Modifier.Text = "40";
+
+                FourModifierBoxes();
 
                 if (hspoints == 0)
                 {
@@ -537,6 +547,8 @@ namespace SWG_Expertise_Calcualtor
                 Rank2Modifier.Text = "20";
                 Rank3Modifier.Text = "30";
                 Rank4Modifier.Text = "40";
+
+                FourModifierBoxes();
 
                 if (espoints == 0)
                 {
@@ -724,7 +736,38 @@ namespace SWG_Expertise_Calcualtor
                 FourRankPoints();
             }
         }
+        
+        private void OneModifierBoxes()
+        {
+            Rank1Modifier.Visible = true;
+            Rank2Modifier.Visible = false;
+            Rank3Modifier.Visible = false;
+            Rank4Modifier.Visible = false;
+        }
 
+        private void TwoModifierBoxes()
+        {
+            Rank1Modifier.Visible = true;
+            Rank2Modifier.Visible = true;
+            Rank3Modifier.Visible = false;
+            Rank4Modifier.Visible = false;
+        }
+
+        private void ThreeModifierBoxes()
+        {
+            Rank1Modifier.Visible = true;
+            Rank2Modifier.Visible = true;
+            Rank3Modifier.Visible = true;
+            Rank4Modifier.Visible = false;
+        }
+
+        private void FourModifierBoxes()
+        {
+            Rank1Modifier.Visible = true;
+            Rank2Modifier.Visible = true;
+            Rank3Modifier.Visible = true;
+            Rank4Modifier.Visible = true;
+        }
         // Changes the background for each skill if they are hovered.
         private void CheckBackgroundsHover()
         {
