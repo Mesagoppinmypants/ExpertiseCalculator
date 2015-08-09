@@ -347,6 +347,40 @@ namespace SWG_Expertise_Calcualtor
                 AlacrityBackground.Image = Properties.Resources.iSkillBox;
                 ImprovedForceThrowBackground.Image = Properties.Resources.iSkillBox;
             }
+
+            // Third Row
+            if (totalPoints <= 37)
+            {
+                GraceInMotionBackground.Image = Properties.Resources.aSkillBox;
+                ForceCloakBackground.Image = Properties.Resources.aSkillBox;
+                PremonitionBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                GraceInMotionBackground.Image = Properties.Resources.iSkillBox;
+                ForceCloakBackground.Image = Properties.Resources.iSkillBox;
+                PremonitionBackground.Image = Properties.Resources.iSkillBox;
+            }
+
+            // Second Wind
+            if (totalPoints <= 37 && hspoints == 4)
+            {
+                SecondWindBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                SecondWindBackground.Image = Properties.Resources.iSkillBox;
+            }
+
+            // Improved Crippling Accuracy
+            if (totalPoints <= 37 && iftpoints == 2)
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
 
         // This controls the skill description visibility
@@ -1682,6 +1716,221 @@ namespace SWG_Expertise_Calcualtor
 
             AvailablePoints.Text = totalPoints.ToString();
             PageFunctions();
+        }
+
+        private void SecondWind_MouseHover(object sender, EventArgs e)
+        {
+            SecondWindHover = true;
+            PageFunctions();
+            if (totalPoints <= 37 && hspoints == 4)
+            {
+                SecondWindBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                SecondWindBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void SecondWind_MouseMove(object sender, MouseEventArgs e)
+        {
+            SecondWindHover = true;
+            PageFunctions();
+            if (totalPoints <= 37 && hspoints == 4)
+            {
+                SecondWindBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                SecondWindBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void SecondWind_MouseLeave(object sender, EventArgs e)
+        {
+            SecondWindHover = false;
+            PageFunctions();
+            if (totalPoints <= 37 && hspoints == 4)
+            {
+                SecondWindBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                SecondWindBackground.Image = Properties.Resources.iSkillBox;
+            }
+        }
+
+        private void SecondWind_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImprovedCripplingAccuracy_MouseHover(object sender, EventArgs e)
+        {
+            ImprovedCripplingAccuracyHover = true;
+            PageFunctions();
+            if (totalPoints <= 37 && iftpoints == 2)
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void ImprovedCripplingAccuracy_MouseMove(object sender, MouseEventArgs e)
+        {
+            ImprovedCripplingAccuracyHover = true;
+            PageFunctions();
+            if (totalPoints <= 37 && iftpoints == 2)
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void ImprovedCripplingAccuracy_MouseLeave(object sender, EventArgs e)
+        {
+            ImprovedCripplingAccuracyHover = false;
+            PageFunctions();
+            if (totalPoints <= 37 && iftpoints == 2)
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.iSkillBox;
+            }
+        }
+
+        private void GraceInMotion_MouseHover(object sender, EventArgs e)
+        {
+            GraceInMotionHover = true;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                GraceInMotionBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                GraceInMotionBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void GraceInMotion_MouseMove(object sender, MouseEventArgs e)
+        {
+            GraceInMotionHover = true;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                GraceInMotionBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                GraceInMotionBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void GraceInMotion_MouseLeave(object sender, EventArgs e)
+        {
+            GraceInMotionHover = false;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                GraceInMotionBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                GraceInMotionBackground.Image = Properties.Resources.iSkillBox;
+            }
+        }
+
+        private void ForceCloak_MouseHover(object sender, EventArgs e)
+        {
+            ForceCloakHover = true;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                ForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ForceCloakBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void ForceCloak_MouseMove(object sender, MouseEventArgs e)
+        {
+            ForceCloakHover = true;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                ForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ForceCloakBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void ForceCloak_MouseLeave(object sender, EventArgs e)
+        {
+            ForceCloakHover = false;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                ForceCloakBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ForceCloakBackground.Image = Properties.Resources.iSkillBox;
+            }
+        }
+
+        private void Premonition_MouseMove(object sender, MouseEventArgs e)
+        {
+            PremonitionHover = true;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                PremonitionBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                PremonitionBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void Premonition_MouseHover(object sender, EventArgs e)
+        {
+            PremonitionHover = true;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                PremonitionBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                PremonitionBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void Premonition_MouseLeave(object sender, EventArgs e)
+        {
+            PremonitionHover = false;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                PremonitionBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                PremonitionBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
     }
 }
