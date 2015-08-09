@@ -352,7 +352,7 @@ namespace SWG_Expertise_Calcualtor
         private void SkillDescriptionVisiblity()
         {
             // Enables the general titles and descriptions that all skills use
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover == true)
             {
                 SkillPictureBackground.Visible = true;
                 SkillPicture.Visible = true;
@@ -373,7 +373,7 @@ namespace SWG_Expertise_Calcualtor
                 }
 
                 // Rank 4 Modifiers - 1 Row
-                if (HeightenedSpeedHover == true)
+                if (HeightenedSpeedHover || AlacrityHover == true)
                 {
                     Rank1Modifier1.Visible = true;
                     Rank2Modifier1.Visible = true;
@@ -403,8 +403,8 @@ namespace SWG_Expertise_Calcualtor
             if (EnhancedStrengthHover == true)
             {
                 SkillPicture.Image = Properties.Resources.aEnhancedStrength;
-                SkillTitle.Text = "Enhanced Strength";
-                SkillSummary.Text = "Strength increased by 25 points per point spent.";
+                SkillTitle.Text = "ENHANCED STRENGTH";
+                SkillSummary.Text = "Strength increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements.Text = "None";
                 SkillModifierTitle1.Text = "STRENGTH";
                 Rank1Modifier1.Text = "25";
@@ -432,8 +432,8 @@ namespace SWG_Expertise_Calcualtor
             if (EnhancedConstitutionHover == true)
             {
                 SkillPicture.Image = Properties.Resources.aEnhancedConstitution;
-                SkillTitle.Text = "Enhanced Constitution";
-                SkillSummary.Text = "Constitution increased by 25 points per point spent.";
+                SkillTitle.Text = "ENHANCED CONSTITUTION";
+                SkillSummary.Text = "Constitution increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements.Text = "None";
                 SkillModifierTitle1.Text = "CONSTITUTION";
                 Rank1Modifier1.Text = "25";
@@ -461,8 +461,8 @@ namespace SWG_Expertise_Calcualtor
             if (EnhancedAgilityHover == true)
             {
                 SkillPicture.Image = Properties.Resources.aEnhancedAgility;
-                SkillTitle.Text = "Enhanced Agility";
-                SkillSummary.Text = "Agility increased by 25 points per point spent.";
+                SkillTitle.Text = "ENHANCED AGILITY";
+                SkillSummary.Text = "Agility increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements.Text = "None";
                 SkillModifierTitle1.Text = "AGILITY";
                 Rank1Modifier1.Text = "25";
@@ -490,8 +490,8 @@ namespace SWG_Expertise_Calcualtor
             if (EnhancedStaminaHover == true)
             {
                 SkillPicture.Image = Properties.Resources.aEnhancedStamina;
-                SkillTitle.Text = "Enhanced Stamina";
-                SkillSummary.Text = "Stamina increased by 25 points per point spent.";
+                SkillTitle.Text = "ENHANCED STAMINA";
+                SkillSummary.Text = "Stamina increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements.Text = "None";
                 SkillModifierTitle1.Text = "STAMINA";
                 Rank1Modifier1.Text = "25";
@@ -519,8 +519,8 @@ namespace SWG_Expertise_Calcualtor
             if (HeightenedSpeedHover == true)
             {
                 SkillPicture.Image = Properties.Resources.aHeightenedSpeed;
-                SkillTitle.Text = "Heightened Speed";
-                SkillSummary.Text = "Force Run's speed is increased by 10% per point spent.";
+                SkillTitle.Text = "HEIGHTENED SPEED";
+                SkillSummary.Text = "Force Run's speed is increased by 10% per" + "\r\n" + "point spent.";
                 SkillRequirements.Text = "4 Points In Jedi General";
                 SkillModifierTitle1.Text = "FORCE RUN MOVEMENT";
                 Rank1Modifier1.Text = "10";
@@ -560,8 +560,8 @@ namespace SWG_Expertise_Calcualtor
             if (ExactingStrikesHover == true)
             {
                 SkillPicture.Image = Properties.Resources.aExactingStrikes;
-                SkillTitle.Text = "Exacting Strikes";
-                SkillSummary.Text = "Strike and sweep damage is increased to 2% per point spent.";
+                SkillTitle.Text = "EXACTING STRIKES";
+                SkillSummary.Text = "Strike and sweep damage is increased by" + "\r\n" + "2% per point spent.";
                 SkillRequirements.Text = "4 Points In Jedi General";
                 SkillModifierTitle1.Text = "SWEEP DAMAGE";
                 SkillModifierTitle2.Text = "STRIKE DAMAGE";
@@ -597,6 +597,47 @@ namespace SWG_Expertise_Calcualtor
                 }
 
                 if (espoints == 4)
+                {
+                    SkillRank.Text = "4/4";
+                }
+            }
+
+            // Alacrity
+            if (AlacrityHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aAlacrity;
+                SkillTitle.Text = "ALACRITY";
+                SkillSummary.Text = "The chance for a blow to glance off you is" + "\r\n" + "increased by 2% per point spent.";
+                SkillRequirements.Text = "4 Points In Jedi General";
+                SkillModifierTitle1.Text = "GLANCING BLOW INCREASE";
+                Rank1Modifier1.Text = "2";
+                Rank2Modifier1.Text = "4";
+                Rank3Modifier1.Text = "6";
+                Rank4Modifier1.Text = "8";
+
+                FourModifierBoxes();
+
+                if (apoints == 0)
+                {
+                    SkillRank.Text = "0/4";
+                }
+
+                if (apoints == 1)
+                {
+                    SkillRank.Text = "1/4";
+                }
+
+                if (apoints == 2)
+                {
+                    SkillRank.Text = "2/4";
+                }
+
+                if (apoints == 3)
+                {
+                    SkillRank.Text = "3/4";
+                }
+
+                if (apoints == 4)
                 {
                     SkillRank.Text = "4/4";
                 }
@@ -781,6 +822,32 @@ namespace SWG_Expertise_Calcualtor
             {
                 FourRankPoints();
             }
+
+            // Alacrity
+            if (apoints == 0 && AlacrityHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (apoints == 1 && AlacrityHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (apoints == 2 && AlacrityHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            if (apoints == 3 && AlacrityHover == true)
+            {
+                ThreeRankPoints();
+            }
+
+            if (apoints == 4 && AlacrityHover == true)
+            {
+                FourRankPoints();
+            }
         }
         
         private void OneModifierBoxes()
@@ -817,7 +884,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void HideSecondRankRow()
         {
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || AlacrityHover == true)
             {
                 SkillModifierTitle2.Visible = false;
                 Rank1Modifier2.Visible = false;
@@ -829,7 +896,8 @@ namespace SWG_Expertise_Calcualtor
 
         private void CheckRequirements()
         {
-            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints <= 41 && HeightenedSpeedHover || ExactingStrikesHover == true)
+            // Second Row - 4 General Jedi points Needs to be spent
+            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints <= 41 && HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover == true)
             {
                 SkillRequirements.ForeColor = Color.Green;
             }
@@ -840,6 +908,11 @@ namespace SWG_Expertise_Calcualtor
             }
 
             if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && HeightenedSpeedHover == true)
+            {
+                SkillRequirements.ForeColor = Color.Red;
+            }
+
+            if (SkillRequirements.Text == "4 Points In Jedi General" && totalPoints > 41 && AlacrityHover == true)
             {
                 SkillRequirements.ForeColor = Color.Red;
             }
@@ -1197,7 +1270,7 @@ namespace SWG_Expertise_Calcualtor
                 hspoints--;
             }
 
-            if (AddPoints.Checked == true && totalPoints > 0 && hspoints >= 0 && hspoints < 4)
+            if (AddPoints.Checked == true && totalPoints <= 41 && hspoints >= 0 && hspoints < 4)
             {
                 totalPoints--;
                 hspoints++;
@@ -1311,7 +1384,7 @@ namespace SWG_Expertise_Calcualtor
                 espoints--;
             }
 
-            if (AddPoints.Checked == true && totalPoints > 0 && espoints >= 0 && espoints < 4)
+            if (AddPoints.Checked == true && totalPoints <= 41 && espoints >= 0 && espoints < 4)
             {
                 totalPoints--;
                 espoints++;
@@ -1393,6 +1466,113 @@ namespace SWG_Expertise_Calcualtor
             {
                 ExactingStrikesBackground.Image = Properties.Resources.iSkillBox;
             }
+        }
+
+        // Alacrity
+        private void Alacrity_Click(object sender, EventArgs e)
+        {
+            if (RemovePoints.Checked == true && apoints <= 4 && apoints > 0)
+            {
+                totalPoints++;
+                apoints--;
+            }
+
+            if (AddPoints.Checked == true && totalPoints <= 41 && apoints >= 0 && apoints < 4)
+            {
+                totalPoints--;
+                apoints++;
+            }
+
+            if (apoints >= 1)
+            {
+                AlacrityPoints.Visible = true;
+                Alacrity.Image = Properties.Resources.aAlacrity;
+            }
+
+            if (apoints == 1)
+            {
+                AlacrityPoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (apoints == 2)
+            {
+                AlacrityPoints.Image = Properties.Resources.skillpoints2;
+            }
+
+            if (apoints == 3)
+            {
+                AlacrityPoints.Image = Properties.Resources.skillpoints3;
+            }
+
+            if (apoints == 4)
+            {
+                AlacrityPoints.Image = Properties.Resources.skillpoints4;
+            }
+
+            if (apoints == 0)
+            {
+                Alacrity.Image = Properties.Resources.iAlacrity;
+                AlacrityPoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
+        }
+
+        private void Alacrity_MouseHover(object sender, EventArgs e)
+        {
+            AlacrityHover = true;
+            PageFunctions();
+            if (totalPoints <= 41)
+            {
+                AlacrityBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                AlacrityBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void Alacrity_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (totalPoints <= 41)
+            {
+                AlacrityBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                AlacrityBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void Alacrity_MouseLeave(object sender, EventArgs e)
+        {
+            AlacrityHover = false;
+            PageFunctions();
+            if (totalPoints <= 41)
+            {
+                AlacrityBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                AlacrityBackground.Image = Properties.Resources.iSkillBox;
+            }
+        }
+
+        // Improved Force Throw
+        private void ImprovedForceThrow_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void ImprovedForceThrow_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImprovedForceThrow_MouseLeave(object sender, EventArgs e)
+        {
+
         }
     }
 }

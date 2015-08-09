@@ -1015,6 +1015,10 @@
             this.Alacrity.Size = new System.Drawing.Size(42, 42);
             this.Alacrity.TabIndex = 50;
             this.Alacrity.TabStop = false;
+            this.Alacrity.Click += new System.EventHandler(this.Alacrity_Click);
+            this.Alacrity.MouseLeave += new System.EventHandler(this.Alacrity_MouseLeave);
+            this.Alacrity.MouseHover += new System.EventHandler(this.Alacrity_MouseHover);
+            this.Alacrity.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Alacrity_MouseMove);
             // 
             // ImprovedForceThrow
             // 
@@ -1024,6 +1028,9 @@
             this.ImprovedForceThrow.Size = new System.Drawing.Size(42, 42);
             this.ImprovedForceThrow.TabIndex = 49;
             this.ImprovedForceThrow.TabStop = false;
+            this.ImprovedForceThrow.MouseLeave += new System.EventHandler(this.ImprovedForceThrow_MouseLeave);
+            this.ImprovedForceThrow.MouseHover += new System.EventHandler(this.ImprovedForceThrow_MouseHover);
+            this.ImprovedForceThrow.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ImprovedForceThrow_MouseMove);
             // 
             // EnhancedStaminaPoints
             // 
