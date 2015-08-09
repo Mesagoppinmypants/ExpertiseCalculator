@@ -253,6 +253,15 @@
   <ItemGroup>
     <None Include="Resources\SkillBox.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LineVertical.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LineStart1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LineArrowTop.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

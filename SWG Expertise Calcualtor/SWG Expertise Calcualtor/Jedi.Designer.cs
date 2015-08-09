@@ -37,6 +37,28 @@
             this.levelOutput = new System.Windows.Forms.Label();
             this.ResetButton = new System.Windows.Forms.Button();
             this.SaveButton = new System.Windows.Forms.Button();
+            this.SkillTitle = new System.Windows.Forms.Label();
+            this.SkillSummary = new System.Windows.Forms.Label();
+            this.RequiresLabel = new System.Windows.Forms.Label();
+            this.SkillRequirements = new System.Windows.Forms.Label();
+            this.RankLabel = new System.Windows.Forms.Label();
+            this.SkillRank = new System.Windows.Forms.Label();
+            this.GrandsModifiersLabel = new System.Windows.Forms.Label();
+            this.SkillModifierTitle1 = new System.Windows.Forms.Label();
+            this.Rank1Modifier1 = new System.Windows.Forms.Label();
+            this.Rank2Modifier1 = new System.Windows.Forms.Label();
+            this.Rank3Modifier1 = new System.Windows.Forms.Label();
+            this.Rank4Modifier1 = new System.Windows.Forms.Label();
+            this.Rank4Modifier2 = new System.Windows.Forms.Label();
+            this.Rank3Modifier2 = new System.Windows.Forms.Label();
+            this.Rank2Modifier2 = new System.Windows.Forms.Label();
+            this.Rank1Modifier2 = new System.Windows.Forms.Label();
+            this.SkillModifierTitle2 = new System.Windows.Forms.Label();
+            this.ForceCloakLineEnd = new System.Windows.Forms.PictureBox();
+            this.ForceCloakLineStart = new System.Windows.Forms.PictureBox();
+            this.ForceCloakLine = new System.Windows.Forms.PictureBox();
+            this.SecondWind = new System.Windows.Forms.PictureBox();
+            this.SkillPicture = new System.Windows.Forms.PictureBox();
             this.SkillPictureBackground = new System.Windows.Forms.PictureBox();
             this.ExactingStrikesPoints = new System.Windows.Forms.PictureBox();
             this.ExactingStrikes = new System.Windows.Forms.PictureBox();
@@ -106,25 +128,11 @@
             this.ImprovedCripplingAccuracyBackground = new System.Windows.Forms.PictureBox();
             this.DefensiveFightingBackground = new System.Windows.Forms.PictureBox();
             this.ImprovedSaberBlockBackground = new System.Windows.Forms.PictureBox();
-            this.SkillPicture = new System.Windows.Forms.PictureBox();
-            this.SkillTitle = new System.Windows.Forms.Label();
-            this.SkillSummary = new System.Windows.Forms.Label();
-            this.RequiresLabel = new System.Windows.Forms.Label();
-            this.SkillRequirements = new System.Windows.Forms.Label();
-            this.RankLabel = new System.Windows.Forms.Label();
-            this.SkillRank = new System.Windows.Forms.Label();
-            this.GrandsModifiersLabel = new System.Windows.Forms.Label();
-            this.SkillModifierTitle1 = new System.Windows.Forms.Label();
-            this.Rank1Modifier1 = new System.Windows.Forms.Label();
-            this.Rank2Modifier1 = new System.Windows.Forms.Label();
-            this.Rank3Modifier1 = new System.Windows.Forms.Label();
-            this.Rank4Modifier1 = new System.Windows.Forms.Label();
-            this.SecondWind = new System.Windows.Forms.PictureBox();
-            this.Rank4Modifier2 = new System.Windows.Forms.Label();
-            this.Rank3Modifier2 = new System.Windows.Forms.Label();
-            this.Rank2Modifier2 = new System.Windows.Forms.Label();
-            this.Rank1Modifier2 = new System.Windows.Forms.Label();
-            this.SkillModifierTitle2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineEnd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineStart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillPictureBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikes)).BeginInit();
@@ -194,8 +202,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlockBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).BeginInit();
             this.SuspendLayout();
             // 
             // AvailablePoints
@@ -298,6 +304,258 @@
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            // 
+            // SkillTitle
+            // 
+            this.SkillTitle.AutoSize = true;
+            this.SkillTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkillTitle.ForeColor = System.Drawing.Color.Khaki;
+            this.SkillTitle.Location = new System.Drawing.Point(708, 58);
+            this.SkillTitle.Name = "SkillTitle";
+            this.SkillTitle.Size = new System.Drawing.Size(110, 25);
+            this.SkillTitle.TabIndex = 175;
+            this.SkillTitle.Text = "Skill Title";
+            this.SkillTitle.Visible = false;
+            // 
+            // SkillSummary
+            // 
+            this.SkillSummary.AutoSize = true;
+            this.SkillSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkillSummary.ForeColor = System.Drawing.Color.Khaki;
+            this.SkillSummary.Location = new System.Drawing.Point(645, 98);
+            this.SkillSummary.Name = "SkillSummary";
+            this.SkillSummary.Size = new System.Drawing.Size(142, 16);
+            this.SkillSummary.TabIndex = 176;
+            this.SkillSummary.Text = "Brief Skill Summary";
+            this.SkillSummary.Visible = false;
+            // 
+            // RequiresLabel
+            // 
+            this.RequiresLabel.AutoSize = true;
+            this.RequiresLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RequiresLabel.ForeColor = System.Drawing.Color.White;
+            this.RequiresLabel.Location = new System.Drawing.Point(647, 141);
+            this.RequiresLabel.Name = "RequiresLabel";
+            this.RequiresLabel.Size = new System.Drawing.Size(75, 16);
+            this.RequiresLabel.TabIndex = 177;
+            this.RequiresLabel.Text = "Requires:";
+            this.RequiresLabel.Visible = false;
+            // 
+            // SkillRequirements
+            // 
+            this.SkillRequirements.AutoSize = true;
+            this.SkillRequirements.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkillRequirements.ForeColor = System.Drawing.Color.White;
+            this.SkillRequirements.Location = new System.Drawing.Point(728, 141);
+            this.SkillRequirements.Name = "SkillRequirements";
+            this.SkillRequirements.Size = new System.Drawing.Size(45, 16);
+            this.SkillRequirements.TabIndex = 178;
+            this.SkillRequirements.Text = "None";
+            this.SkillRequirements.Visible = false;
+            // 
+            // RankLabel
+            // 
+            this.RankLabel.AutoSize = true;
+            this.RankLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RankLabel.ForeColor = System.Drawing.Color.White;
+            this.RankLabel.Location = new System.Drawing.Point(647, 178);
+            this.RankLabel.Name = "RankLabel";
+            this.RankLabel.Size = new System.Drawing.Size(48, 16);
+            this.RankLabel.TabIndex = 179;
+            this.RankLabel.Text = "Rank:";
+            this.RankLabel.Visible = false;
+            // 
+            // SkillRank
+            // 
+            this.SkillRank.AutoSize = true;
+            this.SkillRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkillRank.ForeColor = System.Drawing.Color.White;
+            this.SkillRank.Location = new System.Drawing.Point(693, 178);
+            this.SkillRank.Name = "SkillRank";
+            this.SkillRank.Size = new System.Drawing.Size(29, 16);
+            this.SkillRank.TabIndex = 180;
+            this.SkillRank.Text = "0/2";
+            this.SkillRank.Visible = false;
+            // 
+            // GrandsModifiersLabel
+            // 
+            this.GrandsModifiersLabel.AutoSize = true;
+            this.GrandsModifiersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrandsModifiersLabel.ForeColor = System.Drawing.Color.White;
+            this.GrandsModifiersLabel.Location = new System.Drawing.Point(647, 227);
+            this.GrandsModifiersLabel.Name = "GrandsModifiersLabel";
+            this.GrandsModifiersLabel.Size = new System.Drawing.Size(130, 16);
+            this.GrandsModifiersLabel.TabIndex = 181;
+            this.GrandsModifiersLabel.Text = "Grands Modifiers:";
+            this.GrandsModifiersLabel.Visible = false;
+            // 
+            // SkillModifierTitle1
+            // 
+            this.SkillModifierTitle1.AutoSize = true;
+            this.SkillModifierTitle1.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkillModifierTitle1.ForeColor = System.Drawing.Color.White;
+            this.SkillModifierTitle1.Location = new System.Drawing.Point(647, 254);
+            this.SkillModifierTitle1.Name = "SkillModifierTitle1";
+            this.SkillModifierTitle1.Size = new System.Drawing.Size(167, 29);
+            this.SkillModifierTitle1.TabIndex = 182;
+            this.SkillModifierTitle1.Text = "Modifier Name 1";
+            this.SkillModifierTitle1.Visible = false;
+            // 
+            // Rank1Modifier1
+            // 
+            this.Rank1Modifier1.AutoSize = true;
+            this.Rank1Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rank1Modifier1.ForeColor = System.Drawing.Color.White;
+            this.Rank1Modifier1.Location = new System.Drawing.Point(668, 298);
+            this.Rank1Modifier1.Name = "Rank1Modifier1";
+            this.Rank1Modifier1.Size = new System.Drawing.Size(29, 20);
+            this.Rank1Modifier1.TabIndex = 183;
+            this.Rank1Modifier1.Text = "25";
+            this.Rank1Modifier1.Visible = false;
+            // 
+            // Rank2Modifier1
+            // 
+            this.Rank2Modifier1.AutoSize = true;
+            this.Rank2Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rank2Modifier1.ForeColor = System.Drawing.Color.White;
+            this.Rank2Modifier1.Location = new System.Drawing.Point(742, 298);
+            this.Rank2Modifier1.Name = "Rank2Modifier1";
+            this.Rank2Modifier1.Size = new System.Drawing.Size(29, 20);
+            this.Rank2Modifier1.TabIndex = 184;
+            this.Rank2Modifier1.Text = "50";
+            this.Rank2Modifier1.Visible = false;
+            // 
+            // Rank3Modifier1
+            // 
+            this.Rank3Modifier1.AutoSize = true;
+            this.Rank3Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rank3Modifier1.ForeColor = System.Drawing.Color.White;
+            this.Rank3Modifier1.Location = new System.Drawing.Point(819, 298);
+            this.Rank3Modifier1.Name = "Rank3Modifier1";
+            this.Rank3Modifier1.Size = new System.Drawing.Size(29, 20);
+            this.Rank3Modifier1.TabIndex = 185;
+            this.Rank3Modifier1.Text = "75";
+            this.Rank3Modifier1.Visible = false;
+            // 
+            // Rank4Modifier1
+            // 
+            this.Rank4Modifier1.AutoSize = true;
+            this.Rank4Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rank4Modifier1.ForeColor = System.Drawing.Color.White;
+            this.Rank4Modifier1.Location = new System.Drawing.Point(891, 298);
+            this.Rank4Modifier1.Name = "Rank4Modifier1";
+            this.Rank4Modifier1.Size = new System.Drawing.Size(39, 20);
+            this.Rank4Modifier1.TabIndex = 186;
+            this.Rank4Modifier1.Text = "100";
+            this.Rank4Modifier1.Visible = false;
+            // 
+            // Rank4Modifier2
+            // 
+            this.Rank4Modifier2.AutoSize = true;
+            this.Rank4Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rank4Modifier2.ForeColor = System.Drawing.Color.White;
+            this.Rank4Modifier2.Location = new System.Drawing.Point(891, 382);
+            this.Rank4Modifier2.Name = "Rank4Modifier2";
+            this.Rank4Modifier2.Size = new System.Drawing.Size(39, 20);
+            this.Rank4Modifier2.TabIndex = 192;
+            this.Rank4Modifier2.Text = "100";
+            this.Rank4Modifier2.Visible = false;
+            // 
+            // Rank3Modifier2
+            // 
+            this.Rank3Modifier2.AutoSize = true;
+            this.Rank3Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rank3Modifier2.ForeColor = System.Drawing.Color.White;
+            this.Rank3Modifier2.Location = new System.Drawing.Point(819, 382);
+            this.Rank3Modifier2.Name = "Rank3Modifier2";
+            this.Rank3Modifier2.Size = new System.Drawing.Size(29, 20);
+            this.Rank3Modifier2.TabIndex = 191;
+            this.Rank3Modifier2.Text = "75";
+            this.Rank3Modifier2.Visible = false;
+            // 
+            // Rank2Modifier2
+            // 
+            this.Rank2Modifier2.AutoSize = true;
+            this.Rank2Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rank2Modifier2.ForeColor = System.Drawing.Color.White;
+            this.Rank2Modifier2.Location = new System.Drawing.Point(742, 382);
+            this.Rank2Modifier2.Name = "Rank2Modifier2";
+            this.Rank2Modifier2.Size = new System.Drawing.Size(29, 20);
+            this.Rank2Modifier2.TabIndex = 190;
+            this.Rank2Modifier2.Text = "50";
+            this.Rank2Modifier2.Visible = false;
+            // 
+            // Rank1Modifier2
+            // 
+            this.Rank1Modifier2.AutoSize = true;
+            this.Rank1Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rank1Modifier2.ForeColor = System.Drawing.Color.White;
+            this.Rank1Modifier2.Location = new System.Drawing.Point(668, 382);
+            this.Rank1Modifier2.Name = "Rank1Modifier2";
+            this.Rank1Modifier2.Size = new System.Drawing.Size(29, 20);
+            this.Rank1Modifier2.TabIndex = 189;
+            this.Rank1Modifier2.Text = "25";
+            this.Rank1Modifier2.Visible = false;
+            // 
+            // SkillModifierTitle2
+            // 
+            this.SkillModifierTitle2.AutoSize = true;
+            this.SkillModifierTitle2.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkillModifierTitle2.ForeColor = System.Drawing.Color.White;
+            this.SkillModifierTitle2.Location = new System.Drawing.Point(647, 338);
+            this.SkillModifierTitle2.Name = "SkillModifierTitle2";
+            this.SkillModifierTitle2.Size = new System.Drawing.Size(170, 29);
+            this.SkillModifierTitle2.TabIndex = 188;
+            this.SkillModifierTitle2.Text = "Modifier Name 2";
+            this.SkillModifierTitle2.Visible = false;
+            // 
+            // ForceCloakLineEnd
+            // 
+            this.ForceCloakLineEnd.BackColor = System.Drawing.Color.Transparent;
+            this.ForceCloakLineEnd.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineArrowTop;
+            this.ForceCloakLineEnd.Location = new System.Drawing.Point(269, 416);
+            this.ForceCloakLineEnd.Name = "ForceCloakLineEnd";
+            this.ForceCloakLineEnd.Size = new System.Drawing.Size(32, 24);
+            this.ForceCloakLineEnd.TabIndex = 195;
+            this.ForceCloakLineEnd.TabStop = false;
+            // 
+            // ForceCloakLineStart
+            // 
+            this.ForceCloakLineStart.BackColor = System.Drawing.Color.Transparent;
+            this.ForceCloakLineStart.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineStart1;
+            this.ForceCloakLineStart.Location = new System.Drawing.Point(269, 351);
+            this.ForceCloakLineStart.Name = "ForceCloakLineStart";
+            this.ForceCloakLineStart.Size = new System.Drawing.Size(29, 26);
+            this.ForceCloakLineStart.TabIndex = 194;
+            this.ForceCloakLineStart.TabStop = false;
+            // 
+            // ForceCloakLine
+            // 
+            this.ForceCloakLine.BackColor = System.Drawing.Color.Transparent;
+            this.ForceCloakLine.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineVertical;
+            this.ForceCloakLine.Location = new System.Drawing.Point(245, 350);
+            this.ForceCloakLine.Name = "ForceCloakLine";
+            this.ForceCloakLine.Size = new System.Drawing.Size(88, 90);
+            this.ForceCloakLine.TabIndex = 193;
+            this.ForceCloakLine.TabStop = false;
+            // 
+            // SecondWind
+            // 
+            this.SecondWind.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSecondWind;
+            this.SecondWind.Location = new System.Drawing.Point(442, 287);
+            this.SecondWind.Name = "SecondWind";
+            this.SecondWind.Size = new System.Drawing.Size(42, 42);
+            this.SecondWind.TabIndex = 187;
+            this.SecondWind.TabStop = false;
+            // 
+            // SkillPicture
+            // 
+            this.SkillPicture.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aEnhancedStrength;
+            this.SkillPicture.Location = new System.Drawing.Point(655, 49);
+            this.SkillPicture.Name = "SkillPicture";
+            this.SkillPicture.Size = new System.Drawing.Size(42, 42);
+            this.SkillPicture.TabIndex = 174;
+            this.SkillPicture.TabStop = false;
             // 
             // SkillPictureBackground
             // 
@@ -487,6 +745,7 @@
             // 
             // ImprovedForceCloakBackground
             // 
+            this.ImprovedForceCloakBackground.BackColor = System.Drawing.Color.Transparent;
             this.ImprovedForceCloakBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
             this.ImprovedForceCloakBackground.Location = new System.Drawing.Point(245, 440);
             this.ImprovedForceCloakBackground.Name = "ImprovedForceCloakBackground";
@@ -966,234 +1225,15 @@
             this.ImprovedSaberBlockBackground.TabIndex = 152;
             this.ImprovedSaberBlockBackground.TabStop = false;
             // 
-            // SkillPicture
-            // 
-            this.SkillPicture.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aEnhancedStrength;
-            this.SkillPicture.Location = new System.Drawing.Point(655, 49);
-            this.SkillPicture.Name = "SkillPicture";
-            this.SkillPicture.Size = new System.Drawing.Size(42, 42);
-            this.SkillPicture.TabIndex = 174;
-            this.SkillPicture.TabStop = false;
-            // 
-            // SkillTitle
-            // 
-            this.SkillTitle.AutoSize = true;
-            this.SkillTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillTitle.ForeColor = System.Drawing.Color.Khaki;
-            this.SkillTitle.Location = new System.Drawing.Point(708, 58);
-            this.SkillTitle.Name = "SkillTitle";
-            this.SkillTitle.Size = new System.Drawing.Size(110, 25);
-            this.SkillTitle.TabIndex = 175;
-            this.SkillTitle.Text = "Skill Title";
-            this.SkillTitle.Visible = false;
-            // 
-            // SkillSummary
-            // 
-            this.SkillSummary.AutoSize = true;
-            this.SkillSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillSummary.ForeColor = System.Drawing.Color.Khaki;
-            this.SkillSummary.Location = new System.Drawing.Point(645, 98);
-            this.SkillSummary.Name = "SkillSummary";
-            this.SkillSummary.Size = new System.Drawing.Size(142, 16);
-            this.SkillSummary.TabIndex = 176;
-            this.SkillSummary.Text = "Brief Skill Summary";
-            this.SkillSummary.Visible = false;
-            // 
-            // RequiresLabel
-            // 
-            this.RequiresLabel.AutoSize = true;
-            this.RequiresLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RequiresLabel.ForeColor = System.Drawing.Color.White;
-            this.RequiresLabel.Location = new System.Drawing.Point(647, 141);
-            this.RequiresLabel.Name = "RequiresLabel";
-            this.RequiresLabel.Size = new System.Drawing.Size(75, 16);
-            this.RequiresLabel.TabIndex = 177;
-            this.RequiresLabel.Text = "Requires:";
-            this.RequiresLabel.Visible = false;
-            // 
-            // SkillRequirements
-            // 
-            this.SkillRequirements.AutoSize = true;
-            this.SkillRequirements.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillRequirements.ForeColor = System.Drawing.Color.White;
-            this.SkillRequirements.Location = new System.Drawing.Point(728, 141);
-            this.SkillRequirements.Name = "SkillRequirements";
-            this.SkillRequirements.Size = new System.Drawing.Size(45, 16);
-            this.SkillRequirements.TabIndex = 178;
-            this.SkillRequirements.Text = "None";
-            this.SkillRequirements.Visible = false;
-            // 
-            // RankLabel
-            // 
-            this.RankLabel.AutoSize = true;
-            this.RankLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RankLabel.ForeColor = System.Drawing.Color.White;
-            this.RankLabel.Location = new System.Drawing.Point(647, 178);
-            this.RankLabel.Name = "RankLabel";
-            this.RankLabel.Size = new System.Drawing.Size(48, 16);
-            this.RankLabel.TabIndex = 179;
-            this.RankLabel.Text = "Rank:";
-            this.RankLabel.Visible = false;
-            // 
-            // SkillRank
-            // 
-            this.SkillRank.AutoSize = true;
-            this.SkillRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillRank.ForeColor = System.Drawing.Color.White;
-            this.SkillRank.Location = new System.Drawing.Point(693, 178);
-            this.SkillRank.Name = "SkillRank";
-            this.SkillRank.Size = new System.Drawing.Size(29, 16);
-            this.SkillRank.TabIndex = 180;
-            this.SkillRank.Text = "0/2";
-            this.SkillRank.Visible = false;
-            // 
-            // GrandsModifiersLabel
-            // 
-            this.GrandsModifiersLabel.AutoSize = true;
-            this.GrandsModifiersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrandsModifiersLabel.ForeColor = System.Drawing.Color.White;
-            this.GrandsModifiersLabel.Location = new System.Drawing.Point(647, 227);
-            this.GrandsModifiersLabel.Name = "GrandsModifiersLabel";
-            this.GrandsModifiersLabel.Size = new System.Drawing.Size(130, 16);
-            this.GrandsModifiersLabel.TabIndex = 181;
-            this.GrandsModifiersLabel.Text = "Grands Modifiers:";
-            this.GrandsModifiersLabel.Visible = false;
-            // 
-            // SkillModifierTitle1
-            // 
-            this.SkillModifierTitle1.AutoSize = true;
-            this.SkillModifierTitle1.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillModifierTitle1.ForeColor = System.Drawing.Color.White;
-            this.SkillModifierTitle1.Location = new System.Drawing.Point(647, 254);
-            this.SkillModifierTitle1.Name = "SkillModifierTitle1";
-            this.SkillModifierTitle1.Size = new System.Drawing.Size(167, 29);
-            this.SkillModifierTitle1.TabIndex = 182;
-            this.SkillModifierTitle1.Text = "Modifier Name 1";
-            this.SkillModifierTitle1.Visible = false;
-            // 
-            // Rank1Modifier1
-            // 
-            this.Rank1Modifier1.AutoSize = true;
-            this.Rank1Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank1Modifier1.ForeColor = System.Drawing.Color.White;
-            this.Rank1Modifier1.Location = new System.Drawing.Point(668, 298);
-            this.Rank1Modifier1.Name = "Rank1Modifier1";
-            this.Rank1Modifier1.Size = new System.Drawing.Size(29, 20);
-            this.Rank1Modifier1.TabIndex = 183;
-            this.Rank1Modifier1.Text = "25";
-            this.Rank1Modifier1.Visible = false;
-            // 
-            // Rank2Modifier1
-            // 
-            this.Rank2Modifier1.AutoSize = true;
-            this.Rank2Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank2Modifier1.ForeColor = System.Drawing.Color.White;
-            this.Rank2Modifier1.Location = new System.Drawing.Point(742, 298);
-            this.Rank2Modifier1.Name = "Rank2Modifier1";
-            this.Rank2Modifier1.Size = new System.Drawing.Size(29, 20);
-            this.Rank2Modifier1.TabIndex = 184;
-            this.Rank2Modifier1.Text = "50";
-            this.Rank2Modifier1.Visible = false;
-            // 
-            // Rank3Modifier1
-            // 
-            this.Rank3Modifier1.AutoSize = true;
-            this.Rank3Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank3Modifier1.ForeColor = System.Drawing.Color.White;
-            this.Rank3Modifier1.Location = new System.Drawing.Point(819, 298);
-            this.Rank3Modifier1.Name = "Rank3Modifier1";
-            this.Rank3Modifier1.Size = new System.Drawing.Size(29, 20);
-            this.Rank3Modifier1.TabIndex = 185;
-            this.Rank3Modifier1.Text = "75";
-            this.Rank3Modifier1.Visible = false;
-            // 
-            // Rank4Modifier1
-            // 
-            this.Rank4Modifier1.AutoSize = true;
-            this.Rank4Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank4Modifier1.ForeColor = System.Drawing.Color.White;
-            this.Rank4Modifier1.Location = new System.Drawing.Point(891, 298);
-            this.Rank4Modifier1.Name = "Rank4Modifier1";
-            this.Rank4Modifier1.Size = new System.Drawing.Size(39, 20);
-            this.Rank4Modifier1.TabIndex = 186;
-            this.Rank4Modifier1.Text = "100";
-            this.Rank4Modifier1.Visible = false;
-            // 
-            // SecondWind
-            // 
-            this.SecondWind.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSecondWind;
-            this.SecondWind.Location = new System.Drawing.Point(442, 287);
-            this.SecondWind.Name = "SecondWind";
-            this.SecondWind.Size = new System.Drawing.Size(42, 42);
-            this.SecondWind.TabIndex = 187;
-            this.SecondWind.TabStop = false;
-            // 
-            // Rank4Modifier2
-            // 
-            this.Rank4Modifier2.AutoSize = true;
-            this.Rank4Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank4Modifier2.ForeColor = System.Drawing.Color.White;
-            this.Rank4Modifier2.Location = new System.Drawing.Point(891, 382);
-            this.Rank4Modifier2.Name = "Rank4Modifier2";
-            this.Rank4Modifier2.Size = new System.Drawing.Size(39, 20);
-            this.Rank4Modifier2.TabIndex = 192;
-            this.Rank4Modifier2.Text = "100";
-            this.Rank4Modifier2.Visible = false;
-            // 
-            // Rank3Modifier2
-            // 
-            this.Rank3Modifier2.AutoSize = true;
-            this.Rank3Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank3Modifier2.ForeColor = System.Drawing.Color.White;
-            this.Rank3Modifier2.Location = new System.Drawing.Point(819, 382);
-            this.Rank3Modifier2.Name = "Rank3Modifier2";
-            this.Rank3Modifier2.Size = new System.Drawing.Size(29, 20);
-            this.Rank3Modifier2.TabIndex = 191;
-            this.Rank3Modifier2.Text = "75";
-            this.Rank3Modifier2.Visible = false;
-            // 
-            // Rank2Modifier2
-            // 
-            this.Rank2Modifier2.AutoSize = true;
-            this.Rank2Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank2Modifier2.ForeColor = System.Drawing.Color.White;
-            this.Rank2Modifier2.Location = new System.Drawing.Point(742, 382);
-            this.Rank2Modifier2.Name = "Rank2Modifier2";
-            this.Rank2Modifier2.Size = new System.Drawing.Size(29, 20);
-            this.Rank2Modifier2.TabIndex = 190;
-            this.Rank2Modifier2.Text = "50";
-            this.Rank2Modifier2.Visible = false;
-            // 
-            // Rank1Modifier2
-            // 
-            this.Rank1Modifier2.AutoSize = true;
-            this.Rank1Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank1Modifier2.ForeColor = System.Drawing.Color.White;
-            this.Rank1Modifier2.Location = new System.Drawing.Point(668, 382);
-            this.Rank1Modifier2.Name = "Rank1Modifier2";
-            this.Rank1Modifier2.Size = new System.Drawing.Size(29, 20);
-            this.Rank1Modifier2.TabIndex = 189;
-            this.Rank1Modifier2.Text = "25";
-            this.Rank1Modifier2.Visible = false;
-            // 
-            // SkillModifierTitle2
-            // 
-            this.SkillModifierTitle2.AutoSize = true;
-            this.SkillModifierTitle2.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillModifierTitle2.ForeColor = System.Drawing.Color.White;
-            this.SkillModifierTitle2.Location = new System.Drawing.Point(647, 338);
-            this.SkillModifierTitle2.Name = "SkillModifierTitle2";
-            this.SkillModifierTitle2.Size = new System.Drawing.Size(170, 29);
-            this.SkillModifierTitle2.TabIndex = 188;
-            this.SkillModifierTitle2.Text = "Modifier Name 2";
-            this.SkillModifierTitle2.Visible = false;
-            // 
             // Jedi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(984, 696);
+            this.Controls.Add(this.ForceCloakLineEnd);
+            this.Controls.Add(this.ForceCloakLineStart);
+            this.Controls.Add(this.ForceCloakLine);
             this.Controls.Add(this.Rank4Modifier2);
             this.Controls.Add(this.Rank3Modifier2);
             this.Controls.Add(this.Rank2Modifier2);
@@ -1296,6 +1336,11 @@
             this.Text = "Jedi";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Jedi_FormClosing);
             this.Load += new System.EventHandler(this.Jedi_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineEnd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineStart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillPictureBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikes)).EndInit();
@@ -1365,8 +1410,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlockBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1471,5 +1514,8 @@
         private System.Windows.Forms.Label Rank2Modifier2;
         private System.Windows.Forms.Label Rank1Modifier2;
         private System.Windows.Forms.Label SkillModifierTitle2;
+        private System.Windows.Forms.PictureBox ForceCloakLine;
+        private System.Windows.Forms.PictureBox ForceCloakLineStart;
+        private System.Windows.Forms.PictureBox ForceCloakLineEnd;
     }
 }
