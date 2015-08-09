@@ -407,8 +407,8 @@ namespace SWG_Expertise_Calcualtor
                 SkillSummary.Text = "Strength increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements.Text = "None";
                 SkillModifierTitle1.Text = "STRENGTH";
-                Rank1Modifier1.Text = "25";
-                Rank2Modifier1.Text = "50";
+                Rank1Modifier1.Text = " 25 ";
+                Rank2Modifier1.Text = " 50 ";
 
                 TwoModifierBoxes();
 
@@ -436,8 +436,8 @@ namespace SWG_Expertise_Calcualtor
                 SkillSummary.Text = "Constitution increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements.Text = "None";
                 SkillModifierTitle1.Text = "CONSTITUTION";
-                Rank1Modifier1.Text = "25";
-                Rank2Modifier1.Text = "50";
+                Rank1Modifier1.Text = " 25 ";
+                Rank2Modifier1.Text = " 50 ";
 
                 TwoModifierBoxes();
 
@@ -465,8 +465,8 @@ namespace SWG_Expertise_Calcualtor
                 SkillSummary.Text = "Agility increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements.Text = "None";
                 SkillModifierTitle1.Text = "AGILITY";
-                Rank1Modifier1.Text = "25";
-                Rank2Modifier1.Text = "50";
+                Rank1Modifier1.Text = " 25 ";
+                Rank2Modifier1.Text = " 50 ";
 
                 TwoModifierBoxes();
 
@@ -494,8 +494,8 @@ namespace SWG_Expertise_Calcualtor
                 SkillSummary.Text = "Stamina increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements.Text = "None";
                 SkillModifierTitle1.Text = "STAMINA";
-                Rank1Modifier1.Text = "25";
-                Rank2Modifier1.Text = "50";
+                Rank1Modifier1.Text = " 25 ";
+                Rank2Modifier1.Text = " 50 ";
 
                 TwoModifierBoxes();
 
@@ -523,10 +523,10 @@ namespace SWG_Expertise_Calcualtor
                 SkillSummary.Text = "Force Run's speed is increased by 10% per" + "\r\n" + "point spent.";
                 SkillRequirements.Text = "4 Points In Jedi General";
                 SkillModifierTitle1.Text = "FORCE RUN MOVEMENT";
-                Rank1Modifier1.Text = "10";
-                Rank2Modifier1.Text = "20";
-                Rank3Modifier1.Text = "30";
-                Rank4Modifier1.Text = "40";
+                Rank1Modifier1.Text = " 10 ";
+                Rank2Modifier1.Text = " 20 ";
+                Rank3Modifier1.Text = " 30 ";
+                Rank4Modifier1.Text = " 40 ";
 
                 FourModifierBoxes();
 
@@ -565,14 +565,14 @@ namespace SWG_Expertise_Calcualtor
                 SkillRequirements.Text = "4 Points In Jedi General";
                 SkillModifierTitle1.Text = "SWEEP DAMAGE";
                 SkillModifierTitle2.Text = "STRIKE DAMAGE";
-                Rank1Modifier1.Text = "2";
-                Rank2Modifier1.Text = "4";
-                Rank3Modifier1.Text = "6";
-                Rank4Modifier1.Text = "8";
-                Rank1Modifier2.Text = "2";
-                Rank2Modifier2.Text = "4";
-                Rank3Modifier2.Text = "6";
-                Rank4Modifier2.Text = "8";
+                Rank1Modifier1.Text = " 2 ";
+                Rank2Modifier1.Text = " 4 ";
+                Rank3Modifier1.Text = " 6 ";
+                Rank4Modifier1.Text = " 8 ";
+                Rank1Modifier2.Text = " 2 ";
+                Rank2Modifier2.Text = " 4 ";
+                Rank3Modifier2.Text = " 6 ";
+                Rank4Modifier2.Text = " 8 ";
 
                 FourModifierBoxes();
 
@@ -610,10 +610,10 @@ namespace SWG_Expertise_Calcualtor
                 SkillSummary.Text = "The chance for a blow to glance off you is" + "\r\n" + "increased by 2% per point spent.";
                 SkillRequirements.Text = "4 Points In Jedi General";
                 SkillModifierTitle1.Text = "GLANCING BLOW INCREASE";
-                Rank1Modifier1.Text = "2";
-                Rank2Modifier1.Text = "4";
-                Rank3Modifier1.Text = "6";
-                Rank4Modifier1.Text = "8";
+                Rank1Modifier1.Text = " 2 ";
+                Rank2Modifier1.Text = " 4 ";
+                Rank3Modifier1.Text = " 6 ";
+                Rank4Modifier1.Text = " 8 ";
 
                 FourModifierBoxes();
 
