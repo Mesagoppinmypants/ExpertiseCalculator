@@ -395,7 +395,7 @@ namespace SWG_Expertise_Calcualtor
         private void SkillDescriptionVisiblity()
         {
             // Enables the general titles and descriptions that all skills use
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover == true)
             {
                 SkillPictureBackground.Visible = true;
                 SkillPicture.Visible = true;
@@ -422,6 +422,16 @@ namespace SWG_Expertise_Calcualtor
                     Rank2Modifier2.Visible = true;
                     Rank3Modifier2.Visible = true;
                     Rank4Modifier2.Visible = true;
+                }
+
+                // Rank 2 Modifiers - 2 Requirements
+                if (SecondWindHover == true)
+                {
+                    SkillRequirements2.Visible = true;
+                }
+                else
+                {
+                    SkillRequirements2.Visible = false;
                 }
             }
         }
@@ -700,6 +710,36 @@ namespace SWG_Expertise_Calcualtor
                     SkillRank.Text = "2/2";
                 }
             }
+
+            // Second Wind
+            if (SecondWindHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aSecondWind;
+                SkillTitle.Text = "SECOND WIND";
+                SkillSummary.Text = "Force Run's duration is increased by 2" + "\r\n" + "seconds per point spent.";
+                SkillRequirements1.Text = "8 Points In Jedi General";
+                SkillRequirements2.Text = "4 Points In Heightened Speed";
+                SkillModifierTitle1.Text = "FORCE RUN DURATION";
+                Rank1Modifier1.Text = " 2 ";
+                Rank2Modifier1.Text = " 4 ";
+
+                TwoModifierBoxes();
+
+                if (swpoints == 0)
+                {
+                    SkillRank.Text = "0/2";
+                }
+
+                if (swpoints == 1)
+                {
+                    SkillRank.Text = "1/2";
+                }
+
+                if (swpoints == 2)
+                {
+                    SkillRank.Text = "2/2";
+                }
+            }
         }
 
         private void OneRankPoints()
@@ -922,6 +962,22 @@ namespace SWG_Expertise_Calcualtor
             {
                 TwoRankPoints();
             }
+
+            // Second Wind
+            if (swpoints == 0 && SecondWindHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (swpoints == 1 && SecondWindHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (swpoints == 2 && SecondWindHover == true)
+            {
+                TwoRankPoints();
+            }
         }
         
         private void OneModifierBoxes()
@@ -958,7 +1014,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void HideSecondRankRow()
         {
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || AlacrityHover || ImprovedForceThrowHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover == true)
             {
                 SkillModifierTitle2.Visible = false;
                 Rank1Modifier2.Visible = false;
@@ -980,6 +1036,28 @@ namespace SWG_Expertise_Calcualtor
             if (SkillRequirements1.Text == "4 Points In Jedi General" && totalPoints <= 41 && HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover == true)
             {
                 SkillRequirements1.ForeColor = Color.White;
+            }
+
+            // Second Wind - 8 Points In Jedi General Requirement
+            if (SkillRequirements1.Text == "8 Points In Jedi General" && totalPoints <= 37 && SecondWindHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.White;
+            }
+
+            if (SkillRequirements1.Text == "8 Points In Jedi General" && totalPoints > 37 && SecondWindHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.Red;
+            }
+
+            // Second Wind - 4 Points Required in Heightened Speed
+            if (SkillRequirements2.Text == "4 Points In Heightened Speed" && hspoints < 4 && SecondWindHover == true)
+            {
+                SkillRequirements2.ForeColor = Color.Red;
+            }
+
+            if (SkillRequirements2.Text == "4 Points In Heightened Speed" && hspoints == 4 && SecondWindHover == true)
+            {
+                SkillRequirements2.ForeColor = Color.White;
             }
 
             // Exacting Strikes
@@ -1770,7 +1848,52 @@ namespace SWG_Expertise_Calcualtor
 
         private void SecondWind_Click(object sender, EventArgs e)
         {
+            if (RemovePoints.Checked == true && swpoints <= 2 && swpoints > 0)
+            {
+                totalPoints++;
+                swpoints--;
+            }
 
+            if (AddPoints.Checked == true && totalPoints <= 37 && swpoints >= 0 && swpoints < 2)
+            {
+                totalPoints--;
+                swpoints++;
+            }
+
+            if (swpoints >= 1)
+            {
+                SecondWindPoints.Visible = true;
+                SecondWind.Image = Properties.Resources.aSecondWind;
+            }
+
+            if (hspoints == 1)
+            {
+                SecondWindPoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (hspoints == 2)
+            {
+                SecondWindPoints.Image = Properties.Resources.skillpoints2;
+            }
+
+            if (hspoints == 3)
+            {
+                SecondWindPoints.Image = Properties.Resources.skillpoints3;
+            }
+
+            if (hspoints == 4)
+            {
+                SecondWindPoints.Image = Properties.Resources.skillpoints4;
+            }
+
+            if (hspoints == 0)
+            {
+                SecondWind.Image = Properties.Resources.iSecondWind;
+                SecondWindPoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
         }
 
         private void ImprovedCripplingAccuracy_MouseHover(object sender, EventArgs e)
