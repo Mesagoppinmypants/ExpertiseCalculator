@@ -16,5 +16,15 @@ namespace SWG_Expertise_Calcualtor
         {
             InitializeComponent();
         }
+
+        private void NextButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NextButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

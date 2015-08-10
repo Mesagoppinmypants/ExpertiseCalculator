@@ -121,8 +121,8 @@
   <data name="SkillBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SkillBox.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LineVertical" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LineVertical.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="aForceCloak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aForceCloak.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iImprovedForceThrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iImprovedForceThrow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,14 +130,17 @@
   <data name="aAlacrity" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aAlacrity.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LineStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LineStart.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="iSkillBoxGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iSkillBoxGreen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="aImprovedForceThrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aImprovedForceThrow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="aImprovedForceThrow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aImprovedForceThrow1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iImprovedForceCloak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iImprovedForceCloak.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iEnhancedStrength" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iEnhancedStrength.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -159,9 +162,6 @@
   </data>
   <data name="iEnhancedAgility" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iEnhancedAgility.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LineStart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LineStart1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aSkillBoxGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aSkillBoxGreen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,6 +193,9 @@
   <data name="aSkillBoxRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aSkillBoxRed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="aExactingStrikes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aExactingStrikes.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iStanceSaberBlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iStanceSaberBlock.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -205,11 +208,8 @@
   <data name="iIncisiveness" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iIncisiveness.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aImprovedForceThrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aImprovedForceThrow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="window1_top_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\window1_top_left.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LineVertical" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LineVertical.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iSkillBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iSkillBox.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -222,6 +222,9 @@
   </data>
   <data name="window1_bottom_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\window1_bottom_left.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="large_load_a_speeder_for_me" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\large_load_a_speeder_for_me.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aEnhancedStamina" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aEnhancedStamina.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,8 +241,8 @@
   <data name="window1_bottom_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\window1_bottom_right.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aForceCloak" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aForceCloak.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iGraceInMotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iGraceInMotion.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LineArrowTop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LineArrowTop.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,8 +250,8 @@
   <data name="massage_top_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\massage_top_right.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iGraceInMotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iGraceInMotion.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LineStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LineStart.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aGraceInMotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aGraceInMotion.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,23 +262,23 @@
   <data name="iSkillBoxRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iSkillBoxRed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aStanceSaberBlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aStanceSaberBlock.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iForceShockwave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iForceShockwave.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iEnhancedStamina" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iEnhancedStamina.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="window1_top_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\window1_top_right.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LineStart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LineStart1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iEnhancedConstitution" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iEnhancedConstitution.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iImprovedForceCloak" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iImprovedForceCloak.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="window1_top_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\window1_top_left.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iForceShockwave" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iForceShockwave.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="window1_top_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\window1_top_right.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aImprovedCripplingAccuracy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aImprovedCripplingAccuracy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -286,10 +289,10 @@
   <data name="iImprovedForceShockwave" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iImprovedForceShockwave.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aExactingStrikes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aExactingStrikes.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="aStanceSaberBlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aStanceSaberBlock.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="large_load_a_speeder_for_me" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\large_load_a_speeder_for_me.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="large_load_account_access_data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\large_load_account_access_data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

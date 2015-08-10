@@ -28,20 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.NextButton = new System.Windows.Forms.Button();
+            this.NextButton1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.large_load_a_speeder_for_me;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(512, 512);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -53,22 +44,32 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "a speeder for me";
             // 
-            // NextButton
+            // NextButton1
             // 
-            this.NextButton.Location = new System.Drawing.Point(824, 542);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(75, 23);
-            this.NextButton.TabIndex = 2;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton1.Location = new System.Drawing.Point(797, 526);
+            this.NextButton1.Name = "NextButton1";
+            this.NextButton1.Size = new System.Drawing.Size(75, 23);
+            this.NextButton1.TabIndex = 2;
+            this.NextButton1.Text = "Next";
+            this.NextButton1.UseVisualStyleBackColor = true;
+            this.NextButton1.Click += new System.EventHandler(this.NextButton1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.large_load_a_speeder_for_me;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(512, 512);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // SWGGameArt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(911, 577);
-            this.Controls.Add(this.NextButton);
+            this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.NextButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "SWGGameArt";
@@ -84,6 +85,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button NextButton1;
     }
 }

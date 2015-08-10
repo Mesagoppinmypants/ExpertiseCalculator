@@ -483,6 +483,16 @@ namespace SWG_Expertise_Calcualtor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap large_load_account_access_data {
+            get {
+                object obj = ResourceManager.GetObject("large_load_account_access_data", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LineArrowTop {
             get {
                 object obj = ResourceManager.GetObject("LineArrowTop", resourceCulture);

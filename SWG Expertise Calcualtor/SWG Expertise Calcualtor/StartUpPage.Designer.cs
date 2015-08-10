@@ -73,7 +73,7 @@
             this.SoundtrackStart.Name = "SoundtrackStart";
             this.SoundtrackStart.Size = new System.Drawing.Size(134, 63);
             this.SoundtrackStart.TabIndex = 4;
-            this.SoundtrackStart.Text = "swg game art";
+            this.SoundtrackStart.Text = "swg game art album";
             this.SoundtrackStart.UseVisualStyleBackColor = true;
             this.SoundtrackStart.Click += new System.EventHandler(this.SoundtrackStart_Click);
             // 
@@ -84,7 +84,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(134, 63);
             this.button2.TabIndex = 5;
-            this.button2.Text = "project swg information";
+            this.button2.Text = "project swg quick links";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -99,7 +99,8 @@
             this.PanelForInformationButton.Controls.Add(this.StaffMembers);
             this.PanelForInformationButton.Controls.Add(this.CurrentGameFeatures);
             this.PanelForInformationButton.Controls.Add(this.button1);
-            this.PanelForInformationButton.Location = new System.Drawing.Point(242, 228);
+            this.PanelForInformationButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelForInformationButton.Location = new System.Drawing.Point(0, 0);
             this.PanelForInformationButton.Name = "PanelForInformationButton";
             this.PanelForInformationButton.Size = new System.Drawing.Size(284, 381);
             this.PanelForInformationButton.TabIndex = 6;
