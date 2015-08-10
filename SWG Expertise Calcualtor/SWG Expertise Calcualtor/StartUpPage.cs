@@ -27,8 +27,8 @@ namespace SWG_Expertise_Calcualtor
 
         private void SoundtrackStart_Click(object sender, EventArgs e)
         {
-            MessageBoxService mbs = new MessageBoxService();
-            mbs.SoundtrackDisabled();
+            SWGGameArt gaam = new SWGGameArt();
+            gaam.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -49,6 +49,12 @@
     <Compile Include="Controllers\Services\MessageBoxService.cs" />
     <Compile Include="Controllers\Services\TotalPointsService.cs" />
     <Compile Include="Controllers\GuiController.cs" />
+    <Compile Include="GameArtAndMusic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameArtAndMusic.Designer.cs">
+      <DependentUpon>GameArtAndMusic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Jedi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GameArtAndMusic.resx">
+      <DependentUpon>GameArtAndMusic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Jedi.resx">
       <DependentUpon>Jedi.cs</DependentUpon>
     </EmbeddedResource>
@@ -272,6 +281,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LineArrowTop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large_load_a_speeder_for_me.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
