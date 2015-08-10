@@ -19,7 +19,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void NextButton1_Click(object sender, EventArgs e)
         {
-
+            panel1.Visible = true;
         }
 
         private void NextButton2_Click(object sender, EventArgs e)
@@ -31,6 +31,21 @@ namespace SWG_Expertise_Calcualtor
         {
             StartUpPage sup = new StartUpPage();
             sup.Visible = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
         }
     }
 }

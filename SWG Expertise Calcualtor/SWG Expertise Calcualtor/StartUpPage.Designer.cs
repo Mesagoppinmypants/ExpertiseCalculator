@@ -99,7 +99,8 @@
             this.PanelForInformationButton.Controls.Add(this.StaffMembers);
             this.PanelForInformationButton.Controls.Add(this.CurrentGameFeatures);
             this.PanelForInformationButton.Controls.Add(this.button1);
-            this.PanelForInformationButton.Location = new System.Drawing.Point(242, 181);
+            this.PanelForInformationButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelForInformationButton.Location = new System.Drawing.Point(0, 0);
             this.PanelForInformationButton.Name = "PanelForInformationButton";
             this.PanelForInformationButton.Size = new System.Drawing.Size(284, 381);
             this.PanelForInformationButton.TabIndex = 6;
@@ -195,7 +196,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 354);
+            this.button1.Location = new System.Drawing.Point(12, 349);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
