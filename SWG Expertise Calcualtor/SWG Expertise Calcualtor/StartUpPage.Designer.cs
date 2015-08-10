@@ -99,7 +99,8 @@
             this.PanelForInformationButton.Controls.Add(this.StaffMembers);
             this.PanelForInformationButton.Controls.Add(this.CurrentGameFeatures);
             this.PanelForInformationButton.Controls.Add(this.button1);
-            this.PanelForInformationButton.Location = new System.Drawing.Point(227, 97);
+            this.PanelForInformationButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelForInformationButton.Location = new System.Drawing.Point(0, 0);
             this.PanelForInformationButton.Name = "PanelForInformationButton";
             this.PanelForInformationButton.Size = new System.Drawing.Size(284, 381);
             this.PanelForInformationButton.TabIndex = 6;
@@ -207,6 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(284, 381);
             this.Controls.Add(this.PanelForInformationButton);
             this.Controls.Add(this.button2);
