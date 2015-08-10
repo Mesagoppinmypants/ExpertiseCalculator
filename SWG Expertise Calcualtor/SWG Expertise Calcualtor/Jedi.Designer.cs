@@ -54,10 +54,22 @@
             this.Rank2Modifier2 = new System.Windows.Forms.Label();
             this.Rank1Modifier2 = new System.Windows.Forms.Label();
             this.SkillModifierTitle2 = new System.Windows.Forms.Label();
+            this.SkillRequirements2 = new System.Windows.Forms.Label();
+            this.JediGeneral = new System.Windows.Forms.Label();
+            this.Path = new System.Windows.Forms.Label();
+            this.BeastMastery = new System.Windows.Forms.Label();
+            this.ForceCloakPoints = new System.Windows.Forms.PictureBox();
+            this.ForceCloak = new System.Windows.Forms.PictureBox();
+            this.ForceCloakBackground = new System.Windows.Forms.PictureBox();
+            this.AlacrityPoints = new System.Windows.Forms.PictureBox();
+            this.Alacrity = new System.Windows.Forms.PictureBox();
+            this.AlacrityBackground = new System.Windows.Forms.PictureBox();
+            this.SecondWindPoints = new System.Windows.Forms.PictureBox();
+            this.SecondWind = new System.Windows.Forms.PictureBox();
+            this.SecondWindBackground = new System.Windows.Forms.PictureBox();
             this.ForceCloakLineEnd = new System.Windows.Forms.PictureBox();
             this.ForceCloakLineStart = new System.Windows.Forms.PictureBox();
             this.ForceCloakLine = new System.Windows.Forms.PictureBox();
-            this.SecondWind = new System.Windows.Forms.PictureBox();
             this.SkillPicture = new System.Windows.Forms.PictureBox();
             this.SkillPictureBackground = new System.Windows.Forms.PictureBox();
             this.ExactingStrikesPoints = new System.Windows.Forms.PictureBox();
@@ -92,10 +104,8 @@
             this.DefensiveFightingPoints = new System.Windows.Forms.PictureBox();
             this.DefensiveFighting = new System.Windows.Forms.PictureBox();
             this.GraceInMotionPoints = new System.Windows.Forms.PictureBox();
-            this.ForceCloakPoints = new System.Windows.Forms.PictureBox();
             this.PremonitionPoints = new System.Windows.Forms.PictureBox();
             this.GraceInMotion = new System.Windows.Forms.PictureBox();
-            this.ForceCloak = new System.Windows.Forms.PictureBox();
             this.Premonition = new System.Windows.Forms.PictureBox();
             this.GraceInMotionBackground = new System.Windows.Forms.PictureBox();
             this.pictureBox50 = new System.Windows.Forms.PictureBox();
@@ -103,10 +113,7 @@
             this.pictureBox52 = new System.Windows.Forms.PictureBox();
             this.ImprovedCripplingAccuracyPoints = new System.Windows.Forms.PictureBox();
             this.ImprovedCripplingAccuracy = new System.Windows.Forms.PictureBox();
-            this.SecondWindPoints = new System.Windows.Forms.PictureBox();
-            this.AlacrityPoints = new System.Windows.Forms.PictureBox();
             this.ImprovedForceThrowPoints = new System.Windows.Forms.PictureBox();
-            this.Alacrity = new System.Windows.Forms.PictureBox();
             this.ImprovedForceThrow = new System.Windows.Forms.PictureBox();
             this.EnhancedStaminaPoints = new System.Windows.Forms.PictureBox();
             this.EnhancedAgilityPoints = new System.Windows.Forms.PictureBox();
@@ -120,22 +127,23 @@
             this.EnhancedAgilityBackground = new System.Windows.Forms.PictureBox();
             this.EnhancedConstitutionBackground = new System.Windows.Forms.PictureBox();
             this.EnhancedStrengthBackground = new System.Windows.Forms.PictureBox();
-            this.SecondWindBackground = new System.Windows.Forms.PictureBox();
             this.ImprovedForceThrowBackground = new System.Windows.Forms.PictureBox();
-            this.AlacrityBackground = new System.Windows.Forms.PictureBox();
-            this.ForceCloakBackground = new System.Windows.Forms.PictureBox();
             this.PremonitionBackground = new System.Windows.Forms.PictureBox();
             this.ImprovedCripplingAccuracyBackground = new System.Windows.Forms.PictureBox();
             this.DefensiveFightingBackground = new System.Windows.Forms.PictureBox();
             this.ImprovedSaberBlockBackground = new System.Windows.Forms.PictureBox();
-            this.SkillRequirements2 = new System.Windows.Forms.Label();
-            this.JediGeneral = new System.Windows.Forms.Label();
-            this.Path = new System.Windows.Forms.Label();
-            this.BeastMastery = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloak)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlacrityPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlacrityBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWindPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWindBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineEnd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLine)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillPictureBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesPoints)).BeginInit();
@@ -170,10 +178,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFighting)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GraceInMotionPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PremonitionPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GraceInMotion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloak)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Premonition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GraceInMotionBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
@@ -181,10 +187,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWindPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AlacrityPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityPoints)).BeginInit();
@@ -198,10 +201,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWindBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AlacrityBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PremonitionBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingBackground)).BeginInit();
@@ -514,6 +514,148 @@
             this.SkillModifierTitle2.Text = "Modifier Name 2";
             this.SkillModifierTitle2.Visible = false;
             // 
+            // SkillRequirements2
+            // 
+            this.SkillRequirements2.AutoSize = true;
+            this.SkillRequirements2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SkillRequirements2.ForeColor = System.Drawing.Color.White;
+            this.SkillRequirements2.Location = new System.Drawing.Point(728, 159);
+            this.SkillRequirements2.Name = "SkillRequirements2";
+            this.SkillRequirements2.Size = new System.Drawing.Size(45, 16);
+            this.SkillRequirements2.TabIndex = 196;
+            this.SkillRequirements2.Text = "None";
+            this.SkillRequirements2.Visible = false;
+            // 
+            // JediGeneral
+            // 
+            this.JediGeneral.AutoSize = true;
+            this.JediGeneral.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JediGeneral.ForeColor = System.Drawing.Color.White;
+            this.JediGeneral.Location = new System.Drawing.Point(12, 9);
+            this.JediGeneral.Name = "JediGeneral";
+            this.JediGeneral.Size = new System.Drawing.Size(160, 31);
+            this.JediGeneral.TabIndex = 197;
+            this.JediGeneral.Text = "jedi general";
+            this.JediGeneral.MouseHover += new System.EventHandler(this.JediGeneral_MouseHover);
+            this.JediGeneral.MouseMove += new System.Windows.Forms.MouseEventHandler(this.JediGeneral_MouseMove);
+            // 
+            // Path
+            // 
+            this.Path.AutoSize = true;
+            this.Path.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Path.ForeColor = System.Drawing.Color.White;
+            this.Path.Location = new System.Drawing.Point(215, 9);
+            this.Path.Name = "Path";
+            this.Path.Size = new System.Drawing.Size(68, 31);
+            this.Path.TabIndex = 198;
+            this.Path.Text = "path";
+            // 
+            // BeastMastery
+            // 
+            this.BeastMastery.AutoSize = true;
+            this.BeastMastery.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BeastMastery.ForeColor = System.Drawing.Color.White;
+            this.BeastMastery.Location = new System.Drawing.Point(326, 9);
+            this.BeastMastery.Name = "BeastMastery";
+            this.BeastMastery.Size = new System.Drawing.Size(184, 31);
+            this.BeastMastery.TabIndex = 199;
+            this.BeastMastery.Text = "beast mastery";
+            // 
+            // ForceCloakPoints
+            // 
+            this.ForceCloakPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.ForceCloakPoints.Location = new System.Drawing.Point(307, 328);
+            this.ForceCloakPoints.Name = "ForceCloakPoints";
+            this.ForceCloakPoints.Size = new System.Drawing.Size(25, 24);
+            this.ForceCloakPoints.TabIndex = 97;
+            this.ForceCloakPoints.TabStop = false;
+            this.ForceCloakPoints.Visible = false;
+            // 
+            // ForceCloak
+            // 
+            this.ForceCloak.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iForceCloak;
+            this.ForceCloak.Location = new System.Drawing.Point(267, 288);
+            this.ForceCloak.Name = "ForceCloak";
+            this.ForceCloak.Size = new System.Drawing.Size(42, 42);
+            this.ForceCloak.TabIndex = 93;
+            this.ForceCloak.TabStop = false;
+            this.ForceCloak.MouseLeave += new System.EventHandler(this.ForceCloak_MouseLeave);
+            this.ForceCloak.MouseHover += new System.EventHandler(this.ForceCloak_MouseHover);
+            this.ForceCloak.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ForceCloak_MouseMove);
+            // 
+            // ForceCloakBackground
+            // 
+            this.ForceCloakBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            this.ForceCloakBackground.Location = new System.Drawing.Point(245, 265);
+            this.ForceCloakBackground.Name = "ForceCloakBackground";
+            this.ForceCloakBackground.Size = new System.Drawing.Size(89, 88);
+            this.ForceCloakBackground.TabIndex = 147;
+            this.ForceCloakBackground.TabStop = false;
+            // 
+            // AlacrityPoints
+            // 
+            this.AlacrityPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.AlacrityPoints.Location = new System.Drawing.Point(308, 242);
+            this.AlacrityPoints.Name = "AlacrityPoints";
+            this.AlacrityPoints.Size = new System.Drawing.Size(25, 24);
+            this.AlacrityPoints.TabIndex = 56;
+            this.AlacrityPoints.TabStop = false;
+            this.AlacrityPoints.Visible = false;
+            // 
+            // Alacrity
+            // 
+            this.Alacrity.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iAlacrity;
+            this.Alacrity.Location = new System.Drawing.Point(268, 201);
+            this.Alacrity.Name = "Alacrity";
+            this.Alacrity.Size = new System.Drawing.Size(42, 42);
+            this.Alacrity.TabIndex = 50;
+            this.Alacrity.TabStop = false;
+            this.Alacrity.Click += new System.EventHandler(this.Alacrity_Click);
+            this.Alacrity.MouseLeave += new System.EventHandler(this.Alacrity_MouseLeave);
+            this.Alacrity.MouseHover += new System.EventHandler(this.Alacrity_MouseHover);
+            this.Alacrity.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Alacrity_MouseMove);
+            // 
+            // AlacrityBackground
+            // 
+            this.AlacrityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            this.AlacrityBackground.Location = new System.Drawing.Point(245, 178);
+            this.AlacrityBackground.Name = "AlacrityBackground";
+            this.AlacrityBackground.Size = new System.Drawing.Size(89, 88);
+            this.AlacrityBackground.TabIndex = 148;
+            this.AlacrityBackground.TabStop = false;
+            // 
+            // SecondWindPoints
+            // 
+            this.SecondWindPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.SecondWindPoints.Location = new System.Drawing.Point(483, 328);
+            this.SecondWindPoints.Name = "SecondWindPoints";
+            this.SecondWindPoints.Size = new System.Drawing.Size(25, 24);
+            this.SecondWindPoints.TabIndex = 68;
+            this.SecondWindPoints.TabStop = false;
+            this.SecondWindPoints.Visible = false;
+            // 
+            // SecondWind
+            // 
+            this.SecondWind.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSecondWind;
+            this.SecondWind.Location = new System.Drawing.Point(442, 288);
+            this.SecondWind.Name = "SecondWind";
+            this.SecondWind.Size = new System.Drawing.Size(42, 42);
+            this.SecondWind.TabIndex = 187;
+            this.SecondWind.TabStop = false;
+            this.SecondWind.Click += new System.EventHandler(this.SecondWind_Click);
+            this.SecondWind.MouseLeave += new System.EventHandler(this.SecondWind_MouseLeave);
+            this.SecondWind.MouseHover += new System.EventHandler(this.SecondWind_MouseHover);
+            this.SecondWind.MouseMove += new System.Windows.Forms.MouseEventHandler(this.SecondWind_MouseMove);
+            // 
+            // SecondWindBackground
+            // 
+            this.SecondWindBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            this.SecondWindBackground.Location = new System.Drawing.Point(419, 265);
+            this.SecondWindBackground.Name = "SecondWindBackground";
+            this.SecondWindBackground.Size = new System.Drawing.Size(89, 88);
+            this.SecondWindBackground.TabIndex = 144;
+            this.SecondWindBackground.TabStop = false;
+            // 
             // ForceCloakLineEnd
             // 
             this.ForceCloakLineEnd.BackColor = System.Drawing.Color.Transparent;
@@ -543,19 +685,6 @@
             this.ForceCloakLine.Size = new System.Drawing.Size(88, 90);
             this.ForceCloakLine.TabIndex = 193;
             this.ForceCloakLine.TabStop = false;
-            // 
-            // SecondWind
-            // 
-            this.SecondWind.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSecondWind;
-            this.SecondWind.Location = new System.Drawing.Point(442, 288);
-            this.SecondWind.Name = "SecondWind";
-            this.SecondWind.Size = new System.Drawing.Size(42, 42);
-            this.SecondWind.TabIndex = 187;
-            this.SecondWind.TabStop = false;
-            this.SecondWind.Click += new System.EventHandler(this.SecondWind_Click);
-            this.SecondWind.MouseLeave += new System.EventHandler(this.SecondWind_MouseLeave);
-            this.SecondWind.MouseHover += new System.EventHandler(this.SecondWind_MouseHover);
-            this.SecondWind.MouseMove += new System.Windows.Forms.MouseEventHandler(this.SecondWind_MouseMove);
             // 
             // SkillPicture
             // 
@@ -884,16 +1013,6 @@
             this.GraceInMotionPoints.TabStop = false;
             this.GraceInMotionPoints.Visible = false;
             // 
-            // ForceCloakPoints
-            // 
-            this.ForceCloakPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ForceCloakPoints.Location = new System.Drawing.Point(307, 328);
-            this.ForceCloakPoints.Name = "ForceCloakPoints";
-            this.ForceCloakPoints.Size = new System.Drawing.Size(25, 24);
-            this.ForceCloakPoints.TabIndex = 97;
-            this.ForceCloakPoints.TabStop = false;
-            this.ForceCloakPoints.Visible = false;
-            // 
             // PremonitionPoints
             // 
             this.PremonitionPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
@@ -912,21 +1031,10 @@
             this.GraceInMotion.Size = new System.Drawing.Size(42, 42);
             this.GraceInMotion.TabIndex = 94;
             this.GraceInMotion.TabStop = false;
+            this.GraceInMotion.Click += new System.EventHandler(this.GraceInMotion_Click);
             this.GraceInMotion.MouseLeave += new System.EventHandler(this.GraceInMotion_MouseLeave);
             this.GraceInMotion.MouseHover += new System.EventHandler(this.GraceInMotion_MouseHover);
             this.GraceInMotion.MouseMove += new System.Windows.Forms.MouseEventHandler(this.GraceInMotion_MouseMove);
-            // 
-            // ForceCloak
-            // 
-            this.ForceCloak.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iForceCloak;
-            this.ForceCloak.Location = new System.Drawing.Point(267, 288);
-            this.ForceCloak.Name = "ForceCloak";
-            this.ForceCloak.Size = new System.Drawing.Size(42, 42);
-            this.ForceCloak.TabIndex = 93;
-            this.ForceCloak.TabStop = false;
-            this.ForceCloak.MouseLeave += new System.EventHandler(this.ForceCloak_MouseLeave);
-            this.ForceCloak.MouseHover += new System.EventHandler(this.ForceCloak_MouseHover);
-            this.ForceCloak.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ForceCloak_MouseMove);
             // 
             // Premonition
             // 
@@ -998,26 +1106,6 @@
             this.ImprovedCripplingAccuracy.MouseHover += new System.EventHandler(this.ImprovedCripplingAccuracy_MouseHover);
             this.ImprovedCripplingAccuracy.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ImprovedCripplingAccuracy_MouseMove);
             // 
-            // SecondWindPoints
-            // 
-            this.SecondWindPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.SecondWindPoints.Location = new System.Drawing.Point(483, 328);
-            this.SecondWindPoints.Name = "SecondWindPoints";
-            this.SecondWindPoints.Size = new System.Drawing.Size(25, 24);
-            this.SecondWindPoints.TabIndex = 68;
-            this.SecondWindPoints.TabStop = false;
-            this.SecondWindPoints.Visible = false;
-            // 
-            // AlacrityPoints
-            // 
-            this.AlacrityPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.AlacrityPoints.Location = new System.Drawing.Point(308, 242);
-            this.AlacrityPoints.Name = "AlacrityPoints";
-            this.AlacrityPoints.Size = new System.Drawing.Size(25, 24);
-            this.AlacrityPoints.TabIndex = 56;
-            this.AlacrityPoints.TabStop = false;
-            this.AlacrityPoints.Visible = false;
-            // 
             // ImprovedForceThrowPoints
             // 
             this.ImprovedForceThrowPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
@@ -1027,19 +1115,6 @@
             this.ImprovedForceThrowPoints.TabIndex = 53;
             this.ImprovedForceThrowPoints.TabStop = false;
             this.ImprovedForceThrowPoints.Visible = false;
-            // 
-            // Alacrity
-            // 
-            this.Alacrity.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iAlacrity;
-            this.Alacrity.Location = new System.Drawing.Point(268, 201);
-            this.Alacrity.Name = "Alacrity";
-            this.Alacrity.Size = new System.Drawing.Size(42, 42);
-            this.Alacrity.TabIndex = 50;
-            this.Alacrity.TabStop = false;
-            this.Alacrity.Click += new System.EventHandler(this.Alacrity_Click);
-            this.Alacrity.MouseLeave += new System.EventHandler(this.Alacrity_MouseLeave);
-            this.Alacrity.MouseHover += new System.EventHandler(this.Alacrity_MouseHover);
-            this.Alacrity.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Alacrity_MouseMove);
             // 
             // ImprovedForceThrow
             // 
@@ -1182,15 +1257,6 @@
             this.EnhancedStrengthBackground.TabIndex = 0;
             this.EnhancedStrengthBackground.TabStop = false;
             // 
-            // SecondWindBackground
-            // 
-            this.SecondWindBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.SecondWindBackground.Location = new System.Drawing.Point(419, 265);
-            this.SecondWindBackground.Name = "SecondWindBackground";
-            this.SecondWindBackground.Size = new System.Drawing.Size(89, 88);
-            this.SecondWindBackground.TabIndex = 144;
-            this.SecondWindBackground.TabStop = false;
-            // 
             // ImprovedForceThrowBackground
             // 
             this.ImprovedForceThrowBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
@@ -1199,24 +1265,6 @@
             this.ImprovedForceThrowBackground.Size = new System.Drawing.Size(89, 88);
             this.ImprovedForceThrowBackground.TabIndex = 145;
             this.ImprovedForceThrowBackground.TabStop = false;
-            // 
-            // AlacrityBackground
-            // 
-            this.AlacrityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.AlacrityBackground.Location = new System.Drawing.Point(245, 178);
-            this.AlacrityBackground.Name = "AlacrityBackground";
-            this.AlacrityBackground.Size = new System.Drawing.Size(89, 88);
-            this.AlacrityBackground.TabIndex = 148;
-            this.AlacrityBackground.TabStop = false;
-            // 
-            // ForceCloakBackground
-            // 
-            this.ForceCloakBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.ForceCloakBackground.Location = new System.Drawing.Point(245, 265);
-            this.ForceCloakBackground.Name = "ForceCloakBackground";
-            this.ForceCloakBackground.Size = new System.Drawing.Size(89, 88);
-            this.ForceCloakBackground.TabIndex = 147;
-            this.ForceCloakBackground.TabStop = false;
             // 
             // PremonitionBackground
             // 
@@ -1253,53 +1301,6 @@
             this.ImprovedSaberBlockBackground.Size = new System.Drawing.Size(89, 88);
             this.ImprovedSaberBlockBackground.TabIndex = 152;
             this.ImprovedSaberBlockBackground.TabStop = false;
-            // 
-            // SkillRequirements2
-            // 
-            this.SkillRequirements2.AutoSize = true;
-            this.SkillRequirements2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillRequirements2.ForeColor = System.Drawing.Color.White;
-            this.SkillRequirements2.Location = new System.Drawing.Point(728, 159);
-            this.SkillRequirements2.Name = "SkillRequirements2";
-            this.SkillRequirements2.Size = new System.Drawing.Size(45, 16);
-            this.SkillRequirements2.TabIndex = 196;
-            this.SkillRequirements2.Text = "None";
-            this.SkillRequirements2.Visible = false;
-            // 
-            // JediGeneral
-            // 
-            this.JediGeneral.AutoSize = true;
-            this.JediGeneral.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JediGeneral.ForeColor = System.Drawing.Color.White;
-            this.JediGeneral.Location = new System.Drawing.Point(12, 9);
-            this.JediGeneral.Name = "JediGeneral";
-            this.JediGeneral.Size = new System.Drawing.Size(160, 31);
-            this.JediGeneral.TabIndex = 197;
-            this.JediGeneral.Text = "jedi general";
-            this.JediGeneral.MouseHover += new System.EventHandler(this.JediGeneral_MouseHover);
-            this.JediGeneral.MouseMove += new System.Windows.Forms.MouseEventHandler(this.JediGeneral_MouseMove);
-            // 
-            // Path
-            // 
-            this.Path.AutoSize = true;
-            this.Path.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Path.ForeColor = System.Drawing.Color.White;
-            this.Path.Location = new System.Drawing.Point(215, 9);
-            this.Path.Name = "Path";
-            this.Path.Size = new System.Drawing.Size(68, 31);
-            this.Path.TabIndex = 198;
-            this.Path.Text = "path";
-            // 
-            // BeastMastery
-            // 
-            this.BeastMastery.AutoSize = true;
-            this.BeastMastery.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BeastMastery.ForeColor = System.Drawing.Color.White;
-            this.BeastMastery.Location = new System.Drawing.Point(326, 9);
-            this.BeastMastery.Name = "BeastMastery";
-            this.BeastMastery.Size = new System.Drawing.Size(184, 31);
-            this.BeastMastery.TabIndex = 199;
-            this.BeastMastery.Text = "beast mastery";
             // 
             // Jedi
             // 
@@ -1416,10 +1417,18 @@
             this.Text = "Jedi";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Jedi_FormClosing);
             this.Load += new System.EventHandler(this.Jedi_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloak)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlacrityPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlacrityBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWindPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondWindBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineEnd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineStart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLine)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillPictureBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesPoints)).EndInit();
@@ -1454,10 +1463,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFighting)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GraceInMotionPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PremonitionPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GraceInMotion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloak)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Premonition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GraceInMotionBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
@@ -1465,10 +1472,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWindPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AlacrityPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityPoints)).EndInit();
@@ -1482,10 +1486,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWindBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AlacrityBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PremonitionBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingBackground)).EndInit();

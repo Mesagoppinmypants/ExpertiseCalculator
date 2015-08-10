@@ -395,7 +395,7 @@ namespace SWG_Expertise_Calcualtor
         private void SkillDescriptionVisiblity()
         {
             // Enables the general titles and descriptions that all skills use
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover == true)
             {
                 SkillPictureBackground.Visible = true;
                 SkillPicture.Visible = true;
@@ -740,6 +740,41 @@ namespace SWG_Expertise_Calcualtor
                     SkillRank.Text = "2/2";
                 }
             }
+
+            // Grace In Motion
+            if (GraceInMotionHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aGraceInMotion;
+                SkillTitle.Text = "GRACE IN MOTION";
+                SkillSummary.Text = "All melee action costs are reduced by 5%" + "\r\n" + "per point spent.";
+                SkillRequirements1.Text = "8 Points In Jedi General";
+                SkillModifierTitle1.Text = "FORCE RUN DURATION";
+                Rank1Modifier1.Text = " 5 ";
+                Rank2Modifier1.Text = " 10 ";
+                Rank3Modifier1.Text = " 15 ";
+
+                TwoModifierBoxes();
+
+                if (swpoints == 0)
+                {
+                    SkillRank.Text = "0/3";
+                }
+
+                if (swpoints == 1)
+                {
+                    SkillRank.Text = "1/3";
+                }
+
+                if (swpoints == 2)
+                {
+                    SkillRank.Text = "2/3";
+                }
+
+                if (swpoints == 3)
+                {
+                    SkillRank.Text = "3/3";
+                }
+            }
         }
 
         private void OneRankPoints()
@@ -1014,7 +1049,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void HideSecondRankRow()
         {
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover == true)
             {
                 SkillModifierTitle2.Visible = false;
                 Rank1Modifier2.Visible = false;
@@ -2044,6 +2079,51 @@ namespace SWG_Expertise_Calcualtor
         {
             GeneralTabHover = true;
             gc.TabHoverControls();
+        }
+
+        private void GraceInMotion_Click(object sender, EventArgs e)
+        {
+            if (RemovePoints.Checked == true && gimpoints <= 3 && gimpoints > 0)
+            {
+                totalPoints++;
+                gimpoints--;
+            }
+
+            if (AddPoints.Checked == true && totalPoints <= 37 && gimpoints >= 0 && gimpoints < 3)
+            {
+                totalPoints--;
+                gimpoints++;
+            }
+
+            if (gimpoints >= 1)
+            {
+                GraceInMotionPoints.Visible = true;
+                GraceInMotion.Image = Properties.Resources.aGraceInMotion;
+            }
+
+            if (gimpoints == 1)
+            {
+                GraceInMotionPoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (gimpoints == 2)
+            {
+                GraceInMotionPoints.Image = Properties.Resources.skillpoints2;
+            }
+
+            if (gimpoints == 3)
+            {
+                GraceInMotionPoints.Image = Properties.Resources.skillpoints3;
+            }
+
+            if (gimpoints == 0)
+            {
+                GraceInMotion.Image = Properties.Resources.iGraceInMotion;
+                GraceInMotionPoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
         }
     }
 }

@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.NextButton1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,12 +64,23 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Star Jedi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(530, 94);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1167, 26);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "as soon as your character lands" + "\r\n" + "on Tatooine from Tansarii Point" + "\r\n" + "Station, Han Solo will help you" + "\r\n" + "get an x-34 landspeeder.";
+            // 
             // GameArt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(884, 561);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.NextButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -87,5 +99,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button NextButton1;
+        private System.Windows.Forms.Label label2;
     }
 }

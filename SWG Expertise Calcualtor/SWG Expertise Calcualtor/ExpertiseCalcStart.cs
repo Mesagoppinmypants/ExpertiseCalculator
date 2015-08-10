@@ -47,5 +47,11 @@ namespace SWG_Expertise_Calcualtor
             Close();
             Dispose();
         }
+
+        private void ExpertiseCalcStart_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            StartUpPage sup = new StartUpPage();
+            sup.WindowState = FormWindowState.Maximized;
+        }
     }
 }

@@ -23,6 +23,7 @@ namespace SWG_Expertise_Calcualtor
         {
             ExpertiseCalcStart calc = new ExpertiseCalcStart();
             calc.Show();
+            //WindowState = FormWindowState.Minimized;
         }
 
         private void SoundtrackStart_Click(object sender, EventArgs e)

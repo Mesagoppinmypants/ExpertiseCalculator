@@ -84,6 +84,7 @@
             this.Name = "ExpertiseCalcStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Expertise Calculator";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ExpertiseCalcStart_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.TopRightCornerGraphic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
