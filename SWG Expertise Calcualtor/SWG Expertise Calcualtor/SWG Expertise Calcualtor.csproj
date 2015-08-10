@@ -49,11 +49,17 @@
     <Compile Include="Controllers\Services\MessageBoxService.cs" />
     <Compile Include="Controllers\Services\TotalPointsService.cs" />
     <Compile Include="Controllers\GuiController.cs" />
-    <Compile Include="GameArtAndMusic.cs">
+    <Compile Include="GameArt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameArtAndMusic.Designer.cs">
-      <DependentUpon>GameArtAndMusic.cs</DependentUpon>
+    <Compile Include="GameArt.Designer.cs">
+      <DependentUpon>GameArt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameMusic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameMusic.Designer.cs">
+      <DependentUpon>GameMusic.cs</DependentUpon>
     </Compile>
     <Compile Include="Jedi.cs">
       <SubType>Form</SubType>
@@ -76,8 +82,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GameArtAndMusic.resx">
-      <DependentUpon>GameArtAndMusic.cs</DependentUpon>
+    <Compile Include="SWGGameArchives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SWGGameArchives.Designer.cs">
+      <DependentUpon>SWGGameArchives.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GameArt.resx">
+      <DependentUpon>GameArt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameMusic.resx">
+      <DependentUpon>GameMusic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Jedi.resx">
       <DependentUpon>Jedi.cs</DependentUpon>
@@ -97,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ExpertiseCalcStart.resx">
       <DependentUpon>ExpertiseCalcStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWGGameArchives.resx">
+      <DependentUpon>SWGGameArchives.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

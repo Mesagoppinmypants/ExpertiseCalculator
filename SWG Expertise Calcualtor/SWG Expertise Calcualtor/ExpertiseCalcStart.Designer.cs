@@ -71,7 +71,7 @@
             this.ExitButton.Text = "    ";
             this.ExitButton.Click += new System.EventHandler(this.label1_Click);
             // 
-            // StartUpPage
+            // ExpertiseCalcStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -80,8 +80,8 @@
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.ProfessionSelection);
             this.Controls.Add(this.TopRightCornerGraphic);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "StartUpPage";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "ExpertiseCalcStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Expertise Calculator";
             ((System.ComponentModel.ISupportInitialize)(this.TopRightCornerGraphic)).EndInit();

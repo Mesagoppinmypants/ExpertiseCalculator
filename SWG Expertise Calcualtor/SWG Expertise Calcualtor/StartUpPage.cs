@@ -27,8 +27,9 @@ namespace SWG_Expertise_Calcualtor
 
         private void SoundtrackStart_Click(object sender, EventArgs e)
         {
-            SWGGameArt gaam = new SWGGameArt();
-            gaam.Show();
+            SWGGameArchives gaa = new SWGGameArchives();
+            gaa.Show();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -81,6 +82,11 @@ namespace SWG_Expertise_Calcualtor
         private void button10_Click(object sender, EventArgs e)
         {
             Process.Start("http://www.projectswg.com/page/about_us.html");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
