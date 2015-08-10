@@ -20,12 +20,20 @@ namespace SWG_Expertise_Calcualtor.Controllers.Services
             MessageBox.Show("Testing the reset button function. This button isn't implemented yet.");
         }
 
-        public void ProfessionDisabledBountyHunter()
+        public void BountyHunterDisabled()
         {
             MessageBox.Show("Sorry, the Bounty Hunter expertise tree isn't implemented yet.");
         }
 
         // StartUp
+        public void SoundtrackDisabled()
+        {
+            MessageBox.Show("Sorry, the soundtrack part of this application isn't implemented yet.");
+        }
 
+        public void InformationDisabled()
+        {
+            MessageBox.Show("Sorry, this function isn't implemented yet.");
+        }
     }
 }

@@ -37,7 +37,7 @@ namespace SWG_Expertise_Calcualtor
 
             if (ProfessionSelection.SelectedIndex == 2)
             {
-                mbs.ProfessionDisabledBountyHunter();
+                mbs.BountyHunterDisabled();
                 ProfessionSelection.SelectedIndex = 0;
             }
         }
@@ -46,11 +46,6 @@ namespace SWG_Expertise_Calcualtor
         {
             Close();
             Dispose();
-        }
-
-        private void StartUpPage_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -84,7 +84,6 @@
             this.Name = "StartUpPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Expertise Calculator";
-            this.Load += new System.EventHandler(this.StartUpPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TopRightCornerGraphic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
