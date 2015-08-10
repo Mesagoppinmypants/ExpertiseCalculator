@@ -28,64 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ProfessionSelection = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.OpenExpertiseCalculatorButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // ProfessionSelection
+            // OpenExpertiseCalculatorButton
             // 
-            this.ProfessionSelection.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ProfessionSelection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ProfessionSelection.ForeColor = System.Drawing.Color.MediumTurquoise;
-            this.ProfessionSelection.FormattingEnabled = true;
-            this.ProfessionSelection.Items.AddRange(new object[] {
-            "Choose Profession",
-            "Jedi",
-            "Bounty Hunter"});
-            this.ProfessionSelection.Location = new System.Drawing.Point(814, 9);
-            this.ProfessionSelection.Name = "ProfessionSelection";
-            this.ProfessionSelection.Size = new System.Drawing.Size(121, 21);
-            this.ProfessionSelection.TabIndex = 0;
-            this.ProfessionSelection.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.massage_top_right;
-            this.pictureBox1.Location = new System.Drawing.Point(771, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(214, 34);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.OpenExpertiseCalculatorButton.Font = new System.Drawing.Font("Star Jedi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OpenExpertiseCalculatorButton.Location = new System.Drawing.Point(72, 24);
+            this.OpenExpertiseCalculatorButton.Name = "OpenExpertiseCalculatorButton";
+            this.OpenExpertiseCalculatorButton.Size = new System.Drawing.Size(134, 63);
+            this.OpenExpertiseCalculatorButton.TabIndex = 0;
+            this.OpenExpertiseCalculatorButton.Text = "expertise calculator";
+            this.OpenExpertiseCalculatorButton.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(914, 53);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(239, 357);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "EXIT";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Size = new System.Drawing.Size(33, 15);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "v0.1";
             // 
-            // StartUpPage
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Star Jedi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(72, 141);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 63);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "swg soundtrack";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Star Jedi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(72, 258);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(134, 63);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "project swg information";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // StartUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(984, 696);
+            this.ClientSize = new System.Drawing.Size(284, 381);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ProfessionSelection);
-            this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "StartUpPage";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Expertise Calculator";
-            this.Load += new System.EventHandler(this.StartUpPage_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Controls.Add(this.OpenExpertiseCalculatorButton);
+            this.Name = "StartUp";
+            this.Text = "Project SWG Tools";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,9 +92,9 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox ProfessionSelection;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button OpenExpertiseCalculatorButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
-

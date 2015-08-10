@@ -9,6 +9,7 @@ namespace SWG_Expertise_Calcualtor.Controllers.Services
 {
     class MessageBoxService
     {
+        // Start Up Page
         public void SaveButton()
         {
             MessageBox.Show("Testing the save button function. This button isn't implemented yet.");
@@ -18,5 +19,13 @@ namespace SWG_Expertise_Calcualtor.Controllers.Services
         {
             MessageBox.Show("Testing the reset button function. This button isn't implemented yet.");
         }
+
+        public void ProfessionDisabledBountyHunter()
+        {
+            MessageBox.Show("Sorry, the Bounty Hunter expertise tree isn't implemented yet.");
+        }
+
+        // StartUp
+
     }
 }

@@ -92,7 +92,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void Jedi_FormClosing(object sender, FormClosingEventArgs e)
         {
-            StartUpPage start = new StartUpPage();
+            ExpertiseCalcStart start = new ExpertiseCalcStart();
             start.Visible = true;
         }
 

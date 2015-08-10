@@ -62,6 +62,12 @@
     <Compile Include="StartUpPage.Designer.cs">
       <DependentUpon>StartUpPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExpertiseCalcStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpertiseCalcStart.Designer.cs">
+      <DependentUpon>ExpertiseCalcStart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Jedi.resx">
@@ -79,6 +85,9 @@
     </Compile>
     <EmbeddedResource Include="StartUpPage.resx">
       <DependentUpon>StartUpPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpertiseCalcStart.resx">
+      <DependentUpon>ExpertiseCalcStart.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
