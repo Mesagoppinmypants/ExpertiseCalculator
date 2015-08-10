@@ -1470,26 +1470,6 @@ namespace SWG_Expertise_Calcualtor
                 HeightenedSpeedPoints.Visible = false;
             }
 
-            if (hspoints == 1 && HeightenedSpeedHover == true)
-            {
-                OneRankPoints();
-            }
-
-            if (hspoints == 2 && HeightenedSpeedHover == true)
-            {
-                TwoRankPoints();
-            }
-
-            if (hspoints == 3 && HeightenedSpeedHover == true)
-            {
-                ThreeRankPoints();
-            }
-
-            if (hspoints == 4 && HeightenedSpeedHover == true)
-            {
-                FourRankPoints();
-            }
-
             AvailablePoints.Text = totalPoints.ToString();
             PageFunctions();
         }
@@ -1874,16 +1854,6 @@ namespace SWG_Expertise_Calcualtor
             if (hspoints == 2)
             {
                 SecondWindPoints.Image = Properties.Resources.skillpoints2;
-            }
-
-            if (hspoints == 3)
-            {
-                SecondWindPoints.Image = Properties.Resources.skillpoints3;
-            }
-
-            if (hspoints == 4)
-            {
-                SecondWindPoints.Image = Properties.Resources.skillpoints4;
             }
 
             if (hspoints == 0)
