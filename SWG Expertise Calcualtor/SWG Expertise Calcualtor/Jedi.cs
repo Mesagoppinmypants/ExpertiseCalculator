@@ -748,29 +748,29 @@ namespace SWG_Expertise_Calcualtor
                 SkillTitle.Text = "GRACE IN MOTION";
                 SkillSummary.Text = "All melee action costs are reduced by 5%" + "\r\n" + "per point spent.";
                 SkillRequirements1.Text = "8 Points In Jedi General";
-                SkillModifierTitle1.Text = "FORCE RUN DURATION";
+                SkillModifierTitle1.Text = "LIGHTSABER ACTIONS COST";
                 Rank1Modifier1.Text = " 5 ";
                 Rank2Modifier1.Text = " 10 ";
                 Rank3Modifier1.Text = " 15 ";
 
                 TwoModifierBoxes();
 
-                if (swpoints == 0)
+                if (gimpoints == 0)
                 {
                     SkillRank.Text = "0/3";
                 }
 
-                if (swpoints == 1)
+                if (gimpoints == 1)
                 {
                     SkillRank.Text = "1/3";
                 }
 
-                if (swpoints == 2)
+                if (gimpoints == 2)
                 {
                     SkillRank.Text = "2/3";
                 }
 
-                if (swpoints == 3)
+                if (gimpoints == 3)
                 {
                     SkillRank.Text = "3/3";
                 }
@@ -1012,6 +1012,27 @@ namespace SWG_Expertise_Calcualtor
             if (swpoints == 2 && SecondWindHover == true)
             {
                 TwoRankPoints();
+            }
+
+            // Grace In Motion
+            if (gimpoints == 0 && GraceInMotionHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (gimpoints == 1 && GraceInMotionHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (gimpoints == 2 && GraceInMotionHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            if (gimpoints == 3 && GraceInMotionHover == true)
+            {
+                ThreeRankPoints();
             }
         }
         
