@@ -17,6 +17,8 @@ namespace SWG_Expertise_Calcualtor
             InitializeComponent();
         }
 
+        GuiController gc = new GuiController();
+
         private void NextButton1_Click(object sender, EventArgs e)
         {
             panel1.Visible = true;
@@ -50,8 +52,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void GameArt_Load(object sender, EventArgs e)
         {
-            GuiController gc = new GuiController();
-            gc.ButtonSound();
+            gc.GameArtMusic();
         }
     }
 }

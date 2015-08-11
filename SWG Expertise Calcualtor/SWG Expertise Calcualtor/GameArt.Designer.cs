@@ -57,9 +57,9 @@
             this.label1.Font = new System.Drawing.Font("Star Jedi", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(542, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 35);
+            this.label1.Size = new System.Drawing.Size(291, 35);
             this.label1.TabIndex = 1;
-            this.label1.Text = "a speeder for me";
+            this.label1.Text = "A speeder for me";
             // 
             // NextButton1
             // 
@@ -149,7 +149,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(193, 35);
             this.label6.TabIndex = 10;
-            this.label6.Text = "acolyte robe";
+            this.label6.Text = "Acolyte robe";
             // 
             // pictureBox3
             // 

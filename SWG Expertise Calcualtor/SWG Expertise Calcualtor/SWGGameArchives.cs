@@ -20,7 +20,7 @@ namespace SWG_Expertise_Calcualtor
         private void button2_Click(object sender, EventArgs e)
         {
             GuiController gc = new GuiController();
-            gc.ButtonSound();
+            gc.ProgramButtonSound();
             GameArt ga = new GameArt();
             ga.Show();
             Visible = false;
@@ -29,7 +29,7 @@ namespace SWG_Expertise_Calcualtor
         private void button1_Click(object sender, EventArgs e)
         {
             GuiController gc = new GuiController();
-            gc.ButtonSound();
+            gc.ProgramButtonSound();
             GameMusic gm = new GameMusic();
             gm.Show();
             Visible = false;

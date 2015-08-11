@@ -20,7 +20,7 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
-        public void ButtonSound()
+        public void ProgramButtonSound()
         {
             System.Media.SoundPlayer Audio = new System.Media.SoundPlayer();
             Audio.SoundLocation = Path.Combine(Application.StartupPath, "sound\\beeping_timer.wav");
@@ -31,6 +31,13 @@ namespace SWG_Expertise_Calcualtor
         {
             System.Media.SoundPlayer Audio = new System.Media.SoundPlayer();
             Audio.SoundLocation = Path.Combine(Application.StartupPath, "sound\\ui_select_popup.wav");
+            Audio.Play();
+        }
+
+        public void GameArtMusic()
+        {
+            System.Media.SoundPlayer Audio = new System.Media.SoundPlayer();
+            Audio.SoundLocation = Path.Combine(Application.StartupPath, "sound\\mus_battle_of_the_heroes.wav");
             Audio.Play();
         }
     }
