@@ -1899,7 +1899,7 @@ namespace SWG_Expertise_Calcualtor
                 swpoints--;
             }
 
-            if (AddPoints.Checked == true && totalPoints <= 37 && swpoints >= 0 && swpoints < 2)
+            if (AddPoints.Checked == true && totalPoints <= 37 && swpoints >= 0 && swpoints < 2 && espoints == 4)
             {
                 totalPoints--;
                 swpoints++;
