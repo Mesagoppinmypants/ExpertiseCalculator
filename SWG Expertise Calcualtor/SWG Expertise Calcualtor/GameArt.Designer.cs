@@ -143,17 +143,17 @@
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Star Jedi", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(525, 12);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(193, 35);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Acolyte robe";
+            label6.AutoSize = true;
+            label6.Font = new System.Drawing.Font("Star Jedi", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label6.Location = new System.Drawing.Point(525, 12);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(193, 35);
+            label6.TabIndex = 10;
+            label6.Text = "Acolyte robe";
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.large_load_acolyte_robe;
+            this.pictureBox3.Image = Properties.Resources.large_load_acolyte_robe;
             this.pictureBox3.Location = new System.Drawing.Point(8, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(512, 512);
