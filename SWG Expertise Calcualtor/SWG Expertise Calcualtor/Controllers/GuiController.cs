@@ -40,5 +40,12 @@ namespace SWG_Expertise_Calcualtor
             Audio.SoundLocation = Path.Combine(Application.StartupPath, "sound\\mus_battle_of_the_heroes.wav");
             Audio.Play();
         }
+
+        public void DefaultHoverSound()
+        {
+            System.Media.SoundPlayer Audio = new System.Media.SoundPlayer();
+            Audio.SoundLocation = Path.Combine(Application.StartupPath, "sound\\ui_rollover.wav");
+            Audio.Play();
+        }
     }
 }
