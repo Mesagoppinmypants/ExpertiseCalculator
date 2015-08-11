@@ -47,5 +47,11 @@ namespace SWG_Expertise_Calcualtor
         {
             panel2.Visible = false;
         }
+
+        private void GameArt_Load(object sender, EventArgs e)
+        {
+            GuiController gc = new GuiController();
+            gc.ButtonSound();
+        }
     }
 }

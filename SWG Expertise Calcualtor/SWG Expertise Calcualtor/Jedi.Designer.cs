@@ -579,6 +579,7 @@
             this.ForceCloak.Size = new System.Drawing.Size(42, 42);
             this.ForceCloak.TabIndex = 93;
             this.ForceCloak.TabStop = false;
+            this.ForceCloak.Click += new System.EventHandler(this.ForceCloak_Click);
             this.ForceCloak.MouseLeave += new System.EventHandler(this.ForceCloak_MouseLeave);
             this.ForceCloak.MouseHover += new System.EventHandler(this.ForceCloak_MouseHover);
             this.ForceCloak.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ForceCloak_MouseMove);
@@ -1044,6 +1045,7 @@
             this.Premonition.Size = new System.Drawing.Size(42, 42);
             this.Premonition.TabIndex = 92;
             this.Premonition.TabStop = false;
+            this.Premonition.Click += new System.EventHandler(this.Premonition_Click);
             this.Premonition.MouseLeave += new System.EventHandler(this.Premonition_MouseLeave);
             this.Premonition.MouseHover += new System.EventHandler(this.Premonition_MouseHover);
             this.Premonition.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Premonition_MouseMove);
@@ -1102,6 +1104,7 @@
             this.ImprovedCripplingAccuracy.Size = new System.Drawing.Size(42, 42);
             this.ImprovedCripplingAccuracy.TabIndex = 80;
             this.ImprovedCripplingAccuracy.TabStop = false;
+            this.ImprovedCripplingAccuracy.Click += new System.EventHandler(this.ImprovedCripplingAccuracy_Click);
             this.ImprovedCripplingAccuracy.MouseLeave += new System.EventHandler(this.ImprovedCripplingAccuracy_MouseLeave);
             this.ImprovedCripplingAccuracy.MouseHover += new System.EventHandler(this.ImprovedCripplingAccuracy_MouseHover);
             this.ImprovedCripplingAccuracy.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ImprovedCripplingAccuracy_MouseMove);

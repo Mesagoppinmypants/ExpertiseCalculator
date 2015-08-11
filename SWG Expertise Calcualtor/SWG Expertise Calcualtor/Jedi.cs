@@ -1181,6 +1181,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStrength_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
             if (RemovePoints.Checked == true && strpoints <= 2 && strpoints > 0)
             {
                 totalPoints++;
@@ -1252,6 +1253,7 @@ namespace SWG_Expertise_Calcualtor
         // Enhanced Constitution    
         private void EnhancedConstitution_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
             if (RemovePoints.Checked == true && conpoints <= 2 && conpoints > 0)
             {
                 totalPoints++;
@@ -1323,6 +1325,7 @@ namespace SWG_Expertise_Calcualtor
         // Enhanced Agility
         private void EnhancedAgility_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
             if (RemovePoints.Checked == true && agipoints <= 2 && agipoints > 0)
             {
                 totalPoints++;
@@ -1392,6 +1395,7 @@ namespace SWG_Expertise_Calcualtor
         // Enhanced Stamina
         private void EnhancedStamina_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
             if (RemovePoints.Checked == true && stapoints <= 2 && stapoints > 0)
             {
                 totalPoints++;
@@ -1461,6 +1465,7 @@ namespace SWG_Expertise_Calcualtor
         // Heightened Speed
         private void HeightenedSpeed_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
             if (RemovePoints.Checked == true && hspoints <= 4 && hspoints > 0)
             {
                 totalPoints++;
@@ -1555,6 +1560,7 @@ namespace SWG_Expertise_Calcualtor
         // Exacting Strikes
         private void ExactingStrikes_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
             if (RemovePoints.Checked == true && espoints <= 4 && espoints > 0)
             {
                 totalPoints++;
@@ -1648,6 +1654,7 @@ namespace SWG_Expertise_Calcualtor
         // Alacrity
         private void Alacrity_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
             if (RemovePoints.Checked == true && apoints <= 4 && apoints > 0)
             {
                 totalPoints++;
@@ -1781,6 +1788,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void ImprovedForceThrow_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
             if (RemovePoints.Checked == true && ifspoints <= 2 && iftpoints > 0)
             {
                 totalPoints++;
@@ -1863,6 +1871,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void SecondWind_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
             if (RemovePoints.Checked == true && swpoints <= 2 && swpoints > 0)
             {
                 totalPoints++;
@@ -2083,6 +2092,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void GraceInMotion_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
             if (RemovePoints.Checked == true && gimpoints <= 3 && gimpoints > 0)
             {
                 totalPoints++;
@@ -2124,6 +2134,21 @@ namespace SWG_Expertise_Calcualtor
 
             AvailablePoints.Text = totalPoints.ToString();
             PageFunctions();
+        }
+
+        private void ImprovedCripplingAccuracy_Click(object sender, EventArgs e)
+        {
+            gc.ExpertiseButtonSound();
+        }
+
+        private void Premonition_Click(object sender, EventArgs e)
+        {
+            gc.ExpertiseButtonSound();
+        }
+
+        private void ForceCloak_Click(object sender, EventArgs e)
+        {
+            gc.ExpertiseButtonSound();
         }
     }
 }

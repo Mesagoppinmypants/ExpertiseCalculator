@@ -32,16 +32,16 @@
             this.NextButton1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -97,46 +97,6 @@
             this.panel1.TabIndex = 4;
             this.panel1.Visible = false;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Star Jedi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(526, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(350, 104);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "testing...";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(793, 501);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Star Jedi", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(525, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(291, 35);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Account Data Access";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(712, 501);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Previous";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.button3);
@@ -167,9 +127,10 @@
             this.label5.Font = new System.Drawing.Font("Star Jedi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(526, 94);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(350, 104);
+            this.label5.Size = new System.Drawing.Size(333, 104);
             this.label5.TabIndex = 12;
-            this.label5.Text = "this robe can only be worn by\r\njedi who are level 40 and up. it\r\ncan be looted by wide variety\r\nof npcs.";
+            this.label5.Text = "this robe can only be worn by\r\njedi who are level 40 and up. it\r\ncan be looted by" +
+    " wide variety\r\nof npcs.";
             // 
             // button4
             // 
@@ -198,6 +159,46 @@
             this.pictureBox3.Size = new System.Drawing.Size(512, 512);
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(712, 501);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Previous";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Star Jedi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(526, 94);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 26);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "testing...";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(793, 501);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Next";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Star Jedi", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(525, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(291, 35);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Account Data Access";
             // 
             // pictureBox2
             // 
@@ -232,6 +233,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SWG Game Art";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameArt_FormClosing);
+            this.Load += new System.EventHandler(this.GameArt_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
