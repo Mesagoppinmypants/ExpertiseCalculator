@@ -28,1474 +28,1474 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AvailablePoints = new System.Windows.Forms.Label();
-            this.AddPoints = new System.Windows.Forms.CheckBox();
-            this.RemovePoints = new System.Windows.Forms.CheckBox();
-            this.AvailablePointsBase = new System.Windows.Forms.Label();
-            this.AvailablePointsLabel = new System.Windows.Forms.Label();
-            this.RequiredLevelLabel = new System.Windows.Forms.Label();
-            this.levelOutput = new System.Windows.Forms.Label();
-            this.ResetButton = new System.Windows.Forms.Button();
-            this.SaveButton = new System.Windows.Forms.Button();
-            this.SkillTitle = new System.Windows.Forms.Label();
-            this.SkillSummary = new System.Windows.Forms.Label();
-            this.RequiresLabel = new System.Windows.Forms.Label();
-            this.SkillRequirements1 = new System.Windows.Forms.Label();
-            this.RankLabel = new System.Windows.Forms.Label();
-            this.SkillRank = new System.Windows.Forms.Label();
-            this.GrandsModifiersLabel = new System.Windows.Forms.Label();
-            this.SkillModifierTitle1 = new System.Windows.Forms.Label();
-            this.Rank1Modifier1 = new System.Windows.Forms.Label();
-            this.Rank2Modifier1 = new System.Windows.Forms.Label();
-            this.Rank3Modifier1 = new System.Windows.Forms.Label();
-            this.Rank4Modifier1 = new System.Windows.Forms.Label();
-            this.Rank4Modifier2 = new System.Windows.Forms.Label();
-            this.Rank3Modifier2 = new System.Windows.Forms.Label();
-            this.Rank2Modifier2 = new System.Windows.Forms.Label();
-            this.Rank1Modifier2 = new System.Windows.Forms.Label();
-            this.SkillModifierTitle2 = new System.Windows.Forms.Label();
-            this.SkillRequirements2 = new System.Windows.Forms.Label();
-            this.JediGeneral = new System.Windows.Forms.Label();
-            this.Path = new System.Windows.Forms.Label();
-            this.BeastMastery = new System.Windows.Forms.Label();
-            this.ForceCloakPoints = new System.Windows.Forms.PictureBox();
-            this.ForceCloak = new System.Windows.Forms.PictureBox();
-            this.ForceCloakBackground = new System.Windows.Forms.PictureBox();
-            this.AlacrityPoints = new System.Windows.Forms.PictureBox();
-            this.Alacrity = new System.Windows.Forms.PictureBox();
-            this.AlacrityBackground = new System.Windows.Forms.PictureBox();
-            this.SecondWindPoints = new System.Windows.Forms.PictureBox();
-            this.SecondWind = new System.Windows.Forms.PictureBox();
-            this.SecondWindBackground = new System.Windows.Forms.PictureBox();
-            this.ForceCloakLineEnd = new System.Windows.Forms.PictureBox();
-            this.ForceCloakLineStart = new System.Windows.Forms.PictureBox();
-            this.ForceCloakLine = new System.Windows.Forms.PictureBox();
-            this.SkillPicture = new System.Windows.Forms.PictureBox();
-            this.SkillPictureBackground = new System.Windows.Forms.PictureBox();
-            this.ExactingStrikesPoints = new System.Windows.Forms.PictureBox();
-            this.ExactingStrikes = new System.Windows.Forms.PictureBox();
-            this.ExactingStrikesBackground = new System.Windows.Forms.PictureBox();
-            this.HeightenedSpeedPoints = new System.Windows.Forms.PictureBox();
-            this.HeightenedSpeed = new System.Windows.Forms.PictureBox();
-            this.HeightenedSpeedBackground = new System.Windows.Forms.PictureBox();
-            this.IncisivenessPoints = new System.Windows.Forms.PictureBox();
-            this.ImprovedForceCloakPoints = new System.Windows.Forms.PictureBox();
-            this.ImprovedForceShockwavePoints = new System.Windows.Forms.PictureBox();
-            this.Incisiveness = new System.Windows.Forms.PictureBox();
-            this.ImprovedForceCloak = new System.Windows.Forms.PictureBox();
-            this.ImprovedForceShockwave = new System.Windows.Forms.PictureBox();
-            this.IncisivenessBackground = new System.Windows.Forms.PictureBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.pictureBox43 = new System.Windows.Forms.PictureBox();
-            this.pictureBox44 = new System.Windows.Forms.PictureBox();
-            this.ForceShockwavePoints = new System.Windows.Forms.PictureBox();
-            this.ForceShockwave = new System.Windows.Forms.PictureBox();
-            this.ImprovedForceCloakBackground = new System.Windows.Forms.PictureBox();
-            this.ImprovedForceShockwaveBackground = new System.Windows.Forms.PictureBox();
-            this.ForceShockwaveBackground = new System.Windows.Forms.PictureBox();
-            this.FidelityPoints = new System.Windows.Forms.PictureBox();
-            this.ImprovedSaberBlockPoints = new System.Windows.Forms.PictureBox();
-            this.Fidelity = new System.Windows.Forms.PictureBox();
-            this.ImprovedSaberBlock = new System.Windows.Forms.PictureBox();
-            this.FidelityBackground = new System.Windows.Forms.PictureBox();
-            this.pictureBox74 = new System.Windows.Forms.PictureBox();
-            this.pictureBox75 = new System.Windows.Forms.PictureBox();
-            this.pictureBox76 = new System.Windows.Forms.PictureBox();
-            this.DefensiveFightingPoints = new System.Windows.Forms.PictureBox();
-            this.DefensiveFighting = new System.Windows.Forms.PictureBox();
-            this.GraceInMotionPoints = new System.Windows.Forms.PictureBox();
-            this.PremonitionPoints = new System.Windows.Forms.PictureBox();
-            this.GraceInMotion = new System.Windows.Forms.PictureBox();
-            this.Premonition = new System.Windows.Forms.PictureBox();
-            this.GraceInMotionBackground = new System.Windows.Forms.PictureBox();
-            this.pictureBox50 = new System.Windows.Forms.PictureBox();
-            this.pictureBox51 = new System.Windows.Forms.PictureBox();
-            this.pictureBox52 = new System.Windows.Forms.PictureBox();
-            this.ImprovedCripplingAccuracyPoints = new System.Windows.Forms.PictureBox();
-            this.ImprovedCripplingAccuracy = new System.Windows.Forms.PictureBox();
-            this.ImprovedForceThrowPoints = new System.Windows.Forms.PictureBox();
-            this.ImprovedForceThrow = new System.Windows.Forms.PictureBox();
-            this.EnhancedStaminaPoints = new System.Windows.Forms.PictureBox();
-            this.EnhancedAgilityPoints = new System.Windows.Forms.PictureBox();
-            this.EnhancedConstitutionPoints = new System.Windows.Forms.PictureBox();
-            this.EnhancedStrengthPoints = new System.Windows.Forms.PictureBox();
-            this.EnhancedStamina = new System.Windows.Forms.PictureBox();
-            this.EnhancedAgility = new System.Windows.Forms.PictureBox();
-            this.EnhancedConstitution = new System.Windows.Forms.PictureBox();
-            this.EnhancedStrength = new System.Windows.Forms.PictureBox();
-            this.EnhancedStaminaBackground = new System.Windows.Forms.PictureBox();
-            this.EnhancedAgilityBackground = new System.Windows.Forms.PictureBox();
-            this.EnhancedConstitutionBackground = new System.Windows.Forms.PictureBox();
-            this.EnhancedStrengthBackground = new System.Windows.Forms.PictureBox();
-            this.ImprovedForceThrowBackground = new System.Windows.Forms.PictureBox();
-            this.PremonitionBackground = new System.Windows.Forms.PictureBox();
-            this.ImprovedCripplingAccuracyBackground = new System.Windows.Forms.PictureBox();
-            this.DefensiveFightingBackground = new System.Windows.Forms.PictureBox();
-            this.ImprovedSaberBlockBackground = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloak)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AlacrityPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AlacrityBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWindPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWindBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineEnd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineStart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLine)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SkillPictureBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HeightenedSpeedPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HeightenedSpeed)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HeightenedSpeedBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IncisivenessPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceCloakPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceShockwavePoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Incisiveness)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceCloak)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceShockwave)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IncisivenessBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceShockwavePoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceShockwave)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceCloakBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceShockwaveBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceShockwaveBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FidelityPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlockPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Fidelity)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlock)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FidelityBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DefensiveFighting)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GraceInMotionPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PremonitionPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GraceInMotion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Premonition)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GraceInMotionBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStamina)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitution)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrength)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PremonitionBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlockBackground)).BeginInit();
-            this.SuspendLayout();
+            AvailablePoints = new System.Windows.Forms.Label();
+            AddPoints = new System.Windows.Forms.CheckBox();
+            RemovePoints = new System.Windows.Forms.CheckBox();
+            AvailablePointsBase = new System.Windows.Forms.Label();
+            AvailablePointsLabel = new System.Windows.Forms.Label();
+            RequiredLevelLabel = new System.Windows.Forms.Label();
+            levelOutput = new System.Windows.Forms.Label();
+            ResetButton = new System.Windows.Forms.Button();
+            SaveButton = new System.Windows.Forms.Button();
+            SkillTitle = new System.Windows.Forms.Label();
+            SkillSummary = new System.Windows.Forms.Label();
+            RequiresLabel = new System.Windows.Forms.Label();
+            SkillRequirements1 = new System.Windows.Forms.Label();
+            RankLabel = new System.Windows.Forms.Label();
+            SkillRank = new System.Windows.Forms.Label();
+            GrandsModifiersLabel = new System.Windows.Forms.Label();
+            SkillModifierTitle1 = new System.Windows.Forms.Label();
+            Rank1Modifier1 = new System.Windows.Forms.Label();
+            Rank2Modifier1 = new System.Windows.Forms.Label();
+            Rank3Modifier1 = new System.Windows.Forms.Label();
+            Rank4Modifier1 = new System.Windows.Forms.Label();
+            Rank4Modifier2 = new System.Windows.Forms.Label();
+            Rank3Modifier2 = new System.Windows.Forms.Label();
+            Rank2Modifier2 = new System.Windows.Forms.Label();
+            Rank1Modifier2 = new System.Windows.Forms.Label();
+            SkillModifierTitle2 = new System.Windows.Forms.Label();
+            SkillRequirements2 = new System.Windows.Forms.Label();
+            JediGeneral = new System.Windows.Forms.Label();
+            Path = new System.Windows.Forms.Label();
+            BeastMastery = new System.Windows.Forms.Label();
+            ForceCloakPoints = new System.Windows.Forms.PictureBox();
+            ForceCloak = new System.Windows.Forms.PictureBox();
+            ForceCloakBackground = new System.Windows.Forms.PictureBox();
+            AlacrityPoints = new System.Windows.Forms.PictureBox();
+            Alacrity = new System.Windows.Forms.PictureBox();
+            AlacrityBackground = new System.Windows.Forms.PictureBox();
+            SecondWindPoints = new System.Windows.Forms.PictureBox();
+            SecondWind = new System.Windows.Forms.PictureBox();
+            SecondWindBackground = new System.Windows.Forms.PictureBox();
+            ForceCloakLineEnd = new System.Windows.Forms.PictureBox();
+            ForceCloakLineStart = new System.Windows.Forms.PictureBox();
+            ForceCloakLine = new System.Windows.Forms.PictureBox();
+            SkillPicture = new System.Windows.Forms.PictureBox();
+            SkillPictureBackground = new System.Windows.Forms.PictureBox();
+            ExactingStrikesPoints = new System.Windows.Forms.PictureBox();
+            ExactingStrikes = new System.Windows.Forms.PictureBox();
+            ExactingStrikesBackground = new System.Windows.Forms.PictureBox();
+            HeightenedSpeedPoints = new System.Windows.Forms.PictureBox();
+            HeightenedSpeed = new System.Windows.Forms.PictureBox();
+            HeightenedSpeedBackground = new System.Windows.Forms.PictureBox();
+            IncisivenessPoints = new System.Windows.Forms.PictureBox();
+            ImprovedForceCloakPoints = new System.Windows.Forms.PictureBox();
+            ImprovedForceShockwavePoints = new System.Windows.Forms.PictureBox();
+            Incisiveness = new System.Windows.Forms.PictureBox();
+            ImprovedForceCloak = new System.Windows.Forms.PictureBox();
+            ImprovedForceShockwave = new System.Windows.Forms.PictureBox();
+            IncisivenessBackground = new System.Windows.Forms.PictureBox();
+            pictureBox33 = new System.Windows.Forms.PictureBox();
+            pictureBox43 = new System.Windows.Forms.PictureBox();
+            pictureBox44 = new System.Windows.Forms.PictureBox();
+            ForceShockwavePoints = new System.Windows.Forms.PictureBox();
+            ForceShockwave = new System.Windows.Forms.PictureBox();
+            ImprovedForceCloakBackground = new System.Windows.Forms.PictureBox();
+            ImprovedForceShockwaveBackground = new System.Windows.Forms.PictureBox();
+            ForceShockwaveBackground = new System.Windows.Forms.PictureBox();
+            FidelityPoints = new System.Windows.Forms.PictureBox();
+            ImprovedSaberBlockPoints = new System.Windows.Forms.PictureBox();
+            Fidelity = new System.Windows.Forms.PictureBox();
+            ImprovedSaberBlock = new System.Windows.Forms.PictureBox();
+            FidelityBackground = new System.Windows.Forms.PictureBox();
+            pictureBox74 = new System.Windows.Forms.PictureBox();
+            pictureBox75 = new System.Windows.Forms.PictureBox();
+            pictureBox76 = new System.Windows.Forms.PictureBox();
+            DefensiveFightingPoints = new System.Windows.Forms.PictureBox();
+            DefensiveFighting = new System.Windows.Forms.PictureBox();
+            GraceInMotionPoints = new System.Windows.Forms.PictureBox();
+            PremonitionPoints = new System.Windows.Forms.PictureBox();
+            GraceInMotion = new System.Windows.Forms.PictureBox();
+            Premonition = new System.Windows.Forms.PictureBox();
+            GraceInMotionBackground = new System.Windows.Forms.PictureBox();
+            pictureBox50 = new System.Windows.Forms.PictureBox();
+            pictureBox51 = new System.Windows.Forms.PictureBox();
+            pictureBox52 = new System.Windows.Forms.PictureBox();
+            ImprovedCripplingAccuracyPoints = new System.Windows.Forms.PictureBox();
+            ImprovedCripplingAccuracy = new System.Windows.Forms.PictureBox();
+            ImprovedForceThrowPoints = new System.Windows.Forms.PictureBox();
+            ImprovedForceThrow = new System.Windows.Forms.PictureBox();
+            EnhancedStaminaPoints = new System.Windows.Forms.PictureBox();
+            EnhancedAgilityPoints = new System.Windows.Forms.PictureBox();
+            EnhancedConstitutionPoints = new System.Windows.Forms.PictureBox();
+            EnhancedStrengthPoints = new System.Windows.Forms.PictureBox();
+            EnhancedStamina = new System.Windows.Forms.PictureBox();
+            EnhancedAgility = new System.Windows.Forms.PictureBox();
+            EnhancedConstitution = new System.Windows.Forms.PictureBox();
+            EnhancedStrength = new System.Windows.Forms.PictureBox();
+            EnhancedStaminaBackground = new System.Windows.Forms.PictureBox();
+            EnhancedAgilityBackground = new System.Windows.Forms.PictureBox();
+            EnhancedConstitutionBackground = new System.Windows.Forms.PictureBox();
+            EnhancedStrengthBackground = new System.Windows.Forms.PictureBox();
+            ImprovedForceThrowBackground = new System.Windows.Forms.PictureBox();
+            PremonitionBackground = new System.Windows.Forms.PictureBox();
+            ImprovedCripplingAccuracyBackground = new System.Windows.Forms.PictureBox();
+            DefensiveFightingBackground = new System.Windows.Forms.PictureBox();
+            ImprovedSaberBlockBackground = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(ForceCloakPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceCloak)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceCloakBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(AlacrityPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(Alacrity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(AlacrityBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(SecondWindPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(SecondWind)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(SecondWindBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceCloakLineEnd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceCloakLineStart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceCloakLine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(SkillPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(SkillPictureBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ExactingStrikesPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ExactingStrikes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ExactingStrikesBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(HeightenedSpeedPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(HeightenedSpeed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(HeightenedSpeedBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(IncisivenessPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceCloakPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceShockwavePoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(Incisiveness)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceCloak)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceShockwave)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(IncisivenessBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceShockwavePoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceShockwave)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceCloakBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceShockwaveBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceShockwaveBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(FidelityPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedSaberBlockPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(Fidelity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedSaberBlock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(FidelityBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox74)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox75)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox76)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(DefensiveFightingPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(DefensiveFighting)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(GraceInMotionPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(PremonitionPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(GraceInMotion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(Premonition)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(GraceInMotionBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox51)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox52)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedCripplingAccuracyPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedCripplingAccuracy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceThrowPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceThrow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedStaminaPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedAgilityPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedConstitutionPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedStrengthPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedStamina)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedAgility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedConstitution)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedStrength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedStaminaBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedAgilityBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedConstitutionBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedStrengthBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceThrowBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(PremonitionBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedCripplingAccuracyBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(DefensiveFightingBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedSaberBlockBackground)).BeginInit();
+            SuspendLayout();
             // 
             // AvailablePoints
             // 
-            this.AvailablePoints.AutoSize = true;
-            this.AvailablePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AvailablePoints.ForeColor = System.Drawing.Color.Yellow;
-            this.AvailablePoints.Location = new System.Drawing.Point(891, 612);
-            this.AvailablePoints.Name = "AvailablePoints";
-            this.AvailablePoints.Size = new System.Drawing.Size(30, 24);
-            this.AvailablePoints.TabIndex = 22;
-            this.AvailablePoints.Text = "45";
+            AvailablePoints.AutoSize = true;
+            AvailablePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            AvailablePoints.ForeColor = System.Drawing.Color.Yellow;
+            AvailablePoints.Location = new System.Drawing.Point(891, 612);
+            AvailablePoints.Name = "AvailablePoints";
+            AvailablePoints.Size = new System.Drawing.Size(30, 24);
+            AvailablePoints.TabIndex = 22;
+            AvailablePoints.Text = "45";
             // 
             // AddPoints
             // 
-            this.AddPoints.AutoSize = true;
-            this.AddPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddPoints.ForeColor = System.Drawing.Color.White;
-            this.AddPoints.Location = new System.Drawing.Point(732, 640);
-            this.AddPoints.Name = "AddPoints";
-            this.AddPoints.Size = new System.Drawing.Size(102, 20);
-            this.AddPoints.TabIndex = 23;
-            this.AddPoints.Text = "Add Points";
-            this.AddPoints.UseVisualStyleBackColor = true;
-            this.AddPoints.CheckedChanged += new System.EventHandler(this.AddPoints_CheckedChanged);
+            AddPoints.AutoSize = true;
+            AddPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            AddPoints.ForeColor = System.Drawing.Color.White;
+            AddPoints.Location = new System.Drawing.Point(732, 640);
+            AddPoints.Name = "AddPoints";
+            AddPoints.Size = new System.Drawing.Size(102, 20);
+            AddPoints.TabIndex = 23;
+            AddPoints.Text = "Add Points";
+            AddPoints.UseVisualStyleBackColor = true;
+            AddPoints.CheckedChanged += new System.EventHandler(AddPoints_CheckedChanged);
             // 
             // RemovePoints
             // 
-            this.RemovePoints.AutoSize = true;
-            this.RemovePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RemovePoints.ForeColor = System.Drawing.Color.White;
-            this.RemovePoints.Location = new System.Drawing.Point(840, 640);
-            this.RemovePoints.Name = "RemovePoints";
-            this.RemovePoints.Size = new System.Drawing.Size(132, 20);
-            this.RemovePoints.TabIndex = 24;
-            this.RemovePoints.Text = "Remove Points";
-            this.RemovePoints.UseVisualStyleBackColor = true;
-            this.RemovePoints.CheckedChanged += new System.EventHandler(this.RemovePoints_CheckedChanged);
+            RemovePoints.AutoSize = true;
+            RemovePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            RemovePoints.ForeColor = System.Drawing.Color.White;
+            RemovePoints.Location = new System.Drawing.Point(840, 640);
+            RemovePoints.Name = "RemovePoints";
+            RemovePoints.Size = new System.Drawing.Size(132, 20);
+            RemovePoints.TabIndex = 24;
+            RemovePoints.Text = "Remove Points";
+            RemovePoints.UseVisualStyleBackColor = true;
+            RemovePoints.CheckedChanged += new System.EventHandler(RemovePoints_CheckedChanged);
             // 
             // AvailablePointsBase
             // 
-            this.AvailablePointsBase.AutoSize = true;
-            this.AvailablePointsBase.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AvailablePointsBase.ForeColor = System.Drawing.Color.Yellow;
-            this.AvailablePointsBase.Location = new System.Drawing.Point(917, 613);
-            this.AvailablePointsBase.Name = "AvailablePointsBase";
-            this.AvailablePointsBase.Size = new System.Drawing.Size(40, 24);
-            this.AvailablePointsBase.TabIndex = 25;
-            this.AvailablePointsBase.Text = "/ 45";
+            AvailablePointsBase.AutoSize = true;
+            AvailablePointsBase.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            AvailablePointsBase.ForeColor = System.Drawing.Color.Yellow;
+            AvailablePointsBase.Location = new System.Drawing.Point(917, 613);
+            AvailablePointsBase.Name = "AvailablePointsBase";
+            AvailablePointsBase.Size = new System.Drawing.Size(40, 24);
+            AvailablePointsBase.TabIndex = 25;
+            AvailablePointsBase.Text = "/ 45";
             // 
             // AvailablePointsLabel
             // 
-            this.AvailablePointsLabel.AutoSize = true;
-            this.AvailablePointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AvailablePointsLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.AvailablePointsLabel.Location = new System.Drawing.Point(742, 612);
-            this.AvailablePointsLabel.Name = "AvailablePointsLabel";
-            this.AvailablePointsLabel.Size = new System.Drawing.Size(147, 24);
-            this.AvailablePointsLabel.TabIndex = 26;
-            this.AvailablePointsLabel.Text = "Available Points:";
+            AvailablePointsLabel.AutoSize = true;
+            AvailablePointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            AvailablePointsLabel.ForeColor = System.Drawing.Color.Yellow;
+            AvailablePointsLabel.Location = new System.Drawing.Point(742, 612);
+            AvailablePointsLabel.Name = "AvailablePointsLabel";
+            AvailablePointsLabel.Size = new System.Drawing.Size(147, 24);
+            AvailablePointsLabel.TabIndex = 26;
+            AvailablePointsLabel.Text = "Available Points:";
             // 
             // RequiredLevelLabel
             // 
-            this.RequiredLevelLabel.AutoSize = true;
-            this.RequiredLevelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RequiredLevelLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.RequiredLevelLabel.Location = new System.Drawing.Point(742, 589);
-            this.RequiredLevelLabel.Name = "RequiredLevelLabel";
-            this.RequiredLevelLabel.Size = new System.Drawing.Size(143, 24);
-            this.RequiredLevelLabel.TabIndex = 33;
-            this.RequiredLevelLabel.Text = "Required Level:";
+            RequiredLevelLabel.AutoSize = true;
+            RequiredLevelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            RequiredLevelLabel.ForeColor = System.Drawing.Color.Yellow;
+            RequiredLevelLabel.Location = new System.Drawing.Point(742, 589);
+            RequiredLevelLabel.Name = "RequiredLevelLabel";
+            RequiredLevelLabel.Size = new System.Drawing.Size(143, 24);
+            RequiredLevelLabel.TabIndex = 33;
+            RequiredLevelLabel.Text = "Required Level:";
             // 
             // levelOutput
             // 
-            this.levelOutput.AutoSize = true;
-            this.levelOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.levelOutput.ForeColor = System.Drawing.Color.Yellow;
-            this.levelOutput.Location = new System.Drawing.Point(891, 589);
-            this.levelOutput.Name = "levelOutput";
-            this.levelOutput.Size = new System.Drawing.Size(30, 24);
-            this.levelOutput.TabIndex = 34;
-            this.levelOutput.Text = "10";
+            levelOutput.AutoSize = true;
+            levelOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            levelOutput.ForeColor = System.Drawing.Color.Yellow;
+            levelOutput.Location = new System.Drawing.Point(891, 589);
+            levelOutput.Name = "levelOutput";
+            levelOutput.Size = new System.Drawing.Size(30, 24);
+            levelOutput.TabIndex = 34;
+            levelOutput.Text = "10";
             // 
             // ResetButton
             // 
-            this.ResetButton.Location = new System.Drawing.Point(873, 668);
-            this.ResetButton.Name = "ResetButton";
-            this.ResetButton.Size = new System.Drawing.Size(75, 23);
-            this.ResetButton.TabIndex = 72;
-            this.ResetButton.Text = "Reset";
-            this.ResetButton.UseVisualStyleBackColor = true;
-            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
+            ResetButton.Location = new System.Drawing.Point(873, 668);
+            ResetButton.Name = "ResetButton";
+            ResetButton.Size = new System.Drawing.Size(75, 23);
+            ResetButton.TabIndex = 72;
+            ResetButton.Text = "Reset";
+            ResetButton.UseVisualStyleBackColor = true;
+            ResetButton.Click += new System.EventHandler(ResetButton_Click);
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(792, 668);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(75, 23);
-            this.SaveButton.TabIndex = 73;
-            this.SaveButton.Text = "Save";
-            this.SaveButton.UseVisualStyleBackColor = true;
-            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            SaveButton.Location = new System.Drawing.Point(792, 668);
+            SaveButton.Name = "SaveButton";
+            SaveButton.Size = new System.Drawing.Size(75, 23);
+            SaveButton.TabIndex = 73;
+            SaveButton.Text = "Save";
+            SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += new System.EventHandler(SaveButton_Click);
             // 
             // SkillTitle
             // 
-            this.SkillTitle.AutoSize = true;
-            this.SkillTitle.BackColor = System.Drawing.Color.Transparent;
-            this.SkillTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillTitle.ForeColor = System.Drawing.Color.Khaki;
-            this.SkillTitle.Location = new System.Drawing.Point(699, 58);
-            this.SkillTitle.Name = "SkillTitle";
-            this.SkillTitle.Size = new System.Drawing.Size(94, 24);
-            this.SkillTitle.TabIndex = 175;
-            this.SkillTitle.Text = "Skill Title";
-            this.SkillTitle.Visible = false;
+            SkillTitle.AutoSize = true;
+            SkillTitle.BackColor = System.Drawing.Color.Transparent;
+            SkillTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            SkillTitle.ForeColor = System.Drawing.Color.Khaki;
+            SkillTitle.Location = new System.Drawing.Point(699, 58);
+            SkillTitle.Name = "SkillTitle";
+            SkillTitle.Size = new System.Drawing.Size(94, 24);
+            SkillTitle.TabIndex = 175;
+            SkillTitle.Text = "Skill Title";
+            SkillTitle.Visible = false;
             // 
             // SkillSummary
             // 
-            this.SkillSummary.AutoSize = true;
-            this.SkillSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillSummary.ForeColor = System.Drawing.Color.Khaki;
-            this.SkillSummary.Location = new System.Drawing.Point(645, 98);
-            this.SkillSummary.Name = "SkillSummary";
-            this.SkillSummary.Size = new System.Drawing.Size(142, 16);
-            this.SkillSummary.TabIndex = 176;
-            this.SkillSummary.Text = "Brief Skill Summary";
-            this.SkillSummary.Visible = false;
+            SkillSummary.AutoSize = true;
+            SkillSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            SkillSummary.ForeColor = System.Drawing.Color.Khaki;
+            SkillSummary.Location = new System.Drawing.Point(645, 98);
+            SkillSummary.Name = "SkillSummary";
+            SkillSummary.Size = new System.Drawing.Size(142, 16);
+            SkillSummary.TabIndex = 176;
+            SkillSummary.Text = "Brief Skill Summary";
+            SkillSummary.Visible = false;
             // 
             // RequiresLabel
             // 
-            this.RequiresLabel.AutoSize = true;
-            this.RequiresLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RequiresLabel.ForeColor = System.Drawing.Color.White;
-            this.RequiresLabel.Location = new System.Drawing.Point(647, 141);
-            this.RequiresLabel.Name = "RequiresLabel";
-            this.RequiresLabel.Size = new System.Drawing.Size(75, 16);
-            this.RequiresLabel.TabIndex = 177;
-            this.RequiresLabel.Text = "Requires:";
-            this.RequiresLabel.Visible = false;
+            RequiresLabel.AutoSize = true;
+            RequiresLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            RequiresLabel.ForeColor = System.Drawing.Color.White;
+            RequiresLabel.Location = new System.Drawing.Point(647, 141);
+            RequiresLabel.Name = "RequiresLabel";
+            RequiresLabel.Size = new System.Drawing.Size(75, 16);
+            RequiresLabel.TabIndex = 177;
+            RequiresLabel.Text = "Requires:";
+            RequiresLabel.Visible = false;
             // 
             // SkillRequirements1
             // 
-            this.SkillRequirements1.AutoSize = true;
-            this.SkillRequirements1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillRequirements1.ForeColor = System.Drawing.Color.White;
-            this.SkillRequirements1.Location = new System.Drawing.Point(728, 141);
-            this.SkillRequirements1.Name = "SkillRequirements1";
-            this.SkillRequirements1.Size = new System.Drawing.Size(45, 16);
-            this.SkillRequirements1.TabIndex = 178;
-            this.SkillRequirements1.Text = "None";
-            this.SkillRequirements1.Visible = false;
+            SkillRequirements1.AutoSize = true;
+            SkillRequirements1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            SkillRequirements1.ForeColor = System.Drawing.Color.White;
+            SkillRequirements1.Location = new System.Drawing.Point(728, 141);
+            SkillRequirements1.Name = "SkillRequirements1";
+            SkillRequirements1.Size = new System.Drawing.Size(45, 16);
+            SkillRequirements1.TabIndex = 178;
+            SkillRequirements1.Text = "None";
+            SkillRequirements1.Visible = false;
             // 
             // RankLabel
             // 
-            this.RankLabel.AutoSize = true;
-            this.RankLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RankLabel.ForeColor = System.Drawing.Color.White;
-            this.RankLabel.Location = new System.Drawing.Point(647, 197);
-            this.RankLabel.Name = "RankLabel";
-            this.RankLabel.Size = new System.Drawing.Size(48, 16);
-            this.RankLabel.TabIndex = 179;
-            this.RankLabel.Text = "Rank:";
-            this.RankLabel.Visible = false;
+            RankLabel.AutoSize = true;
+            RankLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            RankLabel.ForeColor = System.Drawing.Color.White;
+            RankLabel.Location = new System.Drawing.Point(647, 197);
+            RankLabel.Name = "RankLabel";
+            RankLabel.Size = new System.Drawing.Size(48, 16);
+            RankLabel.TabIndex = 179;
+            RankLabel.Text = "Rank:";
+            RankLabel.Visible = false;
             // 
             // SkillRank
             // 
-            this.SkillRank.AutoSize = true;
-            this.SkillRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillRank.ForeColor = System.Drawing.Color.White;
-            this.SkillRank.Location = new System.Drawing.Point(693, 197);
-            this.SkillRank.Name = "SkillRank";
-            this.SkillRank.Size = new System.Drawing.Size(29, 16);
-            this.SkillRank.TabIndex = 180;
-            this.SkillRank.Text = "0/2";
-            this.SkillRank.Visible = false;
+            SkillRank.AutoSize = true;
+            SkillRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            SkillRank.ForeColor = System.Drawing.Color.White;
+            SkillRank.Location = new System.Drawing.Point(693, 197);
+            SkillRank.Name = "SkillRank";
+            SkillRank.Size = new System.Drawing.Size(29, 16);
+            SkillRank.TabIndex = 180;
+            SkillRank.Text = "0/2";
+            SkillRank.Visible = false;
             // 
             // GrandsModifiersLabel
             // 
-            this.GrandsModifiersLabel.AutoSize = true;
-            this.GrandsModifiersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrandsModifiersLabel.ForeColor = System.Drawing.Color.White;
-            this.GrandsModifiersLabel.Location = new System.Drawing.Point(647, 246);
-            this.GrandsModifiersLabel.Name = "GrandsModifiersLabel";
-            this.GrandsModifiersLabel.Size = new System.Drawing.Size(125, 16);
-            this.GrandsModifiersLabel.TabIndex = 181;
-            this.GrandsModifiersLabel.Text = "Grants Modifiers:";
-            this.GrandsModifiersLabel.Visible = false;
+            GrandsModifiersLabel.AutoSize = true;
+            GrandsModifiersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            GrandsModifiersLabel.ForeColor = System.Drawing.Color.White;
+            GrandsModifiersLabel.Location = new System.Drawing.Point(647, 246);
+            GrandsModifiersLabel.Name = "GrandsModifiersLabel";
+            GrandsModifiersLabel.Size = new System.Drawing.Size(125, 16);
+            GrandsModifiersLabel.TabIndex = 181;
+            GrandsModifiersLabel.Text = "Grants Modifiers:";
+            GrandsModifiersLabel.Visible = false;
             // 
             // SkillModifierTitle1
             // 
-            this.SkillModifierTitle1.AutoSize = true;
-            this.SkillModifierTitle1.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillModifierTitle1.ForeColor = System.Drawing.Color.White;
-            this.SkillModifierTitle1.Location = new System.Drawing.Point(647, 273);
-            this.SkillModifierTitle1.Name = "SkillModifierTitle1";
-            this.SkillModifierTitle1.Size = new System.Drawing.Size(167, 29);
-            this.SkillModifierTitle1.TabIndex = 182;
-            this.SkillModifierTitle1.Text = "Modifier Name 1";
-            this.SkillModifierTitle1.Visible = false;
+            SkillModifierTitle1.AutoSize = true;
+            SkillModifierTitle1.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            SkillModifierTitle1.ForeColor = System.Drawing.Color.White;
+            SkillModifierTitle1.Location = new System.Drawing.Point(647, 273);
+            SkillModifierTitle1.Name = "SkillModifierTitle1";
+            SkillModifierTitle1.Size = new System.Drawing.Size(167, 29);
+            SkillModifierTitle1.TabIndex = 182;
+            SkillModifierTitle1.Text = "Modifier Name 1";
+            SkillModifierTitle1.Visible = false;
             // 
             // Rank1Modifier1
             // 
-            this.Rank1Modifier1.AutoSize = true;
-            this.Rank1Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank1Modifier1.ForeColor = System.Drawing.Color.White;
-            this.Rank1Modifier1.Location = new System.Drawing.Point(668, 317);
-            this.Rank1Modifier1.Name = "Rank1Modifier1";
-            this.Rank1Modifier1.Size = new System.Drawing.Size(29, 20);
-            this.Rank1Modifier1.TabIndex = 183;
-            this.Rank1Modifier1.Text = "25";
-            this.Rank1Modifier1.Visible = false;
+            Rank1Modifier1.AutoSize = true;
+            Rank1Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Rank1Modifier1.ForeColor = System.Drawing.Color.White;
+            Rank1Modifier1.Location = new System.Drawing.Point(668, 317);
+            Rank1Modifier1.Name = "Rank1Modifier1";
+            Rank1Modifier1.Size = new System.Drawing.Size(29, 20);
+            Rank1Modifier1.TabIndex = 183;
+            Rank1Modifier1.Text = "25";
+            Rank1Modifier1.Visible = false;
             // 
             // Rank2Modifier1
             // 
-            this.Rank2Modifier1.AutoSize = true;
-            this.Rank2Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank2Modifier1.ForeColor = System.Drawing.Color.White;
-            this.Rank2Modifier1.Location = new System.Drawing.Point(742, 317);
-            this.Rank2Modifier1.Name = "Rank2Modifier1";
-            this.Rank2Modifier1.Size = new System.Drawing.Size(29, 20);
-            this.Rank2Modifier1.TabIndex = 184;
-            this.Rank2Modifier1.Text = "50";
-            this.Rank2Modifier1.Visible = false;
+            Rank2Modifier1.AutoSize = true;
+            Rank2Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Rank2Modifier1.ForeColor = System.Drawing.Color.White;
+            Rank2Modifier1.Location = new System.Drawing.Point(742, 317);
+            Rank2Modifier1.Name = "Rank2Modifier1";
+            Rank2Modifier1.Size = new System.Drawing.Size(29, 20);
+            Rank2Modifier1.TabIndex = 184;
+            Rank2Modifier1.Text = "50";
+            Rank2Modifier1.Visible = false;
             // 
             // Rank3Modifier1
             // 
-            this.Rank3Modifier1.AutoSize = true;
-            this.Rank3Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank3Modifier1.ForeColor = System.Drawing.Color.White;
-            this.Rank3Modifier1.Location = new System.Drawing.Point(819, 317);
-            this.Rank3Modifier1.Name = "Rank3Modifier1";
-            this.Rank3Modifier1.Size = new System.Drawing.Size(29, 20);
-            this.Rank3Modifier1.TabIndex = 185;
-            this.Rank3Modifier1.Text = "75";
-            this.Rank3Modifier1.Visible = false;
+            Rank3Modifier1.AutoSize = true;
+            Rank3Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Rank3Modifier1.ForeColor = System.Drawing.Color.White;
+            Rank3Modifier1.Location = new System.Drawing.Point(819, 317);
+            Rank3Modifier1.Name = "Rank3Modifier1";
+            Rank3Modifier1.Size = new System.Drawing.Size(29, 20);
+            Rank3Modifier1.TabIndex = 185;
+            Rank3Modifier1.Text = "75";
+            Rank3Modifier1.Visible = false;
             // 
             // Rank4Modifier1
             // 
-            this.Rank4Modifier1.AutoSize = true;
-            this.Rank4Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank4Modifier1.ForeColor = System.Drawing.Color.White;
-            this.Rank4Modifier1.Location = new System.Drawing.Point(891, 317);
-            this.Rank4Modifier1.Name = "Rank4Modifier1";
-            this.Rank4Modifier1.Size = new System.Drawing.Size(39, 20);
-            this.Rank4Modifier1.TabIndex = 186;
-            this.Rank4Modifier1.Text = "100";
-            this.Rank4Modifier1.Visible = false;
+            Rank4Modifier1.AutoSize = true;
+            Rank4Modifier1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Rank4Modifier1.ForeColor = System.Drawing.Color.White;
+            Rank4Modifier1.Location = new System.Drawing.Point(891, 317);
+            Rank4Modifier1.Name = "Rank4Modifier1";
+            Rank4Modifier1.Size = new System.Drawing.Size(39, 20);
+            Rank4Modifier1.TabIndex = 186;
+            Rank4Modifier1.Text = "100";
+            Rank4Modifier1.Visible = false;
             // 
             // Rank4Modifier2
             // 
-            this.Rank4Modifier2.AutoSize = true;
-            this.Rank4Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank4Modifier2.ForeColor = System.Drawing.Color.White;
-            this.Rank4Modifier2.Location = new System.Drawing.Point(891, 401);
-            this.Rank4Modifier2.Name = "Rank4Modifier2";
-            this.Rank4Modifier2.Size = new System.Drawing.Size(39, 20);
-            this.Rank4Modifier2.TabIndex = 192;
-            this.Rank4Modifier2.Text = "100";
-            this.Rank4Modifier2.Visible = false;
+            Rank4Modifier2.AutoSize = true;
+            Rank4Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Rank4Modifier2.ForeColor = System.Drawing.Color.White;
+            Rank4Modifier2.Location = new System.Drawing.Point(891, 401);
+            Rank4Modifier2.Name = "Rank4Modifier2";
+            Rank4Modifier2.Size = new System.Drawing.Size(39, 20);
+            Rank4Modifier2.TabIndex = 192;
+            Rank4Modifier2.Text = "100";
+            Rank4Modifier2.Visible = false;
             // 
             // Rank3Modifier2
             // 
-            this.Rank3Modifier2.AutoSize = true;
-            this.Rank3Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank3Modifier2.ForeColor = System.Drawing.Color.White;
-            this.Rank3Modifier2.Location = new System.Drawing.Point(819, 401);
-            this.Rank3Modifier2.Name = "Rank3Modifier2";
-            this.Rank3Modifier2.Size = new System.Drawing.Size(29, 20);
-            this.Rank3Modifier2.TabIndex = 191;
-            this.Rank3Modifier2.Text = "75";
-            this.Rank3Modifier2.Visible = false;
+            Rank3Modifier2.AutoSize = true;
+            Rank3Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Rank3Modifier2.ForeColor = System.Drawing.Color.White;
+            Rank3Modifier2.Location = new System.Drawing.Point(819, 401);
+            Rank3Modifier2.Name = "Rank3Modifier2";
+            Rank3Modifier2.Size = new System.Drawing.Size(29, 20);
+            Rank3Modifier2.TabIndex = 191;
+            Rank3Modifier2.Text = "75";
+            Rank3Modifier2.Visible = false;
             // 
             // Rank2Modifier2
             // 
-            this.Rank2Modifier2.AutoSize = true;
-            this.Rank2Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank2Modifier2.ForeColor = System.Drawing.Color.White;
-            this.Rank2Modifier2.Location = new System.Drawing.Point(742, 401);
-            this.Rank2Modifier2.Name = "Rank2Modifier2";
-            this.Rank2Modifier2.Size = new System.Drawing.Size(29, 20);
-            this.Rank2Modifier2.TabIndex = 190;
-            this.Rank2Modifier2.Text = "50";
-            this.Rank2Modifier2.Visible = false;
+            Rank2Modifier2.AutoSize = true;
+            Rank2Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Rank2Modifier2.ForeColor = System.Drawing.Color.White;
+            Rank2Modifier2.Location = new System.Drawing.Point(742, 401);
+            Rank2Modifier2.Name = "Rank2Modifier2";
+            Rank2Modifier2.Size = new System.Drawing.Size(29, 20);
+            Rank2Modifier2.TabIndex = 190;
+            Rank2Modifier2.Text = "50";
+            Rank2Modifier2.Visible = false;
             // 
             // Rank1Modifier2
             // 
-            this.Rank1Modifier2.AutoSize = true;
-            this.Rank1Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rank1Modifier2.ForeColor = System.Drawing.Color.White;
-            this.Rank1Modifier2.Location = new System.Drawing.Point(668, 401);
-            this.Rank1Modifier2.Name = "Rank1Modifier2";
-            this.Rank1Modifier2.Size = new System.Drawing.Size(29, 20);
-            this.Rank1Modifier2.TabIndex = 189;
-            this.Rank1Modifier2.Text = "25";
-            this.Rank1Modifier2.Visible = false;
+            Rank1Modifier2.AutoSize = true;
+            Rank1Modifier2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Rank1Modifier2.ForeColor = System.Drawing.Color.White;
+            Rank1Modifier2.Location = new System.Drawing.Point(668, 401);
+            Rank1Modifier2.Name = "Rank1Modifier2";
+            Rank1Modifier2.Size = new System.Drawing.Size(29, 20);
+            Rank1Modifier2.TabIndex = 189;
+            Rank1Modifier2.Text = "25";
+            Rank1Modifier2.Visible = false;
             // 
             // SkillModifierTitle2
             // 
-            this.SkillModifierTitle2.AutoSize = true;
-            this.SkillModifierTitle2.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillModifierTitle2.ForeColor = System.Drawing.Color.White;
-            this.SkillModifierTitle2.Location = new System.Drawing.Point(647, 357);
-            this.SkillModifierTitle2.Name = "SkillModifierTitle2";
-            this.SkillModifierTitle2.Size = new System.Drawing.Size(170, 29);
-            this.SkillModifierTitle2.TabIndex = 188;
-            this.SkillModifierTitle2.Text = "Modifier Name 2";
-            this.SkillModifierTitle2.Visible = false;
+            SkillModifierTitle2.AutoSize = true;
+            SkillModifierTitle2.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            SkillModifierTitle2.ForeColor = System.Drawing.Color.White;
+            SkillModifierTitle2.Location = new System.Drawing.Point(647, 357);
+            SkillModifierTitle2.Name = "SkillModifierTitle2";
+            SkillModifierTitle2.Size = new System.Drawing.Size(170, 29);
+            SkillModifierTitle2.TabIndex = 188;
+            SkillModifierTitle2.Text = "Modifier Name 2";
+            SkillModifierTitle2.Visible = false;
             // 
             // SkillRequirements2
             // 
-            this.SkillRequirements2.AutoSize = true;
-            this.SkillRequirements2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SkillRequirements2.ForeColor = System.Drawing.Color.White;
-            this.SkillRequirements2.Location = new System.Drawing.Point(728, 159);
-            this.SkillRequirements2.Name = "SkillRequirements2";
-            this.SkillRequirements2.Size = new System.Drawing.Size(45, 16);
-            this.SkillRequirements2.TabIndex = 196;
-            this.SkillRequirements2.Text = "None";
-            this.SkillRequirements2.Visible = false;
+            SkillRequirements2.AutoSize = true;
+            SkillRequirements2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            SkillRequirements2.ForeColor = System.Drawing.Color.White;
+            SkillRequirements2.Location = new System.Drawing.Point(728, 159);
+            SkillRequirements2.Name = "SkillRequirements2";
+            SkillRequirements2.Size = new System.Drawing.Size(45, 16);
+            SkillRequirements2.TabIndex = 196;
+            SkillRequirements2.Text = "None";
+            SkillRequirements2.Visible = false;
             // 
             // JediGeneral
             // 
-            this.JediGeneral.AutoSize = true;
-            this.JediGeneral.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JediGeneral.ForeColor = System.Drawing.Color.White;
-            this.JediGeneral.Location = new System.Drawing.Point(12, 9);
-            this.JediGeneral.Name = "JediGeneral";
-            this.JediGeneral.Size = new System.Drawing.Size(160, 31);
-            this.JediGeneral.TabIndex = 197;
-            this.JediGeneral.Text = "jedi general";
-            this.JediGeneral.MouseHover += new System.EventHandler(this.JediGeneral_MouseHover);
-            this.JediGeneral.MouseMove += new System.Windows.Forms.MouseEventHandler(this.JediGeneral_MouseMove);
+            JediGeneral.AutoSize = true;
+            JediGeneral.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            JediGeneral.ForeColor = System.Drawing.Color.White;
+            JediGeneral.Location = new System.Drawing.Point(12, 9);
+            JediGeneral.Name = "JediGeneral";
+            JediGeneral.Size = new System.Drawing.Size(160, 31);
+            JediGeneral.TabIndex = 197;
+            JediGeneral.Text = "jedi general";
+            JediGeneral.MouseHover += new System.EventHandler(JediGeneral_MouseHover);
+            JediGeneral.MouseMove += new System.Windows.Forms.MouseEventHandler(JediGeneral_MouseMove);
             // 
             // Path
             // 
-            this.Path.AutoSize = true;
-            this.Path.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Path.ForeColor = System.Drawing.Color.White;
-            this.Path.Location = new System.Drawing.Point(215, 9);
-            this.Path.Name = "Path";
-            this.Path.Size = new System.Drawing.Size(68, 31);
-            this.Path.TabIndex = 198;
-            this.Path.Text = "path";
+            Path.AutoSize = true;
+            Path.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Path.ForeColor = System.Drawing.Color.White;
+            Path.Location = new System.Drawing.Point(215, 9);
+            Path.Name = "Path";
+            Path.Size = new System.Drawing.Size(68, 31);
+            Path.TabIndex = 198;
+            Path.Text = "path";
             // 
             // BeastMastery
             // 
-            this.BeastMastery.AutoSize = true;
-            this.BeastMastery.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BeastMastery.ForeColor = System.Drawing.Color.White;
-            this.BeastMastery.Location = new System.Drawing.Point(326, 9);
-            this.BeastMastery.Name = "BeastMastery";
-            this.BeastMastery.Size = new System.Drawing.Size(184, 31);
-            this.BeastMastery.TabIndex = 199;
-            this.BeastMastery.Text = "beast mastery";
+            BeastMastery.AutoSize = true;
+            BeastMastery.Font = new System.Drawing.Font("Star Jedi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            BeastMastery.ForeColor = System.Drawing.Color.White;
+            BeastMastery.Location = new System.Drawing.Point(326, 9);
+            BeastMastery.Name = "BeastMastery";
+            BeastMastery.Size = new System.Drawing.Size(184, 31);
+            BeastMastery.TabIndex = 199;
+            BeastMastery.Text = "beast mastery";
             // 
             // ForceCloakPoints
             // 
-            this.ForceCloakPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ForceCloakPoints.Location = new System.Drawing.Point(307, 328);
-            this.ForceCloakPoints.Name = "ForceCloakPoints";
-            this.ForceCloakPoints.Size = new System.Drawing.Size(25, 24);
-            this.ForceCloakPoints.TabIndex = 97;
-            this.ForceCloakPoints.TabStop = false;
-            this.ForceCloakPoints.Visible = false;
+            ForceCloakPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            ForceCloakPoints.Location = new System.Drawing.Point(307, 328);
+            ForceCloakPoints.Name = "ForceCloakPoints";
+            ForceCloakPoints.Size = new System.Drawing.Size(25, 24);
+            ForceCloakPoints.TabIndex = 97;
+            ForceCloakPoints.TabStop = false;
+            ForceCloakPoints.Visible = false;
             // 
             // ForceCloak
             // 
-            this.ForceCloak.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iForceCloak;
-            this.ForceCloak.Location = new System.Drawing.Point(267, 288);
-            this.ForceCloak.Name = "ForceCloak";
-            this.ForceCloak.Size = new System.Drawing.Size(42, 42);
-            this.ForceCloak.TabIndex = 93;
-            this.ForceCloak.TabStop = false;
-            this.ForceCloak.Click += new System.EventHandler(this.ForceCloak_Click);
-            this.ForceCloak.MouseLeave += new System.EventHandler(this.ForceCloak_MouseLeave);
-            this.ForceCloak.MouseHover += new System.EventHandler(this.ForceCloak_MouseHover);
-            this.ForceCloak.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ForceCloak_MouseMove);
+            ForceCloak.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iForceCloak;
+            ForceCloak.Location = new System.Drawing.Point(267, 288);
+            ForceCloak.Name = "ForceCloak";
+            ForceCloak.Size = new System.Drawing.Size(42, 42);
+            ForceCloak.TabIndex = 93;
+            ForceCloak.TabStop = false;
+            ForceCloak.Click += new System.EventHandler(ForceCloak_Click);
+            ForceCloak.MouseLeave += new System.EventHandler(ForceCloak_MouseLeave);
+            ForceCloak.MouseHover += new System.EventHandler(ForceCloak_MouseHover);
+            ForceCloak.MouseMove += new System.Windows.Forms.MouseEventHandler(ForceCloak_MouseMove);
             // 
             // ForceCloakBackground
             // 
-            this.ForceCloakBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.ForceCloakBackground.Location = new System.Drawing.Point(245, 265);
-            this.ForceCloakBackground.Name = "ForceCloakBackground";
-            this.ForceCloakBackground.Size = new System.Drawing.Size(89, 88);
-            this.ForceCloakBackground.TabIndex = 147;
-            this.ForceCloakBackground.TabStop = false;
+            ForceCloakBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            ForceCloakBackground.Location = new System.Drawing.Point(245, 265);
+            ForceCloakBackground.Name = "ForceCloakBackground";
+            ForceCloakBackground.Size = new System.Drawing.Size(89, 88);
+            ForceCloakBackground.TabIndex = 147;
+            ForceCloakBackground.TabStop = false;
             // 
             // AlacrityPoints
             // 
-            this.AlacrityPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.AlacrityPoints.Location = new System.Drawing.Point(308, 242);
-            this.AlacrityPoints.Name = "AlacrityPoints";
-            this.AlacrityPoints.Size = new System.Drawing.Size(25, 24);
-            this.AlacrityPoints.TabIndex = 56;
-            this.AlacrityPoints.TabStop = false;
-            this.AlacrityPoints.Visible = false;
+            AlacrityPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            AlacrityPoints.Location = new System.Drawing.Point(308, 242);
+            AlacrityPoints.Name = "AlacrityPoints";
+            AlacrityPoints.Size = new System.Drawing.Size(25, 24);
+            AlacrityPoints.TabIndex = 56;
+            AlacrityPoints.TabStop = false;
+            AlacrityPoints.Visible = false;
             // 
             // Alacrity
             // 
-            this.Alacrity.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iAlacrity;
-            this.Alacrity.Location = new System.Drawing.Point(268, 201);
-            this.Alacrity.Name = "Alacrity";
-            this.Alacrity.Size = new System.Drawing.Size(42, 42);
-            this.Alacrity.TabIndex = 50;
-            this.Alacrity.TabStop = false;
-            this.Alacrity.Click += new System.EventHandler(this.Alacrity_Click);
-            this.Alacrity.MouseLeave += new System.EventHandler(this.Alacrity_MouseLeave);
-            this.Alacrity.MouseHover += new System.EventHandler(this.Alacrity_MouseHover);
-            this.Alacrity.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Alacrity_MouseMove);
+            Alacrity.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iAlacrity;
+            Alacrity.Location = new System.Drawing.Point(268, 201);
+            Alacrity.Name = "Alacrity";
+            Alacrity.Size = new System.Drawing.Size(42, 42);
+            Alacrity.TabIndex = 50;
+            Alacrity.TabStop = false;
+            Alacrity.Click += new System.EventHandler(Alacrity_Click);
+            Alacrity.MouseLeave += new System.EventHandler(Alacrity_MouseLeave);
+            Alacrity.MouseHover += new System.EventHandler(Alacrity_MouseHover);
+            Alacrity.MouseMove += new System.Windows.Forms.MouseEventHandler(Alacrity_MouseMove);
             // 
             // AlacrityBackground
             // 
-            this.AlacrityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.AlacrityBackground.Location = new System.Drawing.Point(245, 178);
-            this.AlacrityBackground.Name = "AlacrityBackground";
-            this.AlacrityBackground.Size = new System.Drawing.Size(89, 88);
-            this.AlacrityBackground.TabIndex = 148;
-            this.AlacrityBackground.TabStop = false;
+            AlacrityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            AlacrityBackground.Location = new System.Drawing.Point(245, 178);
+            AlacrityBackground.Name = "AlacrityBackground";
+            AlacrityBackground.Size = new System.Drawing.Size(89, 88);
+            AlacrityBackground.TabIndex = 148;
+            AlacrityBackground.TabStop = false;
             // 
             // SecondWindPoints
             // 
-            this.SecondWindPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.SecondWindPoints.Location = new System.Drawing.Point(483, 328);
-            this.SecondWindPoints.Name = "SecondWindPoints";
-            this.SecondWindPoints.Size = new System.Drawing.Size(25, 24);
-            this.SecondWindPoints.TabIndex = 68;
-            this.SecondWindPoints.TabStop = false;
-            this.SecondWindPoints.Visible = false;
+            SecondWindPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            SecondWindPoints.Location = new System.Drawing.Point(483, 328);
+            SecondWindPoints.Name = "SecondWindPoints";
+            SecondWindPoints.Size = new System.Drawing.Size(25, 24);
+            SecondWindPoints.TabIndex = 68;
+            SecondWindPoints.TabStop = false;
+            SecondWindPoints.Visible = false;
             // 
             // SecondWind
             // 
-            this.SecondWind.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSecondWind;
-            this.SecondWind.Location = new System.Drawing.Point(442, 288);
-            this.SecondWind.Name = "SecondWind";
-            this.SecondWind.Size = new System.Drawing.Size(42, 42);
-            this.SecondWind.TabIndex = 187;
-            this.SecondWind.TabStop = false;
-            this.SecondWind.Click += new System.EventHandler(this.SecondWind_Click);
-            this.SecondWind.MouseLeave += new System.EventHandler(this.SecondWind_MouseLeave);
-            this.SecondWind.MouseHover += new System.EventHandler(this.SecondWind_MouseHover);
-            this.SecondWind.MouseMove += new System.Windows.Forms.MouseEventHandler(this.SecondWind_MouseMove);
+            SecondWind.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSecondWind;
+            SecondWind.Location = new System.Drawing.Point(442, 288);
+            SecondWind.Name = "SecondWind";
+            SecondWind.Size = new System.Drawing.Size(42, 42);
+            SecondWind.TabIndex = 187;
+            SecondWind.TabStop = false;
+            SecondWind.Click += new System.EventHandler(SecondWind_Click);
+            SecondWind.MouseLeave += new System.EventHandler(SecondWind_MouseLeave);
+            SecondWind.MouseHover += new System.EventHandler(SecondWind_MouseHover);
+            SecondWind.MouseMove += new System.Windows.Forms.MouseEventHandler(SecondWind_MouseMove);
             // 
             // SecondWindBackground
             // 
-            this.SecondWindBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.SecondWindBackground.Location = new System.Drawing.Point(419, 265);
-            this.SecondWindBackground.Name = "SecondWindBackground";
-            this.SecondWindBackground.Size = new System.Drawing.Size(89, 88);
-            this.SecondWindBackground.TabIndex = 144;
-            this.SecondWindBackground.TabStop = false;
+            SecondWindBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            SecondWindBackground.Location = new System.Drawing.Point(419, 265);
+            SecondWindBackground.Name = "SecondWindBackground";
+            SecondWindBackground.Size = new System.Drawing.Size(89, 88);
+            SecondWindBackground.TabIndex = 144;
+            SecondWindBackground.TabStop = false;
             // 
             // ForceCloakLineEnd
             // 
-            this.ForceCloakLineEnd.BackColor = System.Drawing.Color.Transparent;
-            this.ForceCloakLineEnd.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineArrowTop;
-            this.ForceCloakLineEnd.Location = new System.Drawing.Point(269, 416);
-            this.ForceCloakLineEnd.Name = "ForceCloakLineEnd";
-            this.ForceCloakLineEnd.Size = new System.Drawing.Size(32, 24);
-            this.ForceCloakLineEnd.TabIndex = 195;
-            this.ForceCloakLineEnd.TabStop = false;
+            ForceCloakLineEnd.BackColor = System.Drawing.Color.Transparent;
+            ForceCloakLineEnd.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineArrowTop;
+            ForceCloakLineEnd.Location = new System.Drawing.Point(269, 416);
+            ForceCloakLineEnd.Name = "ForceCloakLineEnd";
+            ForceCloakLineEnd.Size = new System.Drawing.Size(32, 24);
+            ForceCloakLineEnd.TabIndex = 195;
+            ForceCloakLineEnd.TabStop = false;
             // 
             // ForceCloakLineStart
             // 
-            this.ForceCloakLineStart.BackColor = System.Drawing.Color.Transparent;
-            this.ForceCloakLineStart.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineStart1;
-            this.ForceCloakLineStart.Location = new System.Drawing.Point(269, 351);
-            this.ForceCloakLineStart.Name = "ForceCloakLineStart";
-            this.ForceCloakLineStart.Size = new System.Drawing.Size(29, 26);
-            this.ForceCloakLineStart.TabIndex = 194;
-            this.ForceCloakLineStart.TabStop = false;
+            ForceCloakLineStart.BackColor = System.Drawing.Color.Transparent;
+            ForceCloakLineStart.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineStart1;
+            ForceCloakLineStart.Location = new System.Drawing.Point(269, 351);
+            ForceCloakLineStart.Name = "ForceCloakLineStart";
+            ForceCloakLineStart.Size = new System.Drawing.Size(29, 26);
+            ForceCloakLineStart.TabIndex = 194;
+            ForceCloakLineStart.TabStop = false;
             // 
             // ForceCloakLine
             // 
-            this.ForceCloakLine.BackColor = System.Drawing.Color.Transparent;
-            this.ForceCloakLine.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineVertical;
-            this.ForceCloakLine.Location = new System.Drawing.Point(245, 350);
-            this.ForceCloakLine.Name = "ForceCloakLine";
-            this.ForceCloakLine.Size = new System.Drawing.Size(88, 90);
-            this.ForceCloakLine.TabIndex = 193;
-            this.ForceCloakLine.TabStop = false;
+            ForceCloakLine.BackColor = System.Drawing.Color.Transparent;
+            ForceCloakLine.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineVertical;
+            ForceCloakLine.Location = new System.Drawing.Point(245, 350);
+            ForceCloakLine.Name = "ForceCloakLine";
+            ForceCloakLine.Size = new System.Drawing.Size(88, 90);
+            ForceCloakLine.TabIndex = 193;
+            ForceCloakLine.TabStop = false;
             // 
             // SkillPicture
             // 
-            this.SkillPicture.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aEnhancedStrength;
-            this.SkillPicture.Location = new System.Drawing.Point(655, 50);
-            this.SkillPicture.Name = "SkillPicture";
-            this.SkillPicture.Size = new System.Drawing.Size(42, 42);
-            this.SkillPicture.TabIndex = 174;
-            this.SkillPicture.TabStop = false;
+            SkillPicture.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aEnhancedStrength;
+            SkillPicture.Location = new System.Drawing.Point(655, 50);
+            SkillPicture.Name = "SkillPicture";
+            SkillPicture.Size = new System.Drawing.Size(42, 42);
+            SkillPicture.TabIndex = 174;
+            SkillPicture.TabStop = false;
             // 
             // SkillPictureBackground
             // 
-            this.SkillPictureBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.SkillBox;
-            this.SkillPictureBackground.Location = new System.Drawing.Point(650, 45);
-            this.SkillPictureBackground.Name = "SkillPictureBackground";
-            this.SkillPictureBackground.Size = new System.Drawing.Size(52, 50);
-            this.SkillPictureBackground.TabIndex = 173;
-            this.SkillPictureBackground.TabStop = false;
-            this.SkillPictureBackground.Visible = false;
+            SkillPictureBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.SkillBox;
+            SkillPictureBackground.Location = new System.Drawing.Point(650, 45);
+            SkillPictureBackground.Name = "SkillPictureBackground";
+            SkillPictureBackground.Size = new System.Drawing.Size(52, 50);
+            SkillPictureBackground.TabIndex = 173;
+            SkillPictureBackground.TabStop = false;
+            SkillPictureBackground.Visible = false;
             // 
             // ExactingStrikesPoints
             // 
-            this.ExactingStrikesPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ExactingStrikesPoints.Location = new System.Drawing.Point(395, 242);
-            this.ExactingStrikesPoints.Name = "ExactingStrikesPoints";
-            this.ExactingStrikesPoints.Size = new System.Drawing.Size(25, 24);
-            this.ExactingStrikesPoints.TabIndex = 57;
-            this.ExactingStrikesPoints.TabStop = false;
-            this.ExactingStrikesPoints.Visible = false;
+            ExactingStrikesPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            ExactingStrikesPoints.Location = new System.Drawing.Point(395, 242);
+            ExactingStrikesPoints.Name = "ExactingStrikesPoints";
+            ExactingStrikesPoints.Size = new System.Drawing.Size(25, 24);
+            ExactingStrikesPoints.TabIndex = 57;
+            ExactingStrikesPoints.TabStop = false;
+            ExactingStrikesPoints.Visible = false;
             // 
             // ExactingStrikes
             // 
-            this.ExactingStrikes.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iExactingStrikes;
-            this.ExactingStrikes.Location = new System.Drawing.Point(354, 201);
-            this.ExactingStrikes.Name = "ExactingStrikes";
-            this.ExactingStrikes.Size = new System.Drawing.Size(42, 42);
-            this.ExactingStrikes.TabIndex = 51;
-            this.ExactingStrikes.TabStop = false;
-            this.ExactingStrikes.Click += new System.EventHandler(this.ExactingStrikes_Click);
-            this.ExactingStrikes.MouseLeave += new System.EventHandler(this.ExactingStrikes_MouseLeave);
-            this.ExactingStrikes.MouseHover += new System.EventHandler(this.ExactingStrikes_MouseHover);
-            this.ExactingStrikes.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ExactingStrikes_MouseMove);
+            ExactingStrikes.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iExactingStrikes;
+            ExactingStrikes.Location = new System.Drawing.Point(354, 201);
+            ExactingStrikes.Name = "ExactingStrikes";
+            ExactingStrikes.Size = new System.Drawing.Size(42, 42);
+            ExactingStrikes.TabIndex = 51;
+            ExactingStrikes.TabStop = false;
+            ExactingStrikes.Click += new System.EventHandler(ExactingStrikes_Click);
+            ExactingStrikes.MouseLeave += new System.EventHandler(ExactingStrikes_MouseLeave);
+            ExactingStrikes.MouseHover += new System.EventHandler(ExactingStrikes_MouseHover);
+            ExactingStrikes.MouseMove += new System.Windows.Forms.MouseEventHandler(ExactingStrikes_MouseMove);
             // 
             // ExactingStrikesBackground
             // 
-            this.ExactingStrikesBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.ExactingStrikesBackground.Location = new System.Drawing.Point(331, 178);
-            this.ExactingStrikesBackground.Name = "ExactingStrikesBackground";
-            this.ExactingStrikesBackground.Size = new System.Drawing.Size(89, 88);
-            this.ExactingStrikesBackground.TabIndex = 149;
-            this.ExactingStrikesBackground.TabStop = false;
+            ExactingStrikesBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            ExactingStrikesBackground.Location = new System.Drawing.Point(331, 178);
+            ExactingStrikesBackground.Name = "ExactingStrikesBackground";
+            ExactingStrikesBackground.Size = new System.Drawing.Size(89, 88);
+            ExactingStrikesBackground.TabIndex = 149;
+            ExactingStrikesBackground.TabStop = false;
             // 
             // HeightenedSpeedPoints
             // 
-            this.HeightenedSpeedPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.HeightenedSpeedPoints.Location = new System.Drawing.Point(483, 242);
-            this.HeightenedSpeedPoints.Name = "HeightenedSpeedPoints";
-            this.HeightenedSpeedPoints.Size = new System.Drawing.Size(25, 24);
-            this.HeightenedSpeedPoints.TabIndex = 60;
-            this.HeightenedSpeedPoints.TabStop = false;
-            this.HeightenedSpeedPoints.Visible = false;
+            HeightenedSpeedPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            HeightenedSpeedPoints.Location = new System.Drawing.Point(483, 242);
+            HeightenedSpeedPoints.Name = "HeightenedSpeedPoints";
+            HeightenedSpeedPoints.Size = new System.Drawing.Size(25, 24);
+            HeightenedSpeedPoints.TabIndex = 60;
+            HeightenedSpeedPoints.TabStop = false;
+            HeightenedSpeedPoints.Visible = false;
             // 
             // HeightenedSpeed
             // 
-            this.HeightenedSpeed.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iHeightenedSpeed;
-            this.HeightenedSpeed.Location = new System.Drawing.Point(441, 201);
-            this.HeightenedSpeed.Name = "HeightenedSpeed";
-            this.HeightenedSpeed.Size = new System.Drawing.Size(42, 42);
-            this.HeightenedSpeed.TabIndex = 52;
-            this.HeightenedSpeed.TabStop = false;
-            this.HeightenedSpeed.Click += new System.EventHandler(this.HeightenedSpeed_Click);
-            this.HeightenedSpeed.MouseLeave += new System.EventHandler(this.HeightenedSpeed_MouseLeave);
-            this.HeightenedSpeed.MouseHover += new System.EventHandler(this.HeightenedSpeed_MouseHover);
-            this.HeightenedSpeed.MouseMove += new System.Windows.Forms.MouseEventHandler(this.HeightenedSpeed_MouseMove);
+            HeightenedSpeed.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iHeightenedSpeed;
+            HeightenedSpeed.Location = new System.Drawing.Point(441, 201);
+            HeightenedSpeed.Name = "HeightenedSpeed";
+            HeightenedSpeed.Size = new System.Drawing.Size(42, 42);
+            HeightenedSpeed.TabIndex = 52;
+            HeightenedSpeed.TabStop = false;
+            HeightenedSpeed.Click += new System.EventHandler(HeightenedSpeed_Click);
+            HeightenedSpeed.MouseLeave += new System.EventHandler(HeightenedSpeed_MouseLeave);
+            HeightenedSpeed.MouseHover += new System.EventHandler(HeightenedSpeed_MouseHover);
+            HeightenedSpeed.MouseMove += new System.Windows.Forms.MouseEventHandler(HeightenedSpeed_MouseMove);
             // 
             // HeightenedSpeedBackground
             // 
-            this.HeightenedSpeedBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.HeightenedSpeedBackground.Location = new System.Drawing.Point(419, 178);
-            this.HeightenedSpeedBackground.Name = "HeightenedSpeedBackground";
-            this.HeightenedSpeedBackground.Size = new System.Drawing.Size(89, 88);
-            this.HeightenedSpeedBackground.TabIndex = 71;
-            this.HeightenedSpeedBackground.TabStop = false;
+            HeightenedSpeedBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            HeightenedSpeedBackground.Location = new System.Drawing.Point(419, 178);
+            HeightenedSpeedBackground.Name = "HeightenedSpeedBackground";
+            HeightenedSpeedBackground.Size = new System.Drawing.Size(89, 88);
+            HeightenedSpeedBackground.TabIndex = 71;
+            HeightenedSpeedBackground.TabStop = false;
             // 
             // IncisivenessPoints
             // 
-            this.IncisivenessPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.IncisivenessPoints.Location = new System.Drawing.Point(397, 504);
-            this.IncisivenessPoints.Name = "IncisivenessPoints";
-            this.IncisivenessPoints.Size = new System.Drawing.Size(25, 24);
-            this.IncisivenessPoints.TabIndex = 165;
-            this.IncisivenessPoints.TabStop = false;
-            this.IncisivenessPoints.Visible = false;
+            IncisivenessPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            IncisivenessPoints.Location = new System.Drawing.Point(397, 504);
+            IncisivenessPoints.Name = "IncisivenessPoints";
+            IncisivenessPoints.Size = new System.Drawing.Size(25, 24);
+            IncisivenessPoints.TabIndex = 165;
+            IncisivenessPoints.TabStop = false;
+            IncisivenessPoints.Visible = false;
             // 
             // ImprovedForceCloakPoints
             // 
-            this.ImprovedForceCloakPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ImprovedForceCloakPoints.Location = new System.Drawing.Point(310, 504);
-            this.ImprovedForceCloakPoints.Name = "ImprovedForceCloakPoints";
-            this.ImprovedForceCloakPoints.Size = new System.Drawing.Size(25, 24);
-            this.ImprovedForceCloakPoints.TabIndex = 164;
-            this.ImprovedForceCloakPoints.TabStop = false;
-            this.ImprovedForceCloakPoints.Visible = false;
+            ImprovedForceCloakPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            ImprovedForceCloakPoints.Location = new System.Drawing.Point(310, 504);
+            ImprovedForceCloakPoints.Name = "ImprovedForceCloakPoints";
+            ImprovedForceCloakPoints.Size = new System.Drawing.Size(25, 24);
+            ImprovedForceCloakPoints.TabIndex = 164;
+            ImprovedForceCloakPoints.TabStop = false;
+            ImprovedForceCloakPoints.Visible = false;
             // 
             // ImprovedForceShockwavePoints
             // 
-            this.ImprovedForceShockwavePoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ImprovedForceShockwavePoints.Location = new System.Drawing.Point(223, 504);
-            this.ImprovedForceShockwavePoints.Name = "ImprovedForceShockwavePoints";
-            this.ImprovedForceShockwavePoints.Size = new System.Drawing.Size(25, 24);
-            this.ImprovedForceShockwavePoints.TabIndex = 163;
-            this.ImprovedForceShockwavePoints.TabStop = false;
-            this.ImprovedForceShockwavePoints.Visible = false;
+            ImprovedForceShockwavePoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            ImprovedForceShockwavePoints.Location = new System.Drawing.Point(223, 504);
+            ImprovedForceShockwavePoints.Name = "ImprovedForceShockwavePoints";
+            ImprovedForceShockwavePoints.Size = new System.Drawing.Size(25, 24);
+            ImprovedForceShockwavePoints.TabIndex = 163;
+            ImprovedForceShockwavePoints.TabStop = false;
+            ImprovedForceShockwavePoints.Visible = false;
             // 
             // Incisiveness
             // 
-            this.Incisiveness.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iIncisiveness;
-            this.Incisiveness.Location = new System.Drawing.Point(354, 463);
-            this.Incisiveness.Name = "Incisiveness";
-            this.Incisiveness.Size = new System.Drawing.Size(42, 42);
-            this.Incisiveness.TabIndex = 161;
-            this.Incisiveness.TabStop = false;
+            Incisiveness.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iIncisiveness;
+            Incisiveness.Location = new System.Drawing.Point(354, 463);
+            Incisiveness.Name = "Incisiveness";
+            Incisiveness.Size = new System.Drawing.Size(42, 42);
+            Incisiveness.TabIndex = 161;
+            Incisiveness.TabStop = false;
             // 
             // ImprovedForceCloak
             // 
-            this.ImprovedForceCloak.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedForceCloak;
-            this.ImprovedForceCloak.Location = new System.Drawing.Point(268, 462);
-            this.ImprovedForceCloak.Name = "ImprovedForceCloak";
-            this.ImprovedForceCloak.Size = new System.Drawing.Size(42, 42);
-            this.ImprovedForceCloak.TabIndex = 160;
-            this.ImprovedForceCloak.TabStop = false;
+            ImprovedForceCloak.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedForceCloak;
+            ImprovedForceCloak.Location = new System.Drawing.Point(268, 462);
+            ImprovedForceCloak.Name = "ImprovedForceCloak";
+            ImprovedForceCloak.Size = new System.Drawing.Size(42, 42);
+            ImprovedForceCloak.TabIndex = 160;
+            ImprovedForceCloak.TabStop = false;
             // 
             // ImprovedForceShockwave
             // 
-            this.ImprovedForceShockwave.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedForceShockwave;
-            this.ImprovedForceShockwave.Location = new System.Drawing.Point(180, 463);
-            this.ImprovedForceShockwave.Name = "ImprovedForceShockwave";
-            this.ImprovedForceShockwave.Size = new System.Drawing.Size(42, 42);
-            this.ImprovedForceShockwave.TabIndex = 159;
-            this.ImprovedForceShockwave.TabStop = false;
+            ImprovedForceShockwave.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedForceShockwave;
+            ImprovedForceShockwave.Location = new System.Drawing.Point(180, 463);
+            ImprovedForceShockwave.Name = "ImprovedForceShockwave";
+            ImprovedForceShockwave.Size = new System.Drawing.Size(42, 42);
+            ImprovedForceShockwave.TabIndex = 159;
+            ImprovedForceShockwave.TabStop = false;
             // 
             // IncisivenessBackground
             // 
-            this.IncisivenessBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.IncisivenessBackground.Location = new System.Drawing.Point(332, 440);
-            this.IncisivenessBackground.Name = "IncisivenessBackground";
-            this.IncisivenessBackground.Size = new System.Drawing.Size(89, 88);
-            this.IncisivenessBackground.TabIndex = 166;
-            this.IncisivenessBackground.TabStop = false;
+            IncisivenessBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            IncisivenessBackground.Location = new System.Drawing.Point(332, 440);
+            IncisivenessBackground.Name = "IncisivenessBackground";
+            IncisivenessBackground.Size = new System.Drawing.Size(89, 88);
+            IncisivenessBackground.TabIndex = 166;
+            IncisivenessBackground.TabStop = false;
             // 
             // pictureBox33
             // 
-            this.pictureBox33.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxRed;
-            this.pictureBox33.Location = new System.Drawing.Point(333, 440);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox33.TabIndex = 169;
-            this.pictureBox33.TabStop = false;
+            pictureBox33.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxRed;
+            pictureBox33.Location = new System.Drawing.Point(333, 440);
+            pictureBox33.Name = "pictureBox33";
+            pictureBox33.Size = new System.Drawing.Size(89, 88);
+            pictureBox33.TabIndex = 169;
+            pictureBox33.TabStop = false;
             // 
             // pictureBox43
             // 
-            this.pictureBox43.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxGreen;
-            this.pictureBox43.Location = new System.Drawing.Point(333, 440);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox43.TabIndex = 168;
-            this.pictureBox43.TabStop = false;
+            pictureBox43.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxGreen;
+            pictureBox43.Location = new System.Drawing.Point(333, 440);
+            pictureBox43.Name = "pictureBox43";
+            pictureBox43.Size = new System.Drawing.Size(89, 88);
+            pictureBox43.TabIndex = 168;
+            pictureBox43.TabStop = false;
             // 
             // pictureBox44
             // 
-            this.pictureBox44.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxRed;
-            this.pictureBox44.Location = new System.Drawing.Point(333, 440);
-            this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox44.TabIndex = 167;
-            this.pictureBox44.TabStop = false;
+            pictureBox44.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxRed;
+            pictureBox44.Location = new System.Drawing.Point(333, 440);
+            pictureBox44.Name = "pictureBox44";
+            pictureBox44.Size = new System.Drawing.Size(89, 88);
+            pictureBox44.TabIndex = 167;
+            pictureBox44.TabStop = false;
             // 
             // ForceShockwavePoints
             // 
-            this.ForceShockwavePoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ForceShockwavePoints.Location = new System.Drawing.Point(133, 504);
-            this.ForceShockwavePoints.Name = "ForceShockwavePoints";
-            this.ForceShockwavePoints.Size = new System.Drawing.Size(25, 24);
-            this.ForceShockwavePoints.TabIndex = 155;
-            this.ForceShockwavePoints.TabStop = false;
-            this.ForceShockwavePoints.Visible = false;
+            ForceShockwavePoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            ForceShockwavePoints.Location = new System.Drawing.Point(133, 504);
+            ForceShockwavePoints.Name = "ForceShockwavePoints";
+            ForceShockwavePoints.Size = new System.Drawing.Size(25, 24);
+            ForceShockwavePoints.TabIndex = 155;
+            ForceShockwavePoints.TabStop = false;
+            ForceShockwavePoints.Visible = false;
             // 
             // ForceShockwave
             // 
-            this.ForceShockwave.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iForceShockwave;
-            this.ForceShockwave.Location = new System.Drawing.Point(91, 463);
-            this.ForceShockwave.Name = "ForceShockwave";
-            this.ForceShockwave.Size = new System.Drawing.Size(42, 42);
-            this.ForceShockwave.TabIndex = 154;
-            this.ForceShockwave.TabStop = false;
+            ForceShockwave.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iForceShockwave;
+            ForceShockwave.Location = new System.Drawing.Point(91, 463);
+            ForceShockwave.Name = "ForceShockwave";
+            ForceShockwave.Size = new System.Drawing.Size(42, 42);
+            ForceShockwave.TabIndex = 154;
+            ForceShockwave.TabStop = false;
             // 
             // ImprovedForceCloakBackground
             // 
-            this.ImprovedForceCloakBackground.BackColor = System.Drawing.Color.Transparent;
-            this.ImprovedForceCloakBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.ImprovedForceCloakBackground.Location = new System.Drawing.Point(245, 440);
-            this.ImprovedForceCloakBackground.Name = "ImprovedForceCloakBackground";
-            this.ImprovedForceCloakBackground.Size = new System.Drawing.Size(89, 88);
-            this.ImprovedForceCloakBackground.TabIndex = 171;
-            this.ImprovedForceCloakBackground.TabStop = false;
+            ImprovedForceCloakBackground.BackColor = System.Drawing.Color.Transparent;
+            ImprovedForceCloakBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            ImprovedForceCloakBackground.Location = new System.Drawing.Point(245, 440);
+            ImprovedForceCloakBackground.Name = "ImprovedForceCloakBackground";
+            ImprovedForceCloakBackground.Size = new System.Drawing.Size(89, 88);
+            ImprovedForceCloakBackground.TabIndex = 171;
+            ImprovedForceCloakBackground.TabStop = false;
             // 
             // ImprovedForceShockwaveBackground
             // 
-            this.ImprovedForceShockwaveBackground.AccessibleDescription = "";
-            this.ImprovedForceShockwaveBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.ImprovedForceShockwaveBackground.Location = new System.Drawing.Point(157, 440);
-            this.ImprovedForceShockwaveBackground.Name = "ImprovedForceShockwaveBackground";
-            this.ImprovedForceShockwaveBackground.Size = new System.Drawing.Size(89, 88);
-            this.ImprovedForceShockwaveBackground.TabIndex = 170;
-            this.ImprovedForceShockwaveBackground.TabStop = false;
+            ImprovedForceShockwaveBackground.AccessibleDescription = "";
+            ImprovedForceShockwaveBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            ImprovedForceShockwaveBackground.Location = new System.Drawing.Point(157, 440);
+            ImprovedForceShockwaveBackground.Name = "ImprovedForceShockwaveBackground";
+            ImprovedForceShockwaveBackground.Size = new System.Drawing.Size(89, 88);
+            ImprovedForceShockwaveBackground.TabIndex = 170;
+            ImprovedForceShockwaveBackground.TabStop = false;
             // 
             // ForceShockwaveBackground
             // 
-            this.ForceShockwaveBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.ForceShockwaveBackground.Location = new System.Drawing.Point(68, 440);
-            this.ForceShockwaveBackground.Name = "ForceShockwaveBackground";
-            this.ForceShockwaveBackground.Size = new System.Drawing.Size(89, 88);
-            this.ForceShockwaveBackground.TabIndex = 172;
-            this.ForceShockwaveBackground.TabStop = false;
+            ForceShockwaveBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            ForceShockwaveBackground.Location = new System.Drawing.Point(68, 440);
+            ForceShockwaveBackground.Name = "ForceShockwaveBackground";
+            ForceShockwaveBackground.Size = new System.Drawing.Size(89, 88);
+            ForceShockwaveBackground.TabIndex = 172;
+            ForceShockwaveBackground.TabStop = false;
             // 
             // FidelityPoints
             // 
-            this.FidelityPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.FidelityPoints.Location = new System.Drawing.Point(394, 416);
-            this.FidelityPoints.Name = "FidelityPoints";
-            this.FidelityPoints.Size = new System.Drawing.Size(25, 24);
-            this.FidelityPoints.TabIndex = 137;
-            this.FidelityPoints.TabStop = false;
-            this.FidelityPoints.Visible = false;
+            FidelityPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            FidelityPoints.Location = new System.Drawing.Point(394, 416);
+            FidelityPoints.Name = "FidelityPoints";
+            FidelityPoints.Size = new System.Drawing.Size(25, 24);
+            FidelityPoints.TabIndex = 137;
+            FidelityPoints.TabStop = false;
+            FidelityPoints.Visible = false;
             // 
             // ImprovedSaberBlockPoints
             // 
-            this.ImprovedSaberBlockPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ImprovedSaberBlockPoints.Location = new System.Drawing.Point(221, 416);
-            this.ImprovedSaberBlockPoints.Name = "ImprovedSaberBlockPoints";
-            this.ImprovedSaberBlockPoints.Size = new System.Drawing.Size(25, 24);
-            this.ImprovedSaberBlockPoints.TabIndex = 133;
-            this.ImprovedSaberBlockPoints.TabStop = false;
-            this.ImprovedSaberBlockPoints.Visible = false;
+            ImprovedSaberBlockPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            ImprovedSaberBlockPoints.Location = new System.Drawing.Point(221, 416);
+            ImprovedSaberBlockPoints.Name = "ImprovedSaberBlockPoints";
+            ImprovedSaberBlockPoints.Size = new System.Drawing.Size(25, 24);
+            ImprovedSaberBlockPoints.TabIndex = 133;
+            ImprovedSaberBlockPoints.TabStop = false;
+            ImprovedSaberBlockPoints.Visible = false;
             // 
             // Fidelity
             // 
-            this.Fidelity.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iFidelity;
-            this.Fidelity.Location = new System.Drawing.Point(354, 375);
-            this.Fidelity.Name = "Fidelity";
-            this.Fidelity.Size = new System.Drawing.Size(42, 42);
-            this.Fidelity.TabIndex = 131;
-            this.Fidelity.TabStop = false;
+            Fidelity.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iFidelity;
+            Fidelity.Location = new System.Drawing.Point(354, 375);
+            Fidelity.Name = "Fidelity";
+            Fidelity.Size = new System.Drawing.Size(42, 42);
+            Fidelity.TabIndex = 131;
+            Fidelity.TabStop = false;
             // 
             // ImprovedSaberBlock
             // 
-            this.ImprovedSaberBlock.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedSaberBlock;
-            this.ImprovedSaberBlock.Location = new System.Drawing.Point(180, 375);
-            this.ImprovedSaberBlock.Name = "ImprovedSaberBlock";
-            this.ImprovedSaberBlock.Size = new System.Drawing.Size(42, 42);
-            this.ImprovedSaberBlock.TabIndex = 129;
-            this.ImprovedSaberBlock.TabStop = false;
+            ImprovedSaberBlock.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedSaberBlock;
+            ImprovedSaberBlock.Location = new System.Drawing.Point(180, 375);
+            ImprovedSaberBlock.Name = "ImprovedSaberBlock";
+            ImprovedSaberBlock.Size = new System.Drawing.Size(42, 42);
+            ImprovedSaberBlock.TabIndex = 129;
+            ImprovedSaberBlock.TabStop = false;
             // 
             // FidelityBackground
             // 
-            this.FidelityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.FidelityBackground.Location = new System.Drawing.Point(331, 352);
-            this.FidelityBackground.Name = "FidelityBackground";
-            this.FidelityBackground.Size = new System.Drawing.Size(89, 88);
-            this.FidelityBackground.TabIndex = 140;
-            this.FidelityBackground.TabStop = false;
+            FidelityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            FidelityBackground.Location = new System.Drawing.Point(331, 352);
+            FidelityBackground.Name = "FidelityBackground";
+            FidelityBackground.Size = new System.Drawing.Size(89, 88);
+            FidelityBackground.TabIndex = 140;
+            FidelityBackground.TabStop = false;
             // 
             // pictureBox74
             // 
-            this.pictureBox74.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxRed;
-            this.pictureBox74.Location = new System.Drawing.Point(332, 352);
-            this.pictureBox74.Name = "pictureBox74";
-            this.pictureBox74.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox74.TabIndex = 143;
-            this.pictureBox74.TabStop = false;
+            pictureBox74.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxRed;
+            pictureBox74.Location = new System.Drawing.Point(332, 352);
+            pictureBox74.Name = "pictureBox74";
+            pictureBox74.Size = new System.Drawing.Size(89, 88);
+            pictureBox74.TabIndex = 143;
+            pictureBox74.TabStop = false;
             // 
             // pictureBox75
             // 
-            this.pictureBox75.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxGreen;
-            this.pictureBox75.Location = new System.Drawing.Point(332, 352);
-            this.pictureBox75.Name = "pictureBox75";
-            this.pictureBox75.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox75.TabIndex = 142;
-            this.pictureBox75.TabStop = false;
+            pictureBox75.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxGreen;
+            pictureBox75.Location = new System.Drawing.Point(332, 352);
+            pictureBox75.Name = "pictureBox75";
+            pictureBox75.Size = new System.Drawing.Size(89, 88);
+            pictureBox75.TabIndex = 142;
+            pictureBox75.TabStop = false;
             // 
             // pictureBox76
             // 
-            this.pictureBox76.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxRed;
-            this.pictureBox76.Location = new System.Drawing.Point(332, 352);
-            this.pictureBox76.Name = "pictureBox76";
-            this.pictureBox76.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox76.TabIndex = 141;
-            this.pictureBox76.TabStop = false;
+            pictureBox76.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxRed;
+            pictureBox76.Location = new System.Drawing.Point(332, 352);
+            pictureBox76.Name = "pictureBox76";
+            pictureBox76.Size = new System.Drawing.Size(89, 88);
+            pictureBox76.TabIndex = 141;
+            pictureBox76.TabStop = false;
             // 
             // DefensiveFightingPoints
             // 
-            this.DefensiveFightingPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.DefensiveFightingPoints.Location = new System.Drawing.Point(132, 416);
-            this.DefensiveFightingPoints.Name = "DefensiveFightingPoints";
-            this.DefensiveFightingPoints.Size = new System.Drawing.Size(25, 24);
-            this.DefensiveFightingPoints.TabIndex = 118;
-            this.DefensiveFightingPoints.TabStop = false;
-            this.DefensiveFightingPoints.Visible = false;
+            DefensiveFightingPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            DefensiveFightingPoints.Location = new System.Drawing.Point(132, 416);
+            DefensiveFightingPoints.Name = "DefensiveFightingPoints";
+            DefensiveFightingPoints.Size = new System.Drawing.Size(25, 24);
+            DefensiveFightingPoints.TabIndex = 118;
+            DefensiveFightingPoints.TabStop = false;
+            DefensiveFightingPoints.Visible = false;
             // 
             // DefensiveFighting
             // 
-            this.DefensiveFighting.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iStanceSaberBlock;
-            this.DefensiveFighting.Location = new System.Drawing.Point(93, 375);
-            this.DefensiveFighting.Name = "DefensiveFighting";
-            this.DefensiveFighting.Size = new System.Drawing.Size(42, 42);
-            this.DefensiveFighting.TabIndex = 117;
-            this.DefensiveFighting.TabStop = false;
+            DefensiveFighting.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iStanceSaberBlock;
+            DefensiveFighting.Location = new System.Drawing.Point(93, 375);
+            DefensiveFighting.Name = "DefensiveFighting";
+            DefensiveFighting.Size = new System.Drawing.Size(42, 42);
+            DefensiveFighting.TabIndex = 117;
+            DefensiveFighting.TabStop = false;
             // 
             // GraceInMotionPoints
             // 
-            this.GraceInMotionPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.GraceInMotionPoints.Location = new System.Drawing.Point(396, 328);
-            this.GraceInMotionPoints.Name = "GraceInMotionPoints";
-            this.GraceInMotionPoints.Size = new System.Drawing.Size(25, 24);
-            this.GraceInMotionPoints.TabIndex = 100;
-            this.GraceInMotionPoints.TabStop = false;
-            this.GraceInMotionPoints.Visible = false;
+            GraceInMotionPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            GraceInMotionPoints.Location = new System.Drawing.Point(396, 328);
+            GraceInMotionPoints.Name = "GraceInMotionPoints";
+            GraceInMotionPoints.Size = new System.Drawing.Size(25, 24);
+            GraceInMotionPoints.TabIndex = 100;
+            GraceInMotionPoints.TabStop = false;
+            GraceInMotionPoints.Visible = false;
             // 
             // PremonitionPoints
             // 
-            this.PremonitionPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.PremonitionPoints.Location = new System.Drawing.Point(220, 329);
-            this.PremonitionPoints.Name = "PremonitionPoints";
-            this.PremonitionPoints.Size = new System.Drawing.Size(25, 24);
-            this.PremonitionPoints.TabIndex = 96;
-            this.PremonitionPoints.TabStop = false;
-            this.PremonitionPoints.Visible = false;
+            PremonitionPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            PremonitionPoints.Location = new System.Drawing.Point(220, 329);
+            PremonitionPoints.Name = "PremonitionPoints";
+            PremonitionPoints.Size = new System.Drawing.Size(25, 24);
+            PremonitionPoints.TabIndex = 96;
+            PremonitionPoints.TabStop = false;
+            PremonitionPoints.Visible = false;
             // 
             // GraceInMotion
             // 
-            this.GraceInMotion.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iGraceInMotion;
-            this.GraceInMotion.Location = new System.Drawing.Point(354, 287);
-            this.GraceInMotion.Name = "GraceInMotion";
-            this.GraceInMotion.Size = new System.Drawing.Size(42, 42);
-            this.GraceInMotion.TabIndex = 94;
-            this.GraceInMotion.TabStop = false;
-            this.GraceInMotion.Click += new System.EventHandler(this.GraceInMotion_Click);
-            this.GraceInMotion.MouseLeave += new System.EventHandler(this.GraceInMotion_MouseLeave);
-            this.GraceInMotion.MouseHover += new System.EventHandler(this.GraceInMotion_MouseHover);
-            this.GraceInMotion.MouseMove += new System.Windows.Forms.MouseEventHandler(this.GraceInMotion_MouseMove);
+            GraceInMotion.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iGraceInMotion;
+            GraceInMotion.Location = new System.Drawing.Point(354, 287);
+            GraceInMotion.Name = "GraceInMotion";
+            GraceInMotion.Size = new System.Drawing.Size(42, 42);
+            GraceInMotion.TabIndex = 94;
+            GraceInMotion.TabStop = false;
+            GraceInMotion.Click += new System.EventHandler(GraceInMotion_Click);
+            GraceInMotion.MouseLeave += new System.EventHandler(GraceInMotion_MouseLeave);
+            GraceInMotion.MouseHover += new System.EventHandler(GraceInMotion_MouseHover);
+            GraceInMotion.MouseMove += new System.Windows.Forms.MouseEventHandler(GraceInMotion_MouseMove);
             // 
             // Premonition
             // 
-            this.Premonition.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iPremonition;
-            this.Premonition.Location = new System.Drawing.Point(179, 288);
-            this.Premonition.Name = "Premonition";
-            this.Premonition.Size = new System.Drawing.Size(42, 42);
-            this.Premonition.TabIndex = 92;
-            this.Premonition.TabStop = false;
-            this.Premonition.Click += new System.EventHandler(this.Premonition_Click);
-            this.Premonition.MouseLeave += new System.EventHandler(this.Premonition_MouseLeave);
-            this.Premonition.MouseHover += new System.EventHandler(this.Premonition_MouseHover);
-            this.Premonition.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Premonition_MouseMove);
+            Premonition.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iPremonition;
+            Premonition.Location = new System.Drawing.Point(179, 288);
+            Premonition.Name = "Premonition";
+            Premonition.Size = new System.Drawing.Size(42, 42);
+            Premonition.TabIndex = 92;
+            Premonition.TabStop = false;
+            Premonition.Click += new System.EventHandler(Premonition_Click);
+            Premonition.MouseLeave += new System.EventHandler(Premonition_MouseLeave);
+            Premonition.MouseHover += new System.EventHandler(Premonition_MouseHover);
+            Premonition.MouseMove += new System.Windows.Forms.MouseEventHandler(Premonition_MouseMove);
             // 
             // GraceInMotionBackground
             // 
-            this.GraceInMotionBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.GraceInMotionBackground.Location = new System.Drawing.Point(331, 264);
-            this.GraceInMotionBackground.Name = "GraceInMotionBackground";
-            this.GraceInMotionBackground.Size = new System.Drawing.Size(89, 88);
-            this.GraceInMotionBackground.TabIndex = 103;
-            this.GraceInMotionBackground.TabStop = false;
+            GraceInMotionBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            GraceInMotionBackground.Location = new System.Drawing.Point(331, 264);
+            GraceInMotionBackground.Name = "GraceInMotionBackground";
+            GraceInMotionBackground.Size = new System.Drawing.Size(89, 88);
+            GraceInMotionBackground.TabIndex = 103;
+            GraceInMotionBackground.TabStop = false;
             // 
             // pictureBox50
             // 
-            this.pictureBox50.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxRed;
-            this.pictureBox50.Location = new System.Drawing.Point(332, 264);
-            this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox50.TabIndex = 106;
-            this.pictureBox50.TabStop = false;
+            pictureBox50.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBoxRed;
+            pictureBox50.Location = new System.Drawing.Point(332, 264);
+            pictureBox50.Name = "pictureBox50";
+            pictureBox50.Size = new System.Drawing.Size(89, 88);
+            pictureBox50.TabIndex = 106;
+            pictureBox50.TabStop = false;
             // 
             // pictureBox51
             // 
-            this.pictureBox51.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxGreen;
-            this.pictureBox51.Location = new System.Drawing.Point(332, 264);
-            this.pictureBox51.Name = "pictureBox51";
-            this.pictureBox51.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox51.TabIndex = 105;
-            this.pictureBox51.TabStop = false;
+            pictureBox51.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxGreen;
+            pictureBox51.Location = new System.Drawing.Point(332, 264);
+            pictureBox51.Name = "pictureBox51";
+            pictureBox51.Size = new System.Drawing.Size(89, 88);
+            pictureBox51.TabIndex = 105;
+            pictureBox51.TabStop = false;
             // 
             // pictureBox52
             // 
-            this.pictureBox52.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxRed;
-            this.pictureBox52.Location = new System.Drawing.Point(332, 264);
-            this.pictureBox52.Name = "pictureBox52";
-            this.pictureBox52.Size = new System.Drawing.Size(89, 88);
-            this.pictureBox52.TabIndex = 104;
-            this.pictureBox52.TabStop = false;
+            pictureBox52.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBoxRed;
+            pictureBox52.Location = new System.Drawing.Point(332, 264);
+            pictureBox52.Name = "pictureBox52";
+            pictureBox52.Size = new System.Drawing.Size(89, 88);
+            pictureBox52.TabIndex = 104;
+            pictureBox52.TabStop = false;
             // 
             // ImprovedCripplingAccuracyPoints
             // 
-            this.ImprovedCripplingAccuracyPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ImprovedCripplingAccuracyPoints.Location = new System.Drawing.Point(132, 328);
-            this.ImprovedCripplingAccuracyPoints.Name = "ImprovedCripplingAccuracyPoints";
-            this.ImprovedCripplingAccuracyPoints.Size = new System.Drawing.Size(25, 24);
-            this.ImprovedCripplingAccuracyPoints.TabIndex = 81;
-            this.ImprovedCripplingAccuracyPoints.TabStop = false;
-            this.ImprovedCripplingAccuracyPoints.Visible = false;
+            ImprovedCripplingAccuracyPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            ImprovedCripplingAccuracyPoints.Location = new System.Drawing.Point(132, 328);
+            ImprovedCripplingAccuracyPoints.Name = "ImprovedCripplingAccuracyPoints";
+            ImprovedCripplingAccuracyPoints.Size = new System.Drawing.Size(25, 24);
+            ImprovedCripplingAccuracyPoints.TabIndex = 81;
+            ImprovedCripplingAccuracyPoints.TabStop = false;
+            ImprovedCripplingAccuracyPoints.Visible = false;
             // 
             // ImprovedCripplingAccuracy
             // 
-            this.ImprovedCripplingAccuracy.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedCripplingAccuracy;
-            this.ImprovedCripplingAccuracy.Location = new System.Drawing.Point(92, 287);
-            this.ImprovedCripplingAccuracy.Name = "ImprovedCripplingAccuracy";
-            this.ImprovedCripplingAccuracy.Size = new System.Drawing.Size(42, 42);
-            this.ImprovedCripplingAccuracy.TabIndex = 80;
-            this.ImprovedCripplingAccuracy.TabStop = false;
-            this.ImprovedCripplingAccuracy.Click += new System.EventHandler(this.ImprovedCripplingAccuracy_Click);
-            this.ImprovedCripplingAccuracy.MouseLeave += new System.EventHandler(this.ImprovedCripplingAccuracy_MouseLeave);
-            this.ImprovedCripplingAccuracy.MouseHover += new System.EventHandler(this.ImprovedCripplingAccuracy_MouseHover);
-            this.ImprovedCripplingAccuracy.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ImprovedCripplingAccuracy_MouseMove);
+            ImprovedCripplingAccuracy.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedCripplingAccuracy;
+            ImprovedCripplingAccuracy.Location = new System.Drawing.Point(92, 287);
+            ImprovedCripplingAccuracy.Name = "ImprovedCripplingAccuracy";
+            ImprovedCripplingAccuracy.Size = new System.Drawing.Size(42, 42);
+            ImprovedCripplingAccuracy.TabIndex = 80;
+            ImprovedCripplingAccuracy.TabStop = false;
+            ImprovedCripplingAccuracy.Click += new System.EventHandler(ImprovedCripplingAccuracy_Click);
+            ImprovedCripplingAccuracy.MouseLeave += new System.EventHandler(ImprovedCripplingAccuracy_MouseLeave);
+            ImprovedCripplingAccuracy.MouseHover += new System.EventHandler(ImprovedCripplingAccuracy_MouseHover);
+            ImprovedCripplingAccuracy.MouseMove += new System.Windows.Forms.MouseEventHandler(ImprovedCripplingAccuracy_MouseMove);
             // 
             // ImprovedForceThrowPoints
             // 
-            this.ImprovedForceThrowPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ImprovedForceThrowPoints.Location = new System.Drawing.Point(133, 242);
-            this.ImprovedForceThrowPoints.Name = "ImprovedForceThrowPoints";
-            this.ImprovedForceThrowPoints.Size = new System.Drawing.Size(25, 24);
-            this.ImprovedForceThrowPoints.TabIndex = 53;
-            this.ImprovedForceThrowPoints.TabStop = false;
-            this.ImprovedForceThrowPoints.Visible = false;
+            ImprovedForceThrowPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            ImprovedForceThrowPoints.Location = new System.Drawing.Point(133, 242);
+            ImprovedForceThrowPoints.Name = "ImprovedForceThrowPoints";
+            ImprovedForceThrowPoints.Size = new System.Drawing.Size(25, 24);
+            ImprovedForceThrowPoints.TabIndex = 53;
+            ImprovedForceThrowPoints.TabStop = false;
+            ImprovedForceThrowPoints.Visible = false;
             // 
             // ImprovedForceThrow
             // 
-            this.ImprovedForceThrow.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedForceThrow;
-            this.ImprovedForceThrow.Location = new System.Drawing.Point(93, 201);
-            this.ImprovedForceThrow.Name = "ImprovedForceThrow";
-            this.ImprovedForceThrow.Size = new System.Drawing.Size(42, 42);
-            this.ImprovedForceThrow.TabIndex = 49;
-            this.ImprovedForceThrow.TabStop = false;
-            this.ImprovedForceThrow.Click += new System.EventHandler(this.ImprovedForceThrow_Click);
-            this.ImprovedForceThrow.MouseLeave += new System.EventHandler(this.ImprovedForceThrow_MouseLeave);
-            this.ImprovedForceThrow.MouseHover += new System.EventHandler(this.ImprovedForceThrow_MouseHover);
-            this.ImprovedForceThrow.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ImprovedForceThrow_MouseMove);
+            ImprovedForceThrow.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iImprovedForceThrow;
+            ImprovedForceThrow.Location = new System.Drawing.Point(93, 201);
+            ImprovedForceThrow.Name = "ImprovedForceThrow";
+            ImprovedForceThrow.Size = new System.Drawing.Size(42, 42);
+            ImprovedForceThrow.TabIndex = 49;
+            ImprovedForceThrow.TabStop = false;
+            ImprovedForceThrow.Click += new System.EventHandler(ImprovedForceThrow_Click);
+            ImprovedForceThrow.MouseLeave += new System.EventHandler(ImprovedForceThrow_MouseLeave);
+            ImprovedForceThrow.MouseHover += new System.EventHandler(ImprovedForceThrow_MouseHover);
+            ImprovedForceThrow.MouseMove += new System.Windows.Forms.MouseEventHandler(ImprovedForceThrow_MouseMove);
             // 
             // EnhancedStaminaPoints
             // 
-            this.EnhancedStaminaPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.EnhancedStaminaPoints.Location = new System.Drawing.Point(482, 156);
-            this.EnhancedStaminaPoints.Name = "EnhancedStaminaPoints";
-            this.EnhancedStaminaPoints.Size = new System.Drawing.Size(25, 24);
-            this.EnhancedStaminaPoints.TabIndex = 36;
-            this.EnhancedStaminaPoints.TabStop = false;
-            this.EnhancedStaminaPoints.Visible = false;
+            EnhancedStaminaPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            EnhancedStaminaPoints.Location = new System.Drawing.Point(482, 156);
+            EnhancedStaminaPoints.Name = "EnhancedStaminaPoints";
+            EnhancedStaminaPoints.Size = new System.Drawing.Size(25, 24);
+            EnhancedStaminaPoints.TabIndex = 36;
+            EnhancedStaminaPoints.TabStop = false;
+            EnhancedStaminaPoints.Visible = false;
             // 
             // EnhancedAgilityPoints
             // 
-            this.EnhancedAgilityPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.EnhancedAgilityPoints.Location = new System.Drawing.Point(394, 156);
-            this.EnhancedAgilityPoints.Name = "EnhancedAgilityPoints";
-            this.EnhancedAgilityPoints.Size = new System.Drawing.Size(25, 24);
-            this.EnhancedAgilityPoints.TabIndex = 31;
-            this.EnhancedAgilityPoints.TabStop = false;
-            this.EnhancedAgilityPoints.Visible = false;
+            EnhancedAgilityPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            EnhancedAgilityPoints.Location = new System.Drawing.Point(394, 156);
+            EnhancedAgilityPoints.Name = "EnhancedAgilityPoints";
+            EnhancedAgilityPoints.Size = new System.Drawing.Size(25, 24);
+            EnhancedAgilityPoints.TabIndex = 31;
+            EnhancedAgilityPoints.TabStop = false;
+            EnhancedAgilityPoints.Visible = false;
             // 
             // EnhancedConstitutionPoints
             // 
-            this.EnhancedConstitutionPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.EnhancedConstitutionPoints.Location = new System.Drawing.Point(308, 156);
-            this.EnhancedConstitutionPoints.Name = "EnhancedConstitutionPoints";
-            this.EnhancedConstitutionPoints.Size = new System.Drawing.Size(25, 24);
-            this.EnhancedConstitutionPoints.TabIndex = 30;
-            this.EnhancedConstitutionPoints.TabStop = false;
-            this.EnhancedConstitutionPoints.Visible = false;
+            EnhancedConstitutionPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            EnhancedConstitutionPoints.Location = new System.Drawing.Point(308, 156);
+            EnhancedConstitutionPoints.Name = "EnhancedConstitutionPoints";
+            EnhancedConstitutionPoints.Size = new System.Drawing.Size(25, 24);
+            EnhancedConstitutionPoints.TabIndex = 30;
+            EnhancedConstitutionPoints.TabStop = false;
+            EnhancedConstitutionPoints.Visible = false;
             // 
             // EnhancedStrengthPoints
             // 
-            this.EnhancedStrengthPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.EnhancedStrengthPoints.Location = new System.Drawing.Point(222, 156);
-            this.EnhancedStrengthPoints.Name = "EnhancedStrengthPoints";
-            this.EnhancedStrengthPoints.Size = new System.Drawing.Size(25, 24);
-            this.EnhancedStrengthPoints.TabIndex = 27;
-            this.EnhancedStrengthPoints.TabStop = false;
-            this.EnhancedStrengthPoints.Visible = false;
+            EnhancedStrengthPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            EnhancedStrengthPoints.Location = new System.Drawing.Point(222, 156);
+            EnhancedStrengthPoints.Name = "EnhancedStrengthPoints";
+            EnhancedStrengthPoints.Size = new System.Drawing.Size(25, 24);
+            EnhancedStrengthPoints.TabIndex = 27;
+            EnhancedStrengthPoints.TabStop = false;
+            EnhancedStrengthPoints.Visible = false;
             // 
             // EnhancedStamina
             // 
-            this.EnhancedStamina.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStamina;
-            this.EnhancedStamina.Location = new System.Drawing.Point(441, 115);
-            this.EnhancedStamina.Name = "EnhancedStamina";
-            this.EnhancedStamina.Size = new System.Drawing.Size(42, 42);
-            this.EnhancedStamina.TabIndex = 21;
-            this.EnhancedStamina.TabStop = false;
-            this.EnhancedStamina.Click += new System.EventHandler(this.EnhancedStamina_Click);
-            this.EnhancedStamina.MouseLeave += new System.EventHandler(this.EnhancedStamina_MouseLeave);
-            this.EnhancedStamina.MouseHover += new System.EventHandler(this.EnhancedStamina_MouseHover);
-            this.EnhancedStamina.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedStamina_MouseMove);
+            EnhancedStamina.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStamina;
+            EnhancedStamina.Location = new System.Drawing.Point(441, 115);
+            EnhancedStamina.Name = "EnhancedStamina";
+            EnhancedStamina.Size = new System.Drawing.Size(42, 42);
+            EnhancedStamina.TabIndex = 21;
+            EnhancedStamina.TabStop = false;
+            EnhancedStamina.Click += new System.EventHandler(EnhancedStamina_Click);
+            EnhancedStamina.MouseLeave += new System.EventHandler(EnhancedStamina_MouseLeave);
+            EnhancedStamina.MouseHover += new System.EventHandler(EnhancedStamina_MouseHover);
+            EnhancedStamina.MouseMove += new System.Windows.Forms.MouseEventHandler(EnhancedStamina_MouseMove);
             // 
             // EnhancedAgility
             // 
-            this.EnhancedAgility.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedAgility;
-            this.EnhancedAgility.Location = new System.Drawing.Point(356, 115);
-            this.EnhancedAgility.Name = "EnhancedAgility";
-            this.EnhancedAgility.Size = new System.Drawing.Size(42, 42);
-            this.EnhancedAgility.TabIndex = 20;
-            this.EnhancedAgility.TabStop = false;
-            this.EnhancedAgility.Click += new System.EventHandler(this.EnhancedAgility_Click);
-            this.EnhancedAgility.MouseLeave += new System.EventHandler(this.EnhancedAgility_MouseLeave);
-            this.EnhancedAgility.MouseHover += new System.EventHandler(this.EnhancedAgility_MouseHover);
-            this.EnhancedAgility.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedAgility_MouseMove);
+            EnhancedAgility.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedAgility;
+            EnhancedAgility.Location = new System.Drawing.Point(356, 115);
+            EnhancedAgility.Name = "EnhancedAgility";
+            EnhancedAgility.Size = new System.Drawing.Size(42, 42);
+            EnhancedAgility.TabIndex = 20;
+            EnhancedAgility.TabStop = false;
+            EnhancedAgility.Click += new System.EventHandler(EnhancedAgility_Click);
+            EnhancedAgility.MouseLeave += new System.EventHandler(EnhancedAgility_MouseLeave);
+            EnhancedAgility.MouseHover += new System.EventHandler(EnhancedAgility_MouseHover);
+            EnhancedAgility.MouseMove += new System.Windows.Forms.MouseEventHandler(EnhancedAgility_MouseMove);
             // 
             // EnhancedConstitution
             // 
-            this.EnhancedConstitution.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedConstitution;
-            this.EnhancedConstitution.Location = new System.Drawing.Point(268, 115);
-            this.EnhancedConstitution.Name = "EnhancedConstitution";
-            this.EnhancedConstitution.Size = new System.Drawing.Size(42, 42);
-            this.EnhancedConstitution.TabIndex = 19;
-            this.EnhancedConstitution.TabStop = false;
-            this.EnhancedConstitution.Click += new System.EventHandler(this.EnhancedConstitution_Click);
-            this.EnhancedConstitution.MouseLeave += new System.EventHandler(this.EnhancedConstitution_MouseLeave);
-            this.EnhancedConstitution.MouseHover += new System.EventHandler(this.EnhancedConstitution_MouseHover);
-            this.EnhancedConstitution.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedConstitution_MouseMove);
+            EnhancedConstitution.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedConstitution;
+            EnhancedConstitution.Location = new System.Drawing.Point(268, 115);
+            EnhancedConstitution.Name = "EnhancedConstitution";
+            EnhancedConstitution.Size = new System.Drawing.Size(42, 42);
+            EnhancedConstitution.TabIndex = 19;
+            EnhancedConstitution.TabStop = false;
+            EnhancedConstitution.Click += new System.EventHandler(EnhancedConstitution_Click);
+            EnhancedConstitution.MouseLeave += new System.EventHandler(EnhancedConstitution_MouseLeave);
+            EnhancedConstitution.MouseHover += new System.EventHandler(EnhancedConstitution_MouseHover);
+            EnhancedConstitution.MouseMove += new System.Windows.Forms.MouseEventHandler(EnhancedConstitution_MouseMove);
             // 
             // EnhancedStrength
             // 
-            this.EnhancedStrength.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStrength;
-            this.EnhancedStrength.Location = new System.Drawing.Point(181, 115);
-            this.EnhancedStrength.Name = "EnhancedStrength";
-            this.EnhancedStrength.Size = new System.Drawing.Size(42, 42);
-            this.EnhancedStrength.TabIndex = 18;
-            this.EnhancedStrength.TabStop = false;
-            this.EnhancedStrength.Click += new System.EventHandler(this.EnhancedStrength_Click);
-            this.EnhancedStrength.MouseLeave += new System.EventHandler(this.EnhancedStrength_MouseLeave);
-            this.EnhancedStrength.MouseHover += new System.EventHandler(this.EnhancedStrength_MouseHover);
-            this.EnhancedStrength.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedStrength_MouseMove);
+            EnhancedStrength.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStrength;
+            EnhancedStrength.Location = new System.Drawing.Point(181, 115);
+            EnhancedStrength.Name = "EnhancedStrength";
+            EnhancedStrength.Size = new System.Drawing.Size(42, 42);
+            EnhancedStrength.TabIndex = 18;
+            EnhancedStrength.TabStop = false;
+            EnhancedStrength.Click += new System.EventHandler(EnhancedStrength_Click);
+            EnhancedStrength.MouseLeave += new System.EventHandler(EnhancedStrength_MouseLeave);
+            EnhancedStrength.MouseHover += new System.EventHandler(EnhancedStrength_MouseHover);
+            EnhancedStrength.MouseMove += new System.Windows.Forms.MouseEventHandler(EnhancedStrength_MouseMove);
             // 
             // EnhancedStaminaBackground
             // 
-            this.EnhancedStaminaBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.EnhancedStaminaBackground.Location = new System.Drawing.Point(419, 92);
-            this.EnhancedStaminaBackground.Name = "EnhancedStaminaBackground";
-            this.EnhancedStaminaBackground.Size = new System.Drawing.Size(89, 88);
-            this.EnhancedStaminaBackground.TabIndex = 9;
-            this.EnhancedStaminaBackground.TabStop = false;
+            EnhancedStaminaBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
+            EnhancedStaminaBackground.Location = new System.Drawing.Point(419, 92);
+            EnhancedStaminaBackground.Name = "EnhancedStaminaBackground";
+            EnhancedStaminaBackground.Size = new System.Drawing.Size(89, 88);
+            EnhancedStaminaBackground.TabIndex = 9;
+            EnhancedStaminaBackground.TabStop = false;
             // 
             // EnhancedAgilityBackground
             // 
-            this.EnhancedAgilityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.EnhancedAgilityBackground.Location = new System.Drawing.Point(333, 92);
-            this.EnhancedAgilityBackground.Name = "EnhancedAgilityBackground";
-            this.EnhancedAgilityBackground.Size = new System.Drawing.Size(89, 88);
-            this.EnhancedAgilityBackground.TabIndex = 8;
-            this.EnhancedAgilityBackground.TabStop = false;
+            EnhancedAgilityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
+            EnhancedAgilityBackground.Location = new System.Drawing.Point(333, 92);
+            EnhancedAgilityBackground.Name = "EnhancedAgilityBackground";
+            EnhancedAgilityBackground.Size = new System.Drawing.Size(89, 88);
+            EnhancedAgilityBackground.TabIndex = 8;
+            EnhancedAgilityBackground.TabStop = false;
             // 
             // EnhancedConstitutionBackground
             // 
-            this.EnhancedConstitutionBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.EnhancedConstitutionBackground.Location = new System.Drawing.Point(245, 92);
-            this.EnhancedConstitutionBackground.Name = "EnhancedConstitutionBackground";
-            this.EnhancedConstitutionBackground.Size = new System.Drawing.Size(89, 88);
-            this.EnhancedConstitutionBackground.TabIndex = 3;
-            this.EnhancedConstitutionBackground.TabStop = false;
+            EnhancedConstitutionBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
+            EnhancedConstitutionBackground.Location = new System.Drawing.Point(245, 92);
+            EnhancedConstitutionBackground.Name = "EnhancedConstitutionBackground";
+            EnhancedConstitutionBackground.Size = new System.Drawing.Size(89, 88);
+            EnhancedConstitutionBackground.TabIndex = 3;
+            EnhancedConstitutionBackground.TabStop = false;
             // 
             // EnhancedStrengthBackground
             // 
-            this.EnhancedStrengthBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.EnhancedStrengthBackground.Location = new System.Drawing.Point(158, 92);
-            this.EnhancedStrengthBackground.Name = "EnhancedStrengthBackground";
-            this.EnhancedStrengthBackground.Size = new System.Drawing.Size(89, 88);
-            this.EnhancedStrengthBackground.TabIndex = 0;
-            this.EnhancedStrengthBackground.TabStop = false;
+            EnhancedStrengthBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
+            EnhancedStrengthBackground.Location = new System.Drawing.Point(158, 92);
+            EnhancedStrengthBackground.Name = "EnhancedStrengthBackground";
+            EnhancedStrengthBackground.Size = new System.Drawing.Size(89, 88);
+            EnhancedStrengthBackground.TabIndex = 0;
+            EnhancedStrengthBackground.TabStop = false;
             // 
             // ImprovedForceThrowBackground
             // 
-            this.ImprovedForceThrowBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.ImprovedForceThrowBackground.Location = new System.Drawing.Point(70, 178);
-            this.ImprovedForceThrowBackground.Name = "ImprovedForceThrowBackground";
-            this.ImprovedForceThrowBackground.Size = new System.Drawing.Size(89, 88);
-            this.ImprovedForceThrowBackground.TabIndex = 145;
-            this.ImprovedForceThrowBackground.TabStop = false;
+            ImprovedForceThrowBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            ImprovedForceThrowBackground.Location = new System.Drawing.Point(70, 178);
+            ImprovedForceThrowBackground.Name = "ImprovedForceThrowBackground";
+            ImprovedForceThrowBackground.Size = new System.Drawing.Size(89, 88);
+            ImprovedForceThrowBackground.TabIndex = 145;
+            ImprovedForceThrowBackground.TabStop = false;
             // 
             // PremonitionBackground
             // 
-            this.PremonitionBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.PremonitionBackground.Location = new System.Drawing.Point(156, 265);
-            this.PremonitionBackground.Name = "PremonitionBackground";
-            this.PremonitionBackground.Size = new System.Drawing.Size(89, 88);
-            this.PremonitionBackground.TabIndex = 146;
-            this.PremonitionBackground.TabStop = false;
+            PremonitionBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            PremonitionBackground.Location = new System.Drawing.Point(156, 265);
+            PremonitionBackground.Name = "PremonitionBackground";
+            PremonitionBackground.Size = new System.Drawing.Size(89, 88);
+            PremonitionBackground.TabIndex = 146;
+            PremonitionBackground.TabStop = false;
             // 
             // ImprovedCripplingAccuracyBackground
             // 
-            this.ImprovedCripplingAccuracyBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.ImprovedCripplingAccuracyBackground.Location = new System.Drawing.Point(69, 264);
-            this.ImprovedCripplingAccuracyBackground.Name = "ImprovedCripplingAccuracyBackground";
-            this.ImprovedCripplingAccuracyBackground.Size = new System.Drawing.Size(89, 88);
-            this.ImprovedCripplingAccuracyBackground.TabIndex = 150;
-            this.ImprovedCripplingAccuracyBackground.TabStop = false;
+            ImprovedCripplingAccuracyBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            ImprovedCripplingAccuracyBackground.Location = new System.Drawing.Point(69, 264);
+            ImprovedCripplingAccuracyBackground.Name = "ImprovedCripplingAccuracyBackground";
+            ImprovedCripplingAccuracyBackground.Size = new System.Drawing.Size(89, 88);
+            ImprovedCripplingAccuracyBackground.TabIndex = 150;
+            ImprovedCripplingAccuracyBackground.TabStop = false;
             // 
             // DefensiveFightingBackground
             // 
-            this.DefensiveFightingBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.DefensiveFightingBackground.Location = new System.Drawing.Point(69, 352);
-            this.DefensiveFightingBackground.Name = "DefensiveFightingBackground";
-            this.DefensiveFightingBackground.Size = new System.Drawing.Size(89, 88);
-            this.DefensiveFightingBackground.TabIndex = 151;
-            this.DefensiveFightingBackground.TabStop = false;
+            DefensiveFightingBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            DefensiveFightingBackground.Location = new System.Drawing.Point(69, 352);
+            DefensiveFightingBackground.Name = "DefensiveFightingBackground";
+            DefensiveFightingBackground.Size = new System.Drawing.Size(89, 88);
+            DefensiveFightingBackground.TabIndex = 151;
+            DefensiveFightingBackground.TabStop = false;
             // 
             // ImprovedSaberBlockBackground
             // 
-            this.ImprovedSaberBlockBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
-            this.ImprovedSaberBlockBackground.Location = new System.Drawing.Point(157, 352);
-            this.ImprovedSaberBlockBackground.Name = "ImprovedSaberBlockBackground";
-            this.ImprovedSaberBlockBackground.Size = new System.Drawing.Size(89, 88);
-            this.ImprovedSaberBlockBackground.TabIndex = 152;
-            this.ImprovedSaberBlockBackground.TabStop = false;
+            ImprovedSaberBlockBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iSkillBox;
+            ImprovedSaberBlockBackground.Location = new System.Drawing.Point(157, 352);
+            ImprovedSaberBlockBackground.Name = "ImprovedSaberBlockBackground";
+            ImprovedSaberBlockBackground.Size = new System.Drawing.Size(89, 88);
+            ImprovedSaberBlockBackground.TabIndex = 152;
+            ImprovedSaberBlockBackground.TabStop = false;
             // 
             // Jedi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(984, 696);
-            this.Controls.Add(this.BeastMastery);
-            this.Controls.Add(this.Path);
-            this.Controls.Add(this.JediGeneral);
-            this.Controls.Add(this.ForceCloakPoints);
-            this.Controls.Add(this.ForceCloak);
-            this.Controls.Add(this.ForceCloakBackground);
-            this.Controls.Add(this.AlacrityPoints);
-            this.Controls.Add(this.Alacrity);
-            this.Controls.Add(this.AlacrityBackground);
-            this.Controls.Add(this.SkillRequirements2);
-            this.Controls.Add(this.SecondWindPoints);
-            this.Controls.Add(this.SecondWind);
-            this.Controls.Add(this.SecondWindBackground);
-            this.Controls.Add(this.ForceCloakLineEnd);
-            this.Controls.Add(this.ForceCloakLineStart);
-            this.Controls.Add(this.ForceCloakLine);
-            this.Controls.Add(this.Rank4Modifier2);
-            this.Controls.Add(this.Rank3Modifier2);
-            this.Controls.Add(this.Rank2Modifier2);
-            this.Controls.Add(this.Rank1Modifier2);
-            this.Controls.Add(this.SkillModifierTitle2);
-            this.Controls.Add(this.Rank4Modifier1);
-            this.Controls.Add(this.Rank3Modifier1);
-            this.Controls.Add(this.Rank2Modifier1);
-            this.Controls.Add(this.Rank1Modifier1);
-            this.Controls.Add(this.SkillModifierTitle1);
-            this.Controls.Add(this.GrandsModifiersLabel);
-            this.Controls.Add(this.SkillRank);
-            this.Controls.Add(this.RankLabel);
-            this.Controls.Add(this.SkillRequirements1);
-            this.Controls.Add(this.RequiresLabel);
-            this.Controls.Add(this.SkillSummary);
-            this.Controls.Add(this.SkillPicture);
-            this.Controls.Add(this.SkillPictureBackground);
-            this.Controls.Add(this.ExactingStrikesPoints);
-            this.Controls.Add(this.ExactingStrikes);
-            this.Controls.Add(this.ExactingStrikesBackground);
-            this.Controls.Add(this.HeightenedSpeedPoints);
-            this.Controls.Add(this.HeightenedSpeed);
-            this.Controls.Add(this.HeightenedSpeedBackground);
-            this.Controls.Add(this.IncisivenessPoints);
-            this.Controls.Add(this.ImprovedForceCloakPoints);
-            this.Controls.Add(this.ImprovedForceShockwavePoints);
-            this.Controls.Add(this.Incisiveness);
-            this.Controls.Add(this.ImprovedForceCloak);
-            this.Controls.Add(this.ImprovedForceShockwave);
-            this.Controls.Add(this.IncisivenessBackground);
-            this.Controls.Add(this.pictureBox33);
-            this.Controls.Add(this.pictureBox43);
-            this.Controls.Add(this.pictureBox44);
-            this.Controls.Add(this.ForceShockwavePoints);
-            this.Controls.Add(this.ForceShockwave);
-            this.Controls.Add(this.ImprovedForceCloakBackground);
-            this.Controls.Add(this.ImprovedForceShockwaveBackground);
-            this.Controls.Add(this.ForceShockwaveBackground);
-            this.Controls.Add(this.FidelityPoints);
-            this.Controls.Add(this.ImprovedSaberBlockPoints);
-            this.Controls.Add(this.Fidelity);
-            this.Controls.Add(this.ImprovedSaberBlock);
-            this.Controls.Add(this.FidelityBackground);
-            this.Controls.Add(this.pictureBox74);
-            this.Controls.Add(this.pictureBox75);
-            this.Controls.Add(this.pictureBox76);
-            this.Controls.Add(this.DefensiveFightingPoints);
-            this.Controls.Add(this.DefensiveFighting);
-            this.Controls.Add(this.GraceInMotionPoints);
-            this.Controls.Add(this.PremonitionPoints);
-            this.Controls.Add(this.GraceInMotion);
-            this.Controls.Add(this.Premonition);
-            this.Controls.Add(this.GraceInMotionBackground);
-            this.Controls.Add(this.pictureBox50);
-            this.Controls.Add(this.pictureBox51);
-            this.Controls.Add(this.pictureBox52);
-            this.Controls.Add(this.ImprovedCripplingAccuracyPoints);
-            this.Controls.Add(this.ImprovedCripplingAccuracy);
-            this.Controls.Add(this.SaveButton);
-            this.Controls.Add(this.ResetButton);
-            this.Controls.Add(this.ImprovedForceThrowPoints);
-            this.Controls.Add(this.ImprovedForceThrow);
-            this.Controls.Add(this.EnhancedStaminaPoints);
-            this.Controls.Add(this.levelOutput);
-            this.Controls.Add(this.RequiredLevelLabel);
-            this.Controls.Add(this.EnhancedAgilityPoints);
-            this.Controls.Add(this.EnhancedConstitutionPoints);
-            this.Controls.Add(this.EnhancedStrengthPoints);
-            this.Controls.Add(this.AvailablePointsLabel);
-            this.Controls.Add(this.AvailablePointsBase);
-            this.Controls.Add(this.RemovePoints);
-            this.Controls.Add(this.AddPoints);
-            this.Controls.Add(this.AvailablePoints);
-            this.Controls.Add(this.EnhancedStamina);
-            this.Controls.Add(this.EnhancedAgility);
-            this.Controls.Add(this.EnhancedConstitution);
-            this.Controls.Add(this.EnhancedStrength);
-            this.Controls.Add(this.EnhancedStaminaBackground);
-            this.Controls.Add(this.EnhancedAgilityBackground);
-            this.Controls.Add(this.EnhancedConstitutionBackground);
-            this.Controls.Add(this.EnhancedStrengthBackground);
-            this.Controls.Add(this.ImprovedForceThrowBackground);
-            this.Controls.Add(this.PremonitionBackground);
-            this.Controls.Add(this.ImprovedCripplingAccuracyBackground);
-            this.Controls.Add(this.DefensiveFightingBackground);
-            this.Controls.Add(this.ImprovedSaberBlockBackground);
-            this.Controls.Add(this.SkillTitle);
-            this.Name = "Jedi";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Jedi";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Jedi_FormClosing);
-            this.Load += new System.EventHandler(this.Jedi_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloak)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AlacrityPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AlacrityBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWindPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecondWindBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineEnd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineStart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLine)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SkillPictureBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HeightenedSpeedPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HeightenedSpeed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HeightenedSpeedBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IncisivenessPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceCloakPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceShockwavePoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Incisiveness)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceCloak)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceShockwave)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IncisivenessBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceShockwavePoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceShockwave)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceCloakBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceShockwaveBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceShockwaveBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FidelityPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlockPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Fidelity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlock)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FidelityBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DefensiveFighting)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GraceInMotionPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PremonitionPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GraceInMotion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Premonition)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GraceInMotionBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStamina)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitution)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrength)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PremonitionBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlockBackground)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.DarkSlateGray;
+            ClientSize = new System.Drawing.Size(984, 696);
+            Controls.Add(BeastMastery);
+            Controls.Add(Path);
+            Controls.Add(JediGeneral);
+            Controls.Add(ForceCloakPoints);
+            Controls.Add(ForceCloak);
+            Controls.Add(ForceCloakBackground);
+            Controls.Add(AlacrityPoints);
+            Controls.Add(Alacrity);
+            Controls.Add(AlacrityBackground);
+            Controls.Add(SkillRequirements2);
+            Controls.Add(SecondWindPoints);
+            Controls.Add(SecondWind);
+            Controls.Add(SecondWindBackground);
+            Controls.Add(ForceCloakLineEnd);
+            Controls.Add(ForceCloakLineStart);
+            Controls.Add(ForceCloakLine);
+            Controls.Add(Rank4Modifier2);
+            Controls.Add(Rank3Modifier2);
+            Controls.Add(Rank2Modifier2);
+            Controls.Add(Rank1Modifier2);
+            Controls.Add(SkillModifierTitle2);
+            Controls.Add(Rank4Modifier1);
+            Controls.Add(Rank3Modifier1);
+            Controls.Add(Rank2Modifier1);
+            Controls.Add(Rank1Modifier1);
+            Controls.Add(SkillModifierTitle1);
+            Controls.Add(GrandsModifiersLabel);
+            Controls.Add(SkillRank);
+            Controls.Add(RankLabel);
+            Controls.Add(SkillRequirements1);
+            Controls.Add(RequiresLabel);
+            Controls.Add(SkillSummary);
+            Controls.Add(SkillPicture);
+            Controls.Add(SkillPictureBackground);
+            Controls.Add(ExactingStrikesPoints);
+            Controls.Add(ExactingStrikes);
+            Controls.Add(ExactingStrikesBackground);
+            Controls.Add(HeightenedSpeedPoints);
+            Controls.Add(HeightenedSpeed);
+            Controls.Add(HeightenedSpeedBackground);
+            Controls.Add(IncisivenessPoints);
+            Controls.Add(ImprovedForceCloakPoints);
+            Controls.Add(ImprovedForceShockwavePoints);
+            Controls.Add(Incisiveness);
+            Controls.Add(ImprovedForceCloak);
+            Controls.Add(ImprovedForceShockwave);
+            Controls.Add(IncisivenessBackground);
+            Controls.Add(pictureBox33);
+            Controls.Add(pictureBox43);
+            Controls.Add(pictureBox44);
+            Controls.Add(ForceShockwavePoints);
+            Controls.Add(ForceShockwave);
+            Controls.Add(ImprovedForceCloakBackground);
+            Controls.Add(ImprovedForceShockwaveBackground);
+            Controls.Add(ForceShockwaveBackground);
+            Controls.Add(FidelityPoints);
+            Controls.Add(ImprovedSaberBlockPoints);
+            Controls.Add(Fidelity);
+            Controls.Add(ImprovedSaberBlock);
+            Controls.Add(FidelityBackground);
+            Controls.Add(pictureBox74);
+            Controls.Add(pictureBox75);
+            Controls.Add(pictureBox76);
+            Controls.Add(DefensiveFightingPoints);
+            Controls.Add(DefensiveFighting);
+            Controls.Add(GraceInMotionPoints);
+            Controls.Add(PremonitionPoints);
+            Controls.Add(GraceInMotion);
+            Controls.Add(Premonition);
+            Controls.Add(GraceInMotionBackground);
+            Controls.Add(pictureBox50);
+            Controls.Add(pictureBox51);
+            Controls.Add(pictureBox52);
+            Controls.Add(ImprovedCripplingAccuracyPoints);
+            Controls.Add(ImprovedCripplingAccuracy);
+            Controls.Add(SaveButton);
+            Controls.Add(ResetButton);
+            Controls.Add(ImprovedForceThrowPoints);
+            Controls.Add(ImprovedForceThrow);
+            Controls.Add(EnhancedStaminaPoints);
+            Controls.Add(levelOutput);
+            Controls.Add(RequiredLevelLabel);
+            Controls.Add(EnhancedAgilityPoints);
+            Controls.Add(EnhancedConstitutionPoints);
+            Controls.Add(EnhancedStrengthPoints);
+            Controls.Add(AvailablePointsLabel);
+            Controls.Add(AvailablePointsBase);
+            Controls.Add(RemovePoints);
+            Controls.Add(AddPoints);
+            Controls.Add(AvailablePoints);
+            Controls.Add(EnhancedStamina);
+            Controls.Add(EnhancedAgility);
+            Controls.Add(EnhancedConstitution);
+            Controls.Add(EnhancedStrength);
+            Controls.Add(EnhancedStaminaBackground);
+            Controls.Add(EnhancedAgilityBackground);
+            Controls.Add(EnhancedConstitutionBackground);
+            Controls.Add(EnhancedStrengthBackground);
+            Controls.Add(ImprovedForceThrowBackground);
+            Controls.Add(PremonitionBackground);
+            Controls.Add(ImprovedCripplingAccuracyBackground);
+            Controls.Add(DefensiveFightingBackground);
+            Controls.Add(ImprovedSaberBlockBackground);
+            Controls.Add(SkillTitle);
+            Name = "Jedi";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Jedi";
+            FormClosing += new System.Windows.Forms.FormClosingEventHandler(Jedi_FormClosing);
+            Load += new System.EventHandler(Jedi_Load);
+            ((System.ComponentModel.ISupportInitialize)(ForceCloakPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceCloak)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceCloakBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(AlacrityPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(Alacrity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(AlacrityBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(SecondWindPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(SecondWind)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(SecondWindBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceCloakLineEnd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceCloakLineStart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceCloakLine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(SkillPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(SkillPictureBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ExactingStrikesPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ExactingStrikes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ExactingStrikesBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(HeightenedSpeedPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(HeightenedSpeed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(HeightenedSpeedBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(IncisivenessPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceCloakPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceShockwavePoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(Incisiveness)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceCloak)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceShockwave)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(IncisivenessBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceShockwavePoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceShockwave)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceCloakBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceShockwaveBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ForceShockwaveBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(FidelityPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedSaberBlockPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(Fidelity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedSaberBlock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(FidelityBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox74)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox75)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox76)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(DefensiveFightingPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(DefensiveFighting)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(GraceInMotionPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(PremonitionPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(GraceInMotion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(Premonition)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(GraceInMotionBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox51)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(pictureBox52)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedCripplingAccuracyPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedCripplingAccuracy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceThrowPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceThrow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedStaminaPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedAgilityPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedConstitutionPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedStrengthPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedStamina)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedAgility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedConstitution)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedStrength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedStaminaBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedAgilityBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedConstitutionBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(EnhancedStrengthBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedForceThrowBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(PremonitionBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedCripplingAccuracyBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(DefensiveFightingBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(ImprovedSaberBlockBackground)).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
