@@ -1139,6 +1139,17 @@ namespace SWG_Expertise_Calcualtor
             {
                 SkillRequirements1.ForeColor = Color.Red;
             }
+
+            // 8 Points In Jedi General
+            if (totalPoints <= 37 && GraceInMotionHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.White;
+            }
+
+            if (totalPoints > 37 && GraceInMotionHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.Red;
+            }
         }
 
         // Changes the background for each skill if they are hovered.
@@ -1973,48 +1984,6 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
-        private void GraceInMotion_MouseHover(object sender, EventArgs e)
-        {
-            GraceInMotionHover = true;
-            PageFunctions();
-            if (totalPoints <= 37)
-            {
-                GraceInMotionBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                GraceInMotionBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
-        }
-
-        private void GraceInMotion_MouseMove(object sender, MouseEventArgs e)
-        {
-            GraceInMotionHover = true;
-            PageFunctions();
-            if (totalPoints <= 37)
-            {
-                GraceInMotionBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                GraceInMotionBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
-        }
-
-        private void GraceInMotion_MouseLeave(object sender, EventArgs e)
-        {
-            GraceInMotionHover = false;
-            PageFunctions();
-            if (totalPoints <= 37)
-            {
-                GraceInMotionBackground.Image = Properties.Resources.aSkillBox;
-            }
-            else
-            {
-                GraceInMotionBackground.Image = Properties.Resources.iSkillBox;
-            }
-        }
-
         private void ForceCloak_MouseHover(object sender, EventArgs e)
         {
             ForceCloakHover = true;
@@ -2111,6 +2080,7 @@ namespace SWG_Expertise_Calcualtor
             gc.TabHoverControls();
         }
 
+        // Grace In Motion
         private void GraceInMotion_Click(object sender, EventArgs e)
         {
             gc.ExpertiseButtonSound();
@@ -2155,6 +2125,48 @@ namespace SWG_Expertise_Calcualtor
 
             AvailablePoints.Text = totalPoints.ToString();
             PageFunctions();
+        }
+
+        private void GraceInMotion_MouseHover(object sender, EventArgs e)
+        {
+            GraceInMotionHover = true;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                GraceInMotionBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                GraceInMotionBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void GraceInMotion_MouseMove(object sender, MouseEventArgs e)
+        {
+            GraceInMotionHover = true;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                GraceInMotionBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                GraceInMotionBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void GraceInMotion_MouseLeave(object sender, EventArgs e)
+        {
+            GraceInMotionHover = false;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                GraceInMotionBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                GraceInMotionBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
 
         private void ImprovedCripplingAccuracy_Click(object sender, EventArgs e)
