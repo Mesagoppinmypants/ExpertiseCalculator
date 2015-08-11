@@ -1899,7 +1899,7 @@ namespace SWG_Expertise_Calcualtor
                 swpoints--;
             }
 
-            if (AddPoints.Checked == true && totalPoints <= 37 && swpoints >= 0 && swpoints < 2 && espoints == 4)
+            if (AddPoints.Checked == true && totalPoints <= 37 && swpoints >= 0 && swpoints < 2 && hspoints == 4)
             {
                 totalPoints--;
                 swpoints++;
@@ -1911,17 +1911,17 @@ namespace SWG_Expertise_Calcualtor
                 SecondWind.Image = Properties.Resources.aSecondWind;
             }
 
-            if (hspoints == 1)
+            if (swpoints == 1)
             {
                 SecondWindPoints.Image = Properties.Resources.skillpoints1;
             }
 
-            if (hspoints == 2)
+            if (swpoints == 2)
             {
                 SecondWindPoints.Image = Properties.Resources.skillpoints2;
             }
 
-            if (hspoints == 0)
+            if (swpoints == 0)
             {
                 SecondWind.Image = Properties.Resources.iSecondWind;
                 SecondWindPoints.Visible = false;
