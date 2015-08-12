@@ -405,7 +405,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillRequirements1.Visible = true;
                 RankLabel.Visible = true;
                 SkillRank.Visible = true;
-                GrandsModifiersLabel.Visible = true;
+                GrantsModifiersLabel.Visible = true;
                 SkillModifierTitle1.Visible = true;
                 Rank1Modifier1.Visible = true;
                 Rank2Modifier1.Visible = true;
@@ -432,6 +432,21 @@ namespace SWG_Expertise_Calcualtor
                 else
                 {
                     SkillRequirements2.Visible = false;
+                }
+
+                // New Abilities
+                if (ForceCloakHover == true)
+                {
+                    SkillPictureBackground.Visible = true;
+                    SkillPicture.Visible = true;
+                    SkillTitle.Visible = true;
+                    SkillSummary.Visible = true;
+                    RequiresLabel.Visible = true;
+                    SkillRequirements1.Visible = true;
+                    RankLabel.Visible = true;
+                    SkillRank.Visible = true;
+                    GrantsModifiersLabel.Visible = true;
+                    SkillModifierTitle1.Visible = false;
                 }
             }
         }
@@ -773,6 +788,29 @@ namespace SWG_Expertise_Calcualtor
                 if (gimpoints == 3)
                 {
                     SkillRank.Text = "3/3";
+                }
+            }
+
+            // Force Cloak
+            if (ForceCloakHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aForceCloak;
+                SkillTitle.Text = "FORCE CLOAK";
+                SkillSummary.Text = "Grants the ability to use Force Cloak.";
+                SkillRequirements1.Text = "8 Points In Jedi General";
+                GrantsModifiersLabel.Text = "Grants Command:";
+                SkillModifierTitle1.Visible = false;
+
+                TwoModifierBoxes();
+
+                if (fcpoints == 0)
+                {
+                    SkillRank.Text = "0/1";
+                }
+
+                if (fcpoints == 1)
+                {
+                    SkillRank.Text = "1/1";
                 }
             }
         }
@@ -1141,12 +1179,12 @@ namespace SWG_Expertise_Calcualtor
             }
 
             // 8 Points In Jedi General
-            if (totalPoints <= 37 && GraceInMotionHover == true)
+            if (totalPoints <= 37 && ForceCloakHover || GraceInMotionHover == true)
             {
                 SkillRequirements1.ForeColor = Color.White;
             }
 
-            if (totalPoints > 37 && GraceInMotionHover == true)
+            if (totalPoints > 37 && ForceCloakHover || GraceInMotionHover == true)
             {
                 SkillRequirements1.ForeColor = Color.Red;
             }
@@ -2182,6 +2220,37 @@ namespace SWG_Expertise_Calcualtor
         private void ForceCloak_Click(object sender, EventArgs e)
         {
             gc.ExpertiseButtonSound();
+            if (RemovePoints.Checked == true && gimpoints == 1 && fcpoints > 0)
+            {
+                totalPoints++;
+                gimpoints--;
+            }
+
+            if (AddPoints.Checked == true && totalPoints <= 37 && fcpoints >= 0 && fcpoints < 3)
+            {
+                totalPoints--;
+                fcpoints++;
+            }
+
+            if (fcpoints >= 1)
+            {
+                ForceCloakPoints.Visible = true;
+                ForceCloak.Image = Properties.Resources.aForceCloak;
+            }
+
+            if (fcpoints == 1)
+            {
+                ForceCloakPoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (fcpoints == 0)
+            {
+                ForceCloak.Image = Properties.Resources.iForceCloak;
+                ForceCloakPoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
         }
     }
 }

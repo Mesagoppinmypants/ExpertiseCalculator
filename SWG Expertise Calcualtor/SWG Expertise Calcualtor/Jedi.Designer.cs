@@ -43,7 +43,7 @@
             this.SkillRequirements1 = new System.Windows.Forms.Label();
             this.RankLabel = new System.Windows.Forms.Label();
             this.SkillRank = new System.Windows.Forms.Label();
-            this.GrandsModifiersLabel = new System.Windows.Forms.Label();
+            this.GrantsModifiersLabel = new System.Windows.Forms.Label();
             this.SkillModifierTitle1 = new System.Windows.Forms.Label();
             this.Rank1Modifier1 = new System.Windows.Forms.Label();
             this.Rank2Modifier1 = new System.Windows.Forms.Label();
@@ -132,6 +132,10 @@
             this.ImprovedCripplingAccuracyBackground = new System.Windows.Forms.PictureBox();
             this.DefensiveFightingBackground = new System.Windows.Forms.PictureBox();
             this.ImprovedSaberBlockBackground = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.AbilityPicture = new System.Windows.Forms.PictureBox();
+            this.AbilityBackground = new System.Windows.Forms.PictureBox();
+            this.AbilityTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloak)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakBackground)).BeginInit();
@@ -206,6 +210,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlockBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AbilityPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AbilityBackground)).BeginInit();
             this.SuspendLayout();
             // 
             // AvailablePoints
@@ -382,17 +388,17 @@
             this.SkillRank.Text = "0/2";
             this.SkillRank.Visible = false;
             // 
-            // GrandsModifiersLabel
+            // GrantsModifiersLabel
             // 
-            this.GrandsModifiersLabel.AutoSize = true;
-            this.GrandsModifiersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrandsModifiersLabel.ForeColor = System.Drawing.Color.White;
-            this.GrandsModifiersLabel.Location = new System.Drawing.Point(647, 246);
-            this.GrandsModifiersLabel.Name = "GrandsModifiersLabel";
-            this.GrandsModifiersLabel.Size = new System.Drawing.Size(125, 16);
-            this.GrandsModifiersLabel.TabIndex = 181;
-            this.GrandsModifiersLabel.Text = "Grants Modifiers:";
-            this.GrandsModifiersLabel.Visible = false;
+            this.GrantsModifiersLabel.AutoSize = true;
+            this.GrantsModifiersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrantsModifiersLabel.ForeColor = System.Drawing.Color.White;
+            this.GrantsModifiersLabel.Location = new System.Drawing.Point(647, 246);
+            this.GrantsModifiersLabel.Name = "GrantsModifiersLabel";
+            this.GrantsModifiersLabel.Size = new System.Drawing.Size(125, 16);
+            this.GrantsModifiersLabel.TabIndex = 181;
+            this.GrantsModifiersLabel.Text = "Grants Modifiers:";
+            this.GrantsModifiersLabel.Visible = false;
             // 
             // SkillModifierTitle1
             // 
@@ -1305,12 +1311,62 @@
             this.ImprovedSaberBlockBackground.TabIndex = 152;
             this.ImprovedSaberBlockBackground.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(535, 511);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(284, 64);
+            this.label1.TabIndex = 200;
+            this.label1.Text = "Force Cloak: This ability allows\r\ninvisibility for a duration of time. With\r\nImpr" +
+    "oved Force Cloak, Jedi can escape\r\ncombat.";
+            this.label1.Visible = false;
+            // 
+            // AbilityPicture
+            // 
+            this.AbilityPicture.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aForceCloak;
+            this.AbilityPicture.Location = new System.Drawing.Point(543, 463);
+            this.AbilityPicture.Name = "AbilityPicture";
+            this.AbilityPicture.Size = new System.Drawing.Size(42, 42);
+            this.AbilityPicture.TabIndex = 202;
+            this.AbilityPicture.TabStop = false;
+            this.AbilityPicture.Visible = false;
+            // 
+            // AbilityBackground
+            // 
+            this.AbilityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.SkillBox;
+            this.AbilityBackground.Location = new System.Drawing.Point(538, 458);
+            this.AbilityBackground.Name = "AbilityBackground";
+            this.AbilityBackground.Size = new System.Drawing.Size(52, 50);
+            this.AbilityBackground.TabIndex = 201;
+            this.AbilityBackground.TabStop = false;
+            this.AbilityBackground.Visible = false;
+            // 
+            // AbilityTitle
+            // 
+            this.AbilityTitle.AutoSize = true;
+            this.AbilityTitle.BackColor = System.Drawing.Color.Transparent;
+            this.AbilityTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AbilityTitle.ForeColor = System.Drawing.Color.White;
+            this.AbilityTitle.Location = new System.Drawing.Point(587, 471);
+            this.AbilityTitle.Name = "AbilityTitle";
+            this.AbilityTitle.Size = new System.Drawing.Size(112, 24);
+            this.AbilityTitle.TabIndex = 203;
+            this.AbilityTitle.Text = "Ability Title";
+            this.AbilityTitle.Visible = false;
+            // 
             // Jedi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(984, 696);
+            this.Controls.Add(this.AbilityPicture);
+            this.Controls.Add(this.AbilityBackground);
+            this.Controls.Add(this.AbilityTitle);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BeastMastery);
             this.Controls.Add(this.Path);
             this.Controls.Add(this.JediGeneral);
@@ -1337,7 +1393,7 @@
             this.Controls.Add(this.Rank2Modifier1);
             this.Controls.Add(this.Rank1Modifier1);
             this.Controls.Add(this.SkillModifierTitle1);
-            this.Controls.Add(this.GrandsModifiersLabel);
+            this.Controls.Add(this.GrantsModifiersLabel);
             this.Controls.Add(this.SkillRank);
             this.Controls.Add(this.RankLabel);
             this.Controls.Add(this.SkillRequirements1);
@@ -1494,6 +1550,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlockBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AbilityPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AbilityBackground)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1586,7 +1644,7 @@
         private System.Windows.Forms.Label SkillRequirements1;
         private System.Windows.Forms.Label RankLabel;
         private System.Windows.Forms.Label SkillRank;
-        private System.Windows.Forms.Label GrandsModifiersLabel;
+        private System.Windows.Forms.Label GrantsModifiersLabel;
         private System.Windows.Forms.Label SkillModifierTitle1;
         private System.Windows.Forms.Label Rank1Modifier1;
         private System.Windows.Forms.Label Rank2Modifier1;
@@ -1605,5 +1663,9 @@
         public System.Windows.Forms.Label JediGeneral;
         private System.Windows.Forms.Label Path;
         private System.Windows.Forms.Label BeastMastery;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox AbilityPicture;
+        private System.Windows.Forms.PictureBox AbilityBackground;
+        private System.Windows.Forms.Label AbilityTitle;
     }
 }
