@@ -394,8 +394,8 @@ namespace SWG_Expertise_Calcualtor
         // This controls the skill description visibility
         private void SkillDescriptionVisiblity()
         {
-            // Enables the general titles and descriptions that all skills use
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover == true)
+            // Enables the general titles and descriptions that all skills use -- Basically dump all hovers here
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || ForceCloakHover == true)
             {
                 SkillPictureBackground.Visible = true;
                 SkillPicture.Visible = true;
@@ -409,41 +409,36 @@ namespace SWG_Expertise_Calcualtor
                 SkillModifierTitle1.Visible = true;
                 Rank1Modifier1.Visible = true;
                 Rank2Modifier1.Visible = true;
+            }
 
-                // Rank 4 Modifiers - 2 Rows
-                if (ExactingStrikesHover == true)
-                {
-                    SkillModifierTitle2.Visible = true;
-                    Rank1Modifier2.Visible = true;
-                    Rank2Modifier2.Visible = true;
-                    Rank3Modifier2.Visible = true;
-                    Rank4Modifier2.Visible = true;
-                }
+            // Rank 4 Modifiers - 2 Rows
+            if (ExactingStrikesHover == true)
+            {
+                SkillModifierTitle2.Visible = true;
+                Rank1Modifier2.Visible = true;
+                Rank2Modifier2.Visible = true;
+                Rank3Modifier2.Visible = true;
+                Rank4Modifier2.Visible = true;
+            }
 
-                // Rank 2 Modifiers - 2 Requirements
-                if (SecondWindHover == true)
-                {
-                    SkillRequirements2.Visible = true;
-                }
-                else
-                {
-                    SkillRequirements2.Visible = false;
-                }
+            // Rank 2 Modifiers - 2 Requirements
+            if (SecondWindHover == true)
+            {
+                SkillRequirements2.Visible = true;
+            }
+            else
+            {
+                SkillRequirements2.Visible = false;
+            }
 
-                // New Abilities
-                if (ForceCloakHover == true)
-                {
-                    SkillPictureBackground.Visible = true;
-                    SkillPicture.Visible = true;
-                    SkillTitle.Visible = true;
-                    SkillSummary.Visible = true;
-                    RequiresLabel.Visible = true;
-                    SkillRequirements1.Visible = true;
-                    RankLabel.Visible = true;
-                    SkillRank.Visible = true;
-                    GrantsModifiersLabel.Visible = true;
-                    SkillModifierTitle1.Visible = false;
-                }
+            // New Abilities
+            if (ForceCloakHover == true)
+            {
+                CommandPanel.Visible = true;
+            }
+            else
+            {
+                CommandPanel.Visible = false;
             }
         }
 
@@ -2016,49 +2011,7 @@ namespace SWG_Expertise_Calcualtor
             {
                 ImprovedCripplingAccuracyBackground.Image = Properties.Resources.iSkillBox;
             }
-        }
-
-        private void ForceCloak_MouseHover(object sender, EventArgs e)
-        {
-            ForceCloakHover = true;
-            PageFunctions();
-            if (totalPoints <= 37)
-            {
-                ForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                ForceCloakBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
-        }
-
-        private void ForceCloak_MouseMove(object sender, MouseEventArgs e)
-        {
-            ForceCloakHover = true;
-            PageFunctions();
-            if (totalPoints <= 37)
-            {
-                ForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                ForceCloakBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
-        }
-
-        private void ForceCloak_MouseLeave(object sender, EventArgs e)
-        {
-            ForceCloakHover = false;
-            PageFunctions();
-            if (totalPoints <= 37)
-            {
-                ForceCloakBackground.Image = Properties.Resources.aSkillBox;
-            }
-            else
-            {
-                ForceCloakBackground.Image = Properties.Resources.iSkillBox;
-            }
-        }
+        }      
 
         private void Premonition_MouseMove(object sender, MouseEventArgs e)
         {
@@ -2247,6 +2200,48 @@ namespace SWG_Expertise_Calcualtor
 
             AvailablePoints.Text = totalPoints.ToString();
             PageFunctions();
+        }
+
+        private void ForceCloak_MouseHover(object sender, EventArgs e)
+        {
+            ForceCloakHover = true;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                ForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ForceCloakBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void ForceCloak_MouseMove(object sender, MouseEventArgs e)
+        {
+            ForceCloakHover = true;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                ForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ForceCloakBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void ForceCloak_MouseLeave(object sender, EventArgs e)
+        {
+            ForceCloakHover = false;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                ForceCloakBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ForceCloakBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
     }
 }
