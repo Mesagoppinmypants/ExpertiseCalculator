@@ -414,10 +414,6 @@ namespace SWG_Expertise_Calcualtor
                 if (ExactingStrikesHover == true)
                 {
                     SkillModifierTitle2.Visible = true;
-                    Rank1Modifier1.Visible = true;
-                    Rank2Modifier1.Visible = true;
-                    Rank3Modifier1.Visible = true;
-                    Rank4Modifier1.Visible = true;
                     Rank1Modifier2.Visible = true;
                     Rank2Modifier2.Visible = true;
                     Rank3Modifier2.Visible = true;
