@@ -202,7 +202,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.large_load_account_access_data;
+            pictureBox2.Image = Properties.Resources.large_load_account_access_data;
             pictureBox2.Location = new System.Drawing.Point(8, 12);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new System.Drawing.Size(512, 512);
@@ -211,7 +211,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.large_load_a_speeder_for_me;
+            pictureBox1.Image = Properties.Resources.large_load_a_speeder_for_me;
             pictureBox1.Location = new System.Drawing.Point(12, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new System.Drawing.Size(512, 512);

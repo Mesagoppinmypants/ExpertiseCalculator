@@ -52,7 +52,7 @@
             // 
             // TopRightCornerGraphic
             // 
-            TopRightCornerGraphic.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.massage_top_right;
+            TopRightCornerGraphic.Image = Properties.Resources.massage_top_right;
             TopRightCornerGraphic.Location = new System.Drawing.Point(771, -1);
             TopRightCornerGraphic.Name = "TopRightCornerGraphic";
             TopRightCornerGraphic.Size = new System.Drawing.Size(214, 34);
