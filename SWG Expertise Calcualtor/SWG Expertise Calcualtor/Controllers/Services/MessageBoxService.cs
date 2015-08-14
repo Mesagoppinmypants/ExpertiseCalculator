@@ -17,7 +17,7 @@ namespace SWG_Expertise_Calcualtor.Controllers.Services
 
         public void ResetButton()
         {
-            MessageBox.Show("Testing the reset button function. This button isn't implemented yet.");
+            MessageBox.Show("Testing the reset button function. This button is implemented, but very buggy and still in testing phase.");
         }
 
         public void BountyHunterDisabled()

@@ -115,6 +115,15 @@ namespace SWG_Expertise_Calcualtor
             HideSecondRankRow();
         }
 
+        // Reset Button -- Do not add into Page Functions
+        private void ResetSkillPoints()
+        {
+            totalPoints = 45;
+            CheckLevel();
+            AvailablePoints.Text = totalPoints.ToString();
+            mbs.ResetButton();
+        }
+
         // Save Button and Reset Button Functions
         private void SaveButton_Click(object sender, EventArgs e)
         {
@@ -123,7 +132,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void ResetButton_Click(object sender, EventArgs e)
         {
-            mbs.ResetButton();
+            ResetSkillPoints();
         }
 
         // Makes sure that the required level is correct
