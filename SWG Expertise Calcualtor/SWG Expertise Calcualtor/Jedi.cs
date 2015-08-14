@@ -2590,7 +2590,7 @@ namespace SWG_Expertise_Calcualtor
             PageFunctions();
         }
 
-        private void DefensiveFighting_MouseHover(object sender, EventArgs e)
+        private void DefensiveFightingHovering()
         {
             DefensiveFightingHover = true;
             PageFunctions();
@@ -2604,18 +2604,14 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        private void DefensiveFighting_MouseHover(object sender, EventArgs e)
+        {
+            DefensiveFightingHovering();
+        }
+
         private void DefensiveFighting_MouseMove(object sender, MouseEventArgs e)
         {
-            DefensiveFightingHover = true;
-            PageFunctions();
-            if (totalPoints <= 33)
-            {
-                DefensiveFightingBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                DefensiveFightingBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            DefensiveFightingHovering();
         }
 
         private void DefensiveFighting_MouseLeave(object sender, EventArgs e)
@@ -2678,7 +2674,7 @@ namespace SWG_Expertise_Calcualtor
             PageFunctions();
         }
 
-        private void Incisiveness_MouseHover(object sender, EventArgs e)
+        private void IncisivenessHovering()
         {
             IncisivenessHover = true;
             PageFunctions();
@@ -2692,18 +2688,14 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        private void Incisiveness_MouseHover(object sender, EventArgs e)
+        {
+            IncisivenessHovering();
+        }
+
         private void Incisiveness_MouseMove(object sender, MouseEventArgs e)
         {
-            IncisivenessHover = true;
-            PageFunctions();
-            if (totalPoints <= 29 && fpoints == 2)
-            {
-                IncisivenessBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                IncisivenessBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            IncisivenessHovering();
         }
 
         private void Incisiveness_MouseLeave(object sender, EventArgs e)
@@ -2753,7 +2745,7 @@ namespace SWG_Expertise_Calcualtor
             PageFunctions();
         }
 
-        private void ImprovedForceCloak_MouseHover(object sender, EventArgs e)
+        private void ImprovedForceCloakHovering()
         {
             ImprovedForceCloakHover = true;
             PageFunctions();
@@ -2767,18 +2759,14 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        private void ImprovedForceCloak_MouseHover(object sender, EventArgs e)
+        {
+            ImprovedForceCloakHovering();
+        }
+
         private void ImprovedForceCloak_MouseMove(object sender, MouseEventArgs e)
         {
-            ImprovedForceCloakHover = true;
-            PageFunctions();
-            if (totalPoints <= 29 && fcpoints == 1)
-            {
-                ImprovedForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                ImprovedForceCloakBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            ImprovedForceCloakHovering();
         }
 
         private void ImprovedForceCloak_MouseLeave(object sender, EventArgs e)
@@ -2841,7 +2829,7 @@ namespace SWG_Expertise_Calcualtor
             PageFunctions();
         }
 
-        private void ImprovedForceShockwave_MouseHover(object sender, EventArgs e)
+        private void ImprovedForceShockwaveHovering()
         {
             ImprovedForceShockwaveHover = true;
             PageFunctions();
@@ -2855,18 +2843,14 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        private void ImprovedForceShockwave_MouseHover(object sender, EventArgs e)
+        {
+            ImprovedForceShockwaveHovering();
+        }
+
         private void ImprovedForceShockwave_MouseMove(object sender, MouseEventArgs e)
         {
-            ImprovedForceShockwaveHover = true;
-            PageFunctions();
-            if (totalPoints <= 29 && fspoints == 1)
-            {
-                ImprovedForceShockwaveBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                ImprovedForceShockwaveBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            ImprovedForceShockwaveHovering();
         }
 
         private void ImprovedForceShockwave_MouseLeave(object sender, EventArgs e)
@@ -2916,7 +2900,7 @@ namespace SWG_Expertise_Calcualtor
             PageFunctions();
         }
 
-        private void ForceShockwave_MouseHover(object sender, EventArgs e)
+        private void ForceShockwaveHovering()
         {
             ForceShockwaveHover = true;
             PageFunctions();
@@ -2930,18 +2914,14 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        private void ForceShockwave_MouseHover(object sender, EventArgs e)
+        {
+            ForceShockwaveHovering();
+        }
+
         private void ForceShockwave_MouseMove(object sender, MouseEventArgs e)
         {
-            ForceShockwaveHover = true;
-            PageFunctions();
-            if (totalPoints <= 29)
-            {
-                ForceShockwaveBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                ForceShockwaveBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            ForceShockwaveHovering();
         }
 
         private void ForceShockwave_MouseLeave(object sender, EventArgs e)
