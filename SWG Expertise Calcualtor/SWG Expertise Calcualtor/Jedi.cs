@@ -2169,13 +2169,13 @@ namespace SWG_Expertise_Calcualtor
         private void ForceCloak_Click(object sender, EventArgs e)
         {
             gc.ExpertiseButtonSound();
-            if (RemovePoints.Checked == true && gimpoints == 1 && fcpoints > 0)
+            if (RemovePoints.Checked == true && fcpoints == 1)
             {
                 totalPoints++;
-                gimpoints--;
+                fcpoints--;
             }
 
-            if (AddPoints.Checked == true && totalPoints <= 37 && fcpoints >= 0 && fcpoints < 3)
+            if (AddPoints.Checked == true && totalPoints <= 37 && fcpoints == 0)
             {
                 totalPoints--;
                 fcpoints++;
