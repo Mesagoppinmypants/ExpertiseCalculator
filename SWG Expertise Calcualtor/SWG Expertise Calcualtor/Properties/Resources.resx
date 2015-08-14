@@ -298,4 +298,10 @@
   <data name="large_load_acolyte_robe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\large_load_acolyte_robe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="aFidelity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aFidelity.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aImprovedSaberBlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aImprovedSaberBlock.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

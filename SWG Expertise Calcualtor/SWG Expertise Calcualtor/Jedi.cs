@@ -389,6 +389,28 @@ namespace SWG_Expertise_Calcualtor
             {
                 ImprovedCripplingAccuracyBackground.Image = Properties.Resources.iSkillBox;
             }
+
+            // Fourth Row
+            if (totalPoints <= 33)
+            {
+                FidelityBackground.Image = Properties.Resources.aSkillBox;
+                DefensiveFightingBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                FidelityBackground.Image = Properties.Resources.iSkillBox;
+                DefensiveFightingBackground.Image = Properties.Resources.iSkillBox;
+            }
+
+            // Improved Saber Block
+            if (totalPoints <= 33 && dfpoints == 1)
+            {
+                ImprovedSaberBlockBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ImprovedSaberBlockBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
 
         // This controls the skill description visibility
@@ -2306,64 +2328,253 @@ namespace SWG_Expertise_Calcualtor
         // Fidelity
         private void Fidelity_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
+            if (RemovePoints.Checked == true && fpoints <= 2 && fpoints > 0)
+            {
+                totalPoints++;
+                fpoints--;
+            }
 
+            if (AddPoints.Checked == true && totalPoints <= 33 && fpoints >= 0 && fpoints < 2)
+            {
+                totalPoints--;
+                fpoints++;
+            }
+
+            if (fpoints >= 1)
+            {
+                FidelityPoints.Visible = true;
+                Fidelity.Image = Properties.Resources.aFidelity;
+            }
+
+            if (fpoints == 1)
+            {
+                FidelityPoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (fpoints == 2)
+            {
+                FidelityPoints.Image = Properties.Resources.skillpoints2;
+            }
+
+            if (fpoints == 0)
+            {
+                Fidelity.Image = Properties.Resources.iFidelity;
+                FidelityPoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
         }
 
         private void Fidelity_MouseHover(object sender, EventArgs e)
         {
-
+            FidelityHover = true;
+            PageFunctions();
+            if (totalPoints <= 33)
+            {
+                FidelityBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                FidelityBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void Fidelity_MouseMove(object sender, MouseEventArgs e)
         {
-
+            FidelityHover = true;
+            PageFunctions();
+            if (totalPoints <= 33)
+            {
+                FidelityBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                FidelityBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void Fidelity_MouseLeave(object sender, EventArgs e)
         {
-
+            FidelityHover = false;
+            PageFunctions();
+            if (totalPoints <= 33)
+            {
+                FidelityBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                FidelityBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
 
         // Improved Saber Block
         private void ImprovedSaberBlock_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
+            if (RemovePoints.Checked == true && isbpoints <= 3 && isbpoints > 0)
+            {
+                totalPoints++;
+                isbpoints--;
+            }
 
+            if (AddPoints.Checked == true && totalPoints <= 33 && isbpoints >= 0 && isbpoints < 3 && dfpoints == 1)
+            {
+                totalPoints--;
+                isbpoints++;
+            }
+
+            if (isbpoints >= 1)
+            {
+                ImprovedSaberBlockPoints.Visible = true;
+                ImprovedSaberBlock.Image = Properties.Resources.aImprovedSaberBlock;
+            }
+
+            if (isbpoints == 1)
+            {
+                ImprovedSaberBlockPoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (isbpoints == 2)
+            {
+                ImprovedSaberBlockPoints.Image = Properties.Resources.skillpoints2;
+            }
+
+            if (isbpoints == 3)
+            {
+                ImprovedSaberBlockPoints.Image = Properties.Resources.skillpoints3;
+            }
+
+            if (isbpoints == 0)
+            {
+                ImprovedSaberBlock.Image = Properties.Resources.iImprovedSaberBlock;
+                ImprovedSaberBlockPoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
         }
 
         private void ImprovedSaberBlock_MouseHover(object sender, EventArgs e)
         {
-
+            ImprovedSaberBlockHover = true;
+            PageFunctions();
+            if (totalPoints <= 33 && dfpoints == 1)
+            {
+                ImprovedSaberBlockBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ImprovedSaberBlockBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void ImprovedSaberBlock_MouseMove(object sender, MouseEventArgs e)
         {
-
+            ImprovedSaberBlockHover = true;
+            PageFunctions();
+            if (totalPoints <= 33 && dfpoints == 1)
+            {
+                ImprovedSaberBlockBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ImprovedSaberBlockBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void ImprovedSaberBlock_MouseLeave(object sender, EventArgs e)
         {
-
+            ImprovedSaberBlockHover = false;
+            PageFunctions();
+            if (totalPoints <= 33 && dfpoints == 1)
+            {
+                ImprovedSaberBlockBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ImprovedSaberBlockBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
 
         // Defensive Fighting
         private void DefensiveFighting_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
+            if (RemovePoints.Checked == true && dfpoints <= 1 && dfpoints > 0)
+            {
+                totalPoints++;
+                dfpoints--;
+            }
 
+            if (AddPoints.Checked == true && totalPoints <= 33 && dfpoints >= 0 && dfpoints < 1)
+            {
+                totalPoints--;
+                dfpoints++;
+            }
+
+            if (dfpoints >= 1)
+            {
+                DefensiveFightingPoints.Visible = true;
+                DefensiveFighting.Image = Properties.Resources.aStanceSaberBlock;
+            }
+
+            if (dfpoints == 1)
+            {
+                ImprovedSaberBlockPoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (dfpoints == 0)
+            {
+                DefensiveFighting.Image = Properties.Resources.iStanceSaberBlock;
+                DefensiveFightingPoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
         }
 
         private void DefensiveFighting_MouseHover(object sender, EventArgs e)
         {
-
+            DefensiveFightingHover = true;
+            PageFunctions();
+            if (totalPoints <= 33)
+            {
+                DefensiveFightingBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                DefensiveFightingBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void DefensiveFighting_MouseMove(object sender, MouseEventArgs e)
         {
-
+            DefensiveFightingHover = true;
+            PageFunctions();
+            if (totalPoints <= 33)
+            {
+                DefensiveFightingBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                DefensiveFightingBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void DefensiveFighting_MouseLeave(object sender, EventArgs e)
         {
-
+            DefensiveFightingHover = false;
+            PageFunctions();
+            if (totalPoints <= 33)
+            {
+                DefensiveFightingBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                DefensiveFightingBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
 
         // Incisiveness

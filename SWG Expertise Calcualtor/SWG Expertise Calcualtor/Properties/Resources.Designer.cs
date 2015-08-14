@@ -123,6 +123,16 @@ namespace SWG_Expertise_Calcualtor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aFidelity {
+            get {
+                object obj = ResourceManager.GetObject("aFidelity", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aForceCloak {
             get {
                 object obj = ResourceManager.GetObject("aForceCloak", resourceCulture);
@@ -176,6 +186,16 @@ namespace SWG_Expertise_Calcualtor.Properties {
         internal static System.Drawing.Bitmap aImprovedForceThrow1 {
             get {
                 object obj = ResourceManager.GetObject("aImprovedForceThrow1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aImprovedSaberBlock {
+            get {
+                object obj = ResourceManager.GetObject("aImprovedSaberBlock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
