@@ -1282,6 +1282,11 @@ namespace SWG_Expertise_Calcualtor
             {
                 RemovePoints.Checked = false;
             }
+
+            if (AddPoints.Checked == false)
+            {
+                RemovePoints.Checked = true;
+            }
         }
 
         private void RemovePoints_CheckedChanged(object sender, EventArgs e)
@@ -1289,6 +1294,11 @@ namespace SWG_Expertise_Calcualtor
             if (RemovePoints.Checked == true)
             {
                 AddPoints.Checked = false;
+            }
+
+            if (RemovePoints.Checked == false)
+            {
+                AddPoints.Checked = true;
             }
         }
 
