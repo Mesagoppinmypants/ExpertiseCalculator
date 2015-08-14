@@ -136,7 +136,7 @@
             this.AbilityPicture = new System.Windows.Forms.PictureBox();
             this.AbilityBackground = new System.Windows.Forms.PictureBox();
             this.AbilityTitle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.AbilityDescription = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloak)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakBackground)).BeginInit();
@@ -1318,7 +1318,7 @@
             this.CommandPanel.Controls.Add(this.AbilityPicture);
             this.CommandPanel.Controls.Add(this.AbilityBackground);
             this.CommandPanel.Controls.Add(this.AbilityTitle);
-            this.CommandPanel.Controls.Add(this.label1);
+            this.CommandPanel.Controls.Add(this.AbilityDescription);
             this.CommandPanel.Location = new System.Drawing.Point(648, 265);
             this.CommandPanel.Name = "CommandPanel";
             this.CommandPanel.Size = new System.Drawing.Size(300, 175);
@@ -1357,18 +1357,18 @@
             this.AbilityTitle.Text = "Ability Title";
             this.AbilityTitle.Visible = false;
             // 
-            // label1
+            // AbilityDescription
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(4, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(284, 64);
-            this.label1.TabIndex = 204;
-            this.label1.Text = "Force Cloak: This ability allows\r\ninvisibility for a duration of time. With\r\nImpr" +
+            this.AbilityDescription.AutoSize = true;
+            this.AbilityDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AbilityDescription.ForeColor = System.Drawing.Color.White;
+            this.AbilityDescription.Location = new System.Drawing.Point(4, 70);
+            this.AbilityDescription.Name = "AbilityDescription";
+            this.AbilityDescription.Size = new System.Drawing.Size(284, 64);
+            this.AbilityDescription.TabIndex = 204;
+            this.AbilityDescription.Text = "Force Cloak: This ability allows\r\ninvisibility for a duration of time. With\r\nImpr" +
     "oved Force Cloak, Jedi can escape\r\ncombat.";
-            this.label1.Visible = false;
+            this.AbilityDescription.Visible = false;
             // 
             // Jedi
             // 
@@ -1679,6 +1679,6 @@
         private System.Windows.Forms.PictureBox AbilityPicture;
         private System.Windows.Forms.PictureBox AbilityBackground;
         private System.Windows.Forms.Label AbilityTitle;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label AbilityDescription;
     }
 }
