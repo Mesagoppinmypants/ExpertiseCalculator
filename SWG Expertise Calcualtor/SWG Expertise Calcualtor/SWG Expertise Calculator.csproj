@@ -329,6 +329,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\aImprovedForceShockwave.gif" />
+    <None Include="Resources\aForceShockwave.gif" />
+    <None Include="Resources\aImprovedForceCloak.gif" />
+    <None Include="Resources\aIncisiveness.gif" />
     <None Include="Resources\aImprovedSaberBlock.gif" />
     <None Include="Resources\aFidelity.gif" />
   </ItemGroup>

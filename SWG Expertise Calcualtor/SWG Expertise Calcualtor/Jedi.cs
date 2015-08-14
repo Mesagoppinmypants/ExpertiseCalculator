@@ -411,6 +411,46 @@ namespace SWG_Expertise_Calcualtor
             {
                 ImprovedSaberBlockBackground.Image = Properties.Resources.iSkillBox;
             }
+
+            // Fifth Row
+            if (totalPoints <= 29)
+            {
+                ForceShockwaveBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ForceShockwaveBackground.Image = Properties.Resources.iSkillBox;
+            }
+
+            // Improved Force Shockwave
+            if (totalPoints <= 29 && fspoints == 1)
+            {
+                ImprovedForceShockwaveBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ImprovedForceShockwaveBackground.Image = Properties.Resources.iSkillBox;
+            }
+
+            // Imrpoved Force Cloak
+            if (totalPoints <= 29 && fcpoints == 1)
+            {
+                ImprovedForceCloakBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ImprovedForceCloakBackground.Image = Properties.Resources.iSkillBox;
+            }
+
+            // Incisiveness
+            if (totalPoints <= 29 && fpoints == 2)
+            {
+                IncisivenessBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                IncisivenessBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
 
         // This controls the skill description visibility
@@ -1570,7 +1610,6 @@ namespace SWG_Expertise_Calcualtor
 
         private void HeightenedSpeed_MouseLeave(object sender, EventArgs e)
         {
-
             HeightenedSpeedHover = false;
             PageFunctions();
             if (totalPoints <= 41)
@@ -2580,85 +2619,327 @@ namespace SWG_Expertise_Calcualtor
         // Incisiveness
         private void Incisiveness_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
+            if (RemovePoints.Checked == true && ipoints <= 2 && ipoints > 0)
+            {
+                totalPoints++;
+                ipoints--;
+            }
 
+            if (AddPoints.Checked == true && totalPoints <= 29 && swpoints >= 0 && ipoints < 3 && fpoints == 2)
+            {
+                totalPoints--;
+                ipoints++;
+            }
+
+            if (ipoints >= 1)
+            {
+                IncisivenessPoints.Visible = true;
+                Incisiveness.Image = Properties.Resources.aIncisiveness;
+            }
+
+            if (ipoints == 1)
+            {
+                IncisivenessPoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (ipoints == 2)
+            {
+                IncisivenessPoints.Image = Properties.Resources.skillpoints2;
+            }
+            if (ipoints == 3)
+            {
+                IncisivenessPoints.Image = Properties.Resources.skillpoints3;
+            }
+
+            if (ipoints == 0)
+            {
+                Incisiveness.Image = Properties.Resources.iIncisiveness;
+                IncisivenessPoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
         }
 
         private void Incisiveness_MouseHover(object sender, EventArgs e)
         {
-
+            IncisivenessHover = true;
+            PageFunctions();
+            if (totalPoints <= 29 && fpoints == 2)
+            {
+                IncisivenessBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                IncisivenessBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void Incisiveness_MouseMove(object sender, MouseEventArgs e)
         {
-
+            IncisivenessHover = true;
+            PageFunctions();
+            if (totalPoints <= 29 && fpoints == 2)
+            {
+                IncisivenessBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                IncisivenessBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void Incisiveness_MouseLeave(object sender, EventArgs e)
         {
-
+            IncisivenessHover = false;
+            PageFunctions();
+            if (totalPoints <= 29 && fpoints == 2)
+            {
+                IncisivenessBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                IncisivenessBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
 
         // Improved Force Cloak
         private void ImprovedForceCloak_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
+            if (RemovePoints.Checked == true && ifcpoints == 1)
+            {
+                totalPoints++;
+                ifcpoints--;
+            }
 
+            if (AddPoints.Checked == true && totalPoints <= 29 && ifcpoints < 1 && fcpoints == 1)
+            {
+                totalPoints--;
+                ifcpoints++;
+            }
+
+            if (ifcpoints == 1)
+            {
+                ImprovedForceCloakPoints.Visible = true;
+                ImprovedForceCloak.Image = Properties.Resources.aImprovedForceCloak;
+                ImprovedForceCloakPoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (ifcpoints == 0)
+            {
+                ImprovedForceCloak.Image = Properties.Resources.iImprovedForceCloak;
+                ImprovedForceCloakPoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
         }
 
         private void ImprovedForceCloak_MouseHover(object sender, EventArgs e)
         {
-
+            ImprovedForceCloakHover = true;
+            PageFunctions();
+            if (totalPoints <= 29 && fcpoints == 1)
+            {
+                ImprovedForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ImprovedForceCloakBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void ImprovedForceCloak_MouseMove(object sender, MouseEventArgs e)
         {
-
+            ImprovedForceCloakHover = true;
+            PageFunctions();
+            if (totalPoints <= 29 && fcpoints == 1)
+            {
+                ImprovedForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ImprovedForceCloakBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void ImprovedForceCloak_MouseLeave(object sender, EventArgs e)
         {
-
+            ImprovedForceCloakHover = false;
+            PageFunctions();
+            if (totalPoints <= 29 && fcpoints == 1)
+            {
+                ImprovedForceCloakBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ImprovedForceCloakBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
 
         // Improved Force Shockwave
         private void ImprovedForceShockwave_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
+            if (RemovePoints.Checked == true && ifspoints <= 2 && ifspoints > 0)
+            {
+                totalPoints++;
+                ifspoints--;
+            }
 
+            if (AddPoints.Checked == true && totalPoints <= 29 && ifspoints < 3 && fspoints == 1)
+            {
+                totalPoints--;
+                ifspoints++;
+            }
+
+            if (ifspoints >= 1)
+            {
+                ImprovedForceShockwavePoints.Visible = true;
+                ImprovedForceShockwave.Image = Properties.Resources.aImprovedForceShockwave;
+            }
+
+            if (ifspoints == 1)
+            {
+                ImprovedForceShockwavePoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (ifspoints == 2)
+            {
+                ImprovedForceShockwavePoints.Image = Properties.Resources.skillpoints2;
+            }
+            if (ifspoints == 3)
+            {
+                ImprovedForceShockwavePoints.Image = Properties.Resources.skillpoints3;
+            }
+
+            if (ifspoints == 0)
+            {
+                ImprovedForceShockwave.Image = Properties.Resources.iImprovedForceShockwave;
+                ImprovedForceShockwavePoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
         }
 
         private void ImprovedForceShockwave_MouseHover(object sender, EventArgs e)
         {
-
+            ImprovedForceShockwaveHover = true;
+            PageFunctions();
+            if (totalPoints <= 29 && fspoints == 1)
+            {
+                ImprovedForceShockwaveBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ImprovedForceShockwaveBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void ImprovedForceShockwave_MouseMove(object sender, MouseEventArgs e)
         {
-
+            ImprovedForceShockwaveHover = true;
+            PageFunctions();
+            if (totalPoints <= 29 && fspoints == 1)
+            {
+                ImprovedForceShockwaveBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ImprovedForceShockwaveBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void ImprovedForceShockwave_MouseLeave(object sender, EventArgs e)
         {
-
+            ImprovedForceShockwaveHover = false;
+            PageFunctions();
+            if (totalPoints <= 29 && fspoints == 1)
+            {
+                ImprovedForceShockwaveBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ImprovedForceShockwaveBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
 
         // Force Shockwave
         private void ForceShockwave_Click(object sender, EventArgs e)
         {
+            gc.ExpertiseButtonSound();
+            if (RemovePoints.Checked == true && fspoints == 1)
+            {
+                totalPoints++;
+                fspoints--;
+            }
 
+            if (AddPoints.Checked == true && totalPoints <= 29 && fspoints < 1)
+            {
+                totalPoints--;
+                fspoints++;
+            }
+
+            if (fspoints == 1)
+            {
+                ForceShockwavePoints.Visible = true;
+                ForceShockwave.Image = Properties.Resources.aForceShockwave;
+                ForceShockwavePoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (fspoints == 0)
+            {
+                ForceShockwave.Image = Properties.Resources.iForceShockwave;
+                ForceShockwavePoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
         }
 
         private void ForceShockwave_MouseHover(object sender, EventArgs e)
         {
-
+            ForceShockwaveHover = true;
+            PageFunctions();
+            if (totalPoints <= 29)
+            {
+                ForceShockwaveBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ForceShockwaveBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void ForceShockwave_MouseMove(object sender, MouseEventArgs e)
         {
-
+            ForceShockwaveHover = true;
+            PageFunctions();
+            if (totalPoints <= 29)
+            {
+                ForceShockwaveBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ForceShockwaveBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void ForceShockwave_MouseLeave(object sender, EventArgs e)
         {
-
+            ForceShockwaveHover = false;
+            PageFunctions();
+            if (totalPoints <= 29)
+            {
+                ForceShockwaveBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ForceShockwaveBackground.Image = Properties.Resources.iSkillBox;
+            }
         }
     }
 }
