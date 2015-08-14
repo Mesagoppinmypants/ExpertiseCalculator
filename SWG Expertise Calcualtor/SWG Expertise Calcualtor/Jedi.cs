@@ -56,6 +56,9 @@ namespace SWG_Expertise_Calcualtor
         public bool ImprovedForceShockwaveHover = false;
         public bool ForceShockwaveHover = false;
 
+        // Hover sound for all
+        public bool SkillHover = false;
+
         // Skill Tree Tabs
         public bool GeneralTabHover = false;
 
@@ -113,6 +116,8 @@ namespace SWG_Expertise_Calcualtor
             SkillDescription();
             CheckRequirements();
             HideSecondRankRow();
+            SkillHoverCheck();
+            SkillMakeCheck();
         }
 
         // Reset Button -- Do not add into PageFunctions()
@@ -1287,8 +1292,24 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
-        // Enhanced Strength
+        private void SkillHoverCheck()
+        {
+            //if (SkillHover == false && EnhancedStrengthHover || EnhancedConstitutionHover == true)
+            {
+                //gc.DefaultHoverSound();
+                //SkillHover = true;
+            }
+        }
 
+        private void SkillMakeCheck()
+        {
+            //if (EnhancedStrengthHover || EnhancedConstitutionHover == false)
+            {
+                //SkillHover = false;
+            }
+        }
+
+        // Enhanced Strength
         private void EnhancedStrength_Click(object sender, EventArgs e)
         {
             gc.ExpertiseButtonSound();
