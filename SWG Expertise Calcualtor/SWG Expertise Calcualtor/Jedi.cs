@@ -2181,14 +2181,10 @@ namespace SWG_Expertise_Calcualtor
                 fcpoints++;
             }
 
-            if (fcpoints >= 1)
+            if (fcpoints == 1)
             {
                 ForceCloakPoints.Visible = true;
                 ForceCloak.Image = Properties.Resources.aForceCloak;
-            }
-
-            if (fcpoints == 1)
-            {
                 ForceCloakPoints.Image = Properties.Resources.skillpoints1;
             }
 
