@@ -2190,7 +2190,7 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            //PageFunctions();
         }
 
         private void ForceCloak_MouseHover(object sender, EventArgs e)
@@ -2242,7 +2242,53 @@ namespace SWG_Expertise_Calcualtor
 
         private void Premonition_Click(object sender, EventArgs e)
         {
-            //gc.ExpertiseButtonSound();
+            gc.ExpertiseButtonSound();
+            if (RemovePoints.Checked == true && ppoints <= 4 && ppoints > 0)
+            {
+                totalPoints++;
+                ppoints--;
+            }
+
+            if (AddPoints.Checked == true && totalPoints <= 37 && ppoints < 4)
+            {
+                totalPoints--;
+                ppoints++;
+            }
+
+            if (ppoints >= 1)
+            {
+                PremonitionPoints.Visible = true;
+                Premonition.Image = Properties.Resources.aPremonition;
+            }
+
+            if (ppoints == 1)
+            {
+                PremonitionPoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (ppoints == 2)
+            {
+                PremonitionPoints.Image = Properties.Resources.skillpoints2;
+            }
+
+            if (ppoints == 3)
+            {
+                PremonitionPoints.Image = Properties.Resources.skillpoints3;
+            }
+
+            if (ppoints == 4)
+            {
+                PremonitionPoints.Image = Properties.Resources.skillpoints4;
+            }
+
+            if (ppoints == 0)
+            {
+                Premonition.Image = Properties.Resources.iPremonition;
+                PremonitionPoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
         }
     }
 }
