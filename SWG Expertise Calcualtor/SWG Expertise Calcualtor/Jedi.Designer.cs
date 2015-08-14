@@ -1351,6 +1351,7 @@
             this.CommandPanel.Name = "CommandPanel";
             this.CommandPanel.Size = new System.Drawing.Size(300, 175);
             this.CommandPanel.TabIndex = 204;
+            this.CommandPanel.Visible = false;
             // 
             // AbilityPicture
             // 
