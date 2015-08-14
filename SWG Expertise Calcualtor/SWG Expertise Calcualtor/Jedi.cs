@@ -395,7 +395,7 @@ namespace SWG_Expertise_Calcualtor
         private void SkillDescriptionVisiblity()
         {
             // Enables the general titles and descriptions that all skills use -- Basically dump all hovers here
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || ForceCloakHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover == true)
             {
                 SkillPictureBackground.Visible = true;
                 SkillPicture.Visible = true;
@@ -429,16 +429,6 @@ namespace SWG_Expertise_Calcualtor
             else
             {
                 SkillRequirements2.Visible = false;
-            }
-
-            // New Abilities
-            if (ForceCloakHover == true)
-            {
-                CommandPanel.Visible = true;
-            }
-            else
-            {
-                CommandPanel.Visible = false;
             }
         }
 
@@ -779,29 +769,6 @@ namespace SWG_Expertise_Calcualtor
                 if (gimpoints == 3)
                 {
                     SkillRank.Text = "3/3";
-                }
-            }
-
-            // Force Cloak
-            if (ForceCloakHover == true)
-            {
-                SkillPicture.Image = Properties.Resources.aForceCloak;
-                SkillTitle.Text = "FORCE CLOAK";
-                SkillSummary.Text = "Grants the ability to use Force Cloak.";
-                SkillRequirements1.Text = "8 Points In Jedi General";
-                GrantsModifiersLabel.Text = "Grants Command:";
-                SkillModifierTitle1.Visible = false;
-
-                TwoModifierBoxes();
-
-                if (fcpoints == 0)
-                {
-                    SkillRank.Text = "0/1";
-                }
-
-                if (fcpoints == 1)
-                {
-                    SkillRank.Text = "1/1";
                 }
             }
         }
@@ -2190,13 +2157,13 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            //PageFunctions();
+            PageFunctions();
         }
 
         private void ForceCloak_MouseHover(object sender, EventArgs e)
         {
             ForceCloakHover = true;
-            //PageFunctions();
+            PageFunctions();
             if (totalPoints <= 37)
             {
                 ForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -2210,7 +2177,7 @@ namespace SWG_Expertise_Calcualtor
         private void ForceCloak_MouseMove(object sender, MouseEventArgs e)
         {
             ForceCloakHover = true;
-            //PageFunctions();
+            PageFunctions();
             if (totalPoints <= 37)
             {
                 ForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -2224,7 +2191,7 @@ namespace SWG_Expertise_Calcualtor
         private void ForceCloak_MouseLeave(object sender, EventArgs e)
         {
             ForceCloakHover = false;
-            //PageFunctions();
+            PageFunctions();
             if (totalPoints <= 37)
             {
                 ForceCloakBackground.Image = Properties.Resources.aSkillBox;
