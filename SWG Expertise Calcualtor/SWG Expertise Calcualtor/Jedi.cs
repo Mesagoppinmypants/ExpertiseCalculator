@@ -2237,7 +2237,48 @@ namespace SWG_Expertise_Calcualtor
 
         private void ImprovedCripplingAccuracy_Click(object sender, EventArgs e)
         {
-            //gc.ExpertiseButtonSound();
+            gc.ExpertiseButtonSound();
+            if (RemovePoints.Checked == true && icapoints <= 4 && icapoints > 0)
+            {
+                totalPoints++;
+                icapoints--;
+            }
+
+            if (AddPoints.Checked == true && totalPoints <= 37 && icapoints < 2 && iftpoints == 2)
+            {
+                totalPoints--;
+                icapoints++;
+            }
+
+            if (icapoints >= 1)
+            {
+                ImprovedCripplingAccuracyPoints.Visible = true;
+                ImprovedCripplingAccuracy.Image = Properties.Resources.aPremonition;
+            }
+
+            if (icapoints == 1)
+            {
+                ImprovedCripplingAccuracyPoints.Image = Properties.Resources.skillpoints1;
+            }
+
+            if (icapoints == 2)
+            {
+                ImprovedCripplingAccuracyPoints.Image = Properties.Resources.skillpoints2;
+            }
+
+            if (icapoints == 3)
+            {
+                ImprovedCripplingAccuracyPoints.Image = Properties.Resources.skillpoints3;
+            }
+
+            if (icapoints == 0)
+            {
+                ImprovedCripplingAccuracy.Image = Properties.Resources.iPremonition;
+                ImprovedCripplingAccuracyPoints.Visible = false;
+            }
+
+            AvailablePoints.Text = totalPoints.ToString();
+            PageFunctions();
         }
 
         private void Premonition_Click(object sender, EventArgs e)
