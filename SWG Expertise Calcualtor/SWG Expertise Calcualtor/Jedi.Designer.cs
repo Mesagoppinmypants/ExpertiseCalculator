@@ -816,6 +816,10 @@
             this.Incisiveness.Size = new System.Drawing.Size(42, 42);
             this.Incisiveness.TabIndex = 161;
             this.Incisiveness.TabStop = false;
+            this.Incisiveness.Click += new System.EventHandler(this.Incisiveness_Click);
+            this.Incisiveness.MouseLeave += new System.EventHandler(this.Incisiveness_MouseLeave);
+            this.Incisiveness.MouseHover += new System.EventHandler(this.Incisiveness_MouseHover);
+            this.Incisiveness.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Incisiveness_MouseMove);
             // 
             // ImprovedForceCloak
             // 
@@ -825,6 +829,10 @@
             this.ImprovedForceCloak.Size = new System.Drawing.Size(42, 42);
             this.ImprovedForceCloak.TabIndex = 160;
             this.ImprovedForceCloak.TabStop = false;
+            this.ImprovedForceCloak.Click += new System.EventHandler(this.ImprovedForceCloak_Click);
+            this.ImprovedForceCloak.MouseLeave += new System.EventHandler(this.ImprovedForceCloak_MouseLeave);
+            this.ImprovedForceCloak.MouseHover += new System.EventHandler(this.ImprovedForceCloak_MouseHover);
+            this.ImprovedForceCloak.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ImprovedForceCloak_MouseMove);
             // 
             // ImprovedForceShockwave
             // 
@@ -834,6 +842,10 @@
             this.ImprovedForceShockwave.Size = new System.Drawing.Size(42, 42);
             this.ImprovedForceShockwave.TabIndex = 159;
             this.ImprovedForceShockwave.TabStop = false;
+            this.ImprovedForceShockwave.Click += new System.EventHandler(this.ImprovedForceShockwave_Click);
+            this.ImprovedForceShockwave.MouseLeave += new System.EventHandler(this.ImprovedForceShockwave_MouseLeave);
+            this.ImprovedForceShockwave.MouseHover += new System.EventHandler(this.ImprovedForceShockwave_MouseHover);
+            this.ImprovedForceShockwave.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ImprovedForceShockwave_MouseMove);
             // 
             // IncisivenessBackground
             // 
@@ -889,6 +901,10 @@
             this.ForceShockwave.Size = new System.Drawing.Size(42, 42);
             this.ForceShockwave.TabIndex = 154;
             this.ForceShockwave.TabStop = false;
+            this.ForceShockwave.Click += new System.EventHandler(this.ForceShockwave_Click);
+            this.ForceShockwave.MouseLeave += new System.EventHandler(this.ForceShockwave_MouseLeave);
+            this.ForceShockwave.MouseHover += new System.EventHandler(this.ForceShockwave_MouseHover);
+            this.ForceShockwave.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ForceShockwave_MouseMove);
             // 
             // ImprovedForceCloakBackground
             // 
@@ -947,6 +963,10 @@
             this.Fidelity.Size = new System.Drawing.Size(42, 42);
             this.Fidelity.TabIndex = 131;
             this.Fidelity.TabStop = false;
+            this.Fidelity.Click += new System.EventHandler(this.Fidelity_Click);
+            this.Fidelity.MouseLeave += new System.EventHandler(this.Fidelity_MouseLeave);
+            this.Fidelity.MouseHover += new System.EventHandler(this.Fidelity_MouseHover);
+            this.Fidelity.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Fidelity_MouseMove);
             // 
             // ImprovedSaberBlock
             // 
@@ -956,6 +976,10 @@
             this.ImprovedSaberBlock.Size = new System.Drawing.Size(42, 42);
             this.ImprovedSaberBlock.TabIndex = 129;
             this.ImprovedSaberBlock.TabStop = false;
+            this.ImprovedSaberBlock.Click += new System.EventHandler(this.ImprovedSaberBlock_Click);
+            this.ImprovedSaberBlock.MouseLeave += new System.EventHandler(this.ImprovedSaberBlock_MouseLeave);
+            this.ImprovedSaberBlock.MouseHover += new System.EventHandler(this.ImprovedSaberBlock_MouseHover);
+            this.ImprovedSaberBlock.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ImprovedSaberBlock_MouseMove);
             // 
             // FidelityBackground
             // 
@@ -1011,6 +1035,10 @@
             this.DefensiveFighting.Size = new System.Drawing.Size(42, 42);
             this.DefensiveFighting.TabIndex = 117;
             this.DefensiveFighting.TabStop = false;
+            this.DefensiveFighting.Click += new System.EventHandler(this.DefensiveFighting_Click);
+            this.DefensiveFighting.MouseLeave += new System.EventHandler(this.DefensiveFighting_MouseLeave);
+            this.DefensiveFighting.MouseHover += new System.EventHandler(this.DefensiveFighting_MouseHover);
+            this.DefensiveFighting.MouseMove += new System.Windows.Forms.MouseEventHandler(this.DefensiveFighting_MouseMove);
             // 
             // GraceInMotionPoints
             // 

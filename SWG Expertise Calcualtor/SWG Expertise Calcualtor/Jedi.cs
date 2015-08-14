@@ -333,7 +333,7 @@ namespace SWG_Expertise_Calcualtor
             {
                 levelOutput.Text = "90";
             }
-            
+
             //tps.CheckLevelTest();
         }
 
@@ -1031,7 +1031,7 @@ namespace SWG_Expertise_Calcualtor
                 ThreeRankPoints();
             }
         }
-        
+
         private void OneModifierBoxes()
         {
             Rank1Modifier1.Visible = true;
@@ -1258,7 +1258,7 @@ namespace SWG_Expertise_Calcualtor
             if (strpoints == 2 && EnhancedStrengthHover == true)
             {
                 TwoRankPoints();
-            } 
+            }
 
             AvailablePoints.Text = totalPoints.ToString();
             PageFunctions();
@@ -1942,89 +1942,7 @@ namespace SWG_Expertise_Calcualtor
             PageFunctions();
         }
 
-        private void ImprovedCripplingAccuracy_MouseHover(object sender, EventArgs e)
-        {
-            ImprovedCripplingAccuracyHover = true;
-            PageFunctions();
-            if (totalPoints <= 37 && iftpoints == 2)
-            {
-                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
-        }
-
-        private void ImprovedCripplingAccuracy_MouseMove(object sender, MouseEventArgs e)
-        {
-            ImprovedCripplingAccuracyHover = true;
-            PageFunctions();
-            if (totalPoints <= 37 && iftpoints == 2)
-            {
-                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
-        }
-
-        private void ImprovedCripplingAccuracy_MouseLeave(object sender, EventArgs e)
-        {
-            ImprovedCripplingAccuracyHover = false;
-            PageFunctions();
-            if (totalPoints <= 37 && iftpoints == 2)
-            {
-                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.aSkillBox;
-            }
-            else
-            {
-                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.iSkillBox;
-            }
-        }      
-
-        private void Premonition_MouseMove(object sender, MouseEventArgs e)
-        {
-            PremonitionHover = true;
-            PageFunctions();
-            if (totalPoints <= 37)
-            {
-                PremonitionBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                PremonitionBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
-        }
-
-        private void Premonition_MouseHover(object sender, EventArgs e)
-        {
-            PremonitionHover = true;
-            PageFunctions();
-            if (totalPoints <= 37)
-            {
-                PremonitionBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                PremonitionBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
-        }
-
-        private void Premonition_MouseLeave(object sender, EventArgs e)
-        {
-            PremonitionHover = false;
-            PageFunctions();
-            if (totalPoints <= 37)
-            {
-                PremonitionBackground.Image = Properties.Resources.aSkillBox;
-            }
-            else
-            {
-                PremonitionBackground.Image = Properties.Resources.iSkillBox;
-            }
-        }
+        
 
         private void JediGeneral_MouseMove(object sender, MouseEventArgs e)
         {
@@ -2126,7 +2044,7 @@ namespace SWG_Expertise_Calcualtor
                 GraceInMotionBackground.Image = Properties.Resources.iSkillBox;
             }
         }
-        
+
         // Force Cloak
         private void ForceCloak_Click(object sender, EventArgs e)
         {
@@ -2202,6 +2120,7 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        // Improved Crippling Accuracy
         private void ImprovedCripplingAccuracy_Click(object sender, EventArgs e)
         {
             gc.ExpertiseButtonSound();
@@ -2220,7 +2139,7 @@ namespace SWG_Expertise_Calcualtor
             if (icapoints >= 1)
             {
                 ImprovedCripplingAccuracyPoints.Visible = true;
-                ImprovedCripplingAccuracy.Image = Properties.Resources.aPremonition;
+                ImprovedCripplingAccuracy.Image = Properties.Resources.aImprovedCripplingAccuracy;
             }
 
             if (icapoints == 1)
@@ -2240,7 +2159,7 @@ namespace SWG_Expertise_Calcualtor
 
             if (icapoints == 0)
             {
-                ImprovedCripplingAccuracy.Image = Properties.Resources.iPremonition;
+                ImprovedCripplingAccuracy.Image = Properties.Resources.iImprovedCripplingAccuracy;
                 ImprovedCripplingAccuracyPoints.Visible = false;
             }
 
@@ -2248,6 +2167,49 @@ namespace SWG_Expertise_Calcualtor
             PageFunctions();
         }
 
+        private void ImprovedCripplingAccuracy_MouseHover(object sender, EventArgs e)
+        {
+            ImprovedCripplingAccuracyHover = true;
+            PageFunctions();
+            if (totalPoints <= 37 && iftpoints == 2)
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void ImprovedCripplingAccuracy_MouseMove(object sender, MouseEventArgs e)
+        {
+            ImprovedCripplingAccuracyHover = true;
+            PageFunctions();
+            if (totalPoints <= 37 && iftpoints == 2)
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void ImprovedCripplingAccuracy_MouseLeave(object sender, EventArgs e)
+        {
+            ImprovedCripplingAccuracyHover = false;
+            PageFunctions();
+            if (totalPoints <= 37 && iftpoints == 2)
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.iSkillBox;
+            }
+        }
+
+        // Premonition
         private void Premonition_Click(object sender, EventArgs e)
         {
             gc.ExpertiseButtonSound();
@@ -2297,6 +2259,195 @@ namespace SWG_Expertise_Calcualtor
 
             AvailablePoints.Text = totalPoints.ToString();
             PageFunctions();
+        }
+
+        private void Premonition_MouseMove(object sender, MouseEventArgs e)
+        {
+            PremonitionHover = true;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                PremonitionBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                PremonitionBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void Premonition_MouseHover(object sender, EventArgs e)
+        {
+            PremonitionHover = true;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                PremonitionBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                PremonitionBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+
+        private void Premonition_MouseLeave(object sender, EventArgs e)
+        {
+            PremonitionHover = false;
+            PageFunctions();
+            if (totalPoints <= 37)
+            {
+                PremonitionBackground.Image = Properties.Resources.aSkillBox;
+            }
+            else
+            {
+                PremonitionBackground.Image = Properties.Resources.iSkillBox;
+            }
+        }
+
+        // Fidelity
+        private void Fidelity_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Fidelity_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Fidelity_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Fidelity_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        // Improved Saber Block
+        private void ImprovedSaberBlock_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImprovedSaberBlock_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImprovedSaberBlock_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void ImprovedSaberBlock_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        // Defensive Fighting
+        private void DefensiveFighting_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DefensiveFighting_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DefensiveFighting_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void DefensiveFighting_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        // Incisiveness
+        private void Incisiveness_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Incisiveness_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Incisiveness_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Incisiveness_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        // Improved Force Cloak
+        private void ImprovedForceCloak_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImprovedForceCloak_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImprovedForceCloak_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void ImprovedForceCloak_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        // Improved Force Shockwave
+        private void ImprovedForceShockwave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImprovedForceShockwave_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImprovedForceShockwave_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void ImprovedForceShockwave_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        // Force Shockwave
+        private void ForceShockwave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ForceShockwave_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ForceShockwave_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void ForceShockwave_MouseLeave(object sender, EventArgs e)
+        {
+
         }
     }
 }
