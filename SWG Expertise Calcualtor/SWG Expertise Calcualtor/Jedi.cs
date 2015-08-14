@@ -1184,6 +1184,7 @@ namespace SWG_Expertise_Calcualtor
         // Changes the background for each skill if they are hovered.
         private void CheckBackgroundsHover()
         {
+            // Enhanced Strength
             if (EnhancedStrengthHover == true)
             {
                 EnhancedStrengthBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -1193,6 +1194,7 @@ namespace SWG_Expertise_Calcualtor
                 EnhancedStrengthBackground.Image = Properties.Resources.aSkillBox;
             }
 
+            // Enhanced Constitution
             if (EnhancedConstitutionHover == true)
             {
                 EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -1202,6 +1204,7 @@ namespace SWG_Expertise_Calcualtor
                 EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBox;
             }
 
+            // Enhanced Agility
             if (EnhancedAgilityHover == true)
             {
                 EnhancedAgilityBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -1211,6 +1214,7 @@ namespace SWG_Expertise_Calcualtor
                 EnhancedAgilityBackground.Image = Properties.Resources.aSkillBox;
             }
 
+            // Enhanced Stamina
             if (EnhancedStaminaHover == true)
             {
                 EnhancedStaminaBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -2155,17 +2159,8 @@ namespace SWG_Expertise_Calcualtor
                 GraceInMotionBackground.Image = Properties.Resources.iSkillBox;
             }
         }
-
-        private void ImprovedCripplingAccuracy_Click(object sender, EventArgs e)
-        {
-            gc.ExpertiseButtonSound();
-        }
-
-        private void Premonition_Click(object sender, EventArgs e)
-        {
-            gc.ExpertiseButtonSound();
-        }
-
+        
+        // Force Cloak
         private void ForceCloak_Click(object sender, EventArgs e)
         {
             gc.ExpertiseButtonSound();
@@ -2201,7 +2196,7 @@ namespace SWG_Expertise_Calcualtor
         private void ForceCloak_MouseHover(object sender, EventArgs e)
         {
             ForceCloakHover = true;
-            PageFunctions();
+            //PageFunctions();
             if (totalPoints <= 37)
             {
                 ForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -2215,7 +2210,7 @@ namespace SWG_Expertise_Calcualtor
         private void ForceCloak_MouseMove(object sender, MouseEventArgs e)
         {
             ForceCloakHover = true;
-            PageFunctions();
+            //PageFunctions();
             if (totalPoints <= 37)
             {
                 ForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -2229,7 +2224,7 @@ namespace SWG_Expertise_Calcualtor
         private void ForceCloak_MouseLeave(object sender, EventArgs e)
         {
             ForceCloakHover = false;
-            PageFunctions();
+            //PageFunctions();
             if (totalPoints <= 37)
             {
                 ForceCloakBackground.Image = Properties.Resources.aSkillBox;
@@ -2238,6 +2233,16 @@ namespace SWG_Expertise_Calcualtor
             {
                 ForceCloakBackground.Image = Properties.Resources.iSkillBox;
             }
+        }
+
+        private void ImprovedCripplingAccuracy_Click(object sender, EventArgs e)
+        {
+            //gc.ExpertiseButtonSound();
+        }
+
+        private void Premonition_Click(object sender, EventArgs e)
+        {
+            //gc.ExpertiseButtonSound();
         }
     }
 }
