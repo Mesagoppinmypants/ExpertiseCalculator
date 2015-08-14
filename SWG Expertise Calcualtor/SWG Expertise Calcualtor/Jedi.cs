@@ -115,7 +115,7 @@ namespace SWG_Expertise_Calcualtor
             HideSecondRankRow();
         }
 
-        // Reset Button -- Do not add into Page Functions
+        // Reset Button -- Do not add into PageFunctions()
         private void ResetSkillPoints()
         {
             totalPoints = 45;
@@ -124,10 +124,17 @@ namespace SWG_Expertise_Calcualtor
             mbs.ResetButton();
         }
 
+        // Save Button -- do not add into PageFunctions()
+        private void SaveSkillPoints()
+        {
+            Properties.Settings.Default.Save();
+            mbs.SaveButton();
+        }
+
         // Save Button and Reset Button Functions
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            mbs.SaveButton();
+            SaveSkillPoints();
         }
 
         private void ResetButton_Click(object sender, EventArgs e)
