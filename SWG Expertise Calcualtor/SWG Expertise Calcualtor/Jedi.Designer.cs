@@ -1405,11 +1405,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(984, 696);
+            this.Controls.Add(this.CommandPanel);
             this.Controls.Add(this.ForceCloak);
             this.Controls.Add(this.ForceCloakLine);
             this.Controls.Add(this.ForceCloakLineEnd);
             this.Controls.Add(this.ForceCloakLineStart);
-            this.Controls.Add(this.CommandPanel);
             this.Controls.Add(this.BeastMastery);
             this.Controls.Add(this.Path);
             this.Controls.Add(this.JediGeneral);
