@@ -669,7 +669,7 @@
             // 
             this.ForceCloakLineEnd.BackColor = System.Drawing.Color.Transparent;
             this.ForceCloakLineEnd.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineArrowTop;
-            this.ForceCloakLineEnd.Location = new System.Drawing.Point(269, 416);
+            this.ForceCloakLineEnd.Location = new System.Drawing.Point(269, 440);
             this.ForceCloakLineEnd.Name = "ForceCloakLineEnd";
             this.ForceCloakLineEnd.Size = new System.Drawing.Size(32, 24);
             this.ForceCloakLineEnd.TabIndex = 195;
@@ -679,7 +679,7 @@
             // 
             this.ForceCloakLineStart.BackColor = System.Drawing.Color.Transparent;
             this.ForceCloakLineStart.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineStart1;
-            this.ForceCloakLineStart.Location = new System.Drawing.Point(269, 351);
+            this.ForceCloakLineStart.Location = new System.Drawing.Point(269, 330);
             this.ForceCloakLineStart.Name = "ForceCloakLineStart";
             this.ForceCloakLineStart.Size = new System.Drawing.Size(29, 26);
             this.ForceCloakLineStart.TabIndex = 194;
@@ -1405,12 +1405,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(984, 696);
+            this.Controls.Add(this.ForceCloak);
+            this.Controls.Add(this.ForceCloakLine);
+            this.Controls.Add(this.ForceCloakLineEnd);
+            this.Controls.Add(this.ForceCloakLineStart);
             this.Controls.Add(this.CommandPanel);
             this.Controls.Add(this.BeastMastery);
             this.Controls.Add(this.Path);
             this.Controls.Add(this.JediGeneral);
             this.Controls.Add(this.ForceCloakPoints);
-            this.Controls.Add(this.ForceCloak);
             this.Controls.Add(this.ForceCloakBackground);
             this.Controls.Add(this.AlacrityPoints);
             this.Controls.Add(this.Alacrity);
@@ -1419,9 +1422,6 @@
             this.Controls.Add(this.SecondWindPoints);
             this.Controls.Add(this.SecondWind);
             this.Controls.Add(this.SecondWindBackground);
-            this.Controls.Add(this.ForceCloakLineEnd);
-            this.Controls.Add(this.ForceCloakLineStart);
-            this.Controls.Add(this.ForceCloakLine);
             this.Controls.Add(this.Rank4Modifier2);
             this.Controls.Add(this.Rank3Modifier2);
             this.Controls.Add(this.Rank2Modifier2);

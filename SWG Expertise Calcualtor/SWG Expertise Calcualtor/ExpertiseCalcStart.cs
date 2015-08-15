@@ -15,7 +15,6 @@ namespace SWG_Expertise_Calcualtor
             pos = TopRightCornerGraphic.PointToClient(pos);
             ExitButton.Parent = TopRightCornerGraphic;
             ExitButton.Location = pos;
-            ExitButton.BackColor = Color.Transparent;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

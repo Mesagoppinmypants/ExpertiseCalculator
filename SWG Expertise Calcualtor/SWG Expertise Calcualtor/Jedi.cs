@@ -11,6 +11,15 @@ namespace SWG_Expertise_Calcualtor
         {
             InitializeComponent();
             AddPoints.Checked = true;
+            var beg = PointToScreen(ForceCloakLineEnd.Location);
+            beg = ImprovedForceCloakBackground.PointToClient(beg);
+            ForceCloakLineEnd.Parent = ImprovedForceCloakBackground;
+            ForceCloakLineEnd.Location = beg;
+
+            //var end = PointToScreen(ForceCloakLineStart.Location);
+            //end = ForceCloakBackground.PointToClient(end);
+            //ForceCloakLineStart.Parent = ForceCloakBackground;
+            //ForceCloakLineStart.Location = end;
         }
 
         GuiController gc = new GuiController();
