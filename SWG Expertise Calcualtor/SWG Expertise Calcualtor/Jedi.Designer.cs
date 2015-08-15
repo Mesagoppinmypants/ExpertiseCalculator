@@ -1382,7 +1382,7 @@
             this.AbilityTitle.BackColor = System.Drawing.Color.Transparent;
             this.AbilityTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AbilityTitle.ForeColor = System.Drawing.Color.White;
-            this.AbilityTitle.Location = new System.Drawing.Point(56, 30);
+            this.AbilityTitle.Location = new System.Drawing.Point(56, 20);
             this.AbilityTitle.Name = "AbilityTitle";
             this.AbilityTitle.Size = new System.Drawing.Size(112, 24);
             this.AbilityTitle.TabIndex = 207;

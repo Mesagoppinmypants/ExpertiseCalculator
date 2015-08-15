@@ -1176,7 +1176,7 @@ namespace SWG_Expertise_Calcualtor
             }
 
             // Force Shockwave
-            if (ForceCloakHover == true)
+            if (ForceShockwaveHover == true)
             {
                 SkillPicture.Image = Properties.Resources.aForceShockwave;
                 SkillTitle.Text = "FORCE SHOCKWAVE";
