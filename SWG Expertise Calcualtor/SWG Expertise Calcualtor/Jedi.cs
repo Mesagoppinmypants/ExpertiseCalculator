@@ -488,7 +488,7 @@ namespace SWG_Expertise_Calcualtor
         private void SkillDescriptionVisiblity()
         {
             // Enables the general titles and descriptions that all skills use -- Basically dump all hovers here
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || PremonitionHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || ForceCloakHover || PremonitionHover == true)
             {
                 SkillPictureBackground.Visible = true;
                 SkillPicture.Visible = true;
@@ -522,6 +522,23 @@ namespace SWG_Expertise_Calcualtor
             else
             {
                 SkillRequirements2.Visible = false;
+            }
+
+            if (ForceCloakHover == true)
+            {
+                CommandPanel.Visible = true;
+                AbilityBackground.Visible = true;
+                AbilityPicture.Visible = true;
+                AbilityTitle.Visible = true;
+                AbilityDescription.Visible = true;
+            }
+            else
+            {
+                CommandPanel.Visible = false;
+                AbilityBackground.Visible = false;
+                AbilityPicture.Visible = false;
+                AbilityTitle.Visible = false;
+                AbilityDescription.Visible = false;
             }
         }
 
@@ -865,8 +882,32 @@ namespace SWG_Expertise_Calcualtor
                 }
             }
 
-            // Premonition
-            if (PremonitionHover == true)
+            // Force Cloak
+            if (ForceCloakHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aForceCloak;
+                SkillTitle.Text = "FORCE CLOAK";
+                SkillSummary.Text = "Grants the ability to use Force Cloak.";
+                SkillRequirements1.Text = "8 Points In Jedi General";
+                AbilityPicture.Image = Properties.Resources.aForceCloak;
+                AbilityTitle.Text = "FORCE CLOAK";
+                AbilityDescription.Text = "Force Cloak: This ability allows" + "\r\n" + "invisibility for a duraction of time. With" + "\r\n" + "Improved Force Cloak, Jedi can escape" + "\r\n" + "combat.";
+
+                ThreeModifierBoxes();
+
+                if (fcpoints == 0)
+                {
+                    SkillRank.Text = "0/1";
+                }
+
+                if (fcpoints == 1)
+                {
+                    SkillRank.Text = "1/1";
+                }
+            }
+
+                // Premonition
+                if (PremonitionHover == true)
             {
                 SkillPicture.Image = Properties.Resources.aPremonition;
                 SkillTitle.Text = "PREMONITION";
@@ -1176,19 +1217,24 @@ namespace SWG_Expertise_Calcualtor
                 ZeroRankPoints();
             }
 
-            if (gimpoints == 1 && PremonitionHover == true)
+            if (ppoints == 1 && PremonitionHover == true)
             {
                 OneRankPoints();
             }
 
-            if (gimpoints == 2 && PremonitionHover == true)
+            if (ppoints == 2 && PremonitionHover == true)
             {
                 TwoRankPoints();
             }
 
-            if (gimpoints == 3 && PremonitionHover == true)
+            if (ppoints == 3 && PremonitionHover == true)
             {
                 ThreeRankPoints();
+            }
+
+            if (ppoints == 4 && PremonitionHover == true)
+            {
+                FourRankPoints();
             }
         }
 
