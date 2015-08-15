@@ -120,6 +120,16 @@ namespace SWG_Expertise_Calcualtor
             SkillMakeCheck();
         }
 
+        private void ClickFunctions()
+        {
+
+        }
+
+        private void HoverFunctions()
+        {
+
+        }
+
         // Reset Button -- Do not add into PageFunctions()
         private void ResetSkillPoints()
         {
@@ -478,7 +488,7 @@ namespace SWG_Expertise_Calcualtor
         private void SkillDescriptionVisiblity()
         {
             // Enables the general titles and descriptions that all skills use -- Basically dump all hovers here
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || PremonitionHover == true)
             {
                 SkillPictureBackground.Visible = true;
                 SkillPicture.Visible = true;
@@ -495,7 +505,7 @@ namespace SWG_Expertise_Calcualtor
             }
 
             // Rank 4 Modifiers - 2 Rows
-            if (ExactingStrikesHover == true)
+            if (ExactingStrikesHover || PremonitionHover == true)
             {
                 SkillModifierTitle2.Visible = true;
                 Rank1Modifier2.Visible = true;
@@ -854,6 +864,52 @@ namespace SWG_Expertise_Calcualtor
                     SkillRank.Text = "3/3";
                 }
             }
+
+            // Premonition
+            if (PremonitionHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aPremonition;
+                SkillTitle.Text = "PREMONITION";
+                SkillSummary.Text = "Increase Evasion Chance by 2% per point" + "\r\n" + "and Evasion Value by 8 per point.";
+                SkillRequirements1.Text = "8 Points In Jedi General";
+                SkillModifierTitle1.Text = "EVASION CHANCE";
+                SkillModifierTitle2.Text = "EVASION VALUE";
+                Rank1Modifier1.Text = " 2 ";
+                Rank2Modifier1.Text = " 4 ";
+                Rank3Modifier1.Text = " 6 ";
+                Rank4Modifier1.Text = " 8 ";
+                Rank1Modifier2.Text = " 8 ";
+                Rank2Modifier2.Text = " 16 ";
+                Rank3Modifier2.Text = " 24 ";
+                Rank4Modifier2.Text = " 32 ";
+
+                FourModifierBoxes();
+
+                if (ppoints == 0)
+                {
+                    SkillRank.Text = "0/4";
+                }
+
+                if (ppoints == 1)
+                {
+                    SkillRank.Text = "1/4";
+                }
+
+                if (ppoints == 2)
+                {
+                    SkillRank.Text = "2/4";
+                }
+
+                if (ppoints == 3)
+                {
+                    SkillRank.Text = "3/4";
+                }
+
+                if (ppoints == 4)
+                {
+                    SkillRank.Text = "4/4";
+                }
+            }
         }
 
         private void OneRankPoints()
@@ -1113,6 +1169,27 @@ namespace SWG_Expertise_Calcualtor
             {
                 ThreeRankPoints();
             }
+
+            // Premonition
+            if (ppoints == 0 && PremonitionHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (gimpoints == 1 && PremonitionHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (gimpoints == 2 && PremonitionHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            if (gimpoints == 3 && PremonitionHover == true)
+            {
+                ThreeRankPoints();
+            }
         }
 
         private void OneModifierBoxes()
@@ -1168,64 +1245,87 @@ namespace SWG_Expertise_Calcualtor
             }
 
             // Second Row - 4 General Jedi points Needs to be spent
-            if (SkillRequirements1.Text == "4 Points In Jedi General" && totalPoints <= 41 && HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover == true)
+            if (totalPoints <= 41 && HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover == true)
             {
                 SkillRequirements1.ForeColor = Color.White;
             }
 
             // Second Wind - 8 Points In Jedi General Requirement
-            if (SkillRequirements1.Text == "8 Points In Jedi General" && totalPoints <= 37 && SecondWindHover == true)
+            if (totalPoints <= 37 && SecondWindHover == true)
             {
                 SkillRequirements1.ForeColor = Color.White;
             }
 
-            if (SkillRequirements1.Text == "8 Points In Jedi General" && totalPoints > 37 && SecondWindHover == true)
+            if (totalPoints > 37 && SecondWindHover == true)
             {
                 SkillRequirements1.ForeColor = Color.Red;
             }
 
             // Second Wind - 4 Points Required in Heightened Speed
-            if (SkillRequirements2.Text == "4 Points In Heightened Speed" && hspoints < 4 && SecondWindHover == true)
+            if (hspoints < 4 && SecondWindHover == true)
             {
                 SkillRequirements2.ForeColor = Color.Red;
             }
 
-            if (SkillRequirements2.Text == "4 Points In Heightened Speed" && hspoints == 4 && SecondWindHover == true)
+            if (hspoints == 4 && SecondWindHover == true)
             {
                 SkillRequirements2.ForeColor = Color.White;
             }
 
             // Exacting Strikes
-            if (SkillRequirements1.Text == "4 Points In Jedi General" && totalPoints > 41 && ExactingStrikesHover == true)
+            if (totalPoints > 41 && ExactingStrikesHover == true)
             {
                 SkillRequirements1.ForeColor = Color.Red;
             }
 
             // Heightened Speed
-            if (SkillRequirements1.Text == "4 Points In Jedi General" && totalPoints > 41 && HeightenedSpeedHover == true)
+            if (totalPoints > 41 && HeightenedSpeedHover == true)
             {
                 SkillRequirements1.ForeColor = Color.Red;
             }
 
             // Alacrity
-            if (SkillRequirements1.Text == "4 Points In Jedi General" && totalPoints > 41 && AlacrityHover == true)
+            if (totalPoints > 41 && AlacrityHover == true)
             {
                 SkillRequirements1.ForeColor = Color.Red;
             }
 
             // Enhanced Force Throw
-            if (SkillRequirements1.Text == "4 Points In Jedi General" && totalPoints > 41 && ImprovedForceThrowHover == true)
+            if (totalPoints > 41 && ImprovedForceThrowHover == true)
             {
                 SkillRequirements1.ForeColor = Color.Red;
             }
 
             // 8 Points In Jedi General
-            if (totalPoints <= 37 && ForceCloakHover || GraceInMotionHover == true)
+            // Force Cloak
+            if (totalPoints <= 37 && ForceCloakHover || GraceInMotionHover || PremonitionHover == true)
             {
                 SkillRequirements1.ForeColor = Color.White;
             }
 
-            if (totalPoints > 37 && ForceCloakHover || GraceInMotionHover == true)
+            if (totalPoints > 37 && ForceCloakHover || GraceInMotionHover || PremonitionHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.Red;
+            }
+
+            // Grace In Motion
+            if (totalPoints <= 37 && GraceInMotionHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.White;
+            }
+
+            if (totalPoints > 37 && GraceInMotionHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.Red;
+            }
+
+            // Premonition
+            if (totalPoints <= 37 && PremonitionHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.White;
+            }
+
+            if (totalPoints > 37 && PremonitionHover == true)
             {
                 SkillRequirements1.ForeColor = Color.Red;
             }
@@ -2054,14 +2154,14 @@ namespace SWG_Expertise_Calcualtor
 
         private void JediGeneral_MouseMove(object sender, MouseEventArgs e)
         {
+            JediGeneral.BackColor = Color.Blue;
             GeneralTabHover = true;
-            gc.TabHoverControls();
         }
 
         private void JediGeneral_MouseHover(object sender, EventArgs e)
         {
+            JediGeneral.BackColor = Color.Blue;
             GeneralTabHover = true;
-            gc.TabHoverControls();
         }
 
         // Grace In Motion
@@ -2111,7 +2211,7 @@ namespace SWG_Expertise_Calcualtor
             PageFunctions();
         }
 
-        private void GraceInMotion_MouseHover(object sender, EventArgs e)
+        private void GraceInMotionHovering()
         {
             GraceInMotionHover = true;
             PageFunctions();
@@ -2125,18 +2225,14 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        private void GraceInMotion_MouseHover(object sender, EventArgs e)
+        {
+            GraceInMotionHovering();
+        }
+
         private void GraceInMotion_MouseMove(object sender, MouseEventArgs e)
         {
-            GraceInMotionHover = true;
-            PageFunctions();
-            if (totalPoints <= 37)
-            {
-                GraceInMotionBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                GraceInMotionBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            GraceInMotionHovering();
         }
 
         private void GraceInMotion_MouseLeave(object sender, EventArgs e)
@@ -2186,7 +2282,7 @@ namespace SWG_Expertise_Calcualtor
             PageFunctions();
         }
 
-        private void ForceCloak_MouseHover(object sender, EventArgs e)
+        private void ForceCloakHovering()
         {
             ForceCloakHover = true;
             PageFunctions();
@@ -2200,18 +2296,14 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        private void ForceCloak_MouseHover(object sender, EventArgs e)
+        {
+            ForceCloakHovering();
+        }   
+
         private void ForceCloak_MouseMove(object sender, MouseEventArgs e)
         {
-            ForceCloakHover = true;
-            PageFunctions();
-            if (totalPoints <= 37)
-            {
-                ForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                ForceCloakBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            ForceCloakHovering();
         }
 
         private void ForceCloak_MouseLeave(object sender, EventArgs e)
@@ -2275,7 +2367,7 @@ namespace SWG_Expertise_Calcualtor
             PageFunctions();
         }
 
-        private void ImprovedCripplingAccuracy_MouseHover(object sender, EventArgs e)
+        private void ImprovedCripplingAccuracyHovering()
         {
             ImprovedCripplingAccuracyHover = true;
             PageFunctions();
@@ -2289,18 +2381,14 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        private void ImprovedCripplingAccuracy_MouseHover(object sender, EventArgs e)
+        {
+            ImprovedCripplingAccuracyHovering();
+        }
+
         private void ImprovedCripplingAccuracy_MouseMove(object sender, MouseEventArgs e)
         {
-            ImprovedCripplingAccuracyHover = true;
-            PageFunctions();
-            if (totalPoints <= 37 && iftpoints == 2)
-            {
-                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                ImprovedCripplingAccuracyBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            ImprovedCripplingAccuracyHovering();
         }
 
         private void ImprovedCripplingAccuracy_MouseLeave(object sender, EventArgs e)
@@ -2369,7 +2457,7 @@ namespace SWG_Expertise_Calcualtor
             PageFunctions();
         }
 
-        private void Premonition_MouseMove(object sender, MouseEventArgs e)
+        private void PremonitionHovering()
         {
             PremonitionHover = true;
             PageFunctions();
@@ -2383,18 +2471,14 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        private void Premonition_MouseMove(object sender, MouseEventArgs e)
+        {
+            PremonitionHovering();
+        }
+
         private void Premonition_MouseHover(object sender, EventArgs e)
         {
-            PremonitionHover = true;
-            PageFunctions();
-            if (totalPoints <= 37)
-            {
-                PremonitionBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                PremonitionBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            PremonitionHovering();
         }
 
         private void Premonition_MouseLeave(object sender, EventArgs e)
@@ -2453,7 +2537,7 @@ namespace SWG_Expertise_Calcualtor
             PageFunctions();
         }
 
-        private void Fidelity_MouseHover(object sender, EventArgs e)
+        private void FidelityHovering()
         {
             FidelityHover = true;
             PageFunctions();
@@ -2467,18 +2551,14 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        private void Fidelity_MouseHover(object sender, EventArgs e)
+        {
+            FidelityHovering();
+        }
+
         private void Fidelity_MouseMove(object sender, MouseEventArgs e)
         {
-            FidelityHover = true;
-            PageFunctions();
-            if (totalPoints <= 33)
-            {
-                FidelityBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                FidelityBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            FidelityHovering();
         }
 
         private void Fidelity_MouseLeave(object sender, EventArgs e)
@@ -2542,7 +2622,7 @@ namespace SWG_Expertise_Calcualtor
             PageFunctions();
         }
 
-        private void ImprovedSaberBlock_MouseHover(object sender, EventArgs e)
+        private void ImprovedSaberBlockHovering()
         {
             ImprovedSaberBlockHover = true;
             PageFunctions();
@@ -2556,18 +2636,14 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
+        private void ImprovedSaberBlock_MouseHover(object sender, EventArgs e)
+        {
+            ImprovedSaberBlockHovering();
+        }
+
         private void ImprovedSaberBlock_MouseMove(object sender, MouseEventArgs e)
         {
-            ImprovedSaberBlockHover = true;
-            PageFunctions();
-            if (totalPoints <= 33 && dfpoints == 1)
-            {
-                ImprovedSaberBlockBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                ImprovedSaberBlockBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            ImprovedSaberBlockHovering();
         }
 
         private void ImprovedSaberBlock_MouseLeave(object sender, EventArgs e)
