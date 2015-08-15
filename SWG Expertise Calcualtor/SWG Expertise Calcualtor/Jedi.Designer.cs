@@ -674,6 +674,7 @@
             this.ForceCloakLineEnd.Size = new System.Drawing.Size(32, 24);
             this.ForceCloakLineEnd.TabIndex = 195;
             this.ForceCloakLineEnd.TabStop = false;
+            this.ForceCloakLineEnd.Visible = false;
             // 
             // ForceCloakLineStart
             // 
@@ -684,6 +685,7 @@
             this.ForceCloakLineStart.Size = new System.Drawing.Size(29, 26);
             this.ForceCloakLineStart.TabIndex = 194;
             this.ForceCloakLineStart.TabStop = false;
+            this.ForceCloakLineStart.Visible = false;
             // 
             // ForceCloakLine
             // 
@@ -694,6 +696,7 @@
             this.ForceCloakLine.Size = new System.Drawing.Size(88, 90);
             this.ForceCloakLine.TabIndex = 193;
             this.ForceCloakLine.TabStop = false;
+            this.ForceCloakLine.Visible = false;
             // 
             // SkillPicture
             // 

@@ -518,7 +518,7 @@ namespace SWG_Expertise_Calcualtor
             }
 
             // Rank 2 Modifiers - 2 Requirements
-            if (SecondWindHover == true)
+            if (SecondWindHover || ImprovedCripplingAccuracyHover == true)
             {
                 SkillRequirements2.Visible = true;
             }
@@ -909,8 +909,8 @@ namespace SWG_Expertise_Calcualtor
                 }
             }
 
-                // Premonition
-                if (PremonitionHover == true)
+            // Premonition
+            if (PremonitionHover == true)
             {
                 SkillPicture.Image = Properties.Resources.aPremonition;
                 SkillTitle.Text = "PREMONITION";
@@ -952,6 +952,42 @@ namespace SWG_Expertise_Calcualtor
                 if (ppoints == 4)
                 {
                     SkillRank.Text = "4/4";
+                }
+            }
+
+            // Improved Crippling Accuracy
+            if (ImprovedCripplingAccuracyHover == true)
+            {
+                SkillPicture.Image = Properties.Resources.aImprovedCripplingAccuracy;
+                SkillTitle.Text = "IMPROVED CRIPPLING ACCURACY";
+                SkillSummary.Text = "Force Throw's snare duration is increased" + "\r\n" + "by 2 seconds per point spent.";
+                SkillRequirements1.Text = "8 Points In Jedi General";
+                SkillRequirements2.Text = "2 Points In Improved Force Throw";
+                SkillModifierTitle1.Text = "THROW SNARE DURATION";
+                Rank1Modifier1.Text = " 2 ";
+                Rank2Modifier1.Text = " 4 ";
+                Rank3Modifier1.Text = " 6 ";
+
+                ThreeModifierBoxes();
+
+                if (icapoints == 0)
+                {
+                    SkillRank.Text = "0/3";
+                }
+
+                if (icapoints == 1)
+                {
+                    SkillRank.Text = "1/3";
+                }
+
+                if (icapoints == 2)
+                {
+                    SkillRank.Text = "2/3";
+                }
+
+                if (icapoints == 3)
+                {
+                    SkillRank.Text = "3/3";
                 }
             }
         }
@@ -1239,6 +1275,48 @@ namespace SWG_Expertise_Calcualtor
             {
                 FourRankPoints();
             }
+
+            // Improved Crippling Accuracy
+            if (ppoints == 0 && ImprovedCripplingAccuracyHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (ppoints == 1 && ImprovedCripplingAccuracyHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (ppoints == 2 && ImprovedCripplingAccuracyHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            if (ppoints == 3 && ImprovedCripplingAccuracyHover == true)
+            {
+                ThreeRankPoints();
+            }
+
+            // Improved Crippling Accuracy
+            if (icapoints == 0 && ImprovedCripplingAccuracyHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (icapoints == 1 && ImprovedCripplingAccuracyHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (icapoints == 2 && ImprovedCripplingAccuracyHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            if (icapoints == 3 && ImprovedCripplingAccuracyHover == true)
+            {
+                ThreeRankPoints();
+            }
         }
 
         private void OneModifierBoxes()
@@ -1377,6 +1455,29 @@ namespace SWG_Expertise_Calcualtor
             if (totalPoints > 37 && PremonitionHover == true)
             {
                 SkillRequirements1.ForeColor = Color.Red;
+            }
+
+            // Improved Crippling Accuracy
+            // 8 Points In Jedi General
+            if (totalPoints <= 37 && ImprovedCripplingAccuracyHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.White;
+            }
+
+            if (totalPoints > 37 && ImprovedCripplingAccuracyHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.Red;
+            }
+
+            // 2 Points In Improved Force Throw
+            if (iftpoints == 2 && ImprovedCripplingAccuracyHover == true)
+            {
+                SkillRequirements2.ForeColor = Color.White;
+            }
+
+            if (iftpoints < 2 && ImprovedCripplingAccuracyHover == true)
+            {
+                SkillRequirements2.ForeColor = Color.Red;
             }
         }
 
@@ -2381,7 +2482,7 @@ namespace SWG_Expertise_Calcualtor
                 icapoints--;
             }
 
-            if (AddPoints.Checked == true && totalPoints <= 37 && icapoints < 2 && iftpoints == 2)
+            if (AddPoints.Checked == true && totalPoints <= 37 && icapoints < 3 && iftpoints == 2)
             {
                 totalPoints--;
                 icapoints++;
