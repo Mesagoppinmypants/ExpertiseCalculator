@@ -1999,6 +1999,8 @@ namespace SWG_Expertise_Calcualtor
 
         private void Alacrity_MouseMove(object sender, MouseEventArgs e)
         {
+            AlacrityHover = true;
+            PageFunctions();
             if (totalPoints <= 41)
             {
                 AlacrityBackground.Image = Properties.Resources.aSkillBoxGreen;
