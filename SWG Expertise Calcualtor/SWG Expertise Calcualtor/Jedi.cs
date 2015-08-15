@@ -491,7 +491,7 @@ namespace SWG_Expertise_Calcualtor
         private void SkillDescriptionVisiblity()
         {
             // Enables the general titles and descriptions that all skills use -- Basically dump all hovers here
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || ForceCloakHover || PremonitionHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || ForceCloakHover || PremonitionHover || ImprovedCripplingAccuracyHover || FidelityHover || ImprovedSaberBlockHover || DefensiveFightingHover || IncisivenessHover || ImprovedForceCloakHover || ImprovedForceCloakHover || ForceShockwaveHover == true)
             {
                 SkillPictureBackground.Visible = true;
                 SkillPicture.Visible = true;
@@ -527,7 +527,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillRequirements2.Visible = false;
             }
 
-            if (ForceCloakHover == true)
+            if (ForceCloakHover || ForceShockwaveHover == true)
             {
                 CommandPanel.Visible = true;
                 AbilityBackground.Visible = true;
