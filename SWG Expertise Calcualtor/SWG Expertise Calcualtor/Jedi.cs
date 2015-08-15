@@ -1025,7 +1025,7 @@ namespace SWG_Expertise_Calcualtor
             {
                 SkillPicture.Image = Properties.Resources.aImprovedSaberBlock;
                 SkillTitle.Text = "IMPROVED SABER BLOCK";
-                SkillSummary.Text = "Improves the chance to parry an attack by" + "\r\n" + "5% per point spent while saber block is" + "\r\n" + "active.";
+                SkillSummary.Text = "Improves the chance to parry an attack by" + "\r\n" + "5% per point spent while saber block is active.";
                 SkillRequirements1.Text = "12 Points In Jedi General";
                 SkillRequirements1.Text = "1 Points In Defensive Fighting";
                 SkillModifierTitle1.Text = "SABER BLOCK";
