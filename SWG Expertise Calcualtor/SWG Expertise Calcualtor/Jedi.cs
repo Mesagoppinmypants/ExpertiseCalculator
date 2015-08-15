@@ -842,7 +842,7 @@ namespace SWG_Expertise_Calcualtor
                 Rank2Modifier1.Text = " 10 ";
                 Rank3Modifier1.Text = " 15 ";
 
-                TwoModifierBoxes();
+                ThreeModifierBoxes();
 
                 if (gimpoints == 0)
                 {
