@@ -791,7 +791,7 @@
             // ImprovedForceCloakPoints
             // 
             this.ImprovedForceCloakPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ImprovedForceCloakPoints.Location = new System.Drawing.Point(310, 504);
+            this.ImprovedForceCloakPoints.Location = new System.Drawing.Point(308, 504);
             this.ImprovedForceCloakPoints.Name = "ImprovedForceCloakPoints";
             this.ImprovedForceCloakPoints.Size = new System.Drawing.Size(25, 24);
             this.ImprovedForceCloakPoints.TabIndex = 164;
@@ -801,7 +801,7 @@
             // ImprovedForceShockwavePoints
             // 
             this.ImprovedForceShockwavePoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ImprovedForceShockwavePoints.Location = new System.Drawing.Point(223, 504);
+            this.ImprovedForceShockwavePoints.Location = new System.Drawing.Point(221, 504);
             this.ImprovedForceShockwavePoints.Name = "ImprovedForceShockwavePoints";
             this.ImprovedForceShockwavePoints.Size = new System.Drawing.Size(25, 24);
             this.ImprovedForceShockwavePoints.TabIndex = 163;
