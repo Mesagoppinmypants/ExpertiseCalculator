@@ -491,7 +491,7 @@ namespace SWG_Expertise_Calcualtor
         private void SkillDescriptionVisiblity()
         {
             // Enables the general titles and descriptions that all skills use -- Basically dump all hovers here
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || ForceCloakHover || PremonitionHover || ImprovedCripplingAccuracyHover || FidelityHover || ImprovedSaberBlockHover || DefensiveFightingHover || IncisivenessHover || ImprovedForceCloakHover || ImprovedForceCloakHover ||  ForceShockwaveHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || ForceCloakHover || PremonitionHover == true)
             {
                 SkillPictureBackground.Visible = true;
                 SkillPicture.Visible = true;
@@ -527,7 +527,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillRequirements2.Visible = false;
             }
 
-            if (ForceCloakHover || ForceShockwaveHover == true)
+            if (ForceCloakHover == true)
             {
                 CommandPanel.Visible = true;
                 AbilityBackground.Visible = true;
@@ -990,214 +990,6 @@ namespace SWG_Expertise_Calcualtor
                     SkillRank.Text = "3/3";
                 }
             }
-
-            // Fidelity
-            if (FidelityHover == true)
-            {
-                SkillPicture.Image = Properties.Resources.aFidelity;
-                SkillTitle.Text = "FIDELITY";
-                SkillSummary.Text = "The damage from all melee attacks is" + "\r\n" + "increased by 4% per point spent.";
-                SkillRequirements1.Text = "12 Points In Jedi General";
-                SkillModifierTitle1.Text = "MELEE DAMAGE INCREASE";
-                Rank1Modifier1.Text = " 2 ";
-                Rank2Modifier1.Text = " 4 ";
-
-                TwoModifierBoxes();
-
-                if (icapoints == 0)
-                {
-                    SkillRank.Text = "0/2";
-                }
-
-                if (icapoints == 1)
-                {
-                    SkillRank.Text = "1/2";
-                }
-
-                if (icapoints == 2)
-                {
-                    SkillRank.Text = "2/2";
-                }
-            }
-
-            // Improved Saber Block
-            if (ImprovedSaberBlockHover == true)
-            {
-                SkillPicture.Image = Properties.Resources.aImprovedSaberBlock;
-                SkillTitle.Text = "IMPROVED SABER BLOCK";
-                SkillSummary.Text = "Improves the chance to parry an attack by" + "\r\n" + "5% per point spent while saber block is" + "\r\n" + "active.";
-                SkillRequirements1.Text = "12 Points In Jedi General";
-                SkillRequirements1.Text = "1 Points In Defensive Fighting";
-                SkillModifierTitle1.Text = "SABER BLOCK";
-                Rank1Modifier1.Text = " 5 ";
-                Rank2Modifier1.Text = " 10 ";
-                Rank3Modifier1.Text = " 15 ";
-
-                TwoModifierBoxes();
-
-                if (isbpoints == 0)
-                {
-                    SkillRank.Text = "0/3";
-                }
-
-                if (isbpoints == 1)
-                {
-                    SkillRank.Text = "1/3";
-                }
-
-                if (isbpoints == 2)
-                {
-                    SkillRank.Text = "2/3";
-                }
-
-                if (isbpoints == 3)
-                {
-                    SkillRank.Text = "3/3";
-                }
-            }
-
-            // Defensive Fighting
-            if (DefensiveFightingHover == true)
-            {
-                SkillPicture.Image = Properties.Resources.aStanceSaberBlock;
-                SkillTitle.Text = "DEFENSIVE FIGHTING";
-                SkillSummary.Text = "Increase chance to parry by 10%.";
-                SkillRequirements1.Text = "12 Points In Jedi General";
-                SkillModifierTitle1.Text = "STANCE SABER BLOCK";
-                Rank1Modifier1.Text = " 10 ";
-
-                TwoModifierBoxes();
-
-                if (dfpoints == 0)
-                {
-                    SkillRank.Text = "0/1";
-                }
-
-                if (dfpoints == 1)
-                {
-                    SkillRank.Text = "1/1";
-                }
-            }
-
-            // Incisiveness
-            if (IncisivenessHover == true)
-            {
-                SkillPicture.Image = Properties.Resources.aImprovedSaberBlock;
-                SkillTitle.Text = "INCISIVENESS";
-                SkillSummary.Text = "Increases the critical chance up to 8%.";
-                SkillRequirements1.Text = "16 Points In Jedi General";
-                SkillRequirements1.Text = "2 Points In Fidelity";
-                SkillModifierTitle1.Text = "CRITICAL CHANCE INCREASE";
-                Rank1Modifier1.Text = " 2 ";
-                Rank2Modifier1.Text = " 5 ";
-                Rank3Modifier1.Text = " 8 ";
-
-                TwoModifierBoxes();
-
-                if (ipoints == 0)
-                {
-                    SkillRank.Text = "0/3";
-                }
-
-                if (ipoints == 1)
-                {
-                    SkillRank.Text = "1/3";
-                }
-
-                if (ipoints == 2)
-                {
-                    SkillRank.Text = "2/3";
-                }
-
-                if (ipoints == 3)
-                {
-                    SkillRank.Text = "3/3";
-                }
-            }
-
-            // Improved Force Cloak
-            if (ImprovedForceCloakHover == true)
-            {
-                SkillPicture.Image = Properties.Resources.aImprovedForceCloak;
-                SkillTitle.Text = "IMPROVED FORCE CLOAK";
-                SkillSummary.Text = "Force Cloak allows a Jedi to escape from" + "\r\n" + "combat.";
-                SkillRequirements1.Text = "16 Points In Jedi General";
-                SkillRequirements1.Text = "1 Point In Force Cloak";
-                SkillModifierTitle1.Text = "ESCAPE COMBAT";
-                Rank1Modifier1.Text = " 1 ";
-
-                TwoModifierBoxes();
-
-                if (ifcpoints == 0)
-                {
-                    SkillRank.Text = "0/1";
-                }
-
-                if (ifcpoints == 1)
-                {
-                    SkillRank.Text = "1/1";
-                }
-            }
-
-            // Improved Force Shockwave
-            if (ImprovedForceShockwaveHover == true)
-            {
-                SkillPicture.Image = Properties.Resources.aImprovedForceShockwave;
-                SkillTitle.Text = "IMPROVED FORCE SHOCKWAVE";
-                SkillSummary.Text = "Force Shockwave's damage is increased by" + "\r\n" + "10% per point spent.";
-                SkillRequirements1.Text = "16 Points In Jedi General";
-                SkillRequirements1.Text = "1 Point In Force Shockwave";
-                SkillModifierTitle1.Text = "SHOCKWAVE DAMAGE";
-                Rank1Modifier1.Text = " 10 ";
-                Rank2Modifier1.Text = " 20 ";
-                Rank3Modifier1.Text = " 30 ";
-
-                TwoModifierBoxes();
-
-                if (ifspoints == 0)
-                {
-                    SkillRank.Text = "0/3";
-                }
-
-                if (ifspoints == 1)
-                {
-                    SkillRank.Text = "1/3";
-                }
-
-                if (ifspoints == 2)
-                {
-                    SkillRank.Text = "2/3";
-                }
-
-                if (ifspoints == 3)
-                {
-                    SkillRank.Text = "3/3";
-                }
-            }
-
-            // Force Shockwave
-            if (ForceCloakHover == true)
-            {
-                SkillPicture.Image = Properties.Resources.aForceShockwave;
-                SkillTitle.Text = "FORCE SHOCKWAVE";
-                SkillSummary.Text = "Grants the ability to use Force Shockwave" + "\r\n" + "attacks.";
-                SkillRequirements1.Text = "16 Points In Jedi General";
-                AbilityPicture.Image = Properties.Resources.aForceShockwave;
-                AbilityTitle.Text = "FORCE SHOCKWAVE 1:" + "\r\n" + "CRUMBLE";
-                AbilityDescription.Text = "Force Crumble: A crushing force cone" + "\r\n" + "effect attack that causes damage to your" + "\r\n" + "opponents in front of you.";
-
-                ThreeModifierBoxes();
-
-                if (fspoints == 0)
-                {
-                    SkillRank.Text = "0/1";
-                }
-
-                if (fspoints == 1)
-                {
-                    SkillRank.Text = "1/1";
-                }
-            }
         }
 
         private void OneRankPoints()
@@ -1561,7 +1353,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void HideSecondRankRow()
         {
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || ImprovedCripplingAccuracyHover || FidelityHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover == true)
             {
                 SkillModifierTitle2.Visible = false;
                 Rank1Modifier2.Visible = false;
