@@ -483,7 +483,7 @@ namespace SWG_Expertise_Calcualtor
         private void SkillDescriptionVisiblity()
         {
             // Enables the general titles and descriptions that all skills use -- Basically dump all hovers here, except granted commands
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || PremonitionHover || ImprovedCripplingAccuracyHover || FidelityHover || ImprovedSaberBlockHover || DefensiveFightingHover || IncisivenessHover || ImprovedForceCloakHover || ImprovedForceShockwaveHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || GraceInMotionHover || PremonitionHover || FidelityHover || DefensiveFightingHover == true)
             {
                 SkillPictureBackground.Visible = true;
                 SkillPicture.Visible = true;
@@ -497,6 +497,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillModifierTitle1.Visible = true;
                 ForceCloakHover = false;
                 ForceShockwaveHover = false;
+                SkillRequirements2.Visible = false;
             }
 
             // Dump all granted commands here
@@ -512,6 +513,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillRank.Visible = true;
                 GrantsModifiersLabel.Visible = true;
                 SkillModifierTitle1.Visible = true;
+                SkillRequirements2.Visible = false;
             }
 
             // Rank 4 Modifiers - 2 Rows
@@ -525,13 +527,21 @@ namespace SWG_Expertise_Calcualtor
             }
 
             // Rank 2 Modifiers - 2 Requirements
-            if (SecondWindHover || ImprovedCripplingAccuracyHover || ImprovedForceCloakHover || ImprovedForceShockwaveHover || ImprovedSaberBlockHover == true)
+            if (SecondWindHover || ImprovedCripplingAccuracyHover || ImprovedForceCloakHover || ImprovedForceShockwaveHover || ImprovedSaberBlockHover || IncisivenessHover == true)
             {
+                SkillPictureBackground.Visible = true;
+                SkillPicture.Visible = true;
+                SkillTitle.Visible = true;
+                SkillSummary.Visible = true;
+                RequiresLabel.Visible = true;
+                SkillRequirements1.Visible = true;
+                RankLabel.Visible = true;
+                SkillRank.Visible = true;
+                GrantsModifiersLabel.Visible = true;
+                SkillModifierTitle1.Visible = true;
+                ForceCloakHover = false;
+                ForceShockwaveHover = false;
                 SkillRequirements2.Visible = true;
-            }
-            else
-            {
-                SkillRequirements2.Visible = false;
             }
 
             if (ForceCloakHover || ForceShockwaveHover == true)
