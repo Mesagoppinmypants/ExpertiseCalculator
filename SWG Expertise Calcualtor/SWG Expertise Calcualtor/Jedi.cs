@@ -1178,8 +1178,6 @@ namespace SWG_Expertise_Calcualtor
                 AbilityTitle.Text = "FORCE SHOCKWAVE 1:" + "\r\n" + "CRUMBLE";
                 AbilityDescription.Text = "Force Crumble: A crushing force cone" + "\r\n" + "effect attack that causes damage to your" + "\r\n" + "opponents in front of you.";
 
-                OneModifierBoxes();
-
                 if (fspoints == 0)
                 {
                     SkillRank.Text = "0/1";
