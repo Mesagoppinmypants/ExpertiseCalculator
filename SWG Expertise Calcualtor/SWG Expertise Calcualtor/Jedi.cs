@@ -482,8 +482,25 @@ namespace SWG_Expertise_Calcualtor
         // This controls the skill description visibility
         private void SkillDescriptionVisiblity()
         {
-            // Enables the general titles and descriptions that all skills use -- Basically dump all hovers here
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || ForceCloakHover || PremonitionHover || ImprovedCripplingAccuracyHover || FidelityHover || ImprovedSaberBlockHover || DefensiveFightingHover || IncisivenessHover || ImprovedForceCloakHover || ImprovedForceCloakHover || ForceShockwaveHover == true)
+            // Enables the general titles and descriptions that all skills use -- Basically dump all hovers here, except granted commands
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || PremonitionHover || ImprovedCripplingAccuracyHover || FidelityHover || ImprovedSaberBlockHover || DefensiveFightingHover || IncisivenessHover || ImprovedForceCloakHover || ImprovedForceShockwaveHover == true)
+            {
+                SkillPictureBackground.Visible = true;
+                SkillPicture.Visible = true;
+                SkillTitle.Visible = true;
+                SkillSummary.Visible = true;
+                RequiresLabel.Visible = true;
+                SkillRequirements1.Visible = true;
+                RankLabel.Visible = true;
+                SkillRank.Visible = true;
+                GrantsModifiersLabel.Visible = true;
+                SkillModifierTitle1.Visible = true;
+                ForceCloakHover = false;
+                ForceShockwaveHover = false;
+            }
+
+            // Dump all granted commands here
+            if (ForceCloakHover || ForceShockwaveHover == true)
             {
                 SkillPictureBackground.Visible = true;
                 SkillPicture.Visible = true;
@@ -2585,18 +2602,26 @@ namespace SWG_Expertise_Calcualtor
             ClickFunctions();
         }
 
-        
-
-        private void JediGeneral_MouseMove(object sender, MouseEventArgs e)
+        private void JediGeneralHovering()
         {
             JediGeneral.BackColor = Color.Blue;
             GeneralTabHover = true;
         }
 
+        private void JediGeneral_MouseMove(object sender, MouseEventArgs e)
+        {
+            JediGeneralHovering();
+        }
+
         private void JediGeneral_MouseHover(object sender, EventArgs e)
         {
-            JediGeneral.BackColor = Color.Blue;
-            GeneralTabHover = true;
+            JediGeneralHovering();
+        }
+
+        private void JediGeneral_MouseLeave(object sender, EventArgs e)
+        {
+            JediGeneral.BackColor = Color.Transparent;
+            GeneralTabHover = false;
         }
 
         // Grace In Motion
@@ -2743,7 +2768,6 @@ namespace SWG_Expertise_Calcualtor
 
         private void ForceCloak_MouseLeave(object sender, EventArgs e)
         {
-            ForceCloakHover = false;
             HoverFunctions();
             if (totalPoints <= 37)
             {
@@ -3468,7 +3492,6 @@ namespace SWG_Expertise_Calcualtor
 
         private void ForceShockwave_MouseLeave(object sender, EventArgs e)
         {
-            ForceShockwaveHover = false;
             HoverFunctions();
             if (totalPoints <= 29)
             {
@@ -3478,6 +3501,6 @@ namespace SWG_Expertise_Calcualtor
             {
                 ForceShockwaveBackground.Image = Properties.Resources.iSkillBox;
             }
-        }
+        } 
     }
 }

@@ -544,6 +544,7 @@
             this.JediGeneral.Size = new System.Drawing.Size(160, 31);
             this.JediGeneral.TabIndex = 197;
             this.JediGeneral.Text = "jedi general";
+            this.JediGeneral.MouseLeave += new System.EventHandler(this.JediGeneral_MouseLeave);
             this.JediGeneral.MouseHover += new System.EventHandler(this.JediGeneral_MouseHover);
             this.JediGeneral.MouseMove += new System.Windows.Forms.MouseEventHandler(this.JediGeneral_MouseMove);
             // 
