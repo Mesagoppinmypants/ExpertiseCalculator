@@ -1514,6 +1514,7 @@
             this.Controls.Add(this.DefensiveFightingBackground);
             this.Controls.Add(this.ImprovedSaberBlockBackground);
             this.Controls.Add(this.SkillTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Jedi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jedi";
