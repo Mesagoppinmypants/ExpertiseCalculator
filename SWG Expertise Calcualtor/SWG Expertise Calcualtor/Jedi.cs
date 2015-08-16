@@ -109,10 +109,14 @@ namespace SWG_Expertise_Calcualtor
 
         // Page Functions
 
-        private void PageFunctions()
+        private void ClickFunctions()
         {
             CheckLevel();
             CheckBackgrounds();
+        }
+
+        private void HoverFunctions()
+        {
             CheckSkillRank();
             CheckBackgroundsHover();
             SkillDescriptionVisiblity();
@@ -120,17 +124,6 @@ namespace SWG_Expertise_Calcualtor
             CheckRequirements();
             HideSecondRankRow();
             SkillHoverCheck();
-            SkillMakeCheck();
-        }
-
-        private void ClickFunctions()
-        {
-
-        }
-
-        private void HoverFunctions()
-        {
-
         }
 
         // Reset Button -- Do not add into PageFunctions()
@@ -1844,25 +1837,29 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
+        }
+
+        private void EnhancedStrengthHovering()
+        {
+            EnhancedStrengthHover = true;
+            HoverFunctions();
         }
 
         private void EnhancedStrength_MouseMove(object sender, MouseEventArgs e)
         {
-            EnhancedStrengthHover = true;
-            PageFunctions();
+            EnhancedStrengthHovering();
         }
 
         private void EnhancedStrength_MouseHover(object sender, EventArgs e)
         {
-            EnhancedStrengthHover = true;
-            PageFunctions();
+            EnhancedStrengthHovering();
         }
 
         private void EnhancedStrength_MouseLeave(object sender, EventArgs e)
         {
             EnhancedStrengthHover = false;
-            PageFunctions();
+            HoverFunctions();
         }
 
         // Enhanced Constitution    
@@ -1916,25 +1913,29 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
+        }
+
+        private void EnhancedConstitutionHovering()
+        {
+            EnhancedConstitutionHover = true;
+            HoverFunctions();
         }
 
         private void EnhancedConstitution_MouseHover(object sender, EventArgs e)
         {
-            EnhancedConstitutionHover = true;
-            PageFunctions();
+            EnhancedConstitutionHovering();
         }
 
         private void EnhancedConstitution_MouseMove(object sender, MouseEventArgs e)
         {
-            EnhancedConstitutionHover = true;
-            PageFunctions();
+            EnhancedConstitutionHovering();
         }
 
         private void EnhancedConstitution_MouseLeave(object sender, EventArgs e)
         {
             EnhancedConstitutionHover = false;
-            PageFunctions();
+            HoverFunctions();
         }
 
         // Enhanced Agility
@@ -1986,25 +1987,29 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
+        }
+
+        private void EnhancedAgilityHovering()
+        {
+            EnhancedAgilityHover = true;
+            HoverFunctions();
         }
 
         private void EnhancedAgility_MouseHover(object sender, EventArgs e)
         {
-            EnhancedAgilityHover = true;
-            PageFunctions();
+            EnhancedAgilityHovering();
         }
 
         private void EnhancedAgility_MouseMove(object sender, MouseEventArgs e)
         {
-            EnhancedAgilityHover = true;
-            PageFunctions();
+            EnhancedAgilityHovering();
         }
 
         private void EnhancedAgility_MouseLeave(object sender, EventArgs e)
         {
             EnhancedAgilityHover = false;
-            PageFunctions();
+            HoverFunctions();
         }
 
         // Enhanced Stamina
@@ -2056,25 +2061,29 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
+        }
+
+        private void EnhancedStaminaHovering()
+        {
+            EnhancedStaminaHover = true;
+            HoverFunctions();
         }
 
         private void EnhancedStamina_MouseHover(object sender, EventArgs e)
         {
-            EnhancedStaminaHover = true;
-            PageFunctions();
+            EnhancedStaminaHovering();
         }
 
         private void EnhancedStamina_MouseMove(object sender, MouseEventArgs e)
         {
-            EnhancedStaminaHover = true;
-            PageFunctions();
+            EnhancedStaminaHovering();
         }
 
         private void EnhancedStamina_MouseLeave(object sender, EventArgs e)
         {
             EnhancedStaminaHover = false;
-            PageFunctions();
+            HoverFunctions();
         }
 
         // Heightened Speed
@@ -2126,13 +2135,37 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
+        }
+
+        private void HeightenedSpeedHovering()
+        {
+            HeightenedSpeedHover = true;
+            HoverFunctions();
+            if (totalPoints <= 41)
+            {
+                HeightenedSpeedBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                HeightenedSpeedBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
+        }
+        
+        private void HeightenedSpeed_MouseHover(object sender, EventArgs e)
+        {
+            HeightenedSpeedHovering();
+        }
+
+        private void HeightenedSpeed_MouseMove(object sender, MouseEventArgs e)
+        {
+            HeightenedSpeedHovering();
         }
 
         private void HeightenedSpeed_MouseLeave(object sender, EventArgs e)
         {
             HeightenedSpeedHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 41)
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.aSkillBox;
@@ -2140,34 +2173,6 @@ namespace SWG_Expertise_Calcualtor
             else
             {
                 HeightenedSpeedBackground.Image = Properties.Resources.iSkillBox;
-            }
-        }
-
-        private void HeightenedSpeed_MouseHover(object sender, EventArgs e)
-        {
-            HeightenedSpeedHover = true;
-            PageFunctions();
-            if (totalPoints <= 41)
-            {
-                HeightenedSpeedBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                HeightenedSpeedBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
-        }
-
-        private void HeightenedSpeed_MouseMove(object sender, MouseEventArgs e)
-        {
-            HeightenedSpeedHover = true;
-            PageFunctions();
-            if (totalPoints <= 41)
-            {
-                HeightenedSpeedBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                HeightenedSpeedBackground.Image = Properties.Resources.iSkillBoxRed;
             }
         }
 
@@ -2220,41 +2225,37 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
+        }
+
+        private void ExactingStrikesHovering()
+        {
+            ExactingStrikesHover = true;
+            HoverFunctions();
+            if (totalPoints <= 41)
+            {
+                ExactingStrikesBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                ExactingStrikesBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void ExactingStrikes_MouseHover(object sender, EventArgs e)
         {
-            ExactingStrikesHover = true;
-            PageFunctions();
-            if (totalPoints <= 41)
-            {
-                ExactingStrikesBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                ExactingStrikesBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            ExactingStrikesHovering();
         }
 
         private void ExactingStrikes_MouseMove(object sender, MouseEventArgs e)
         {
-            ExactingStrikesHover = true;
-            PageFunctions();
-            if (totalPoints <= 41)
-            {
-                ExactingStrikesBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                ExactingStrikesBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            ExactingStrikesHovering();
         }
 
         private void ExactingStrikes_MouseLeave(object sender, EventArgs e)
         {
             ExactingStrikesHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 41)
             {
                 ExactingStrikesBackground.Image = Properties.Resources.aSkillBox;
@@ -2314,41 +2315,37 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
+        }
+
+        private void AlacrityHovering()
+        {
+            AlacrityHover = true;
+            HoverFunctions();
+            if (totalPoints <= 41)
+            {
+                AlacrityBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                AlacrityBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void Alacrity_MouseHover(object sender, EventArgs e)
         {
-            AlacrityHover = true;
-            PageFunctions();
-            if (totalPoints <= 41)
-            {
-                AlacrityBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                AlacrityBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            AlacrityHovering();
         }
 
         private void Alacrity_MouseMove(object sender, MouseEventArgs e)
         {
-            AlacrityHover = true;
-            PageFunctions();
-            if (totalPoints <= 41)
-            {
-                AlacrityBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                AlacrityBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            AlacrityHovering();
         }
 
         private void Alacrity_MouseLeave(object sender, EventArgs e)
         {
             AlacrityHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 41)
             {
                 AlacrityBackground.Image = Properties.Resources.aSkillBox;
@@ -2359,11 +2356,10 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
-        // Improved Force Throw
-        private void ImprovedForceThrow_MouseMove(object sender, MouseEventArgs e)
+        private void ImprovedForceThrowHovering()
         {
             ImprovedForceThrowHover = true;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 41)
             {
                 ImprovedForceThrowBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -2373,25 +2369,22 @@ namespace SWG_Expertise_Calcualtor
                 ImprovedForceThrowBackground.Image = Properties.Resources.iSkillBoxRed;
             }
         }
+        
+        // Improved Force Throw
+        private void ImprovedForceThrow_MouseMove(object sender, MouseEventArgs e)
+        {
+            ImprovedForceThrowHovering();
+        }
 
         private void ImprovedForceThrow_MouseHover(object sender, EventArgs e)
         {
-            ImprovedForceThrowHover = true;
-            PageFunctions();
-            if (totalPoints <= 41)
-            {
-                ImprovedForceThrowBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                ImprovedForceThrowBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            ImprovedForceThrowHovering();
         }
 
         private void ImprovedForceThrow_MouseLeave(object sender, EventArgs e)
         {
             ImprovedForceThrowHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 41)
             {
                 ImprovedForceThrowBackground.Image = Properties.Resources.aSkillBox;
@@ -2440,41 +2433,37 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
+        }
+
+        private void SecondWindHovering()
+        {
+            SecondWindHover = true;
+            HoverFunctions();
+            if (totalPoints <= 37 && hspoints == 4)
+            {
+                SecondWindBackground.Image = Properties.Resources.aSkillBoxGreen;
+            }
+            else
+            {
+                SecondWindBackground.Image = Properties.Resources.iSkillBoxRed;
+            }
         }
 
         private void SecondWind_MouseHover(object sender, EventArgs e)
         {
-            SecondWindHover = true;
-            PageFunctions();
-            if (totalPoints <= 37 && hspoints == 4)
-            {
-                SecondWindBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                SecondWindBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            SecondWindHovering();
         }
 
         private void SecondWind_MouseMove(object sender, MouseEventArgs e)
         {
-            SecondWindHover = true;
-            PageFunctions();
-            if (totalPoints <= 37 && hspoints == 4)
-            {
-                SecondWindBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                SecondWindBackground.Image = Properties.Resources.iSkillBoxRed;
-            }
+            SecondWindHovering();
         }
 
         private void SecondWind_MouseLeave(object sender, EventArgs e)
         {
             SecondWindHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 37 && hspoints == 4)
             {
                 SecondWindBackground.Image = Properties.Resources.aSkillBox;
@@ -2523,7 +2512,7 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
         }
 
         
@@ -2584,13 +2573,13 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
         }
 
         private void GraceInMotionHovering()
         {
             GraceInMotionHover = true;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 37)
             {
                 GraceInMotionBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -2614,7 +2603,7 @@ namespace SWG_Expertise_Calcualtor
         private void GraceInMotion_MouseLeave(object sender, EventArgs e)
         {
             GraceInMotionHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 37)
             {
                 GraceInMotionBackground.Image = Properties.Resources.aSkillBox;
@@ -2655,13 +2644,13 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
         }
 
         private void ForceCloakHovering()
         {
             ForceCloakHover = true;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 37)
             {
                 ForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -2685,7 +2674,7 @@ namespace SWG_Expertise_Calcualtor
         private void ForceCloak_MouseLeave(object sender, EventArgs e)
         {
             ForceCloakHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 37)
             {
                 ForceCloakBackground.Image = Properties.Resources.aSkillBox;
@@ -2740,13 +2729,13 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
         }
 
         private void ImprovedCripplingAccuracyHovering()
         {
             ImprovedCripplingAccuracyHover = true;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 37 && iftpoints == 2)
             {
                 ImprovedCripplingAccuracyBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -2770,7 +2759,7 @@ namespace SWG_Expertise_Calcualtor
         private void ImprovedCripplingAccuracy_MouseLeave(object sender, EventArgs e)
         {
             ImprovedCripplingAccuracyHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 37 && iftpoints == 2)
             {
                 ImprovedCripplingAccuracyBackground.Image = Properties.Resources.aSkillBox;
@@ -2830,13 +2819,13 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
         }
 
         private void PremonitionHovering()
         {
             PremonitionHover = true;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 37)
             {
                 PremonitionBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -2860,7 +2849,7 @@ namespace SWG_Expertise_Calcualtor
         private void Premonition_MouseLeave(object sender, EventArgs e)
         {
             PremonitionHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 37)
             {
                 PremonitionBackground.Image = Properties.Resources.aSkillBox;
@@ -2910,13 +2899,13 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
         }
 
         private void FidelityHovering()
         {
             FidelityHover = true;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 33)
             {
                 FidelityBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -2940,7 +2929,7 @@ namespace SWG_Expertise_Calcualtor
         private void Fidelity_MouseLeave(object sender, EventArgs e)
         {
             FidelityHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 33)
             {
                 FidelityBackground.Image = Properties.Resources.aSkillBox;
@@ -2995,13 +2984,13 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
         }
 
         private void ImprovedSaberBlockHovering()
         {
             ImprovedSaberBlockHover = true;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 33 && dfpoints == 1)
             {
                 ImprovedSaberBlockBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -3025,7 +3014,7 @@ namespace SWG_Expertise_Calcualtor
         private void ImprovedSaberBlock_MouseLeave(object sender, EventArgs e)
         {
             ImprovedSaberBlockHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 33 && dfpoints == 1)
             {
                 ImprovedSaberBlockBackground.Image = Properties.Resources.aSkillBox;
@@ -3070,13 +3059,13 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
         }
 
         private void DefensiveFightingHovering()
         {
             DefensiveFightingHover = true;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 33)
             {
                 DefensiveFightingBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -3100,7 +3089,7 @@ namespace SWG_Expertise_Calcualtor
         private void DefensiveFighting_MouseLeave(object sender, EventArgs e)
         {
             DefensiveFightingHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 33)
             {
                 DefensiveFightingBackground.Image = Properties.Resources.aSkillBox;
@@ -3154,13 +3143,13 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
         }
 
         private void IncisivenessHovering()
         {
             IncisivenessHover = true;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 29 && fpoints == 2)
             {
                 IncisivenessBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -3184,7 +3173,7 @@ namespace SWG_Expertise_Calcualtor
         private void Incisiveness_MouseLeave(object sender, EventArgs e)
         {
             IncisivenessHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 29 && fpoints == 2)
             {
                 IncisivenessBackground.Image = Properties.Resources.aSkillBox;
@@ -3225,13 +3214,13 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
         }
 
         private void ImprovedForceCloakHovering()
         {
             ImprovedForceCloakHover = true;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 29 && fcpoints == 1)
             {
                 ImprovedForceCloakBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -3255,7 +3244,7 @@ namespace SWG_Expertise_Calcualtor
         private void ImprovedForceCloak_MouseLeave(object sender, EventArgs e)
         {
             ImprovedForceCloakHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 29 && fcpoints == 1)
             {
                 ImprovedForceCloakBackground.Image = Properties.Resources.aSkillBox;
@@ -3309,13 +3298,13 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
         }
 
         private void ImprovedForceShockwaveHovering()
         {
             ImprovedForceShockwaveHover = true;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 29 && fspoints == 1)
             {
                 ImprovedForceShockwaveBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -3339,7 +3328,7 @@ namespace SWG_Expertise_Calcualtor
         private void ImprovedForceShockwave_MouseLeave(object sender, EventArgs e)
         {
             ImprovedForceShockwaveHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 29 && fspoints == 1)
             {
                 ImprovedForceShockwaveBackground.Image = Properties.Resources.aSkillBox;
@@ -3380,13 +3369,13 @@ namespace SWG_Expertise_Calcualtor
             }
 
             AvailablePoints.Text = totalPoints.ToString();
-            PageFunctions();
+            ClickFunctions();
         }
 
         private void ForceShockwaveHovering()
         {
             ForceShockwaveHover = true;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 29)
             {
                 ForceShockwaveBackground.Image = Properties.Resources.aSkillBoxGreen;
@@ -3410,7 +3399,7 @@ namespace SWG_Expertise_Calcualtor
         private void ForceShockwave_MouseLeave(object sender, EventArgs e)
         {
             ForceShockwaveHover = false;
-            PageFunctions();
+            HoverFunctions();
             if (totalPoints <= 29)
             {
                 ForceShockwaveBackground.Image = Properties.Resources.aSkillBox;
