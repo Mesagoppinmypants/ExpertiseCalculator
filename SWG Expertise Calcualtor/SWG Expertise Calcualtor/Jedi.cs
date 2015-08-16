@@ -495,8 +495,6 @@ namespace SWG_Expertise_Calcualtor
                 SkillRank.Visible = true;
                 GrantsModifiersLabel.Visible = true;
                 SkillModifierTitle1.Visible = true;
-                Rank1Modifier1.Visible = true;
-                Rank2Modifier1.Visible = true;
             }
 
             // Rank 4 Modifiers - 2 Rows
