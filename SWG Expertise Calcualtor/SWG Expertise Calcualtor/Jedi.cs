@@ -1033,7 +1033,7 @@ namespace SWG_Expertise_Calcualtor
                 Rank2Modifier1.Text = " 10 ";
                 Rank3Modifier1.Text = " 15 ";
 
-                TwoModifierBoxes();
+                ThreeModifierBoxes();
 
                 if (isbpoints == 0)
                 {
@@ -1066,7 +1066,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillModifierTitle1.Text = "STANCE SABER BLOCK";
                 Rank1Modifier1.Text = " 10 ";
 
-                TwoModifierBoxes();
+                OneModifierBoxes();
 
                 if (dfpoints == 0)
                 {
@@ -1092,7 +1092,7 @@ namespace SWG_Expertise_Calcualtor
                 Rank2Modifier1.Text = " 5 ";
                 Rank3Modifier1.Text = " 8 ";
 
-                TwoModifierBoxes();
+                ThreeModifierBoxes();
 
                 if (ipoints == 0)
                 {
@@ -1126,7 +1126,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillModifierTitle1.Text = "ESCAPE COMBAT";
                 Rank1Modifier1.Text = " 1 ";
 
-                TwoModifierBoxes();
+                OneModifierBoxes();
 
                 if (ifcpoints == 0)
                 {
@@ -1152,7 +1152,7 @@ namespace SWG_Expertise_Calcualtor
                 Rank2Modifier1.Text = " 20 ";
                 Rank3Modifier1.Text = " 30 ";
 
-                TwoModifierBoxes();
+                ThreeModifierBoxes();
 
                 if (ifspoints == 0)
                 {
@@ -1186,7 +1186,7 @@ namespace SWG_Expertise_Calcualtor
                 AbilityTitle.Text = "FORCE SHOCKWAVE 1:" + "\r\n" + "CRUMBLE";
                 AbilityDescription.Text = "Force Crumble: A crushing force cone" + "\r\n" + "effect attack that causes damage to your" + "\r\n" + "opponents in front of you.";
 
-                ThreeModifierBoxes();
+                OneModifierBoxes();
 
                 if (fspoints == 0)
                 {
