@@ -1525,6 +1525,22 @@ namespace SWG_Expertise_Calcualtor
             {
                 ThreeRankPoints();
             }
+
+            // Fidelity
+            if (fpoints == 0 && FidelityHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (fpoints == 1 && FidelityHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (fpoints == 2 && FidelityHover == true)
+            {
+                TwoRankPoints();
+            }
         }
 
         private void OneModifierBoxes()
