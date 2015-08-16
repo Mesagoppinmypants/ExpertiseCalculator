@@ -1033,7 +1033,7 @@
             // DefensiveFighting
             // 
             this.DefensiveFighting.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iStanceSaberBlock;
-            this.DefensiveFighting.Location = new System.Drawing.Point(93, 375);
+            this.DefensiveFighting.Location = new System.Drawing.Point(91, 375);
             this.DefensiveFighting.Name = "DefensiveFighting";
             this.DefensiveFighting.Size = new System.Drawing.Size(42, 42);
             this.DefensiveFighting.TabIndex = 117;
