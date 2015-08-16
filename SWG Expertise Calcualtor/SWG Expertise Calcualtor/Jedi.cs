@@ -118,7 +118,6 @@ namespace SWG_Expertise_Calcualtor
         private void HoverFunctions()
         {
             CheckSkillRank();
-            CheckBackgroundsHover();
             SkillDescriptionVisiblity();
             SkillDescription();
             CheckRequirements();
@@ -1698,50 +1697,6 @@ namespace SWG_Expertise_Calcualtor
             }
         }
 
-        // Changes the background for each skill if they are hovered.
-        private void CheckBackgroundsHover()
-        {
-            // Enhanced Strength
-            if (EnhancedStrengthHover == true)
-            {
-                EnhancedStrengthBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                EnhancedStrengthBackground.Image = Properties.Resources.aSkillBox;
-            }
-
-            // Enhanced Constitution
-            if (EnhancedConstitutionHover == true)
-            {
-                EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBox;
-            }
-
-            // Enhanced Agility
-            if (EnhancedAgilityHover == true)
-            {
-                EnhancedAgilityBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                EnhancedAgilityBackground.Image = Properties.Resources.aSkillBox;
-            }
-
-            // Enhanced Stamina
-            if (EnhancedStaminaHover == true)
-            {
-                EnhancedStaminaBackground.Image = Properties.Resources.aSkillBoxGreen;
-            }
-            else
-            {
-                EnhancedStaminaBackground.Image = Properties.Resources.aSkillBox;
-            }
-        }
-
         // Makes sure that either add/remove points checkbox is checked
         private void AddPoints_CheckedChanged(object sender, EventArgs e)
         {
@@ -1842,6 +1797,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStrengthHovering()
         {
+            EnhancedStrengthBackground.Image = Properties.Resources.aSkillBoxGreen;
             EnhancedStrengthHover = true;
             HoverFunctions();
         }
@@ -1858,6 +1814,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStrength_MouseLeave(object sender, EventArgs e)
         {
+            EnhancedStrengthBackground.Image = Properties.Resources.aSkillBox;
             EnhancedStrengthHover = false;
             HoverFunctions();
         }
@@ -1918,6 +1875,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedConstitutionHovering()
         {
+            EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBoxGreen;
             EnhancedConstitutionHover = true;
             HoverFunctions();
         }
@@ -1934,6 +1892,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedConstitution_MouseLeave(object sender, EventArgs e)
         {
+            EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBox;
             EnhancedConstitutionHover = false;
             HoverFunctions();
         }
@@ -1992,6 +1951,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedAgilityHovering()
         {
+            EnhancedAgilityBackground.Image = Properties.Resources.aSkillBoxGreen;
             EnhancedAgilityHover = true;
             HoverFunctions();
         }
@@ -2008,6 +1968,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedAgility_MouseLeave(object sender, EventArgs e)
         {
+            EnhancedAgilityBackground.Image = Properties.Resources.aSkillBox;
             EnhancedAgilityHover = false;
             HoverFunctions();
         }
@@ -2066,6 +2027,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStaminaHovering()
         {
+            EnhancedStaminaBackground.Image = Properties.Resources.aSkillBoxGreen;
             EnhancedStaminaHover = true;
             HoverFunctions();
         }
@@ -2082,6 +2044,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStamina_MouseLeave(object sender, EventArgs e)
         {
+            EnhancedStaminaBackground.Image = Properties.Resources.aSkillBox;
             EnhancedStaminaHover = false;
             HoverFunctions();
         }
