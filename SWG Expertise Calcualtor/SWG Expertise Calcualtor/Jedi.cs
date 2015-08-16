@@ -1694,19 +1694,7 @@ namespace SWG_Expertise_Calcualtor
 
             //
             // Third Row
-            //
-
-            // Second Wind, 1st Row - White
-            if (totalPoints <= 37 && SecondWindHover == true)
-            {
-                SkillRequirements1.ForeColor = Color.White;
-            }
-
-            // Second Wind, 1st Row - Red
-            if (totalPoints > 37 && SecondWindHover == true)
-            {
-                SkillRequirements1.ForeColor = Color.Red;
-            }      
+            // 
 
             // Second Wind, 2st Row - White
             if (hspoints == 4 && SecondWindHover == true)
@@ -1720,26 +1708,14 @@ namespace SWG_Expertise_Calcualtor
                 SkillRequirements2.ForeColor = Color.Red;
             }
 
-            // Grace In Motion, Force Cloak, and Premonition - White
-            if (totalPoints <= 37 && GraceInMotionHover || ForceCloakHover || PremonitionHover == true)
+            // Second Wind (1st Row), Grace In Motion, Force Cloak, Premonition, and Improved Crippling Accuracy (1st Row) - White
+            if (totalPoints <= 37 && SecondWindHover || GraceInMotionHover || ForceCloakHover || PremonitionHover || ImprovedCripplingAccuracyHover == true)
             {
                 SkillRequirements1.ForeColor = Color.White;
             }
 
-            // Grace In Motion, Force Cloak, and Premonition - Red
-            if (totalPoints > 37 && ForceCloakHover || GraceInMotionHover || PremonitionHover == true)
-            {
-                SkillRequirements1.ForeColor = Color.Red;
-            }
-
-            // Improved Crippling Accuracy, 1st Row - White
-            if (totalPoints <= 37 && ImprovedCripplingAccuracyHover == true)
-            {
-                SkillRequirements1.ForeColor = Color.White;
-            }
-
-            // Improved Crippling Accuracy, 1st Row - Red
-            if (totalPoints > 37 && ImprovedCripplingAccuracyHover == true)
+            // // Second Wind (1st Row), Grace In Motion, Force Cloak, Premonition, and Improved Crippling Accuracy (1st Row) - Red
+            if (totalPoints > 37 && SecondWindHover || ForceCloakHover || GraceInMotionHover || PremonitionHover || ImprovedCripplingAccuracyHover == true)
             {
                 SkillRequirements1.ForeColor = Color.Red;
             }
@@ -1752,6 +1728,34 @@ namespace SWG_Expertise_Calcualtor
 
             // Improved Crippling Accuracy, 2nd Row - Red
             if (iftpoints < 2 && ImprovedCripplingAccuracyHover == true)
+            {
+                SkillRequirements2.ForeColor = Color.Red;
+            }
+
+            //
+            // Fourth Row
+            //
+
+            // Fidelity, Defensive Fighting, and Improved Saber Block (1st Row) - White
+            if (totalPoints > 33 && FidelityHover || DefensiveFightingHover || ImprovedSaberBlockHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.White;
+            }
+
+            // Fidelity, Defensive Fighting, and Improved Saber Block (1st Row) - Red
+            if (totalPoints > 33 && FidelityHover || DefensiveFightingHover || ImprovedSaberBlockHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.Red;
+            }
+
+            // Improved Saber Block, 2nd Row - White
+            if (dfpoints == 1)
+            {
+                SkillRequirements2.ForeColor = Color.White;
+            }
+
+            // Improved Saber Block, 2nd Row - White
+            if (dfpoints == 0)
             {
                 SkillRequirements2.ForeColor = Color.Red;
             }
