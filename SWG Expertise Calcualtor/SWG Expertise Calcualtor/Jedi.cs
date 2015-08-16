@@ -1019,7 +1019,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillTitle.Text = "IMPROVED SABER BLOCK";
                 SkillSummary.Text = "Improves the chance to parry an attack by" + "\r\n" + "5% per point spent while saber block is active.";
                 SkillRequirements1.Text = "12 Points In Jedi General";
-                SkillRequirements1.Text = "1 Points In Defensive Fighting";
+                SkillRequirements2.Text = "1 Points In Defensive Fighting";
                 SkillModifierTitle1.Text = "SABER BLOCK";
                 Rank1Modifier1.Text = " 5 ";
                 Rank2Modifier1.Text = " 10 ";
@@ -1078,7 +1078,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillTitle.Text = "INCISIVENESS";
                 SkillSummary.Text = "Increases the critical chance up to 8%.";
                 SkillRequirements1.Text = "16 Points In Jedi General";
-                SkillRequirements1.Text = "2 Points In Fidelity";
+                SkillRequirements2.Text = "2 Points In Fidelity";
                 SkillModifierTitle1.Text = "CRITICAL CHANCE INCREASE";
                 Rank1Modifier1.Text = " 2 ";
                 Rank2Modifier1.Text = " 5 ";
@@ -1114,7 +1114,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillTitle.Text = "IMPROVED FORCE CLOAK";
                 SkillSummary.Text = "Force Cloak allows a Jedi to escape from" + "\r\n" + "combat.";
                 SkillRequirements1.Text = "16 Points In Jedi General";
-                SkillRequirements1.Text = "1 Point In Force Cloak";
+                SkillRequirements2.Text = "1 Point In Force Cloak";
                 SkillModifierTitle1.Text = "ESCAPE COMBAT";
                 Rank1Modifier1.Text = " 1 ";
 
@@ -1138,7 +1138,7 @@ namespace SWG_Expertise_Calcualtor
                 SkillTitle.Text = "IMPROVED FORCE SHOCKWAVE";
                 SkillSummary.Text = "Force Shockwave's damage is increased by" + "\r\n" + "10% per point spent.";
                 SkillRequirements1.Text = "16 Points In Jedi General";
-                SkillRequirements1.Text = "1 Point In Force Shockwave";
+                SkillRequirements2.Text = "1 Point In Force Shockwave";
                 SkillModifierTitle1.Text = "SHOCKWAVE DAMAGE";
                 Rank1Modifier1.Text = " 10 ";
                 Rank2Modifier1.Text = " 20 ";
