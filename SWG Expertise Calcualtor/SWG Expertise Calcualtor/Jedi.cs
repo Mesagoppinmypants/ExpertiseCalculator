@@ -525,7 +525,7 @@ namespace SWG_Expertise_Calcualtor
             }
 
             // Rank 2 Modifiers - 2 Requirements
-            if (SecondWindHover || ImprovedCripplingAccuracyHover == true)
+            if (SecondWindHover || ImprovedCripplingAccuracyHover || ImprovedForceCloakHover || ImprovedForceShockwaveHover || ImprovedSaberBlockHover == true)
             {
                 SkillRequirements2.Visible = true;
             }
