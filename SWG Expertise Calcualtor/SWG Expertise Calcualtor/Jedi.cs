@@ -1749,16 +1749,63 @@ namespace SWG_Expertise_Calcualtor
             }
 
             // Improved Saber Block, 2nd Row - White
-            if (dfpoints == 1)
+            if (dfpoints == 1 && ImprovedSaberBlockHover == true)
             {
                 SkillRequirements2.ForeColor = Color.White;
             }
 
             // Improved Saber Block, 2nd Row - White
-            if (dfpoints == 0)
+            if (dfpoints == 0 && ImprovedSaberBlockHover == true)
             {
                 SkillRequirements2.ForeColor = Color.Red;
             }
+
+            //
+            // Fifth Row
+            //
+
+            // Everything - White
+            if (totalPoints <= 29 && IncisivenessHover || ImprovedForceCloakHover || ImprovedForceShockwaveHover || ForceShockwaveHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.White;
+            }
+
+            // Incisiveness, 2nd Row - White
+            if (fpoints == 2 && IncisivenessHover == true)
+            {
+                SkillRequirements2.ForeColor = Color.White;
+            }
+
+            // Incisiveness, 2nd Row - Red
+            if (fpoints < 2 && IncisivenessHover == true)
+            {
+                SkillRequirements2.ForeColor = Color.Red;
+            }
+
+            // Improved Force Cloak, 2nd Row - White
+            if (fcpoints == 1 && ImprovedForceCloakHover == true)
+            {
+                SkillRequirements2.ForeColor = Color.White;
+            }
+
+            // Improved Force Cloak, 2nd Row - Red
+            if (fcpoints == 0 && ImprovedForceCloakHover == true)
+            {
+                SkillRequirements2.ForeColor = Color.Red;
+            }
+
+            // Improved Force Shockwave, 2nd Row - White
+            if (fspoints == 3 && ImprovedForceShockwaveHover == true)
+            {
+                SkillRequirements2.ForeColor = Color.White;
+            }
+
+            // Improved Force Shockwave, 2nd Row - Red
+            if (fspoints < 3 && ImprovedForceShockwaveHover == true)
+            {
+                SkillRequirements2.ForeColor = Color.Red;
+            }
+
         }
 
         // Makes sure that either add/remove points checkbox is checked
