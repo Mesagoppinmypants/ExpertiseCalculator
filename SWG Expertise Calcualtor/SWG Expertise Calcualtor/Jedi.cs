@@ -1252,7 +1252,7 @@ namespace SWG_Expertise_Calcualtor
             Rank4Modifier2.BackColor = Color.Transparent;
         }
 
-        private void CheckSkillRank()
+        private void CheckSkillRank() // Do not add granted abilities
         {
             // Enhanced Strength
             if (strpoints == 0 && EnhancedStrengthHover == true)
@@ -1533,6 +1533,91 @@ namespace SWG_Expertise_Calcualtor
             {
                 TwoRankPoints();
             }
+
+            // Improved Saber Block
+            if (isbpoints == 0 && ImprovedSaberBlockHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (isbpoints == 1 && ImprovedSaberBlockHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (isbpoints == 2 && ImprovedSaberBlockHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            if (isbpoints == 3 && ImprovedSaberBlockHover == true)
+            {
+                ThreeRankPoints();
+            }
+
+            // Defensive Fighting
+            if (dfpoints == 0 && DefensiveFightingHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (dfpoints == 1 && DefensiveFightingHover == true)
+            {
+                OneRankPoints();
+            }
+
+            // Incisiveness
+            if (isbpoints == 0 && IncisivenessHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (ipoints == 1 && IncisivenessHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (ipoints == 2 && IncisivenessHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            if (ipoints == 3 && IncisivenessHover == true)
+            {
+                ThreeRankPoints();
+            }
+
+            // Improved Force Cloak
+            if (ifcpoints == 0 && ImprovedForceCloakHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (ifcpoints == 1 && ImprovedForceCloakHover == true)
+            {
+                OneRankPoints();
+            }
+
+            // Improved Force Shockwave
+            if (ifspoints == 0 && ImprovedForceShockwaveHover == true)
+            {
+                ZeroRankPoints();
+            }
+
+            if (ifspoints == 1 && ImprovedForceShockwaveHover == true)
+            {
+                OneRankPoints();
+            }
+
+            if (ifspoints == 2 && ImprovedForceShockwaveHover == true)
+            {
+                TwoRankPoints();
+            }
+
+            if (ifspoints == 3 && ImprovedForceShockwaveHover == true)
+            {
+                ThreeRankPoints();
+            }
         }
 
         private void OneModifierBoxes()
@@ -1581,116 +1666,91 @@ namespace SWG_Expertise_Calcualtor
 
         private void CheckRequirements()
         {
-            // First Row - No requirements
+            //
+            // First Row
+            //
+            
+            // Enhanced Strenth, Constitution, Agility and Stamina - White (Always)
             if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover == true)
             {
                 SkillRequirements1.ForeColor = Color.White;
             }
 
-            // Second Row - 4 General Jedi points Needs to be spent
+            //
+            // Second Row
+            //
+
+            // Heightened Speed, Exacting Strikes, Alacrity, and Improved Force Throw - White
             if (totalPoints <= 41 && HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover == true)
             {
                 SkillRequirements1.ForeColor = Color.White;
             }
 
-            // Second Wind - 8 Points In Jedi General Requirement
+            // Heightened Speed, Exacting Strikes, Alacrity, and Improved Force Throw - Red
+            if (totalPoints > 41 && HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.Red;
+            }
+
+            //
+            // Third Row
+            //
+
+            // Second Wind, 1st Row - White
             if (totalPoints <= 37 && SecondWindHover == true)
             {
                 SkillRequirements1.ForeColor = Color.White;
             }
 
+            // Second Wind, 1st Row - Red
             if (totalPoints > 37 && SecondWindHover == true)
             {
                 SkillRequirements1.ForeColor = Color.Red;
-            }
+            }      
 
-            // Second Wind - 4 Points Required in Heightened Speed
-            if (hspoints < 4 && SecondWindHover == true)
-            {
-                SkillRequirements2.ForeColor = Color.Red;
-            }
-
+            // Second Wind, 2st Row - White
             if (hspoints == 4 && SecondWindHover == true)
             {
                 SkillRequirements2.ForeColor = Color.White;
             }
 
-            // Exacting Strikes
-            if (totalPoints > 41 && ExactingStrikesHover == true)
+            // Second Wind, 2st Row - Red
+            if (hspoints < 4 && SecondWindHover == true)
             {
-                SkillRequirements1.ForeColor = Color.Red;
+                SkillRequirements2.ForeColor = Color.Red;
             }
 
-            // Heightened Speed
-            if (totalPoints > 41 && HeightenedSpeedHover == true)
-            {
-                SkillRequirements1.ForeColor = Color.Red;
-            }
-
-            // Alacrity
-            if (totalPoints > 41 && AlacrityHover == true)
-            {
-                SkillRequirements1.ForeColor = Color.Red;
-            }
-
-            // Enhanced Force Throw
-            if (totalPoints > 41 && ImprovedForceThrowHover == true)
-            {
-                SkillRequirements1.ForeColor = Color.Red;
-            }
-
-            // 8 Points In Jedi General
-            // Force Cloak
-            if (totalPoints <= 37 && ForceCloakHover || GraceInMotionHover || PremonitionHover == true)
+            // Grace In Motion, Force Cloak, and Premonition - White
+            if (totalPoints <= 37 && GraceInMotionHover || ForceCloakHover || PremonitionHover == true)
             {
                 SkillRequirements1.ForeColor = Color.White;
             }
 
+            // Grace In Motion, Force Cloak, and Premonition - Red
             if (totalPoints > 37 && ForceCloakHover || GraceInMotionHover || PremonitionHover == true)
             {
                 SkillRequirements1.ForeColor = Color.Red;
             }
 
-            // Grace In Motion
-            if (totalPoints <= 37 && GraceInMotionHover == true)
-            {
-                SkillRequirements1.ForeColor = Color.White;
-            }
-
-            if (totalPoints > 37 && GraceInMotionHover == true)
-            {
-                SkillRequirements1.ForeColor = Color.Red;
-            }
-
-            // Premonition
-            if (totalPoints <= 37 && PremonitionHover == true)
-            {
-                SkillRequirements1.ForeColor = Color.White;
-            }
-
-            if (totalPoints > 37 && PremonitionHover == true)
-            {
-                SkillRequirements1.ForeColor = Color.Red;
-            }
-
-            // Improved Crippling Accuracy
-            // 8 Points In Jedi General
+            // Improved Crippling Accuracy, 1st Row - White
             if (totalPoints <= 37 && ImprovedCripplingAccuracyHover == true)
             {
                 SkillRequirements1.ForeColor = Color.White;
             }
 
+            // Improved Crippling Accuracy, 1st Row - Red
             if (totalPoints > 37 && ImprovedCripplingAccuracyHover == true)
             {
                 SkillRequirements1.ForeColor = Color.Red;
             }
 
-            // 2 Points In Improved Force Throw
+            // Improved Crippling Accuracy, 2nd Row - White
             if (iftpoints == 2 && ImprovedCripplingAccuracyHover == true)
             {
                 SkillRequirements2.ForeColor = Color.White;
             }
 
+            // Improved Crippling Accuracy, 2nd Row - Red
             if (iftpoints < 2 && ImprovedCripplingAccuracyHover == true)
             {
                 SkillRequirements2.ForeColor = Color.Red;
