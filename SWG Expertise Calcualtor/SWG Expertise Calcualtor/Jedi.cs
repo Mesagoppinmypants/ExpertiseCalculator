@@ -1654,7 +1654,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void HideSecondRankRow()
         {
-            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover == true)
+            if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || AlacrityHover || ImprovedForceThrowHover || SecondWindHover || GraceInMotionHover || ImprovedCripplingAccuracyHover || FidelityHover || ImprovedSaberBlockHover || DefensiveFightingHover || IncisivenessHover || ImprovedForceCloakHover || ImprovedForceShockwaveHover == true)
             {
                 SkillModifierTitle2.Visible = false;
                 Rank1Modifier2.Visible = false;
