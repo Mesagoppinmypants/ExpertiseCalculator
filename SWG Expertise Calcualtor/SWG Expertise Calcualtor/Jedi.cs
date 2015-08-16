@@ -1082,7 +1082,7 @@ namespace SWG_Expertise_Calcualtor
             // Incisiveness
             if (IncisivenessHover == true)
             {
-                SkillPicture.Image = Properties.Resources.aImprovedSaberBlock;
+                SkillPicture.Image = Properties.Resources.aIncisiveness;
                 SkillTitle.Text = "INCISIVENESS";
                 SkillSummary.Text = "Increases the critical chance up to 8%.";
                 SkillRequirements1.Text = "16 Points In Jedi General";
