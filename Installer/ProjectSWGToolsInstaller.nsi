@@ -13,9 +13,9 @@ OutFile "ToolsInstaller.exe"
 
 ; Icon for installer
 !define MUI_ICON "256.ico"
-!define MUI_HEADERIMAGE
+;!define MUI_HEADERIMAGE
 ;!define MUI_HEADERIMAGE_BITMAP "LOGO256X256.bmp"
-!define MUI_HEADERIMAGE_RIGHT
+;!define MUI_HEADERIMAGE_RIGHT
 ;!define MUI_WELCOMEFINISHPAGE_BITMAP ".bmp"
 
 ; The default installation directory

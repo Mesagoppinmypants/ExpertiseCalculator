@@ -329,6 +329,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\StrengthSpent.png" />
+    <None Include="Resources\StrengthSpentHover.png" />
+    <None Include="Resources\StrengthHover.png" />
+    <None Include="Resources\StaminaAvailable.png" />
+    <None Include="Resources\AgilityAvailable.png" />
+    <None Include="Resources\ConAvailable.png" />
+    <None Include="Resources\StrengthAvailable.png" />
     <None Include="Resources\aImprovedForceShockwave.gif" />
     <None Include="Resources\aForceShockwave.gif" />
     <None Include="Resources\aImprovedForceCloak.gif" />

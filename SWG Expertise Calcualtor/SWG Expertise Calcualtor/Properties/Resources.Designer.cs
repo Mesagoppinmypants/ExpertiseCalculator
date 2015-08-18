@@ -153,6 +153,16 @@ namespace SWG_Expertise_Calcualtor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AgilityAvailable {
+            get {
+                object obj = ResourceManager.GetObject("AgilityAvailable", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aGraceInMotion {
             get {
                 object obj = ResourceManager.GetObject("aGraceInMotion", resourceCulture);
@@ -296,6 +306,16 @@ namespace SWG_Expertise_Calcualtor.Properties {
         internal static System.Drawing.Bitmap aStanceSaberBlock {
             get {
                 object obj = ResourceManager.GetObject("aStanceSaberBlock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ConAvailable {
+            get {
+                object obj = ResourceManager.GetObject("ConAvailable", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -676,6 +696,56 @@ namespace SWG_Expertise_Calcualtor.Properties {
         internal static System.Drawing.Bitmap skillpoints4 {
             get {
                 object obj = ResourceManager.GetObject("skillpoints4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap StaminaAvailable {
+            get {
+                object obj = ResourceManager.GetObject("StaminaAvailable", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap StrengthAvailable {
+            get {
+                object obj = ResourceManager.GetObject("StrengthAvailable", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap StrengthHover {
+            get {
+                object obj = ResourceManager.GetObject("StrengthHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap StrengthSpent {
+            get {
+                object obj = ResourceManager.GetObject("StrengthSpent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap StrengthSpentHover {
+            get {
+                object obj = ResourceManager.GetObject("StrengthSpentHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

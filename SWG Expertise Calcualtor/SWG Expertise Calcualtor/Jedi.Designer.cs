@@ -58,8 +58,16 @@
             this.JediGeneral = new System.Windows.Forms.Label();
             this.Path = new System.Windows.Forms.Label();
             this.BeastMastery = new System.Windows.Forms.Label();
-            this.ForceCloakPoints = new System.Windows.Forms.PictureBox();
+            this.CommandPanel = new System.Windows.Forms.Panel();
+            this.AbilityPicture = new System.Windows.Forms.PictureBox();
+            this.AbilityBackground = new System.Windows.Forms.PictureBox();
+            this.AbilityTitle = new System.Windows.Forms.Label();
+            this.AbilityDescription = new System.Windows.Forms.Label();
             this.ForceCloak = new System.Windows.Forms.PictureBox();
+            this.ForceCloakLine = new System.Windows.Forms.PictureBox();
+            this.ForceCloakLineEnd = new System.Windows.Forms.PictureBox();
+            this.ForceCloakLineStart = new System.Windows.Forms.PictureBox();
+            this.ForceCloakPoints = new System.Windows.Forms.PictureBox();
             this.ForceCloakBackground = new System.Windows.Forms.PictureBox();
             this.AlacrityPoints = new System.Windows.Forms.PictureBox();
             this.Alacrity = new System.Windows.Forms.PictureBox();
@@ -67,9 +75,6 @@
             this.SecondWindPoints = new System.Windows.Forms.PictureBox();
             this.SecondWind = new System.Windows.Forms.PictureBox();
             this.SecondWindBackground = new System.Windows.Forms.PictureBox();
-            this.ForceCloakLineEnd = new System.Windows.Forms.PictureBox();
-            this.ForceCloakLineStart = new System.Windows.Forms.PictureBox();
-            this.ForceCloakLine = new System.Windows.Forms.PictureBox();
             this.SkillPicture = new System.Windows.Forms.PictureBox();
             this.SkillPictureBackground = new System.Windows.Forms.PictureBox();
             this.ExactingStrikesPoints = new System.Windows.Forms.PictureBox();
@@ -119,26 +124,26 @@
             this.EnhancedAgilityPoints = new System.Windows.Forms.PictureBox();
             this.EnhancedConstitutionPoints = new System.Windows.Forms.PictureBox();
             this.EnhancedStrengthPoints = new System.Windows.Forms.PictureBox();
-            this.EnhancedStamina = new System.Windows.Forms.PictureBox();
-            this.EnhancedAgility = new System.Windows.Forms.PictureBox();
-            this.EnhancedConstitution = new System.Windows.Forms.PictureBox();
-            this.EnhancedStrength = new System.Windows.Forms.PictureBox();
             this.EnhancedStaminaBackground = new System.Windows.Forms.PictureBox();
             this.EnhancedAgilityBackground = new System.Windows.Forms.PictureBox();
             this.EnhancedConstitutionBackground = new System.Windows.Forms.PictureBox();
-            this.EnhancedStrengthBackground = new System.Windows.Forms.PictureBox();
+            this.EnhancedStrength = new System.Windows.Forms.PictureBox();
             this.ImprovedForceThrowBackground = new System.Windows.Forms.PictureBox();
             this.PremonitionBackground = new System.Windows.Forms.PictureBox();
             this.ImprovedCripplingAccuracyBackground = new System.Windows.Forms.PictureBox();
             this.DefensiveFightingBackground = new System.Windows.Forms.PictureBox();
             this.ImprovedSaberBlockBackground = new System.Windows.Forms.PictureBox();
-            this.CommandPanel = new System.Windows.Forms.Panel();
-            this.AbilityPicture = new System.Windows.Forms.PictureBox();
-            this.AbilityBackground = new System.Windows.Forms.PictureBox();
-            this.AbilityTitle = new System.Windows.Forms.Label();
-            this.AbilityDescription = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakPoints)).BeginInit();
+            this.EnhancedStamina = new System.Windows.Forms.PictureBox();
+            this.EnhancedAgility = new System.Windows.Forms.PictureBox();
+            this.EnhancedConstitution = new System.Windows.Forms.PictureBox();
+            this.CommandPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AbilityPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AbilityBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloak)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineEnd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineStart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AlacrityPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).BeginInit();
@@ -146,9 +151,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.SecondWindPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SecondWindBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineEnd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineStart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillPictureBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesPoints)).BeginInit();
@@ -198,22 +200,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStamina)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitution)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PremonitionBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlockBackground)).BeginInit();
-            this.CommandPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AbilityPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AbilityBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStamina)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitution)).BeginInit();
             this.SuspendLayout();
             // 
             // AvailablePoints
@@ -570,15 +568,63 @@
             this.BeastMastery.TabIndex = 199;
             this.BeastMastery.Text = "beast mastery";
             // 
-            // ForceCloakPoints
+            // CommandPanel
             // 
-            this.ForceCloakPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
-            this.ForceCloakPoints.Location = new System.Drawing.Point(307, 328);
-            this.ForceCloakPoints.Name = "ForceCloakPoints";
-            this.ForceCloakPoints.Size = new System.Drawing.Size(25, 24);
-            this.ForceCloakPoints.TabIndex = 97;
-            this.ForceCloakPoints.TabStop = false;
-            this.ForceCloakPoints.Visible = false;
+            this.CommandPanel.Controls.Add(this.AbilityPicture);
+            this.CommandPanel.Controls.Add(this.AbilityBackground);
+            this.CommandPanel.Controls.Add(this.AbilityTitle);
+            this.CommandPanel.Controls.Add(this.AbilityDescription);
+            this.CommandPanel.Location = new System.Drawing.Point(648, 265);
+            this.CommandPanel.Name = "CommandPanel";
+            this.CommandPanel.Size = new System.Drawing.Size(300, 175);
+            this.CommandPanel.TabIndex = 204;
+            this.CommandPanel.Visible = false;
+            // 
+            // AbilityPicture
+            // 
+            this.AbilityPicture.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aForceCloak;
+            this.AbilityPicture.Location = new System.Drawing.Point(12, 22);
+            this.AbilityPicture.Name = "AbilityPicture";
+            this.AbilityPicture.Size = new System.Drawing.Size(42, 42);
+            this.AbilityPicture.TabIndex = 206;
+            this.AbilityPicture.TabStop = false;
+            this.AbilityPicture.Visible = false;
+            // 
+            // AbilityBackground
+            // 
+            this.AbilityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.SkillBox;
+            this.AbilityBackground.Location = new System.Drawing.Point(7, 17);
+            this.AbilityBackground.Name = "AbilityBackground";
+            this.AbilityBackground.Size = new System.Drawing.Size(52, 50);
+            this.AbilityBackground.TabIndex = 205;
+            this.AbilityBackground.TabStop = false;
+            this.AbilityBackground.Visible = false;
+            // 
+            // AbilityTitle
+            // 
+            this.AbilityTitle.AutoSize = true;
+            this.AbilityTitle.BackColor = System.Drawing.Color.Transparent;
+            this.AbilityTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AbilityTitle.ForeColor = System.Drawing.Color.White;
+            this.AbilityTitle.Location = new System.Drawing.Point(56, 20);
+            this.AbilityTitle.Name = "AbilityTitle";
+            this.AbilityTitle.Size = new System.Drawing.Size(112, 24);
+            this.AbilityTitle.TabIndex = 207;
+            this.AbilityTitle.Text = "Ability Title";
+            this.AbilityTitle.Visible = false;
+            // 
+            // AbilityDescription
+            // 
+            this.AbilityDescription.AutoSize = true;
+            this.AbilityDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AbilityDescription.ForeColor = System.Drawing.Color.White;
+            this.AbilityDescription.Location = new System.Drawing.Point(4, 70);
+            this.AbilityDescription.Name = "AbilityDescription";
+            this.AbilityDescription.Size = new System.Drawing.Size(284, 64);
+            this.AbilityDescription.TabIndex = 204;
+            this.AbilityDescription.Text = "Force Cloak: This ability allows\r\ninvisibility for a duration of time. With\r\nImpr" +
+    "oved Force Cloak, Jedi can escape\r\ncombat.";
+            this.AbilityDescription.Visible = false;
             // 
             // ForceCloak
             // 
@@ -592,6 +638,49 @@
             this.ForceCloak.MouseLeave += new System.EventHandler(this.ForceCloak_MouseLeave);
             this.ForceCloak.MouseHover += new System.EventHandler(this.ForceCloak_MouseHover);
             this.ForceCloak.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ForceCloak_MouseMove);
+            // 
+            // ForceCloakLine
+            // 
+            this.ForceCloakLine.BackColor = System.Drawing.Color.Transparent;
+            this.ForceCloakLine.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineVertical;
+            this.ForceCloakLine.Location = new System.Drawing.Point(245, 350);
+            this.ForceCloakLine.Name = "ForceCloakLine";
+            this.ForceCloakLine.Size = new System.Drawing.Size(88, 90);
+            this.ForceCloakLine.TabIndex = 193;
+            this.ForceCloakLine.TabStop = false;
+            this.ForceCloakLine.Visible = false;
+            // 
+            // ForceCloakLineEnd
+            // 
+            this.ForceCloakLineEnd.BackColor = System.Drawing.Color.Transparent;
+            this.ForceCloakLineEnd.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineArrowTop;
+            this.ForceCloakLineEnd.Location = new System.Drawing.Point(269, 440);
+            this.ForceCloakLineEnd.Name = "ForceCloakLineEnd";
+            this.ForceCloakLineEnd.Size = new System.Drawing.Size(32, 24);
+            this.ForceCloakLineEnd.TabIndex = 195;
+            this.ForceCloakLineEnd.TabStop = false;
+            this.ForceCloakLineEnd.Visible = false;
+            // 
+            // ForceCloakLineStart
+            // 
+            this.ForceCloakLineStart.BackColor = System.Drawing.Color.Transparent;
+            this.ForceCloakLineStart.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineStart1;
+            this.ForceCloakLineStart.Location = new System.Drawing.Point(269, 330);
+            this.ForceCloakLineStart.Name = "ForceCloakLineStart";
+            this.ForceCloakLineStart.Size = new System.Drawing.Size(29, 26);
+            this.ForceCloakLineStart.TabIndex = 194;
+            this.ForceCloakLineStart.TabStop = false;
+            this.ForceCloakLineStart.Visible = false;
+            // 
+            // ForceCloakPoints
+            // 
+            this.ForceCloakPoints.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.skillpoints1;
+            this.ForceCloakPoints.Location = new System.Drawing.Point(307, 328);
+            this.ForceCloakPoints.Name = "ForceCloakPoints";
+            this.ForceCloakPoints.Size = new System.Drawing.Size(25, 24);
+            this.ForceCloakPoints.TabIndex = 97;
+            this.ForceCloakPoints.TabStop = false;
+            this.ForceCloakPoints.Visible = false;
             // 
             // ForceCloakBackground
             // 
@@ -665,39 +754,6 @@
             this.SecondWindBackground.Size = new System.Drawing.Size(89, 88);
             this.SecondWindBackground.TabIndex = 144;
             this.SecondWindBackground.TabStop = false;
-            // 
-            // ForceCloakLineEnd
-            // 
-            this.ForceCloakLineEnd.BackColor = System.Drawing.Color.Transparent;
-            this.ForceCloakLineEnd.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineArrowTop;
-            this.ForceCloakLineEnd.Location = new System.Drawing.Point(269, 440);
-            this.ForceCloakLineEnd.Name = "ForceCloakLineEnd";
-            this.ForceCloakLineEnd.Size = new System.Drawing.Size(32, 24);
-            this.ForceCloakLineEnd.TabIndex = 195;
-            this.ForceCloakLineEnd.TabStop = false;
-            this.ForceCloakLineEnd.Visible = false;
-            // 
-            // ForceCloakLineStart
-            // 
-            this.ForceCloakLineStart.BackColor = System.Drawing.Color.Transparent;
-            this.ForceCloakLineStart.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineStart1;
-            this.ForceCloakLineStart.Location = new System.Drawing.Point(269, 330);
-            this.ForceCloakLineStart.Name = "ForceCloakLineStart";
-            this.ForceCloakLineStart.Size = new System.Drawing.Size(29, 26);
-            this.ForceCloakLineStart.TabIndex = 194;
-            this.ForceCloakLineStart.TabStop = false;
-            this.ForceCloakLineStart.Visible = false;
-            // 
-            // ForceCloakLine
-            // 
-            this.ForceCloakLine.BackColor = System.Drawing.Color.Transparent;
-            this.ForceCloakLine.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.LineVertical;
-            this.ForceCloakLine.Location = new System.Drawing.Point(245, 350);
-            this.ForceCloakLine.Name = "ForceCloakLine";
-            this.ForceCloakLine.Size = new System.Drawing.Size(88, 90);
-            this.ForceCloakLine.TabIndex = 193;
-            this.ForceCloakLine.TabStop = false;
-            this.ForceCloakLine.Visible = false;
             // 
             // SkillPicture
             // 
@@ -1212,58 +1268,6 @@
             this.EnhancedStrengthPoints.TabStop = false;
             this.EnhancedStrengthPoints.Visible = false;
             // 
-            // EnhancedStamina
-            // 
-            this.EnhancedStamina.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStamina;
-            this.EnhancedStamina.Location = new System.Drawing.Point(441, 115);
-            this.EnhancedStamina.Name = "EnhancedStamina";
-            this.EnhancedStamina.Size = new System.Drawing.Size(42, 42);
-            this.EnhancedStamina.TabIndex = 21;
-            this.EnhancedStamina.TabStop = false;
-            this.EnhancedStamina.Click += new System.EventHandler(this.EnhancedStamina_Click);
-            this.EnhancedStamina.MouseLeave += new System.EventHandler(this.EnhancedStamina_MouseLeave);
-            this.EnhancedStamina.MouseHover += new System.EventHandler(this.EnhancedStamina_MouseHover);
-            this.EnhancedStamina.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedStamina_MouseMove);
-            // 
-            // EnhancedAgility
-            // 
-            this.EnhancedAgility.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedAgility;
-            this.EnhancedAgility.Location = new System.Drawing.Point(356, 115);
-            this.EnhancedAgility.Name = "EnhancedAgility";
-            this.EnhancedAgility.Size = new System.Drawing.Size(42, 42);
-            this.EnhancedAgility.TabIndex = 20;
-            this.EnhancedAgility.TabStop = false;
-            this.EnhancedAgility.Click += new System.EventHandler(this.EnhancedAgility_Click);
-            this.EnhancedAgility.MouseLeave += new System.EventHandler(this.EnhancedAgility_MouseLeave);
-            this.EnhancedAgility.MouseHover += new System.EventHandler(this.EnhancedAgility_MouseHover);
-            this.EnhancedAgility.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedAgility_MouseMove);
-            // 
-            // EnhancedConstitution
-            // 
-            this.EnhancedConstitution.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedConstitution;
-            this.EnhancedConstitution.Location = new System.Drawing.Point(268, 115);
-            this.EnhancedConstitution.Name = "EnhancedConstitution";
-            this.EnhancedConstitution.Size = new System.Drawing.Size(42, 42);
-            this.EnhancedConstitution.TabIndex = 19;
-            this.EnhancedConstitution.TabStop = false;
-            this.EnhancedConstitution.Click += new System.EventHandler(this.EnhancedConstitution_Click);
-            this.EnhancedConstitution.MouseLeave += new System.EventHandler(this.EnhancedConstitution_MouseLeave);
-            this.EnhancedConstitution.MouseHover += new System.EventHandler(this.EnhancedConstitution_MouseHover);
-            this.EnhancedConstitution.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedConstitution_MouseMove);
-            // 
-            // EnhancedStrength
-            // 
-            this.EnhancedStrength.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStrength;
-            this.EnhancedStrength.Location = new System.Drawing.Point(181, 115);
-            this.EnhancedStrength.Name = "EnhancedStrength";
-            this.EnhancedStrength.Size = new System.Drawing.Size(42, 42);
-            this.EnhancedStrength.TabIndex = 18;
-            this.EnhancedStrength.TabStop = false;
-            this.EnhancedStrength.Click += new System.EventHandler(this.EnhancedStrength_Click);
-            this.EnhancedStrength.MouseLeave += new System.EventHandler(this.EnhancedStrength_MouseLeave);
-            this.EnhancedStrength.MouseHover += new System.EventHandler(this.EnhancedStrength_MouseHover);
-            this.EnhancedStrength.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedStrength_MouseMove);
-            // 
             // EnhancedStaminaBackground
             // 
             this.EnhancedStaminaBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
@@ -1291,14 +1295,18 @@
             this.EnhancedConstitutionBackground.TabIndex = 3;
             this.EnhancedConstitutionBackground.TabStop = false;
             // 
-            // EnhancedStrengthBackground
+            // EnhancedStrength
             // 
-            this.EnhancedStrengthBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.EnhancedStrengthBackground.Location = new System.Drawing.Point(158, 92);
-            this.EnhancedStrengthBackground.Name = "EnhancedStrengthBackground";
-            this.EnhancedStrengthBackground.Size = new System.Drawing.Size(89, 88);
-            this.EnhancedStrengthBackground.TabIndex = 0;
-            this.EnhancedStrengthBackground.TabStop = false;
+            this.EnhancedStrength.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.StrengthAvailable;
+            this.EnhancedStrength.Location = new System.Drawing.Point(158, 92);
+            this.EnhancedStrength.Name = "EnhancedStrength";
+            this.EnhancedStrength.Size = new System.Drawing.Size(89, 88);
+            this.EnhancedStrength.TabIndex = 0;
+            this.EnhancedStrength.TabStop = false;
+            this.EnhancedStrength.Click += new System.EventHandler(this.EnhancedStrength_Click);
+            this.EnhancedStrength.MouseLeave += new System.EventHandler(this.EnhancedStrength_MouseLeave);
+            this.EnhancedStrength.MouseHover += new System.EventHandler(this.EnhancedStrength_MouseHover);
+            this.EnhancedStrength.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedStrength_MouseMove);
             // 
             // ImprovedForceThrowBackground
             // 
@@ -1345,63 +1353,44 @@
             this.ImprovedSaberBlockBackground.TabIndex = 152;
             this.ImprovedSaberBlockBackground.TabStop = false;
             // 
-            // CommandPanel
+            // EnhancedStamina
             // 
-            this.CommandPanel.Controls.Add(this.AbilityPicture);
-            this.CommandPanel.Controls.Add(this.AbilityBackground);
-            this.CommandPanel.Controls.Add(this.AbilityTitle);
-            this.CommandPanel.Controls.Add(this.AbilityDescription);
-            this.CommandPanel.Location = new System.Drawing.Point(648, 265);
-            this.CommandPanel.Name = "CommandPanel";
-            this.CommandPanel.Size = new System.Drawing.Size(300, 175);
-            this.CommandPanel.TabIndex = 204;
-            this.CommandPanel.Visible = false;
+            this.EnhancedStamina.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStamina;
+            this.EnhancedStamina.Location = new System.Drawing.Point(441, 115);
+            this.EnhancedStamina.Name = "EnhancedStamina";
+            this.EnhancedStamina.Size = new System.Drawing.Size(42, 42);
+            this.EnhancedStamina.TabIndex = 21;
+            this.EnhancedStamina.TabStop = false;
+            this.EnhancedStamina.Click += new System.EventHandler(this.EnhancedStamina_Click);
+            this.EnhancedStamina.MouseLeave += new System.EventHandler(this.EnhancedStamina_MouseLeave);
+            this.EnhancedStamina.MouseHover += new System.EventHandler(this.EnhancedStamina_MouseHover);
+            this.EnhancedStamina.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedStamina_MouseMove);
             // 
-            // AbilityPicture
+            // EnhancedAgility
             // 
-            this.AbilityPicture.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aForceCloak;
-            this.AbilityPicture.Location = new System.Drawing.Point(12, 22);
-            this.AbilityPicture.Name = "AbilityPicture";
-            this.AbilityPicture.Size = new System.Drawing.Size(42, 42);
-            this.AbilityPicture.TabIndex = 206;
-            this.AbilityPicture.TabStop = false;
-            this.AbilityPicture.Visible = false;
+            this.EnhancedAgility.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedAgility;
+            this.EnhancedAgility.Location = new System.Drawing.Point(356, 115);
+            this.EnhancedAgility.Name = "EnhancedAgility";
+            this.EnhancedAgility.Size = new System.Drawing.Size(42, 42);
+            this.EnhancedAgility.TabIndex = 20;
+            this.EnhancedAgility.TabStop = false;
+            this.EnhancedAgility.Click += new System.EventHandler(this.EnhancedAgility_Click);
+            this.EnhancedAgility.MouseLeave += new System.EventHandler(this.EnhancedAgility_MouseLeave);
+            this.EnhancedAgility.MouseHover += new System.EventHandler(this.EnhancedAgility_MouseHover);
+            this.EnhancedAgility.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedAgility_MouseMove);
             // 
-            // AbilityBackground
+            // EnhancedConstitution
             // 
-            this.AbilityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.SkillBox;
-            this.AbilityBackground.Location = new System.Drawing.Point(7, 17);
-            this.AbilityBackground.Name = "AbilityBackground";
-            this.AbilityBackground.Size = new System.Drawing.Size(52, 50);
-            this.AbilityBackground.TabIndex = 205;
-            this.AbilityBackground.TabStop = false;
-            this.AbilityBackground.Visible = false;
-            // 
-            // AbilityTitle
-            // 
-            this.AbilityTitle.AutoSize = true;
-            this.AbilityTitle.BackColor = System.Drawing.Color.Transparent;
-            this.AbilityTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AbilityTitle.ForeColor = System.Drawing.Color.White;
-            this.AbilityTitle.Location = new System.Drawing.Point(56, 20);
-            this.AbilityTitle.Name = "AbilityTitle";
-            this.AbilityTitle.Size = new System.Drawing.Size(112, 24);
-            this.AbilityTitle.TabIndex = 207;
-            this.AbilityTitle.Text = "Ability Title";
-            this.AbilityTitle.Visible = false;
-            // 
-            // AbilityDescription
-            // 
-            this.AbilityDescription.AutoSize = true;
-            this.AbilityDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AbilityDescription.ForeColor = System.Drawing.Color.White;
-            this.AbilityDescription.Location = new System.Drawing.Point(4, 70);
-            this.AbilityDescription.Name = "AbilityDescription";
-            this.AbilityDescription.Size = new System.Drawing.Size(284, 64);
-            this.AbilityDescription.TabIndex = 204;
-            this.AbilityDescription.Text = "Force Cloak: This ability allows\r\ninvisibility for a duration of time. With\r\nImpr" +
-    "oved Force Cloak, Jedi can escape\r\ncombat.";
-            this.AbilityDescription.Visible = false;
+            this.EnhancedConstitution.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedConstitution;
+            this.EnhancedConstitution.Location = new System.Drawing.Point(268, 115);
+            this.EnhancedConstitution.Name = "EnhancedConstitution";
+            this.EnhancedConstitution.Size = new System.Drawing.Size(42, 42);
+            this.EnhancedConstitution.TabIndex = 19;
+            this.EnhancedConstitution.TabStop = false;
+            this.EnhancedConstitution.Click += new System.EventHandler(this.EnhancedConstitution_Click);
+            this.EnhancedConstitution.MouseLeave += new System.EventHandler(this.EnhancedConstitution_MouseLeave);
+            this.EnhancedConstitution.MouseHover += new System.EventHandler(this.EnhancedConstitution_MouseHover);
+            this.EnhancedConstitution.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedConstitution_MouseMove);
             // 
             // Jedi
             // 
@@ -1503,11 +1492,10 @@
             this.Controls.Add(this.EnhancedStamina);
             this.Controls.Add(this.EnhancedAgility);
             this.Controls.Add(this.EnhancedConstitution);
-            this.Controls.Add(this.EnhancedStrength);
             this.Controls.Add(this.EnhancedStaminaBackground);
             this.Controls.Add(this.EnhancedAgilityBackground);
             this.Controls.Add(this.EnhancedConstitutionBackground);
-            this.Controls.Add(this.EnhancedStrengthBackground);
+            this.Controls.Add(this.EnhancedStrength);
             this.Controls.Add(this.ImprovedForceThrowBackground);
             this.Controls.Add(this.PremonitionBackground);
             this.Controls.Add(this.ImprovedCripplingAccuracyBackground);
@@ -1520,8 +1508,15 @@
             this.Text = "Jedi";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Jedi_FormClosing);
             this.Load += new System.EventHandler(this.Jedi_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakPoints)).EndInit();
+            this.CommandPanel.ResumeLayout(false);
+            this.CommandPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AbilityPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AbilityBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloak)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineEnd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineStart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ForceCloakBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AlacrityPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Alacrity)).EndInit();
@@ -1529,9 +1524,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.SecondWindPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SecondWind)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SecondWindBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineEnd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLineStart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ForceCloakLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkillPictureBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExactingStrikesPoints)).EndInit();
@@ -1581,23 +1573,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStamina)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitution)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PremonitionBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlockBackground)).EndInit();
-            this.CommandPanel.ResumeLayout(false);
-            this.CommandPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AbilityPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AbilityBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStamina)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitution)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1605,14 +1592,10 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox EnhancedStrengthBackground;
+        private System.Windows.Forms.PictureBox EnhancedStrength;
         private System.Windows.Forms.PictureBox EnhancedConstitutionBackground;
         private System.Windows.Forms.PictureBox EnhancedStaminaBackground;
         private System.Windows.Forms.PictureBox EnhancedAgilityBackground;
-        private System.Windows.Forms.PictureBox EnhancedStrength;
-        private System.Windows.Forms.PictureBox EnhancedConstitution;
-        private System.Windows.Forms.PictureBox EnhancedAgility;
-        private System.Windows.Forms.PictureBox EnhancedStamina;
         private System.Windows.Forms.Label AvailablePoints;
         public System.Windows.Forms.CheckBox AddPoints;
         public System.Windows.Forms.CheckBox RemovePoints;
@@ -1714,5 +1697,8 @@
         private System.Windows.Forms.PictureBox AbilityBackground;
         private System.Windows.Forms.Label AbilityTitle;
         private System.Windows.Forms.Label AbilityDescription;
+        private System.Windows.Forms.PictureBox EnhancedStamina;
+        private System.Windows.Forms.PictureBox EnhancedAgility;
+        private System.Windows.Forms.PictureBox EnhancedConstitution;
     }
 }

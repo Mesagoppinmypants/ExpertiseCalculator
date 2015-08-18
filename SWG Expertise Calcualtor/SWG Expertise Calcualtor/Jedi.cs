@@ -567,7 +567,7 @@ namespace SWG_Expertise_Calcualtor
             // Enhanced Strength
             if (EnhancedStrengthHover == true)
             {
-                SkillPicture.Image = Properties.Resources.aEnhancedStrength;
+                //SkillPicture.Image = Properties.Resources.aEnhancedStrength;
                 SkillTitle.Text = "ENHANCED STRENGTH";
                 SkillSummary.Text = "Strength increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements1.Text = "None";
@@ -1787,10 +1787,16 @@ namespace SWG_Expertise_Calcualtor
             // Fifth Row
             //
 
-            // Everything - White
+            // Everything, 1st Row - White
             if (totalPoints <= 29 && IncisivenessHover || ImprovedForceCloakHover || ImprovedForceShockwaveHover || ForceShockwaveHover == true)
             {
                 SkillRequirements1.ForeColor = Color.White;
+            }
+
+            // Everything, 1st Row - White
+            if (totalPoints > 29 && IncisivenessHover || ImprovedForceCloakHover || ImprovedForceShockwaveHover || ForceShockwaveHover == true)
+            {
+                SkillRequirements1.ForeColor = Color.Red;
             }
 
             // Incisiveness, 2nd Row - White
@@ -1894,7 +1900,7 @@ namespace SWG_Expertise_Calcualtor
             if (strpoints >= 1)
             {
                 EnhancedStrengthPoints.Visible = true;
-                EnhancedStrength.Image = Properties.Resources.aEnhancedStrength;
+                EnhancedStrength.Image = Properties.Resources.StrengthSpentHover;
             }
 
             if (strpoints == 1)
@@ -1910,7 +1916,7 @@ namespace SWG_Expertise_Calcualtor
 
             if (strpoints == 0)
             {
-                EnhancedStrength.Image = Properties.Resources.iEnhancedStrength;
+                EnhancedStrength.Image = Properties.Resources.StrengthAvailable;
                 EnhancedStrengthPoints.Visible = false;
                 Rank1Modifier1.BackColor = Color.Transparent;
             }
@@ -1931,9 +1937,17 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStrengthHovering()
         {
-            EnhancedStrengthBackground.Image = Properties.Resources.aSkillBoxGreen;
             EnhancedStrengthHover = true;
             HoverFunctions();
+
+            if (espoints >= 1)
+            {
+                EnhancedStrength.Image = Properties.Resources.StrengthSpentHover;
+            }
+            else
+            {
+                EnhancedStrength.Image = Properties.Resources.StrengthHover;
+            }
         }
 
         private void EnhancedStrength_MouseMove(object sender, MouseEventArgs e)
@@ -1948,7 +1962,14 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStrength_MouseLeave(object sender, EventArgs e)
         {
-            EnhancedStrengthBackground.Image = Properties.Resources.aSkillBox;
+            if (espoints >= 1)
+            {
+                EnhancedStrength.Image = Properties.Resources.StrengthSpent;
+            }
+            else
+            {
+                EnhancedStrength.Image = Properties.Resources.StrengthAvailable;
+            }
             EnhancedStrengthHover = false;
             HoverFunctions();
         }
@@ -3511,6 +3532,6 @@ namespace SWG_Expertise_Calcualtor
             {
                 ForceShockwaveBackground.Image = Properties.Resources.iSkillBox;
             }
-        } 
+        }
     }
 }
