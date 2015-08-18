@@ -567,7 +567,6 @@ namespace SWG_Expertise_Calcualtor
             // Enhanced Strength
             if (EnhancedStrengthHover == true)
             {
-                //SkillPicture.Image = Properties.Resources.aEnhancedStrength;
                 SkillTitle.Text = "ENHANCED STRENGTH";
                 SkillSummary.Text = "Strength increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements1.Text = "None";
