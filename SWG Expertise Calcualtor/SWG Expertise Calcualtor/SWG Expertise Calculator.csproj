@@ -329,6 +329,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\StaminaAvailable1.png" />
+    <None Include="Resources\ConAvailable2.png" />
+    <None Include="Resources\aEnhancedAgility1.gif" />
+    <None Include="Resources\AgilityAvailable1.png" />
+    <None Include="Resources\ConAvailable1.png" />
     <None Include="Resources\StrengthSpent.png" />
     <None Include="Resources\StrengthSpentHover.png" />
     <None Include="Resources\StrengthHover.png" />

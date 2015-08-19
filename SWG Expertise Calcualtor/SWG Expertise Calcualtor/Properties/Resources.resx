@@ -139,9 +139,6 @@
   <data name="iEnhancedConstitution" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iEnhancedConstitution.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aSkillBoxGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aSkillBoxGreen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LineVertical" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LineVertical.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -162,6 +159,9 @@
   </data>
   <data name="iStanceSaberBlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iStanceSaberBlock.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StrengthSpent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StrengthSpent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aEnhancedConstitution" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aEnhancedConstitution.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,6 +196,9 @@
   <data name="iGraceInMotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iGraceInMotion.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ConAvailable2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConAvailable2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="large_load_account_access_data" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\large_load_account_access_data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -214,8 +217,11 @@
   <data name="massage_bottom_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\massage_bottom_right.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iIncisiveness" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iIncisiveness.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iImprovedForceShockwave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iImprovedForceShockwave.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StrengthHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StrengthHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iSkillBoxRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iSkillBoxRed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,6 +244,9 @@
   <data name="aSkillBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aSkillBox.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="StaminaAvailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StaminaAvailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="LineStart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LineStart1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -253,14 +262,20 @@
   <data name="ConAvailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ConAvailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iImprovedForceThrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iImprovedForceThrow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="AgilityAvailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AgilityAvailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aSkillBoxGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aSkillBoxGreen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iFidelity" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iFidelity.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aImprovedForceThrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aImprovedForceThrow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AgilityAvailable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgilityAvailable1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aExactingStrikes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aExactingStrikes.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -286,20 +301,20 @@
   <data name="skillpoints3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\skillpoints3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iImprovedForceShockwave" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iImprovedForceShockwave.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="aIncisiveness" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aIncisiveness.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iImprovedForceThrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iImprovedForceThrow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ConAvailable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConAvailable1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iSecondWind" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iSecondWind.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="aEnhancedAgility1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aEnhancedAgility1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="aImprovedForceCloak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aImprovedForceCloak.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="aIncisiveness" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aIncisiveness.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aImprovedSaberBlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aImprovedSaberBlock.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,14 +325,23 @@
   <data name="window1_bottom_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\window1_bottom_left.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="aImprovedForceThrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aImprovedForceThrow.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iImprovedSaberBlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iImprovedSaberBlock.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="StrengthAvailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\StrengthAvailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iIncisiveness" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iIncisiveness.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="skillpoints1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\skillpoints1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StrengthSpentHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StrengthSpentHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iImprovedForceCloak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iImprovedForceCloak.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,16 +349,7 @@
   <data name="massage_top_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\massage_top_right.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="StaminaAvailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\StaminaAvailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="StrengthHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\StrengthHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="StrengthSpent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\StrengthSpent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="StrengthSpentHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\StrengthSpentHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="StaminaAvailable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StaminaAvailable1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

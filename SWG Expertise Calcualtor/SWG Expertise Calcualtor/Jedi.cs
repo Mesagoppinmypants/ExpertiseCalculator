@@ -2030,7 +2030,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedConstitutionHovering()
         {
-            EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBoxGreen;
+            EnhancedConstitution.Image = Properties.Resources.aSkillBoxGreen;
             EnhancedConstitutionHover = true;
             HoverFunctions();
         }
@@ -2047,7 +2047,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedConstitution_MouseLeave(object sender, EventArgs e)
         {
-            EnhancedConstitutionBackground.Image = Properties.Resources.aSkillBox;
+            EnhancedConstitution.Image = Properties.Resources.aSkillBox;
             EnhancedConstitutionHover = false;
             HoverFunctions();
         }
@@ -2106,7 +2106,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedAgilityHovering()
         {
-            EnhancedAgilityBackground.Image = Properties.Resources.aSkillBoxGreen;
+            EnhancedAgility.Image = Properties.Resources.aSkillBoxGreen;
             EnhancedAgilityHover = true;
             HoverFunctions();
         }
@@ -2123,7 +2123,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedAgility_MouseLeave(object sender, EventArgs e)
         {
-            EnhancedAgilityBackground.Image = Properties.Resources.aSkillBox;
+            EnhancedAgility.Image = Properties.Resources.aSkillBox;
             EnhancedAgilityHover = false;
             HoverFunctions();
         }
@@ -2182,7 +2182,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStaminaHovering()
         {
-            EnhancedStaminaBackground.Image = Properties.Resources.aSkillBoxGreen;
+            EnhancedStamina.Image = Properties.Resources.aSkillBoxGreen;
             EnhancedStaminaHover = true;
             HoverFunctions();
         }
@@ -2199,7 +2199,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStamina_MouseLeave(object sender, EventArgs e)
         {
-            EnhancedStaminaBackground.Image = Properties.Resources.aSkillBox;
+            EnhancedStamina.Image = Properties.Resources.aSkillBox;
             EnhancedStaminaHover = false;
             HoverFunctions();
         }

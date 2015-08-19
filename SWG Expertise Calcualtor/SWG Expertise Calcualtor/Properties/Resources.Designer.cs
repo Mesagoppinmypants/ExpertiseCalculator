@@ -83,6 +83,16 @@ namespace SWG_Expertise_Calcualtor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aEnhancedAgility1 {
+            get {
+                object obj = ResourceManager.GetObject("aEnhancedAgility1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aEnhancedConstitution {
             get {
                 object obj = ResourceManager.GetObject("aEnhancedConstitution", resourceCulture);
@@ -156,6 +166,16 @@ namespace SWG_Expertise_Calcualtor.Properties {
         internal static System.Drawing.Bitmap AgilityAvailable {
             get {
                 object obj = ResourceManager.GetObject("AgilityAvailable", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AgilityAvailable1 {
+            get {
+                object obj = ResourceManager.GetObject("AgilityAvailable1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -316,6 +336,26 @@ namespace SWG_Expertise_Calcualtor.Properties {
         internal static System.Drawing.Bitmap ConAvailable {
             get {
                 object obj = ResourceManager.GetObject("ConAvailable", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ConAvailable1 {
+            get {
+                object obj = ResourceManager.GetObject("ConAvailable1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ConAvailable2 {
+            get {
+                object obj = ResourceManager.GetObject("ConAvailable2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -706,6 +746,16 @@ namespace SWG_Expertise_Calcualtor.Properties {
         internal static System.Drawing.Bitmap StaminaAvailable {
             get {
                 object obj = ResourceManager.GetObject("StaminaAvailable", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap StaminaAvailable1 {
+            get {
+                object obj = ResourceManager.GetObject("StaminaAvailable1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

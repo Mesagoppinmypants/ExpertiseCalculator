@@ -124,18 +124,15 @@
             this.EnhancedAgilityPoints = new System.Windows.Forms.PictureBox();
             this.EnhancedConstitutionPoints = new System.Windows.Forms.PictureBox();
             this.EnhancedStrengthPoints = new System.Windows.Forms.PictureBox();
-            this.EnhancedStaminaBackground = new System.Windows.Forms.PictureBox();
-            this.EnhancedAgilityBackground = new System.Windows.Forms.PictureBox();
-            this.EnhancedConstitutionBackground = new System.Windows.Forms.PictureBox();
+            this.EnhancedStamina = new System.Windows.Forms.PictureBox();
+            this.EnhancedAgility = new System.Windows.Forms.PictureBox();
+            this.EnhancedConstitution = new System.Windows.Forms.PictureBox();
             this.EnhancedStrength = new System.Windows.Forms.PictureBox();
             this.ImprovedForceThrowBackground = new System.Windows.Forms.PictureBox();
             this.PremonitionBackground = new System.Windows.Forms.PictureBox();
             this.ImprovedCripplingAccuracyBackground = new System.Windows.Forms.PictureBox();
             this.DefensiveFightingBackground = new System.Windows.Forms.PictureBox();
             this.ImprovedSaberBlockBackground = new System.Windows.Forms.PictureBox();
-            this.EnhancedStamina = new System.Windows.Forms.PictureBox();
-            this.EnhancedAgility = new System.Windows.Forms.PictureBox();
-            this.EnhancedConstitution = new System.Windows.Forms.PictureBox();
             this.CommandPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AbilityPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AbilityBackground)).BeginInit();
@@ -200,18 +197,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthPoints)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStamina)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitution)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PremonitionBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlockBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStamina)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitution)).BeginInit();
             this.SuspendLayout();
             // 
             // AvailablePoints
@@ -1268,32 +1262,33 @@
             this.EnhancedStrengthPoints.TabStop = false;
             this.EnhancedStrengthPoints.Visible = false;
             // 
-            // EnhancedStaminaBackground
+            // EnhancedStamina
             // 
-            this.EnhancedStaminaBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.EnhancedStaminaBackground.Location = new System.Drawing.Point(419, 92);
-            this.EnhancedStaminaBackground.Name = "EnhancedStaminaBackground";
-            this.EnhancedStaminaBackground.Size = new System.Drawing.Size(89, 88);
-            this.EnhancedStaminaBackground.TabIndex = 9;
-            this.EnhancedStaminaBackground.TabStop = false;
+            this.EnhancedStamina.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.StaminaAvailable1;
+            this.EnhancedStamina.Location = new System.Drawing.Point(419, 92);
+            this.EnhancedStamina.Name = "EnhancedStamina";
+            this.EnhancedStamina.Size = new System.Drawing.Size(89, 88);
+            this.EnhancedStamina.TabIndex = 9;
+            this.EnhancedStamina.TabStop = false;
             // 
-            // EnhancedAgilityBackground
+            // EnhancedAgility
             // 
-            this.EnhancedAgilityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.EnhancedAgilityBackground.Location = new System.Drawing.Point(333, 92);
-            this.EnhancedAgilityBackground.Name = "EnhancedAgilityBackground";
-            this.EnhancedAgilityBackground.Size = new System.Drawing.Size(89, 88);
-            this.EnhancedAgilityBackground.TabIndex = 8;
-            this.EnhancedAgilityBackground.TabStop = false;
+            this.EnhancedAgility.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.AgilityAvailable1;
+            this.EnhancedAgility.Location = new System.Drawing.Point(333, 92);
+            this.EnhancedAgility.Name = "EnhancedAgility";
+            this.EnhancedAgility.Size = new System.Drawing.Size(89, 88);
+            this.EnhancedAgility.TabIndex = 8;
+            this.EnhancedAgility.TabStop = false;
             // 
-            // EnhancedConstitutionBackground
+            // EnhancedConstitution
             // 
-            this.EnhancedConstitutionBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aSkillBox;
-            this.EnhancedConstitutionBackground.Location = new System.Drawing.Point(245, 92);
-            this.EnhancedConstitutionBackground.Name = "EnhancedConstitutionBackground";
-            this.EnhancedConstitutionBackground.Size = new System.Drawing.Size(89, 88);
-            this.EnhancedConstitutionBackground.TabIndex = 3;
-            this.EnhancedConstitutionBackground.TabStop = false;
+            this.EnhancedConstitution.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.ConAvailable1;
+            this.EnhancedConstitution.Location = new System.Drawing.Point(245, 92);
+            this.EnhancedConstitution.Name = "EnhancedConstitution";
+            this.EnhancedConstitution.Size = new System.Drawing.Size(89, 88);
+            this.EnhancedConstitution.TabIndex = 3;
+            this.EnhancedConstitution.TabStop = false;
+            this.EnhancedConstitution.Click += new System.EventHandler(this.EnhancedConstitution_Click);
             // 
             // EnhancedStrength
             // 
@@ -1352,45 +1347,6 @@
             this.ImprovedSaberBlockBackground.Size = new System.Drawing.Size(89, 88);
             this.ImprovedSaberBlockBackground.TabIndex = 152;
             this.ImprovedSaberBlockBackground.TabStop = false;
-            // 
-            // EnhancedStamina
-            // 
-            this.EnhancedStamina.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedStamina;
-            this.EnhancedStamina.Location = new System.Drawing.Point(441, 115);
-            this.EnhancedStamina.Name = "EnhancedStamina";
-            this.EnhancedStamina.Size = new System.Drawing.Size(42, 42);
-            this.EnhancedStamina.TabIndex = 21;
-            this.EnhancedStamina.TabStop = false;
-            this.EnhancedStamina.Click += new System.EventHandler(this.EnhancedStamina_Click);
-            this.EnhancedStamina.MouseLeave += new System.EventHandler(this.EnhancedStamina_MouseLeave);
-            this.EnhancedStamina.MouseHover += new System.EventHandler(this.EnhancedStamina_MouseHover);
-            this.EnhancedStamina.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedStamina_MouseMove);
-            // 
-            // EnhancedAgility
-            // 
-            this.EnhancedAgility.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedAgility;
-            this.EnhancedAgility.Location = new System.Drawing.Point(356, 115);
-            this.EnhancedAgility.Name = "EnhancedAgility";
-            this.EnhancedAgility.Size = new System.Drawing.Size(42, 42);
-            this.EnhancedAgility.TabIndex = 20;
-            this.EnhancedAgility.TabStop = false;
-            this.EnhancedAgility.Click += new System.EventHandler(this.EnhancedAgility_Click);
-            this.EnhancedAgility.MouseLeave += new System.EventHandler(this.EnhancedAgility_MouseLeave);
-            this.EnhancedAgility.MouseHover += new System.EventHandler(this.EnhancedAgility_MouseHover);
-            this.EnhancedAgility.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedAgility_MouseMove);
-            // 
-            // EnhancedConstitution
-            // 
-            this.EnhancedConstitution.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.iEnhancedConstitution;
-            this.EnhancedConstitution.Location = new System.Drawing.Point(268, 115);
-            this.EnhancedConstitution.Name = "EnhancedConstitution";
-            this.EnhancedConstitution.Size = new System.Drawing.Size(42, 42);
-            this.EnhancedConstitution.TabIndex = 19;
-            this.EnhancedConstitution.TabStop = false;
-            this.EnhancedConstitution.Click += new System.EventHandler(this.EnhancedConstitution_Click);
-            this.EnhancedConstitution.MouseLeave += new System.EventHandler(this.EnhancedConstitution_MouseLeave);
-            this.EnhancedConstitution.MouseHover += new System.EventHandler(this.EnhancedConstitution_MouseHover);
-            this.EnhancedConstitution.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedConstitution_MouseMove);
             // 
             // Jedi
             // 
@@ -1492,9 +1448,6 @@
             this.Controls.Add(this.EnhancedStamina);
             this.Controls.Add(this.EnhancedAgility);
             this.Controls.Add(this.EnhancedConstitution);
-            this.Controls.Add(this.EnhancedStaminaBackground);
-            this.Controls.Add(this.EnhancedAgilityBackground);
-            this.Controls.Add(this.EnhancedConstitutionBackground);
             this.Controls.Add(this.EnhancedStrength);
             this.Controls.Add(this.ImprovedForceThrowBackground);
             this.Controls.Add(this.PremonitionBackground);
@@ -1573,18 +1526,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrengthPoints)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStaminaBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgilityBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitutionBackground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStamina)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitution)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnhancedStrength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedForceThrowBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PremonitionBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedCripplingAccuracyBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefensiveFightingBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImprovedSaberBlockBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedStamina)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedAgility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EnhancedConstitution)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1593,9 +1543,9 @@
         #endregion
 
         private System.Windows.Forms.PictureBox EnhancedStrength;
-        private System.Windows.Forms.PictureBox EnhancedConstitutionBackground;
-        private System.Windows.Forms.PictureBox EnhancedStaminaBackground;
-        private System.Windows.Forms.PictureBox EnhancedAgilityBackground;
+        private System.Windows.Forms.PictureBox EnhancedConstitution;
+        private System.Windows.Forms.PictureBox EnhancedStamina;
+        private System.Windows.Forms.PictureBox EnhancedAgility;
         private System.Windows.Forms.Label AvailablePoints;
         public System.Windows.Forms.CheckBox AddPoints;
         public System.Windows.Forms.CheckBox RemovePoints;
@@ -1697,8 +1647,5 @@
         private System.Windows.Forms.PictureBox AbilityBackground;
         private System.Windows.Forms.Label AbilityTitle;
         private System.Windows.Forms.Label AbilityDescription;
-        private System.Windows.Forms.PictureBox EnhancedStamina;
-        private System.Windows.Forms.PictureBox EnhancedAgility;
-        private System.Windows.Forms.PictureBox EnhancedConstitution;
     }
 }
