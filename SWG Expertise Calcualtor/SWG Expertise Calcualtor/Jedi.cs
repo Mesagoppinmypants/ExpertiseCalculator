@@ -1939,7 +1939,7 @@ namespace SWG_Expertise_Calcualtor
             EnhancedStrengthHover = true;
             HoverFunctions();
 
-            if (espoints >= 1)
+            if (strpoints >= 1)
             {
                 EnhancedStrength.Image = Properties.Resources.StrengthSpentHover;
             }
@@ -1961,7 +1961,7 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStrength_MouseLeave(object sender, EventArgs e)
         {
-            if (espoints >= 1)
+            if (strpoints >= 1)
             {
                 EnhancedStrength.Image = Properties.Resources.StrengthSpent;
             }
