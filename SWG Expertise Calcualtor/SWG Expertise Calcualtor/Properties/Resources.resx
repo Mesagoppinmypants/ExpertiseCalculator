@@ -196,9 +196,6 @@
   <data name="iGraceInMotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iGraceInMotion.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ConAvailable2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ConAvailable2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="large_load_account_access_data" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\large_load_account_access_data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -351,5 +348,14 @@
   </data>
   <data name="StaminaAvailable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\StaminaAvailable1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConSpent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConSpent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConSpentHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConSpentHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

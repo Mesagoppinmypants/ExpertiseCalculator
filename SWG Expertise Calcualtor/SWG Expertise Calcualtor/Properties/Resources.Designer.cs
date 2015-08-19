@@ -353,9 +353,29 @@ namespace SWG_Expertise_Calcualtor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ConAvailable2 {
+        internal static System.Drawing.Bitmap ConHover {
             get {
-                object obj = ResourceManager.GetObject("ConAvailable2", resourceCulture);
+                object obj = ResourceManager.GetObject("ConHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ConSpent {
+            get {
+                object obj = ResourceManager.GetObject("ConSpent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ConSpentHover {
+            get {
+                object obj = ResourceManager.GetObject("ConSpentHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

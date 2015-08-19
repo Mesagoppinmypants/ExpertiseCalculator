@@ -1962,6 +1962,9 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStrength_MouseLeave(object sender, EventArgs e)
         {
+            EnhancedStrengthHover = false;
+            HoverFunctions();
+
             if (strpoints >= 1)
             {
                 EnhancedStrength.Image = Properties.Resources.StrengthSpent;
@@ -1970,8 +1973,6 @@ namespace SWG_Expertise_Calcualtor
             {
                 EnhancedStrength.Image = Properties.Resources.StrengthAvailable;
             }
-            EnhancedStrengthHover = false;
-            HoverFunctions();
         }
 
         // Enhanced Constitution    
@@ -1993,7 +1994,7 @@ namespace SWG_Expertise_Calcualtor
             if (conpoints >= 1)
             {
                 EnhancedConstitutionPoints.Visible = true;
-                EnhancedConstitution.Image = Properties.Resources.aEnhancedConstitution;
+                EnhancedConstitution.Image = Properties.Resources.ConSpentHover;
             }
 
             if (conpoints == 1)
@@ -2009,7 +2010,7 @@ namespace SWG_Expertise_Calcualtor
 
             if (conpoints == 0)
             {
-                EnhancedConstitution.Image = Properties.Resources.iEnhancedConstitution;
+                EnhancedConstitution.Image = Properties.Resources.ConHover;
                 EnhancedConstitutionPoints.Visible = false;
                 Rank1Modifier1.BackColor = Color.Transparent;
             }
@@ -2030,9 +2031,17 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedConstitutionHovering()
         {
-            EnhancedConstitution.Image = Properties.Resources.aSkillBoxGreen;
             EnhancedConstitutionHover = true;
             HoverFunctions();
+
+            if (conpoints >= 1)
+            {
+                EnhancedConstitution.Image = Properties.Resources.ConSpentHover;
+            }
+            else
+            {
+                EnhancedConstitution.Image = Properties.Resources.ConHover;
+            }
         }
 
         private void EnhancedConstitution_MouseHover(object sender, EventArgs e)
@@ -2047,9 +2056,17 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedConstitution_MouseLeave(object sender, EventArgs e)
         {
-            EnhancedConstitution.Image = Properties.Resources.aSkillBox;
             EnhancedConstitutionHover = false;
             HoverFunctions();
+
+            if (conpoints >= 1)
+            {
+                EnhancedConstitution.Image = Properties.Resources.ConSpent;
+            }
+            else
+            {
+                EnhancedConstitution.Image = Properties.Resources.ConAvailable;
+            }
         }
 
         // Enhanced Agility

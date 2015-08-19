@@ -329,6 +329,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="Resources\ConSpent.png" />
+    <None Include="Resources\ConHover.png" />
+    <None Include="Resources\ConSpentHover.png" />
     <None Include="Resources\StaminaAvailable1.png" />
     <None Include="Resources\ConAvailable2.png" />
     <None Include="Resources\aEnhancedAgility1.gif" />
