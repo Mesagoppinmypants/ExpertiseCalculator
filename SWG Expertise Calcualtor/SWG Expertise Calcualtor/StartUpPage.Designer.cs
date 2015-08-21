@@ -68,7 +68,6 @@
             // 
             // SoundtrackStart
             // 
-            this.SoundtrackStart.Enabled = false;
             this.SoundtrackStart.Font = new System.Drawing.Font("Star Jedi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SoundtrackStart.Location = new System.Drawing.Point(77, 12);
             this.SoundtrackStart.Name = "SoundtrackStart";
