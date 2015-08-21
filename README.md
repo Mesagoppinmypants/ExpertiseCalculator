@@ -7,11 +7,11 @@ For now it's just me making this but anyone is allowed to make changes and creat
 
 This is an NGE profession expertise calculator made for Windows that won't require internet.
 
+Reference: http://www.oekevo.org/expertisecalculator
+
 ## Development Tools You Will Need:
-## Required:
+Required:
 * [Microsoft Visual Studio 2015](https://goo.gl/6iKdV4)
 
-## Recommended:
+Recommended:
 * [Notepad++](https://goo.gl/Ctz9Mk)
-
-Reference: http://www.oekevo.org/expertisecalculator
