@@ -751,7 +751,7 @@
             // 
             // SkillPicture
             // 
-            this.SkillPicture.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aEnhancedStrength;
+            this.SkillPicture.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.StrengthPreview;
             this.SkillPicture.Location = new System.Drawing.Point(655, 50);
             this.SkillPicture.Name = "SkillPicture";
             this.SkillPicture.Size = new System.Drawing.Size(42, 42);

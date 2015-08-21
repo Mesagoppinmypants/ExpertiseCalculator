@@ -485,7 +485,7 @@ namespace SWG_Expertise_Calcualtor
             // Enables the general titles and descriptions that all skills use -- Basically dump all hovers here, except granted commands
             if (EnhancedStrengthHover || EnhancedConstitutionHover || EnhancedAgilityHover || EnhancedStaminaHover || HeightenedSpeedHover || ExactingStrikesHover || AlacrityHover || ImprovedForceThrowHover || GraceInMotionHover || PremonitionHover || FidelityHover || DefensiveFightingHover == true)
             {
-                SkillPictureBackground.Visible = true;
+                SkillPicture.Visible = true;
                 SkillPicture.Visible = true;
                 SkillTitle.Visible = true;
                 SkillSummary.Visible = true;
@@ -503,7 +503,7 @@ namespace SWG_Expertise_Calcualtor
             // Dump all granted commands here
             if (ForceCloakHover || ForceShockwaveHover == true)
             {
-                SkillPictureBackground.Visible = true;
+                SkillPicture.Visible = true;
                 SkillPicture.Visible = true;
                 SkillTitle.Visible = true;
                 SkillSummary.Visible = true;
@@ -529,7 +529,7 @@ namespace SWG_Expertise_Calcualtor
             // Rank 2 Modifiers - 2 Requirements
             if (SecondWindHover || ImprovedCripplingAccuracyHover || ImprovedForceCloakHover || ImprovedForceShockwaveHover || ImprovedSaberBlockHover || IncisivenessHover == true)
             {
-                SkillPictureBackground.Visible = true;
+                SkillPicture.Visible = true;
                 SkillPicture.Visible = true;
                 SkillTitle.Visible = true;
                 SkillSummary.Visible = true;
@@ -567,7 +567,7 @@ namespace SWG_Expertise_Calcualtor
             // Enhanced Strength
             if (EnhancedStrengthHover == true)
             {
-                SkillPicture.Image = Properties.Resources.aEnhancedStrength;
+                SkillPicture.Image = Properties.Resources.StrengthPreview;
                 SkillTitle.Text = "ENHANCED STRENGTH";
                 SkillSummary.Text = "Strength increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements1.Text = "None";
@@ -596,7 +596,7 @@ namespace SWG_Expertise_Calcualtor
             // Enhanced Constitution
             if (EnhancedConstitutionHover == true)
             {
-                SkillPicture.Image = Properties.Resources.aEnhancedConstitution;
+                SkillPicture.Image = Properties.Resources.ConstitutionPreview;
                 SkillTitle.Text = "ENHANCED CONSTITUTION";
                 SkillSummary.Text = "Constitution increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements1.Text = "None";
@@ -625,7 +625,7 @@ namespace SWG_Expertise_Calcualtor
             // Enhanced Agility
             if (EnhancedAgilityHover == true)
             {
-                SkillPicture.Image = Properties.Resources.aEnhancedAgility;
+                SkillPicture.Image = Properties.Resources.AgilityPreview;
                 SkillTitle.Text = "ENHANCED AGILITY";
                 SkillSummary.Text = "Agility increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements1.Text = "None";
@@ -654,7 +654,7 @@ namespace SWG_Expertise_Calcualtor
             // Enhanced Stamina
             if (EnhancedStaminaHover == true)
             {
-                SkillPicture.Image = Properties.Resources.aEnhancedStamina;
+                SkillPicture.Image = Properties.Resources.StaminaPreview;
                 SkillTitle.Text = "ENHANCED STAMINA";
                 SkillSummary.Text = "Stamina increased by 25 points per point" + "\r\n" + "spent.";
                 SkillRequirements1.Text = "None";
@@ -2180,7 +2180,7 @@ namespace SWG_Expertise_Calcualtor
             if (stapoints >= 1)
             {
                 EnhancedStaminaPoints.Visible = true;
-                EnhancedStamina.Image = Properties.Resources.aEnhancedStamina;
+                EnhancedStamina.Image = Properties.Resources.StaminaSpent;
             }
 
             if (stapoints == 1)
@@ -2195,7 +2195,7 @@ namespace SWG_Expertise_Calcualtor
 
             if (stapoints == 0)
             {
-                EnhancedStamina.Image = Properties.Resources.iEnhancedStamina;
+                EnhancedStamina.Image = Properties.Resources.StaminaHover;
                 EnhancedStaminaPoints.Visible = false;
             }
 
@@ -2215,9 +2215,17 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStaminaHovering()
         {
-            EnhancedStamina.Image = Properties.Resources.aSkillBoxGreen;
             EnhancedStaminaHover = true;
             HoverFunctions();
+
+            if (stapoints >= 1)
+            {
+                EnhancedStamina.Image = Properties.Resources.StaminaSpentHover;
+            }
+            else
+            {
+                EnhancedStamina.Image = Properties.Resources.StaminaHover;
+            }
         }
 
         private void EnhancedStamina_MouseHover(object sender, EventArgs e)
@@ -2232,9 +2240,17 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedStamina_MouseLeave(object sender, EventArgs e)
         {
-            EnhancedStamina.Image = Properties.Resources.aSkillBox;
             EnhancedStaminaHover = false;
             HoverFunctions();
+
+            if (stapoints >= 1)
+            {
+                EnhancedStamina.Image = Properties.Resources.StaminaSpent;
+            }
+            else
+            {
+                EnhancedStamina.Image = Properties.Resources.StaminaAvailable;
+            }
         }
 
         // Heightened Speed
