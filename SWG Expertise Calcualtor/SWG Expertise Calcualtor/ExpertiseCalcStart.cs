@@ -44,7 +44,6 @@ namespace SWG_Expertise_Calcualtor
         private void ExpertiseCalcStart_FormClosing(object sender, FormClosingEventArgs e)
         {
             StartUpPage sup = new StartUpPage();
-            sup.ExpertiseOpen = false;
         }
     }
 }
