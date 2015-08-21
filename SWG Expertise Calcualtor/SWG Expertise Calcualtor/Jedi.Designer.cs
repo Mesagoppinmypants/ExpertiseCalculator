@@ -59,10 +59,10 @@
             this.Path = new System.Windows.Forms.Label();
             this.BeastMastery = new System.Windows.Forms.Label();
             this.CommandPanel = new System.Windows.Forms.Panel();
-            this.AbilityTitle = new System.Windows.Forms.Label();
-            this.AbilityDescription = new System.Windows.Forms.Label();
             this.AbilityPicture = new System.Windows.Forms.PictureBox();
             this.AbilityBackground = new System.Windows.Forms.PictureBox();
+            this.AbilityTitle = new System.Windows.Forms.Label();
+            this.AbilityDescription = new System.Windows.Forms.Label();
             this.ForceCloak = new System.Windows.Forms.PictureBox();
             this.ForceCloakLine = new System.Windows.Forms.PictureBox();
             this.ForceCloakLineEnd = new System.Windows.Forms.PictureBox();
@@ -574,6 +574,26 @@
             this.CommandPanel.TabIndex = 204;
             this.CommandPanel.Visible = false;
             // 
+            // AbilityPicture
+            // 
+            this.AbilityPicture.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aForceCloak;
+            this.AbilityPicture.Location = new System.Drawing.Point(12, 22);
+            this.AbilityPicture.Name = "AbilityPicture";
+            this.AbilityPicture.Size = new System.Drawing.Size(42, 42);
+            this.AbilityPicture.TabIndex = 206;
+            this.AbilityPicture.TabStop = false;
+            this.AbilityPicture.Visible = false;
+            // 
+            // AbilityBackground
+            // 
+            this.AbilityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.SkillBox;
+            this.AbilityBackground.Location = new System.Drawing.Point(7, 17);
+            this.AbilityBackground.Name = "AbilityBackground";
+            this.AbilityBackground.Size = new System.Drawing.Size(52, 50);
+            this.AbilityBackground.TabIndex = 205;
+            this.AbilityBackground.TabStop = false;
+            this.AbilityBackground.Visible = false;
+            // 
             // AbilityTitle
             // 
             this.AbilityTitle.AutoSize = true;
@@ -599,26 +619,6 @@
             this.AbilityDescription.Text = "Force Cloak: This ability allows\r\ninvisibility for a duration of time. With\r\nImpr" +
     "oved Force Cloak, Jedi can escape\r\ncombat.";
             this.AbilityDescription.Visible = false;
-            // 
-            // AbilityPicture
-            // 
-            this.AbilityPicture.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.aForceCloak;
-            this.AbilityPicture.Location = new System.Drawing.Point(12, 22);
-            this.AbilityPicture.Name = "AbilityPicture";
-            this.AbilityPicture.Size = new System.Drawing.Size(42, 42);
-            this.AbilityPicture.TabIndex = 206;
-            this.AbilityPicture.TabStop = false;
-            this.AbilityPicture.Visible = false;
-            // 
-            // AbilityBackground
-            // 
-            this.AbilityBackground.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.SkillBox;
-            this.AbilityBackground.Location = new System.Drawing.Point(7, 17);
-            this.AbilityBackground.Name = "AbilityBackground";
-            this.AbilityBackground.Size = new System.Drawing.Size(52, 50);
-            this.AbilityBackground.TabIndex = 205;
-            this.AbilityBackground.TabStop = false;
-            this.AbilityBackground.Visible = false;
             // 
             // ForceCloak
             // 
@@ -1270,6 +1270,10 @@
             this.EnhancedStamina.Size = new System.Drawing.Size(89, 88);
             this.EnhancedStamina.TabIndex = 9;
             this.EnhancedStamina.TabStop = false;
+            this.EnhancedStamina.Click += new System.EventHandler(this.EnhancedStamina_Click);
+            this.EnhancedStamina.MouseLeave += new System.EventHandler(this.EnhancedStamina_MouseLeave);
+            this.EnhancedStamina.MouseHover += new System.EventHandler(this.EnhancedStamina_MouseHover);
+            this.EnhancedStamina.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedStamina_MouseMove);
             // 
             // EnhancedAgility
             // 
@@ -1279,6 +1283,10 @@
             this.EnhancedAgility.Size = new System.Drawing.Size(89, 88);
             this.EnhancedAgility.TabIndex = 8;
             this.EnhancedAgility.TabStop = false;
+            this.EnhancedAgility.Click += new System.EventHandler(this.EnhancedAgility_Click);
+            this.EnhancedAgility.MouseLeave += new System.EventHandler(this.EnhancedAgility_MouseLeave);
+            this.EnhancedAgility.MouseHover += new System.EventHandler(this.EnhancedAgility_MouseHover);
+            this.EnhancedAgility.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EnhancedAgility_MouseMove);
             // 
             // EnhancedConstitution
             // 

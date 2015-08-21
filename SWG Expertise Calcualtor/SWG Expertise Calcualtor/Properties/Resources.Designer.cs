@@ -183,6 +183,36 @@ namespace SWG_Expertise_Calcualtor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AgilityHover {
+            get {
+                object obj = ResourceManager.GetObject("AgilityHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AgilitySpent {
+            get {
+                object obj = ResourceManager.GetObject("AgilitySpent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AgilitySpentHover {
+            get {
+                object obj = ResourceManager.GetObject("AgilitySpentHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aGraceInMotion {
             get {
                 object obj = ResourceManager.GetObject("aGraceInMotion", resourceCulture);

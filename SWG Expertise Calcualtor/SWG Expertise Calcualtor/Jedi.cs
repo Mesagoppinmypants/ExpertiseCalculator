@@ -363,7 +363,7 @@ namespace SWG_Expertise_Calcualtor
             //tps.CheckLevelTest();
         }
 
-        // Changes the backgrounds for each row when the user hits a certain amount of totalPoints -- Finish this for the other rows
+        // Changes the backgrounds for each row when the user hits a certain amount of totalPoints
         private void CheckBackgrounds()
         {
             // Second Row
@@ -2088,7 +2088,7 @@ namespace SWG_Expertise_Calcualtor
             if (agipoints >= 1)
             {
                 EnhancedAgilityPoints.Visible = true;
-                EnhancedAgility.Image = Properties.Resources.aEnhancedAgility;
+                EnhancedAgility.Image = Properties.Resources.AgilitySpent;
             }
 
             if (agipoints == 1)
@@ -2103,7 +2103,7 @@ namespace SWG_Expertise_Calcualtor
 
             if (agipoints == 0)
             {
-                EnhancedAgility.Image = Properties.Resources.iEnhancedAgility;
+                EnhancedAgility.Image = Properties.Resources.AgilityHover;
                 EnhancedAgilityPoints.Visible = false;
             }
 
@@ -2123,9 +2123,17 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedAgilityHovering()
         {
-            EnhancedAgility.Image = Properties.Resources.aSkillBoxGreen;
             EnhancedAgilityHover = true;
             HoverFunctions();
+
+            if (agipoints >= 1)
+            {
+                EnhancedAgility.Image = Properties.Resources.AgilitySpentHover;
+            }
+            else
+            {
+                EnhancedAgility.Image = Properties.Resources.AgilityHover;
+            }
         }
 
         private void EnhancedAgility_MouseHover(object sender, EventArgs e)
@@ -2140,9 +2148,17 @@ namespace SWG_Expertise_Calcualtor
 
         private void EnhancedAgility_MouseLeave(object sender, EventArgs e)
         {
-            EnhancedAgility.Image = Properties.Resources.aSkillBox;
             EnhancedAgilityHover = false;
             HoverFunctions();
+
+            if (agipoints >= 1)
+            {
+                EnhancedAgility.Image = Properties.Resources.AgilitySpent;
+            }
+            else
+            {
+                EnhancedAgility.Image = Properties.Resources.AgilityAvailable;
+            }
         }
 
         // Enhanced Stamina

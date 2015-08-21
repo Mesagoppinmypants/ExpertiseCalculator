@@ -358,4 +358,13 @@
   <data name="ConSpentHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ConSpentHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AgilityHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgilityHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgilitySpent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgilitySpent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgilitySpentHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgilitySpentHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
