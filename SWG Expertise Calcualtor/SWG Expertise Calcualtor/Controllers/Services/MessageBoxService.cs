@@ -30,5 +30,10 @@ namespace SWG_Expertise_Calcualtor.Controllers.Services
         {
             MessageBox.Show("Sorry, this function isn't implemented yet.");
         }
+
+        public void ExpertiseAlreadyOpen()
+        {
+            MessageBox.Show("The expertise calculator is already open, please use the one that's currently open.");
+        }
     }
 }
