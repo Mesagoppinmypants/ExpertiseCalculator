@@ -1,6 +1,6 @@
 ﻿namespace SWG_Expertise_Calcualtor
 {
-    partial class ExpertiseCalcStart
+    partial class ProfessionSelectionPage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.ProfessionSelection = new System.Windows.Forms.ComboBox();
-            this.ExitButton = new System.Windows.Forms.Label();
-            this.TopRightCornerGraphic = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.TopRightCornerGraphic)).BeginInit();
+            this.SelectionText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ProfessionSelection
@@ -44,49 +42,36 @@
             "Choose Profession",
             "Jedi",
             "Bounty Hunter"});
-            this.ProfessionSelection.Location = new System.Drawing.Point(814, 9);
+            this.ProfessionSelection.Location = new System.Drawing.Point(82, 149);
             this.ProfessionSelection.Name = "ProfessionSelection";
             this.ProfessionSelection.Size = new System.Drawing.Size(121, 21);
             this.ProfessionSelection.TabIndex = 0;
             this.ProfessionSelection.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // ExitButton
+            // SelectionText
             // 
-            this.ExitButton.AutoSize = true;
-            this.ExitButton.BackColor = System.Drawing.Color.Transparent;
-            this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitButton.Location = new System.Drawing.Point(949, 9);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(36, 25);
-            this.ExitButton.TabIndex = 2;
-            this.ExitButton.Text = "    ";
-            this.ExitButton.Click += new System.EventHandler(this.label1_Click);
+            this.SelectionText.AutoSize = true;
+            this.SelectionText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectionText.Location = new System.Drawing.Point(12, 110);
+            this.SelectionText.Name = "SelectionText";
+            this.SelectionText.Size = new System.Drawing.Size(260, 24);
+            this.SelectionText.TabIndex = 1;
+            this.SelectionText.Text = "Please select a profession.";
             // 
-            // TopRightCornerGraphic
-            // 
-            this.TopRightCornerGraphic.Image = global::SWG_Expertise_Calcualtor.Properties.Resources.massage_top_right;
-            this.TopRightCornerGraphic.Location = new System.Drawing.Point(771, -1);
-            this.TopRightCornerGraphic.Name = "TopRightCornerGraphic";
-            this.TopRightCornerGraphic.Size = new System.Drawing.Size(214, 34);
-            this.TopRightCornerGraphic.TabIndex = 1;
-            this.TopRightCornerGraphic.TabStop = false;
-            // 
-            // ExpertiseCalcStart
+            // ProfessionSelectionPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(984, 696);
-            this.Controls.Add(this.ExitButton);
+            this.ClientSize = new System.Drawing.Size(284, 381);
+            this.Controls.Add(this.SelectionText);
             this.Controls.Add(this.ProfessionSelection);
-            this.Controls.Add(this.TopRightCornerGraphic);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "ExpertiseCalcStart";
+            this.Name = "ProfessionSelectionPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Expertise Calculator";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ExpertiseCalcStart_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.TopRightCornerGraphic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,8 +80,7 @@
         #endregion
 
         public System.Windows.Forms.ComboBox ProfessionSelection;
-        private System.Windows.Forms.PictureBox TopRightCornerGraphic;
-        private System.Windows.Forms.Label ExitButton;
+        private System.Windows.Forms.Label SelectionText;
     }
 }
 

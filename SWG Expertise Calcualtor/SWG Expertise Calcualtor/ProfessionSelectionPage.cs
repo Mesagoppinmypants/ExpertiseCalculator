@@ -5,16 +5,12 @@ using System.Windows.Forms;
 
 namespace SWG_Expertise_Calcualtor
 {
-    public partial class ExpertiseCalcStart : Form
+    public partial class ProfessionSelectionPage : Form
     {
-        public ExpertiseCalcStart()
+        public ProfessionSelectionPage()
         {
             InitializeComponent();
             ProfessionSelection.SelectedIndex = 0;
-            var pos = PointToScreen(ExitButton.Location);
-            pos = TopRightCornerGraphic.PointToClient(pos);
-            ExitButton.Parent = TopRightCornerGraphic;
-            ExitButton.Location = pos;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

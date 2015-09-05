@@ -16,7 +16,7 @@ namespace SWG_Expertise_Calcualtor
         private void OpenExpertiseCalculatorButton_Click(object sender, EventArgs e)
         {
             gc.ProgramButtonSound();
-            ExpertiseCalcStart calc = new ExpertiseCalcStart();
+            ProfessionSelectionPage calc = new ProfessionSelectionPage();
             calc.Show();
             //WindowState = FormWindowState.Minimized;
         }

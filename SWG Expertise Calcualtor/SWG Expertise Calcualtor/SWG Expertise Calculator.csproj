@@ -92,11 +92,11 @@
     <Compile Include="StartUpPage.Designer.cs">
       <DependentUpon>StartUpPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExpertiseCalcStart.cs">
+    <Compile Include="ProfessionSelectionPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ExpertiseCalcStart.Designer.cs">
-      <DependentUpon>ExpertiseCalcStart.cs</DependentUpon>
+    <Compile Include="ProfessionSelectionPage.Designer.cs">
+      <DependentUpon>ProfessionSelectionPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -128,8 +128,8 @@
     <EmbeddedResource Include="StartUpPage.resx">
       <DependentUpon>StartUpPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ExpertiseCalcStart.resx">
-      <DependentUpon>ExpertiseCalcStart.cs</DependentUpon>
+    <EmbeddedResource Include="ProfessionSelectionPage.resx">
+      <DependentUpon>ProfessionSelectionPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SWGGameArchives.resx">
       <DependentUpon>SWGGameArchives.cs</DependentUpon>
