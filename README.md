@@ -21,3 +21,4 @@ Recommended:
 * [Project SWG Thread](https://github.com/Mesagoppinmypants/ExpertiseCalculator)
 * [Project Model/Reference](http://www.oekevo.org/expertisecalculator)
 * [Project Wiki](https://github.com/Mesagoppinmypants/ExpertiseCalculator/wiki)
+* [Project Images](http://www.oekevo.org/expertisecalculator/source)
