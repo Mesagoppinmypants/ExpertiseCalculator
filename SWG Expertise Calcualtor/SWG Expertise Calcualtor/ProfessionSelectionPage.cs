@@ -7,6 +7,8 @@ namespace SWG_Expertise_Calcualtor
 {
     public partial class ProfessionSelectionPage : Form
     {
+        GuiController gc = new GuiController();
+
         public ProfessionSelectionPage()
         {
             InitializeComponent();
@@ -15,6 +17,11 @@ namespace SWG_Expertise_Calcualtor
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (ProfessionSelection.SelectedIndex != 0)
+            {
+                gc.ProgramButtonSound();
+            }
+
             if (ProfessionSelection.SelectedIndex == 1)
             {
                 Jedi jedi = new Jedi();
