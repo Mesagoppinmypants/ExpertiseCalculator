@@ -128,6 +128,27 @@ namespace SWG_Expertise_Calcualtor
         // Reset Button -- Do not add into PageFunctions()
         private void ResetSkillPoints()
         {
+            // Enhanced Strength Defaults
+            EnhancedStrength.Image = Properties.Resources.StrengthAvailable;
+            EnhancedStrengthPoints.Visible = false;
+            strpoints = 0;
+
+            // Enhanced Constitution Defaults
+            EnhancedConstitution.Image = Properties.Resources.ConAvailable;
+            EnhancedConstitutionPoints.Visible = false;
+            conpoints = 0;
+
+            // Enhanced Agility Defaults
+            EnhancedAgility.Image = Properties.Resources.AgilityAvailable;
+            EnhancedAgilityPoints.Visible = false;
+            agipoints = 0;
+
+            // Enhanced Stamina Defaults
+            EnhancedStamina.Image = Properties.Resources.AgilityAvailable;
+            EnhancedAgilityPoints.Visible = false;
+            stapoints = 0;
+
+            // Defaults
             totalPoints = 45;
             CheckLevel();
             AvailablePoints.Text = totalPoints.ToString();
