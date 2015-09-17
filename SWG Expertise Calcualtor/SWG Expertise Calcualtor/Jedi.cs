@@ -144,7 +144,7 @@ namespace SWG_Expertise_Calcualtor
             agipoints = 0;
 
             // Enhanced Stamina Defaults
-            EnhancedStamina.Image = Properties.Resources.AgilityAvailable;
+            EnhancedStamina.Image = Properties.Resources.StaminaAvailable;
             EnhancedAgilityPoints.Visible = false;
             stapoints = 0;
 
